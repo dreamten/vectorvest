@@ -1,0 +1,1724 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>VectorVest UI</title>
+
+    <meta name="theme-color" content="#131d28" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description" content="VectorVest tells you when to buy, what to buy, and when to sell. It's that simple." />
+
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+    <link rel="stylesheet" type="text/css" href="css/output.css" />
+
+    <script defer src="js/jquery-3.6.0.min.js"></script>
+    <script defer src="js/main.js"></script>
+  </head>
+
+  <body>
+    <!-- header -->
+    <div class="sticky z-header top-0 right-0 left-0 flex items-center h-[51px] border-b border-gray-600 bg-gray-700">
+      <div class="flex items-center justify-center w-[50px] h-[50px] mr-5">
+        <img src="img/logo.png" srcset="img/logo@2x.png 2x" width="26" height="26" alt="" />
+      </div>
+      <div class="flex gap-5 items-stretch overflow-hidden">
+        <a href="index.html" class="relative flex items-center h-[51px] text-white hover:text-white">
+          <span>Elements</span>
+          <span class="absolute right-0 -bottom-0.5 left-0 h-1 bg-blue-600"></span>
+        </a>
+        <a href="forms.html" class="relative flex items-center h-[51px] hover:text-white">
+          <span>Forms</span>
+        </a>
+        <a href="popups.html" class="relative flex items-center h-[51px] hover:text-white">
+          <span>Popups</span>
+        </a>
+        <a href="widgets.html" class="relative flex items-center h-[51px] hover:text-white">
+          <span>Widgets</span>
+        </a>
+      </div>
+    </div>
+    <!--/ header -->
+
+    <!-- content -->
+    <div class="p-5 max-w-[1436px] mr-auto ml-auto md:p-6 xl:p-8">
+      <h1 class="text-h1 text-white">Elements</h1>
+
+      <h2 class="mt-16 mb-4 text-h2 text-white">Alerts</h2>
+      <div class="grid gap-px grid-cols-1 -mx-5 sm:mx-0 lg:grid-cols-3">
+        <div data-preview class="p-5 bg-gray-800">
+          <div class="flex gap-1 items-center py-1.5 px-2.5-px rounded-md border border-green/20 bg-green-bg text-green">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 -ml-0.5">
+              <path d="M12 5L5.8125 11L3 8.27273" />
+            </svg>
+            <span>Success message with <a href="#" class="underline hover:no-underline">text link</a></span>
+            <button type="button" class="flex items-center justify-center shrink-0 w-6 h-6 -my-1 -mr-1.5 ml-auto text-green-hover hover:text-white">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 4L4 12" />
+                <path d="M4 4L12 12" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div data-preview class="p-5 bg-gray-800">
+          <div class="flex gap-1 items-center py-1.5 px-2.5-px rounded-md border border-red/20 bg-red-bg text-red">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 -ml-0.5">
+              <path d="M12 5L5.8125 11L3 8.27273" />
+            </svg>
+            <span>Error message with <a href="#" class="underline hover:no-underline">text link</a></span>
+            <button type="button" class="flex items-center justify-center shrink-0 w-6 h-6 -my-1 -mr-1.5 ml-auto text-red-hover hover:text-white">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 4L4 12" />
+                <path d="M4 4L12 12" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div data-preview class="p-5 bg-gray-800">
+          <div class="flex gap-1 items-center py-1.5 px-2.5-px rounded-md border border-yellow/20 bg-yellow-bg text-yellow">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 -ml-0.5">
+              <path d="M12 5L5.8125 11L3 8.27273" />
+            </svg>
+            <span>Warning message with <a href="#" class="underline hover:no-underline">text link</a></span>
+            <button type="button" class="flex items-center justify-center shrink-0 w-6 h-6 -my-1 -mr-1.5 ml-auto text-yellow-hover hover:text-white">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 4L4 12" />
+                <path d="M4 4L12 12" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="mt-16 mb-4 text-h2 text-white">Badges</h2>
+      <div class="grid gap-px grid-cols-2 -mx-5 sm:mx-0 md:grid-cols-4 lg:grid-cols-6">
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <div class="py-0.5 px-1 rounded border border-blue-600 bg-blue-600 text-xxs font-extrabold uppercase text-white">New</div>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <div class="py-0.5 px-1 rounded border border-gray-600 text-xxs font-extrabold uppercase text-gray-400">Weekly</div>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <div class="flex gap-1 items-center py-0.5 px-1 rounded border border-gray-600 bg-gray-600 text-xxs font-extrabold uppercase text-white">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2.66602 2.6665H5.86602C6.43181 2.6665 6.97443 2.91624 7.37451 3.36077C7.77459 3.8053 7.99935 4.40821 7.99935 5.03687V13.3332C7.99935 12.8617 7.83078 12.4095 7.53072 12.0761C7.23066 11.7427 6.8237 11.5554 6.39935 11.5554H2.66602V2.6665Z" />
+              <path d="M13.3333 2.6665H10.1333C9.56754 2.6665 9.02492 2.91624 8.62484 3.36077C8.22476 3.8053 8 4.40821 8 5.03687V13.3332C8 12.8617 8.16857 12.4095 8.46863 12.0761C8.76869 11.7427 9.17565 11.5554 9.6 11.5554H13.3333V2.6665Z" />
+            </svg>
+            <span>4 Lessons</span>
+          </div>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <div class="flex gap-1 items-center py-0.5 px-1 rounded border border-gray-900 bg-gray-900 text-xxs font-extrabold uppercase text-white">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2.66602 2.6665H5.86602C6.43181 2.6665 6.97443 2.91624 7.37451 3.36077C7.77459 3.8053 7.99935 4.40821 7.99935 5.03687V13.3332C7.99935 12.8617 7.83078 12.4095 7.53072 12.0761C7.23066 11.7427 6.8237 11.5554 6.39935 11.5554H2.66602V2.6665Z" />
+              <path d="M13.3333 2.6665H10.1333C9.56754 2.6665 9.02492 2.91624 8.62484 3.36077C8.22476 3.8053 8 4.40821 8 5.03687V13.3332C8 12.8617 8.16857 12.4095 8.46863 12.0761C8.76869 11.7427 9.17565 11.5554 9.6 11.5554H13.3333V2.6665Z" />
+            </svg>
+            <span>4 Lessons</span>
+          </div>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <div class="py-0.5 px-1 rounded-full border border-red/30 bg-red-bg text-xxs font-extrabold uppercase text-red">Overvalued</div>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <div class="py-0.5 px-1 rounded-full border border-green/30 bg-green-bg text-xxs font-extrabold uppercase text-green">Undervalued</div>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <div class="flex gap-1.5 items-center justify-center h-[20px] px-1.5 rounded bg-red-bg text-red">
+            <span>50.312</span>
+          </div>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <div class="flex gap-0.5 items-center justify-center h-[20px] px-1.5 rounded bg-red-bg text-red">
+            <svg width="12" height="12" viewBox="0 0 12 12" class="-ml-0.5 fill-red">
+              <path d="M5.55165 1.90832C5.73506 1.53673 6.26494 1.53673 6.44835 1.90832L7.42878 3.89455C7.50155 4.04197 7.64214 4.1442 7.80482 4.16798L9.99811 4.48856C10.4081 4.54848 10.5715 5.0524 10.2747 5.34148L8.68839 6.8865C8.57046 7.00138 8.51663 7.16694 8.54446 7.32921L8.91871 9.51132C8.98877 9.9198 8.56 10.2313 8.19318 10.0384L6.23273 9.00739C6.08703 8.93077 5.91297 8.93077 5.76727 9.00739L3.80682 10.0384C3.44 10.2313 3.01123 9.9198 3.08129 9.51132L3.45554 7.32921C3.48337 7.16694 3.42954 7.00138 3.31161 6.8865L1.72534 5.34148C1.42854 5.0524 1.59193 4.54848 2.00189 4.48856L4.19518 4.16798C4.35786 4.1442 4.49845 4.04197 4.57122 3.89455L5.55165 1.90832Z" />
+            </svg>
+            <span>50.312</span>
+          </div>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <div class="flex gap-1.5 items-center justify-center h-[20px] px-1.5 rounded bg-yellow-bg text-yellow">
+            <span>50.312</span>
+          </div>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <div class="flex gap-0.5 items-center justify-center h-[20px] px-1.5 rounded bg-yellow-bg text-yellow">
+            <svg width="12" height="12" viewBox="0 0 12 12" class="-ml-0.5 fill-yellow">
+              <path d="M5.55165 1.90832C5.73506 1.53673 6.26494 1.53673 6.44835 1.90832L7.42878 3.89455C7.50155 4.04197 7.64214 4.1442 7.80482 4.16798L9.99811 4.48856C10.4081 4.54848 10.5715 5.0524 10.2747 5.34148L8.68839 6.8865C8.57046 7.00138 8.51663 7.16694 8.54446 7.32921L8.91871 9.51132C8.98877 9.9198 8.56 10.2313 8.19318 10.0384L6.23273 9.00739C6.08703 8.93077 5.91297 8.93077 5.76727 9.00739L3.80682 10.0384C3.44 10.2313 3.01123 9.9198 3.08129 9.51132L3.45554 7.32921C3.48337 7.16694 3.42954 7.00138 3.31161 6.8865L1.72534 5.34148C1.42854 5.0524 1.59193 4.54848 2.00189 4.48856L4.19518 4.16798C4.35786 4.1442 4.49845 4.04197 4.57122 3.89455L5.55165 1.90832Z" />
+            </svg>
+            <span>50.312</span>
+          </div>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <div class="flex gap-1.5 items-center justify-center h-[20px] px-1.5 rounded bg-green-bg text-green">
+            <span>50.312</span>
+          </div>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <div class="flex gap-0.5 items-center justify-center h-[20px] px-1.5 rounded bg-green-bg text-green">
+            <svg width="12" height="12" viewBox="0 0 12 12" class="-ml-0.5 fill-green">
+              <path d="M5.55165 1.90832C5.73506 1.53673 6.26494 1.53673 6.44835 1.90832L7.42878 3.89455C7.50155 4.04197 7.64214 4.1442 7.80482 4.16798L9.99811 4.48856C10.4081 4.54848 10.5715 5.0524 10.2747 5.34148L8.68839 6.8865C8.57046 7.00138 8.51663 7.16694 8.54446 7.32921L8.91871 9.51132C8.98877 9.9198 8.56 10.2313 8.19318 10.0384L6.23273 9.00739C6.08703 8.93077 5.91297 8.93077 5.76727 9.00739L3.80682 10.0384C3.44 10.2313 3.01123 9.9198 3.08129 9.51132L3.45554 7.32921C3.48337 7.16694 3.42954 7.00138 3.31161 6.8865L1.72534 5.34148C1.42854 5.0524 1.59193 4.54848 2.00189 4.48856L4.19518 4.16798C4.35786 4.1442 4.49845 4.04197 4.57122 3.89455L5.55165 1.90832Z" />
+            </svg>
+            <span>50.312</span>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="mt-16 mb-4 text-h2 text-white">Buttons</h2>
+      <h3 class="mt-4 mb-4 text-h3">Primary Button</h3>
+      <div class="grid gap-px grid-cols-2 -mx-5 sm:mx-0 md:grid-cols-4">
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <button type="button" class="flex gap-1 items-center justify-center h-[32px] px-3 rounded-md bg-gradient-to-b from-blue-600 to-blue-800 shadow-button text-white hover:shadow-button-hover">
+            <span>Default</span>
+          </button>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <button type="button" disabled="" class="flex gap-1 items-center justify-center h-[32px] px-3 rounded-md bg-gray-700 text-gray-500">
+            <span>Disabled</span>
+          </button>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <button type="button" class="flex gap-1 items-center justify-center h-[32px] px-3 rounded-md bg-gradient-to-b from-blue-600 to-blue-800 shadow-button text-white hover:shadow-button-hover">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="-ml-0.5">
+              <path d="M12.6666 8L3.33329 8" />
+              <path d="M7 12L3 8L7 4" />
+            </svg>
+            <span>Leading Icon</span>
+          </button>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <button type="button" class="flex gap-1 items-center justify-center h-[32px] px-3 rounded-md bg-gradient-to-b from-blue-600 to-blue-800 shadow-button text-white hover:shadow-button-hover">
+            <span>Trailing Icon</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="-mr-0.5">
+              <path d="M3.33337 8H12.6667" />
+              <path d="M9 4L13 8L9 12" />
+            </svg>
+          </button>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <button type="button" class="flex gap-1 items-center justify-center h-[26px] px-2.5 rounded bg-gradient-to-b from-blue-600 to-blue-800 shadow-button text-sm text-white hover:shadow-button-hover">
+            <span>Small</span>
+          </button>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <button type="button" disabled="" class="flex gap-1 items-center justify-center h-[26px] px-2.5 rounded-md bg-gray-700 text-sm text-gray-500">
+            <span>Disabled</span>
+          </button>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <button type="button" class="flex gap-1 items-center justify-center h-[26px] px-2.5 rounded bg-gradient-to-b from-blue-600 to-blue-800 shadow-button text-sm text-white hover:shadow-button-hover">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="-ml-0.5">
+              <path d="M12.6666 8L3.33329 8" />
+              <path d="M7 12L3 8L7 4" />
+            </svg>
+            <span>Leading Icon</span>
+          </button>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <button type="button" class="flex gap-1 items-center justify-center h-[26px] px-2.5 rounded bg-gradient-to-b from-blue-600 to-blue-800 shadow-button text-sm text-white hover:shadow-button-hover">
+            <span>Trailing Icon</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="-mr-0.5">
+              <path d="M3.33337 8H12.6667" />
+              <path d="M9 4L13 8L9 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <h3 class="mt-8 mb-4 text-h3">Secondary Button</h3>
+      <div class="grid gap-px grid-cols-2 -mx-5 sm:mx-0 md:grid-cols-4">
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <button type="button" class="flex gap-1 items-center justify-center h-[32px] px-3 rounded-md bg-button-secondary shadow-button text-blue-300 hover:text-white">
+            <span>Default</span>
+          </button>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <button type="button" disabled="" class="flex gap-1 items-center justify-center h-[32px] px-3 rounded-md bg-gray-700 text-gray-500">
+            <span>Disabled</span>
+          </button>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <button type="button" class="flex gap-1 items-center justify-center h-[32px] px-3 rounded-md bg-button-secondary shadow-button text-blue-300 hover:text-white">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="-ml-0.5">
+              <path d="M12.6666 8L3.33329 8" />
+              <path d="M7 12L3 8L7 4" />
+            </svg>
+            <span>Leading Icon</span>
+          </button>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <button type="button" class="flex gap-1 items-center justify-center h-[32px] px-3 rounded-md bg-button-secondary shadow-button text-blue-300 hover:text-white">
+            <span>Trailing Icon</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="-mr-0.5">
+              <path d="M3.33337 8H12.6667" />
+              <path d="M9 4L13 8L9 12" />
+            </svg>
+          </button>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <button type="button" class="flex gap-1 items-center justify-center h-[26px] px-2.5 rounded-md bg-button-secondary shadow-button text-sm text-blue-300 hover:text-white">
+            <span>Small</span>
+          </button>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <button type="button" disabled="" class="flex gap-1 items-center justify-center h-[26px] px-2.5 rounded-md bg-gray-700 text-sm text-gray-500">
+            <span>Disabled</span>
+          </button>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <button type="button" class="flex gap-1 items-center justify-center h-[26px] px-2.5 rounded-md bg-button-secondary shadow-button text-sm text-blue-300 hover:text-white">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="-ml-0.5">
+              <path d="M12.6666 8L3.33329 8" />
+              <path d="M7 12L3 8L7 4" />
+            </svg>
+            <span>Leading Icon</span>
+          </button>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <button type="button" class="flex gap-1 items-center justify-center h-[26px] px-2.5 rounded-md bg-button-secondary shadow-button text-sm text-blue-300 hover:text-white">
+            <span>Trailing Icon</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="-mr-0.5">
+              <path d="M3.33337 8H12.6667" />
+              <path d="M9 4L13 8L9 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <h3 class="mt-8 mb-4 text-h3">Tertiary Button</h3>
+      <div class="grid gap-px grid-cols-2 -mx-5 sm:mx-0 md:grid-cols-4">
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <button type="button" class="flex gap-1 items-center justify-center h-[32px] px-3-px rounded-md border border-blue-300/30 bg-gray-700 text-blue-300 hover:shadow-button-ter-hover hover:text-white">
+            <span>Default</span>
+          </button>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <button type="button" disabled="" class="flex gap-1 items-center justify-center h-[32px] px-3 rounded-md bg-gray-700 text-gray-500">
+            <span>Disabled</span>
+          </button>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <button type="button" class="flex gap-1 items-center justify-center h-[32px] px-3-px rounded-md border border-blue-300/30 bg-gray-700 text-blue-300 hover:shadow-button-ter-hover hover:text-white">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="-ml-0.5">
+              <path d="M12.6666 8L3.33329 8" />
+              <path d="M7 12L3 8L7 4" />
+            </svg>
+            <span>Leading Icon</span>
+          </button>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <button type="button" class="flex gap-1 items-center justify-center h-[32px] px-3-px rounded-md border border-blue-300/30 bg-gray-700 text-blue-300 hover:shadow-button-ter-hover hover:text-white">
+            <span>Trailing Icon</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="-mr-0.5">
+              <path d="M3.33337 8H12.6667" />
+              <path d="M9 4L13 8L9 12" />
+            </svg>
+          </button>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <button type="button" class="flex gap-1 items-center justify-center h-[26px] px-2.5-px rounded-md border border-blue-300/30 bg-gray-700 text-sm text-blue-300 hover:shadow-button-ter-hover hover:text-white">
+            <span>Small</span>
+          </button>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <button type="button" disabled="" class="flex gap-1 items-center justify-center h-[26px] px-2.5-px rounded-md bg-gray-700 text-sm text-gray-500">
+            <span>Disabled</span>
+          </button>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <button type="button" class="flex gap-1 items-center justify-center h-[26px] px-2.5-px rounded-md border border-blue-300/30 bg-gray-700 text-sm text-blue-300 hover:shadow-button-ter-hover hover:text-white">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="-ml-0.5">
+              <path d="M12.6666 8L3.33329 8" />
+              <path d="M7 12L3 8L7 4" />
+            </svg>
+            <span>Leading Icon</span>
+          </button>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <button type="button" class="flex gap-1 items-center justify-center h-[26px] px-2.5-px rounded-md border border-blue-300/30 bg-gray-700 text-sm text-blue-300 hover:shadow-button-ter-hover hover:text-white">
+            <span>Trailing Icon</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="-mr-0.5">
+              <path d="M3.33337 8H12.6667" />
+              <path d="M9 4L13 8L9 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <h3 class="mt-8 mb-4 text-h3">Text Button</h3>
+      <div class="grid gap-px grid-cols-2 -mx-5 sm:mx-0 md:grid-cols-4">
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <button type="button" class="flex gap-1 items-center justify-center text-blue-300 hover:text-white">
+            <span>Default</span>
+          </button>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <button type="button" disabled="" class="flex gap-1 items-center justify-center text-gray-500">
+            <span>Disabled</span>
+          </button>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <button type="button" class="flex gap-1 items-center justify-center text-blue-300 hover:text-white">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="-ml-0.5">
+              <path d="M12.6666 8L3.33329 8" />
+              <path d="M7 12L3 8L7 4" />
+            </svg>
+            <span>Leading Icon</span>
+          </button>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <button type="button" class="flex gap-1 items-center justify-center text-blue-300 hover:text-white">
+            <span>Trailing Icon</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="-mr-0.5">
+              <path d="M3.33337 8H12.6667" />
+              <path d="M9 4L13 8L9 12" />
+            </svg>
+          </button>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <button type="button" class="flex gap-1 items-center justify-center text-sm text-blue-300 hover:text-white">
+            <span>Small</span>
+          </button>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <button type="button" disabled="" class="flex gap-1 items-center justify-center text-sm text-gray-500">
+            <span>Disabled</span>
+          </button>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <button type="button" class="flex gap-1 items-center justify-center text-sm text-blue-300 hover:text-white">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="-ml-0.5">
+              <path d="M12.6666 8L3.33329 8" />
+              <path d="M7 12L3 8L7 4" />
+            </svg>
+            <span>Leading Icon</span>
+          </button>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <button type="button" class="flex gap-1 items-center justify-center text-sm text-blue-300 hover:text-white">
+            <span>Trailing Icon</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="-mr-0.5">
+              <path d="M3.33337 8H12.6667" />
+              <path d="M9 4L13 8L9 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <h2 class="mt-16 mb-4 text-h2 text-white">Icons</h2>
+      <h3 class="mt-4 mb-4 text-h3">Small Size (12px)</h3>
+      <div class="grid gap-px grid-cols-6 -mx-5 sm:mx-0 lg:grid-cols-12">
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="currentcolor">
+            <path d="M5.61589 3.46093L1.68341 8.17991C1.41202 8.50557 1.6436 9 2.06752 9H9.93248C10.3564 9 10.588 8.50557 10.3166 8.17991L6.38411 3.46093C6.18421 3.22106 5.81579 3.22106 5.61589 3.46093Z" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="currentcolor">
+            <path d="M8.53907 5.61589L3.82009 1.68341C3.49443 1.41202 3 1.6436 3 2.06752L3 9.93248C3 10.3564 3.49443 10.588 3.82009 10.3166L8.53907 6.38411C8.77894 6.18421 8.77894 5.81579 8.53907 5.61589Z" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="currentcolor">
+            <path d="M5.61589 8.53907L1.68341 3.82009C1.41202 3.49443 1.6436 3 2.06752 3H9.93248C10.3564 3 10.588 3.49443 10.3166 3.82009L6.38411 8.53907C6.18421 8.77894 5.81579 8.77894 5.61589 8.53907Z" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="currentcolor">
+            <path d="M3.46093 5.61589L8.17991 1.68341C8.50557 1.41202 9 1.6436 9 2.06752L9 9.93248C9 10.3564 8.50557 10.588 8.17991 10.3166L3.46093 6.38411C3.22106 6.18421 3.22106 5.81579 3.46093 5.61589Z" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="currentcolor">
+            <path d="M4.91429 10.5C4.80383 10.5 4.71429 10.4105 4.71429 10.3V6.84286C4.71429 6.7324 4.62474 6.64286 4.51429 6.64286H1.94075C1.76892 6.64286 1.67709 6.44047 1.79024 6.31116L5.84948 1.67202C5.92917 1.58095 6.07083 1.58095 6.15052 1.67202L10.2098 6.31116C10.3229 6.44047 10.2311 6.64286 10.0592 6.64286H7.48571C7.37526 6.64286 7.28571 6.7324 7.28571 6.84286V10.3C7.28571 10.4105 7.19617 10.5 7.08571 10.5H4.91429Z" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="currentcolor">
+            <path d="M4.91429 1.5C4.80383 1.5 4.71429 1.58954 4.71429 1.7V5.15714C4.71429 5.2676 4.62474 5.35714 4.51429 5.35714H1.94075C1.76892 5.35714 1.67709 5.55953 1.79024 5.68884L5.84948 10.328C5.92917 10.419 6.07083 10.419 6.15052 10.328L10.2098 5.68884C10.3229 5.55953 10.2311 5.35714 10.0592 5.35714H7.48571C7.37526 5.35714 7.28571 5.2676 7.28571 5.15714V1.7C7.28571 1.58954 7.19617 1.5 7.08571 1.5H4.91429Z" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+            <path d="M3 7.5L6 4.5L9 7.5" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+            <path d="M4.5 9L7.5 6L4.5 3" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+            <path d="M3 4.5L6 7.5L9 4.5" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+            <path d="M7.5 9L4.5 6L7.5 3" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 9.625L6 2.625" />
+            <path d="M3 5.375L6 2.375L9 5.375" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 9.625L6 2.625" />
+            <path d="M3 6.75L6 9.75L9 6.75" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 11C8.76142 11 11 8.76142 11 6C11 3.23858 8.76142 1 6 1C3.23858 1 1 3.23858 1 6C1 8.76142 3.23858 11 6 11Z" />
+            <path d="M6 8V6" />
+            <path d="M6 4H6.00545" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 3L3 9" />
+            <path d="M3 3L9 9" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="currentcolor">
+            <path d="M5.55165 1.90832C5.73506 1.53673 6.26494 1.53673 6.44835 1.90832L7.42878 3.89455C7.50155 4.04197 7.64214 4.1442 7.80482 4.16798L9.99811 4.48856C10.4081 4.54848 10.5715 5.0524 10.2747 5.34148L8.68839 6.8865C8.57046 7.00138 8.51663 7.16694 8.54446 7.32921L8.91871 9.51132C8.98877 9.9198 8.56 10.2313 8.19318 10.0384L6.23273 9.00739C6.08703 8.93077 5.91297 8.93077 5.76727 9.00739L3.80682 10.0384C3.44 10.2313 3.01123 9.9198 3.08129 9.51132L3.45554 7.32921C3.48337 7.16694 3.42954 7.00138 3.31161 6.8865L1.72534 5.34148C1.42854 5.0524 1.59193 4.54848 2.00189 4.48856L4.19518 4.16798C4.35786 4.1442 4.49845 4.04197 4.57122 3.89455L5.55165 1.90832Z" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3.5 8.5L8.5 3.5" />
+            <path d="M3.5 3.5H8.5V8.5" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2.25 4.5L2.25 2.25L4.5 2.25" />
+            <path d="M9.75 7.5L9.75 9.75L7.5 9.75" />
+            <path d="M2.25 2.25L5.25 5.25" />
+            <path d="M9.75 9.75L6.75 6.75" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="currentcolor">
+            <path d="M5.56699 0.75C5.75944 0.416667 6.24056 0.416667 6.43301 0.75L8.16506 3.75C8.35751 4.08333 8.11695 4.5 7.73205 4.5H4.26795C3.88305 4.5 3.64249 4.08333 3.83494 3.75L5.56699 0.75Z" />
+            <path d="M6.43301 11.25C6.24056 11.5833 5.75944 11.5833 5.56699 11.25L3.83494 8.25C3.64249 7.91667 3.88305 7.5 4.26795 7.5L7.73205 7.5C8.11695 7.5 8.35751 7.91667 8.16506 8.25L6.43301 11.25Z" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9.375 3.75L4.73438 8.25L2.625 6.20455" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 5L3 7L5 9" />
+            <path d="M9 3V5.54545C9 5.93122 8.84196 6.30119 8.56066 6.57397C8.27936 6.84675 7.89782 7 7.5 7H3" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 7.75L6 10.75L9 7.75M3 4.25L6 1.25L9 4.25" />
+          </svg>
+        </div>
+      </div>
+
+      <h3 class="mt-8 mb-4 text-h3">Medium Size (16px)</h3>
+      <div class="grid gap-px grid-cols-6 -mx-5 sm:mx-0 lg:grid-cols-12">
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 12.8335L8 3.50016" />
+            <path d="M4 7.1665L8 3.1665L12 7.1665" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3.33334 8H12.6667" />
+            <path d="M9 4L13 8L9 12" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 12.8335L8 3.50016" />
+            <path d="M4 9L8 13L12 9" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3.33334 8H12.6667" />
+            <path d="M7 4L3 8L7 12" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 4V12" />
+            <path d="M4 8H12" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 8H12" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 10L8 6L12 10" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 12L10 8L6 4" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6L8 10L12 6" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M10 12L6 8L10 4" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8.66666 11.3332L12 7.99984L8.66666 4.6665" />
+            <path d="M4 11.3332L7.33333 7.99984L4 4.6665" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M7.33333 11.3332L4 7.99984L7.33333 4.6665" />
+            <path d="M12 11.3332L8.66666 7.99984L12 4.6665" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M7.5 3H3.22222C2.89807 3 2.58719 3.12877 2.35798 3.35798C2.12877 3.58719 2 3.89807 2 4.22222V12.7778C2 13.1019 2.12877 13.4128 2.35798 13.642C2.58719 13.8712 2.89807 14 3.22222 14H11.7778C12.1019 14 12.4128 13.8712 12.642 13.642C12.8712 13.4128 13 13.1019 13 12.7778V8.5" />
+            <path d="M11.692 2.39599C11.9456 2.14244 12.2894 2 12.648 2C13.0066 2 13.3505 2.14244 13.604 2.39599C13.8576 2.64954 14 2.99342 14 3.35199C14 3.71056 13.8576 4.05444 13.604 4.30799L7.54934 10.3627L5 11L5.63733 8.45066L11.692 2.39599Z" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2.49948 3.59424V6.89478H5.80002" />
+            <path d="M3.88021 9.64527C4.23688 10.6576 4.91291 11.5267 5.80644 12.1214C6.69996 12.7162 7.76257 13.0044 8.83417 12.9428C9.90576 12.8811 10.9283 12.4728 11.7477 11.7795C12.5671 11.0861 13.1389 10.1453 13.3771 9.09868C13.6153 8.05207 13.5068 6.95641 13.0682 5.97677C12.6295 4.99714 11.8843 4.18661 10.9449 3.66731C10.0055 3.14801 8.92284 2.94806 7.85994 3.09761C6.79704 3.24715 5.81153 3.73808 5.0519 4.49642L2.49948 6.89482" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentcolor">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 0.75C1.08579 0.75 0.75 1.08579 0.75 1.5V6.5C0.75 6.91421 1.08579 7.25 1.5 7.25H5.5C5.91421 7.25 6.25 6.91421 6.25 6.5V1.5C6.25 1.08579 5.91421 0.75 5.5 0.75H1.5ZM2.25 5.75V2.25H4.75V5.75H2.25ZM1.5 8.75C1.08579 8.75 0.75 9.08579 0.75 9.5V14.5C0.75 14.9142 1.08579 15.25 1.5 15.25H7.5C7.91421 15.25 8.25 14.9142 8.25 14.5V9.5C8.25 9.08579 7.91421 8.75 7.5 8.75H1.5ZM2.25 13.75V10.25H6.75V13.75H2.25ZM7.75 1.5C7.75 1.08579 8.08579 0.75 8.5 0.75H14.5C14.9142 0.75 15.25 1.08579 15.25 1.5V6.5C15.25 6.91421 14.9142 7.25 14.5 7.25H8.5C8.08579 7.25 7.75 6.91421 7.75 6.5V1.5ZM9.25 2.25V5.75H13.75V2.25H9.25ZM10.5 8.75C10.0858 8.75 9.75 9.08579 9.75 9.5V14.5C9.75 14.9142 10.0858 15.25 10.5 15.25H14.5C14.9142 15.25 15.25 14.9142 15.25 14.5V9.5C15.25 9.08579 14.9142 8.75 14.5 8.75H10.5ZM11.25 13.75V10.25H13.75V13.75H11.25Z" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 5L5.8125 11L3 8.27273" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentcolor">
+            <path d="M6.99351 1.3335C6.67418 1.3335 6.4012 1.55923 6.33987 1.87256L6.11721 3.01579C5.57004 3.2227 5.06409 3.51177 4.61982 3.87646L3.52346 3.49886C3.22146 3.39486 2.88919 3.51974 2.72919 3.79574L1.72398 5.53792C1.56465 5.81459 1.62264 6.16583 1.8633 6.37516L2.74221 7.13949C2.6965 7.42039 2.66669 7.70635 2.66669 8.00016C2.66669 8.29397 2.6965 8.57994 2.74221 8.86084L1.8633 9.62516C1.62264 9.8345 1.56465 10.1857 1.72398 10.4624L2.72919 12.2046C2.88852 12.4813 3.22146 12.6061 3.52346 12.5028L4.61982 12.1252C5.06395 12.4896 5.57029 12.7777 6.11721 12.9845L6.33987 14.1278C6.4012 14.4411 6.67418 14.6668 6.99351 14.6668H9.00653C9.32587 14.6668 9.59885 14.4411 9.66018 14.1278L9.88284 12.9845C10.43 12.7776 10.936 12.4886 11.3802 12.1239L12.4766 12.5015C12.7786 12.6055 13.1109 12.4813 13.2709 12.2046L14.2761 10.4611C14.4354 10.1844 14.3774 9.8345 14.1367 9.62516L13.2578 8.86084C13.3035 8.57994 13.3334 8.29397 13.3334 8.00016C13.3334 7.70635 13.3035 7.42039 13.2578 7.13949L14.1367 6.37516C14.3774 6.16583 14.4354 5.81459 14.2761 5.53792L13.2709 3.79574C13.1115 3.51907 12.7786 3.39423 12.4766 3.49756L11.3802 3.87516C10.9361 3.51069 10.4298 3.2226 9.88284 3.01579L9.66018 1.87256C9.59885 1.55923 9.32587 1.3335 9.00653 1.3335H6.99351ZM8.00002 5.3335C9.47269 5.3335 10.6667 6.5275 10.6667 8.00016C10.6667 9.47283 9.47269 10.6668 8.00002 10.6668C6.52736 10.6668 5.33336 9.47283 5.33336 8.00016C5.33336 6.5275 6.52736 5.3335 8.00002 5.3335Z" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2.59998 4.3999H3.79998H13.4" />
+            <path d="M12.2 4.4V12.8C12.2 13.1183 12.0736 13.4235 11.8485 13.6485C11.6235 13.8736 11.3182 14 11 14H4.99999C4.68173 14 4.3765 13.8736 4.15146 13.6485C3.92642 13.4235 3.79999 13.1183 3.79999 12.8V4.4M5.59999 4.4V3.2C5.59999 2.88174 5.72642 2.57652 5.95146 2.35147C6.1765 2.12643 6.48173 2 6.79999 2H9.19999C9.51825 2 9.82347 2.12643 10.0485 2.35147C10.2736 2.57652 10.4 2.88174 10.4 3.2V4.4" />
+            <path d="M6.79999 7.3999V10.9999" />
+            <path d="M9.20001 7.3999V10.9999" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" />
+            <path d="M8 5V8L10 9" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4.66669 11.3332L11.3334 4.6665" />
+            <path d="M4.66669 4.6665H11.3334V11.3332" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 4L4 12" />
+            <path d="M4 4L12 12" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2.66666 2.6665H5.86666C6.43245 2.6665 6.97507 2.91624 7.37515 3.36077C7.77523 3.8053 7.99999 4.40821 7.99999 5.03687V13.3332C7.99999 12.8617 7.83142 12.4095 7.53136 12.0761C7.2313 11.7427 6.82434 11.5554 6.39999 11.5554H2.66666V2.6665Z" />
+            <path d="M13.3333 2.6665H10.1333C9.56754 2.6665 9.02492 2.91624 8.62484 3.36077C8.22476 3.8053 8 4.40821 8 5.03687V13.3332C8 12.8617 8.16857 12.4095 8.46863 12.0761C8.76869 11.7427 9.17565 11.5554 9.6 11.5554H13.3333V2.6665Z" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M11 6.2C11 5.35131 10.6839 4.53737 10.1213 3.93726C9.55871 3.33714 8.79565 3 8 3C7.20435 3 6.44129 3.33714 5.87868 3.93726C5.31607 4.53737 5 5.35131 5 6.2C5 9.93333 3.5 11 3.5 11H12.5C12.5 11 11 9.93333 11 6.2Z" />
+            <path d="M9.5 13C9.34756 13.3042 9.12877 13.5566 8.86551 13.7321C8.60226 13.9076 8.3038 14 8 14C7.6962 14 7.39774 13.9076 7.13449 13.7321C6.87123 13.5566 6.65244 13.3042 6.5 13" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 3L6.74956 12L8.08073 8.08073L12 6.74956L3 3Z" />
+            <path d="M9 9L12.5 12.5" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" />
+            <path d="M14 8H12" />
+            <path d="M4 8H2" />
+            <path d="M8 4V2" />
+            <path d="M8 14V12" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M10 3H13V6" />
+            <path d="M6 13H3V10" />
+            <path d="M13 3L9 7" />
+            <path d="M3 13L7 9" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10Z" />
+            <path d="M2 8H6" />
+            <path d="M10 8L14 8" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6L2 8L4 10" />
+            <path d="M6 4L8 2L10 4" />
+            <path d="M10 12L8 14L6 12" />
+            <path d="M12 6L14 8L12 10" />
+            <path d="M2 8H14" />
+            <path d="M8 2V14" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 13.3332V6.6665" />
+            <path d="M8 13.3332V2.6665" />
+            <path d="M4 13.3335V9.3335" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentcolor">
+            <path d="M3 9.5C3.82843 9.5 4.5 8.82843 4.5 8C4.5 7.17157 3.82843 6.5 3 6.5C2.17157 6.5 1.5 7.17157 1.5 8C1.5 8.82843 2.17157 9.5 3 9.5Z" />
+            <path d="M8 9.5C8.82843 9.5 9.5 8.82843 9.5 8C9.5 7.17157 8.82843 6.5 8 6.5C7.17157 6.5 6.5 7.17157 6.5 8C6.5 8.82843 7.17157 9.5 8 9.5Z" />
+            <path d="M13 9.5C13.8284 9.5 14.5 8.82843 14.5 8C14.5 7.17157 13.8284 6.5 13 6.5C12.1716 6.5 11.5 7.17157 11.5 8C11.5 8.82843 12.1716 9.5 13 9.5Z" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9.25 2H4.25C3.91848 2 3.60054 2.12643 3.36612 2.35147C3.1317 2.57652 3 2.88174 3 3.2V12.8C3 13.1183 3.1317 13.4235 3.36612 13.6485C3.60054 13.8736 3.91848 14 4.25 14H11.75C12.0815 14 12.3995 13.8736 12.6339 13.6485C12.8683 13.4235 13 13.1183 13 12.8V5.6L9.25 2Z" />
+            <path d="M9 2V6H13" />
+            <path d="M8 8H6" />
+            <path d="M10 11H6" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" />
+            <path d="M2 8H14" />
+            <path d="M8 2C9.25064 3.64301 9.96138 5.77522 10 8C9.96138 10.2248 9.25064 12.357 8 14C6.74936 12.357 6.03862 10.2248 6 8C6.03862 5.77522 6.74936 3.64301 8 2V2Z" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M10.9966 5.0523C10.9966 4.53565 10.9966 3.61717 10.9352 3.40522C10.7688 2.83007 10.2836 2.38082 9.66244 2.22671C9.43354 2.16992 8.55798 2.16992 8 2.16992C7.44202 2.16992 6.55812 2.16992 6.32922 2.22671C5.70806 2.38082 5.22287 2.83007 5.05643 3.40522C4.9951 3.61717 4.9951 4.53565 4.9951 5.0523M3.92 13.8301H12.08C12.7521 13.8301 13.0881 13.8301 13.3448 13.709C13.5706 13.6024 13.7542 13.4325 13.8692 13.2234C14 12.9857 14 12.6746 14 12.0523V6.83008C14 6.2078 14 5.89666 13.8692 5.65898C13.7542 5.44991 13.5706 5.27993 13.3448 5.1734C13.0881 5.0523 12.7521 5.0523 12.08 5.0523H3.92C3.24794 5.0523 2.91191 5.0523 2.65521 5.1734C2.42942 5.27993 2.24584 5.44991 2.13079 5.65898C2 5.89666 2 6.2078 2 6.83008V12.0523C2 12.6746 2 12.9857 2.13079 13.2234C2.24584 13.4325 2.42942 13.6024 2.65521 13.709C2.91191 13.8301 3.24794 13.8301 3.92 13.8301Z" />
+            <path d="M2 7.5L5.76393 9.38197C7.17157 10.0858 8.82843 10.0858 10.2361 9.38197L14 7.5" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M10.6667 5.33322V3.00032C10.6667 2.44583 10.6667 2.16858 10.5499 1.9982C10.4478 1.84934 10.2898 1.74822 10.1118 1.71794C9.90819 1.68328 9.65646 1.79947 9.153 2.03183L3.23934 4.76121C2.79034 4.96845 2.56583 5.07206 2.4014 5.23276C2.25604 5.37483 2.14508 5.54825 2.077 5.73977C2 5.95641 2 6.20367 2 6.69819V9.99988M11 9.66655H11.0067M2 7.46655L2 11.8666C2 12.6133 2 12.9867 2.14532 13.2719C2.27316 13.5228 2.47713 13.7267 2.72801 13.8546C3.01323 13.9999 3.3866 13.9999 4.13333 13.9999H11.8667C12.6134 13.9999 12.9868 13.9999 13.272 13.8546C13.5229 13.7267 13.7268 13.5228 13.8547 13.2719C14 12.9867 14 12.6133 14 11.8666V7.46655C14 6.71982 14 6.34645 13.8547 6.06123C13.7268 5.81035 13.5229 5.60638 13.272 5.47854C12.9868 5.33322 12.6134 5.33322 11.8667 5.33322L4.13333 5.33322C3.3866 5.33322 3.01323 5.33322 2.72801 5.47854C2.47713 5.60637 2.27316 5.81035 2.14532 6.06123C2 6.34645 2 6.71982 2 7.46655ZM11.3333 9.66655C11.3333 9.85065 11.1841 9.99988 11 9.99988C10.8159 9.99988 10.6667 9.85065 10.6667 9.66655C10.6667 9.48246 10.8159 9.33322 11 9.33322C11.1841 9.33322 11.3333 9.48246 11.3333 9.66655Z" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 6L3 3L6 3" />
+            <path d="M13 10L13 13L10 13" />
+            <path d="M3 3L7 7" />
+            <path d="M13 13L9 9" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12.0395 3.81885H4.26175C3.6481 3.81885 3.15063 4.26656 3.15063 4.81885V11.8188C3.15063 12.3711 3.6481 12.8188 4.26175 12.8188H12.0395C12.6532 12.8188 13.1506 12.3711 13.1506 11.8188V4.81885C13.1506 4.26656 12.6532 3.81885 12.0395 3.81885Z" />
+            <path d="M10.1506 2.5V4.5" />
+            <path d="M6.15063 2.5V4.5" />
+            <path d="M3.15063 6.81885H13.1506" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12.9098 9.58203V11.582C12.9098 11.8472 12.7927 12.1016 12.5844 12.2891C12.376 12.4767 12.0934 12.582 11.7987 12.582H4.0209C3.72622 12.582 3.4436 12.4767 3.23523 12.2891C3.02685 12.1016 2.90979 11.8472 2.90979 11.582V9.58203" />
+            <path d="M4.90979 6.58203L7.90979 9.58203L10.9098 6.58203" />
+            <path d="M7.90979 9.58203L7.90979 2.58203" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round">
+            <line x1="13" y1="10.4142" x2="10.4142" y2="13" />
+            <line x1="13" y1="3.41421" x2="3.41421" y2="13" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M11.0605 6.27531C12.0498 6.27531 12.8517 5.47336 12.8517 4.48409C12.8517 3.49483 12.0498 2.69287 11.0605 2.69287C10.0712 2.69287 9.26929 3.49483 9.26929 4.48409C9.26929 5.47336 10.0712 6.27531 11.0605 6.27531Z" />
+            <path d="M4.79122 9.85783C5.78048 9.85783 6.58244 9.05588 6.58244 8.06661C6.58244 7.07735 5.78048 6.27539 4.79122 6.27539C3.80196 6.27539 3 7.07735 3 8.06661C3 9.05588 3.80196 9.85783 4.79122 9.85783Z" />
+            <path d="M11.0605 13.4404C12.0498 13.4404 12.8517 12.6384 12.8517 11.6491C12.8517 10.6599 12.0498 9.85791 11.0605 9.85791C10.0712 9.85791 9.26929 10.6599 9.26929 11.6491C9.26929 12.6384 10.0712 13.4404 11.0605 13.4404Z" />
+            <path d="M6.58246 9.41016L9.26929 10.7536" />
+            <path d="M9.26929 5.37988L6.58246 6.7233" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M7.5 5.33317V7.49984M7.5 5.33317V3.99984C7.5 3.77882 7.5878 3.56686 7.74408 3.41058C7.90036 3.2543 8.11232 3.1665 8.33333 3.1665C8.55435 3.1665 8.76631 3.2543 8.92259 3.41058C9.07887 3.56686 9.16667 3.77882 9.16667 3.99984V7.49984M7.5 5.33317C7.5 5.11216 7.4122 4.9002 7.25592 4.74391C7.09964 4.58763 6.88768 4.49984 6.66667 4.49984C6.44565 4.49984 6.23369 4.58763 6.07741 4.74391C5.92113 4.9002 5.83333 5.11216 5.83333 5.33317V8.83317L4.764 7.55117C4.35667 7.0625 3.612 7.0485 3.17 7.50717M3.17 7.50717L4.48867 10.7538C4.73819 11.3684 5.16539 11.8945 5.71561 12.265C6.26583 12.6354 6.91405 12.8332 7.57733 12.8332H10.1667C11.64 12.8332 12.5 11.6398 12.5 10.1665V5.99984C12.5 5.77882 12.4122 5.56686 12.2559 5.41058C12.0996 5.2543 11.8877 5.1665 11.6667 5.1665C11.4457 5.1665 11.2337 5.2543 11.0774 5.41058C10.9211 5.56686 10.8333 5.77882 10.8333 5.99984M9.16667 5.99984V4.6665C9.16667 4.44549 9.25446 4.23353 9.41074 4.07725C9.56702 3.92097 9.77899 3.83317 10 3.83317C10.221 3.83317 10.433 3.92097 10.5893 4.07725C10.7455 4.23353 10.8333 4.44549 10.8333 4.6665V7.49984M3.17 7.5065C3.168 7.5025 3.16667 7.5105 3.17 7.5065V7.5065Z" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M10 4H11C11.2652 4 11.5196 4.10536 11.7071 4.29289C11.8946 4.48043 12 4.73478 12 5V12C12 12.2652 11.8946 12.5196 11.7071 12.7071C11.5196 12.8946 11.2652 13 11 13H5C4.73478 13 4.48043 12.8946 4.29289 12.7071C4.10536 12.5196 4 12.2652 4 12V5C4 4.73478 4.10536 4.48043 4.29289 4.29289C4.48043 4.10536 4.73478 4 5 4H6" />
+            <path d="M9.5 3H6.5C6.22386 3 6 3.22386 6 3.5V4.5C6 4.77614 6.22386 5 6.5 5H9.5C9.77614 5 10 4.77614 10 4.5V3.5C10 3.22386 9.77614 3 9.5 3Z" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentcolor">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.33335 3.9165C5.44638 3.9165 3.91669 5.4462 3.91669 7.33317C3.91669 9.22016 5.44638 10.7498 7.33335 10.7498C9.22034 10.7498 10.75 9.22016 10.75 7.33317C10.75 5.4462 9.22034 3.9165 7.33335 3.9165ZM2.41669 7.33317C2.41669 4.61777 4.61795 2.4165 7.33335 2.4165C10.0488 2.4165 12.25 4.61777 12.25 7.33317C12.25 8.42027 11.8972 9.42497 11.2998 10.239L13.3637 12.3028C13.6566 12.5957 13.6566 13.0706 13.3637 13.3635C13.0708 13.6564 12.5959 13.6564 12.303 13.3635L10.2392 11.2997C9.42515 11.897 8.42046 12.2498 7.33335 12.2498C4.61795 12.2498 2.41669 10.0486 2.41669 7.33317Z" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M1.66602 8.00033C1.66602 8.00033 4.33268 2.66699 8.99935 2.66699C13.666 2.66699 16.3327 8.00033 16.3327 8.00033C16.3327 8.00033 13.666 13.3337 8.99935 13.3337C4.33268 13.3337 1.66602 8.00033 1.66602 8.00033Z" />
+            <path d="M9 10C10.1046 10 11 9.10457 11 8C11 6.89543 10.1046 6 9 6C7.89543 6 7 6.89543 7 8C7 9.10457 7.89543 10 9 10Z" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 3L12 8L4 13V3Z" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 2.5L9.854 6.1204L14 6.70452L11 9.52103L11.708 13.5L8 11.6204L4.292 13.5L5 9.52103L2 6.70452L6.146 6.1204L8 2.5Z" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentcolor">
+            <path d="M8.55712 9.66804C8.34972 9.74227 8.14004 9.75771 7.99999 9.75771C7.85994 9.75771 7.6509 9.74227 7.44286 9.66804L3.4285 8.23438V10.3858C3.4285 11.9641 5.47532 12.6715 7.99992 12.6715C10.5245 12.6715 12.5714 11.9641 12.5714 10.3858V8.23438L8.55712 9.66804Z" />
+            <path d="M2.57149 10.1428C2.57149 10.6161 2.18769 10.9999 1.71435 10.9999C1.24101 10.9999 0.857208 10.6161 0.857208 10.1428C0.857208 9.66945 1.24101 9.28564 1.71435 9.28564C2.18769 9.28564 2.57149 9.66945 2.57149 10.1428Z" />
+            <path d="M2.91828 13.5921C2.56459 13.9458 0.863426 13.9458 0.509729 13.5921C0.155508 13.2379 0.0137936 11.5624 1.71433 10.4287C3.41484 11.5624 3.27312 13.2379 2.91828 13.5921Z" />
+            <path d="M0.269133 5.70057C0.0908178 5.76409 0 5.89317 0 6.08231V6.11777C0 6.30744 0.0908145 6.43601 0.269133 6.49952L1.82169 7.05436C1.14339 7.78115 1.14286 8.83026 1.14286 9.52858H2.28572C2.28572 8.53828 2.34745 7.81544 3.1509 7.52858L7.9042 5.83088C8.05446 5.77718 8.21619 5.8555 8.26939 6.00397C8.32258 6.15257 8.24477 6.31596 8.0963 6.36916L3.99998 7.8314L7.63492 9.12975C7.76578 9.17605 7.90584 9.18638 8.00011 9.18638C8.09438 9.18638 8.23442 9.17605 8.3653 9.12975L15.7315 6.49889C15.9092 6.4355 16 6.30693 16 6.11715V6.08169C16 5.89253 15.9092 5.76345 15.7309 5.69994L8.36532 3.06984C8.10422 2.97672 7.89668 2.97672 7.63559 3.06984L0.269133 5.70057Z" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 11V7.8C3 6.52696 3.52678 5.30606 4.46447 4.40589C5.40215 3.50571 6.67392 3 8 3C9.32608 3 10.5979 3.50571 11.5355 4.40589C12.4732 5.30606 13 6.52696 13 7.8V11" />
+            <path d="M13 11.8571C13 12.1602 12.8829 12.4509 12.6746 12.6653C12.4662 12.8796 12.1836 13 11.8889 13H11.3333C11.0386 13 10.756 12.8796 10.5477 12.6653C10.3393 12.4509 10.2222 12.1602 10.2222 11.8571V10.1429C10.2222 9.83975 10.3393 9.54906 10.5477 9.33474C10.756 9.12041 11.0386 9 11.3333 9H13V11.8571ZM3 11.8571C3 12.1602 3.11706 12.4509 3.32544 12.6653C3.53381 12.8796 3.81643 13 4.11111 13H4.66667C4.96135 13 5.24397 12.8796 5.45234 12.6653C5.66071 12.4509 5.77778 12.1602 5.77778 11.8571V10.1429C5.77778 9.83975 5.66071 9.54906 5.45234 9.33474C5.24397 9.12041 4.96135 9 4.66667 9H3V11.8571Z" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentcolor">
+            <path d="M6.16667 2.6665H4.5C4.22386 2.6665 4 2.89036 4 3.1665V12.8332C4 13.1093 4.22386 13.3332 4.5 13.3332H6.16667C6.44281 13.3332 6.66667 13.1093 6.66667 12.8332V3.1665C6.66667 2.89036 6.44281 2.6665 6.16667 2.6665Z" />
+            <path d="M11.5 2.6665H9.83334C9.5572 2.6665 9.33334 2.89036 9.33334 3.1665V12.8332C9.33334 13.1093 9.5572 13.3332 9.83334 13.3332H11.5C11.7762 13.3332 12 13.1093 12 12.8332V3.1665C12 2.89036 11.7762 2.6665 11.5 2.6665Z" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentcolor">
+            <path d="M13.6152 12.6668L7.61517 8.00016L13.6152 3.3335V12.6668Z" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M4.55149 3H2.88483C2.60868 3 2.38483 3.22386 2.38483 3.5V12.5C2.38483 12.7761 2.60868 13 2.88483 13H4.55149C4.82764 13 5.05149 12.7761 5.05149 12.5V3.5C5.05149 3.22386 4.82764 3 4.55149 3Z" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentcolor">
+            <path d="M2.3512 12.6668L8.3512 8.00016L2.3512 3.3335V12.6668Z" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M13.1488 3H11.4821C11.206 3 10.9821 3.22386 10.9821 3.5V12.5C10.9821 12.7761 11.206 13 11.4821 13H13.1488C13.4249 13 13.6488 12.7761 13.6488 12.5V3.5C13.6488 3.22386 13.4249 3 13.1488 3Z" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4.0498 12.5V9.5" />
+            <path d="M4.0498 7.11365V3.5" />
+            <path d="M8.0498 12.5V8.5" />
+            <path d="M8.0498 5.5V3.5" />
+            <path d="M12.0498 12.5V10.5" />
+            <path d="M12.0498 7.86932V3.5" />
+            <path d="M2.4502 9.5H5.4502" />
+            <path d="M6.5498 5.5H9.5498" />
+            <path d="M10.5498 10.5H13.5498" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9.25 2H4.25C3.91848 2 3.60054 2.12643 3.36612 2.35147C3.1317 2.57652 3 2.88174 3 3.2V12.8C3 13.1183 3.1317 13.4235 3.36612 13.6485C3.60054 13.8736 3.91848 14 4.25 14H11.75C12.0815 14 12.3995 13.8736 12.6339 13.6485C12.8683 13.4235 13 13.1183 13 12.8V5.6L9.25 2Z" />
+            <path d="M8 6.61572V10.1107" />
+            <path d="M6.2525 8.36279H9.74748" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5.83331 5.1665L5.16665 3.1665H10.8333L10.1666 5.1665V6.6665C12.1666 7.33317 12.1666 9.49984 12.1666 9.49984H3.83331C3.83331 9.49984 3.83331 7.33317 5.83331 6.6665V5.1665Z" />
+            <path d="M8 9.6665V12.8332" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M7 6.73333L8.69231 8.33333L14.3333 3" />
+            <path d="M13 8V11.8889C13 12.1836 12.8829 12.4662 12.6746 12.6746C12.4662 12.8829 12.1836 13 11.8889 13H4.11111C3.81643 13 3.53381 12.8829 3.32544 12.6746C3.11706 12.4662 3 12.1836 3 11.8889V4.11111C3 3.81643 3.11706 3.53381 3.32544 3.32544C3.53381 3.11706 3.81643 3 4.11111 3H10.2222" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 2.74072V4.84435" />
+            <path opacity="0.5" d="M8 11.1553V13.2589" />
+            <path opacity="0.9" d="M4.28186 4.28174L5.77018 5.77005" />
+            <path opacity="0.4" d="M10.2299 10.23L11.7182 11.7183" />
+            <path opacity="0.8" d="M2.74091 8H4.84453" />
+            <path opacity="0.3" d="M11.1555 8H13.2591" />
+            <path opacity="0.7" d="M4.28186 11.7183L5.77018 10.23" />
+            <path opacity="0.2" d="M10.2299 5.77005L11.7182 4.28174" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentcolor" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4.49999 12L3.16666 5.33333L5.99999 7L7.99999 4L9.99999 7L12.8333 5.33333L11.5 12H4.49999Z" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentcolor" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M11.3333 12.6668L7.99999 10.0742L4.66666 12.6668V4.37053C4.66666 4.09549 4.767 3.83172 4.9456 3.63724C5.12421 3.44275 5.36645 3.3335 5.61904 3.3335H10.3809C10.6335 3.3335 10.8758 3.44275 11.0544 3.63724C11.233 3.83172 11.3333 4.09549 11.3333 4.37053V12.6668Z" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentcolor" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12.4932 11.0081C12.4932 11.2438 12.3983 11.4699 12.2296 11.6366C12.0608 11.8033 11.8319 11.897 11.5932 11.897H4.39316C4.15447 11.897 3.92555 11.8033 3.75677 11.6366C3.58799 11.4699 3.49316 11.2438 3.49316 11.0081V4.78586C3.49316 4.55011 3.58799 4.32402 3.75677 4.15732C3.92555 3.99062 4.15447 3.89697 4.39316 3.89697H6.64316L7.54316 5.23031H11.5932C11.8319 5.23031 12.0608 5.32396 12.2296 5.49066C12.3983 5.65735 12.4932 5.88345 12.4932 6.11919V11.0081Z" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M13 6V13H3V6" />
+            <path d="M14 3H2V6H14V3Z" />
+            <path d="M7 9H9" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 9L3 6L6 3" />
+            <path d="M13 13V8.54545C13 7.87036 12.7366 7.22291 12.2678 6.74555C11.7989 6.26818 11.163 6 10.5 6H3" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 10.5V7C1 5.61929 2.11929 4.5 3.5 4.5V9.5C3.5 11.1569 4.84315 12.5 6.5 12.5H12C12 13.6046 11.1046 14.5 10 14.5H5C2.79086 14.5 1 12.7091 1 10.5Z" fill="currentcolor" />
+            <path d="M15 9.11111C15 9.34686 14.9052 9.57295 14.7364 9.73965C14.5676 9.90635 14.3387 10 14.1 10H6.9C6.66131 10 6.43239 9.90635 6.2636 9.73965C6.09482 9.57295 6 9.34686 6 9.11111V2.88889C6 2.65314 6.09482 2.42705 6.2636 2.26035C6.43239 2.09365 6.66131 2 6.9 2H9.15L10.05 3.33333H14.1C14.3387 3.33333 14.5676 3.42698 14.7364 3.59368C14.9052 3.76038 15 3.98647 15 4.22222V9.11111Z" fill="currentcolor" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M12 9.66699L12 3.66699" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M10 8.96143L12 10.9614L14 8.96143" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M5.87304 6.32L6.31241 7.5H8L5.38374 0.5H3.62625L1 7.5H2.69757L3.13695 6.32H5.87304ZM5.32382 4.82H3.68616L4.50499 2.61L5.32382 4.82Z" fill="currentcolor" />
+            <path d="M1.5 14.05V15.5H7.5V14H3.88857L7.47714 9.95V8.5H1.70571V10H5.08857L1.5 14.05Z" fill="currentcolor" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M12 10.667L12 4.66699" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M10 5L12 3L14 5" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M5.87304 6.32L6.31241 7.5H8L5.38374 0.5H3.62625L1 7.5H2.69757L3.13695 6.32H5.87304ZM5.32382 4.82H3.68616L4.50499 2.61L5.32382 4.82Z" fill="currentcolor" />
+            <path d="M1.5 14.05V15.5H7.5V14H3.88857L7.47714 9.95V8.5H1.70571V10H5.08857L1.5 14.05Z" fill="currentcolor" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentcolor">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00343 2H7.99663C7.75054 2 7.42398 2 7.13249 2.00667C6.98631 2.01001 6.84268 2.01516 6.71884 2.02338C6.61155 2.03051 6.46751 2.04266 6.34994 2.07268C5.57924 2.26946 4.95742 2.84916 4.74172 3.61625C4.70666 3.74092 4.69399 3.8966 4.68683 4.00252C4.6782 4.13012 4.67281 4.27922 4.66931 4.43007C4.66773 4.4978 4.66651 4.56721 4.66557 4.63679L4.34975 4.63679H4.34974C4.07123 4.63678 3.82502 4.63676 3.621 4.65265C3.40436 4.66952 3.17873 4.7073 2.9579 4.81453C2.63455 4.97152 2.36563 5.22503 2.19503 5.54409C2.07679 5.76522 2.03527 5.99186 2.01697 6.20521C1.99997 6.40351 1.99999 6.64156 2 6.90469V6.90474V7.06149L6.94773 9.04058C7.62323 9.31078 8.37678 9.31078 9.05228 9.04058L14 7.06149V6.90472C14 6.64157 14 6.40351 13.983 6.20521C13.9647 5.99186 13.9232 5.76522 13.805 5.54409C13.6344 5.22503 13.3655 4.97152 13.0421 4.81453C12.8213 4.7073 12.5956 4.66952 12.379 4.65265C12.175 4.63676 11.9288 4.63678 11.6503 4.63679H11.6503L11.327 4.63679C11.3261 4.56721 11.3249 4.4978 11.3233 4.43007C11.3198 4.27922 11.3144 4.13012 11.3058 4.00252C11.2986 3.8966 11.2859 3.74092 11.2509 3.61625C11.0352 2.84916 10.4134 2.26946 9.64266 2.07268C9.52537 2.04273 9.38213 2.03055 9.27519 2.0234C9.15197 2.01517 9.00921 2.01002 8.86391 2.00667C8.57422 2 8.24948 2 8.00343 2ZM14 8.13852L9.42367 9.96906C8.50976 10.3346 7.49025 10.3346 6.57634 9.96906L2 8.13852V11.7321V11.7321C1.99999 11.9952 1.99997 12.2333 2.01697 12.4316C2.03527 12.6449 2.07679 12.8716 2.19503 13.0927C2.36563 13.4118 2.63455 13.6653 2.9579 13.8223C3.17873 13.9295 3.40436 13.9673 3.62101 13.9841C3.82501 14 4.07122 14 4.34972 14H11.6502C11.9287 14 12.175 14 12.379 13.9841C12.5956 13.9673 12.8213 13.9295 13.0421 13.8223C13.3655 13.6653 13.6344 13.4118 13.805 13.0927C13.9232 12.8716 13.9647 12.6449 13.983 12.4316C14 12.2333 14 11.9952 14 11.7321V8.13852ZM5.99903 4.63679H9.99357C9.99272 4.57739 9.99165 4.51848 9.99032 4.46104C9.98701 4.31852 9.98218 4.19167 9.97547 4.09244C9.96934 4.00169 9.96428 3.96664 9.96428 3.96664C9.88117 3.68602 9.64228 3.44869 9.3128 3.36456C9.31849 3.36601 9.31804 3.36596 9.30971 3.36494L9.30971 3.36494C9.29527 3.36317 9.25714 3.3585 9.18629 3.35377C9.09087 3.34739 8.96991 3.3428 8.83321 3.33965C8.56025 3.33336 8.24953 3.33333 8 3.33333C7.7505 3.33333 7.43787 3.33336 7.16299 3.33965C7.02532 3.3428 6.90338 3.3474 6.80718 3.35379C6.73599 3.35851 6.6976 3.36318 6.68296 3.36496C6.67441 3.366 6.67396 3.36605 6.6798 3.36456C6.35032 3.44869 6.11155 3.68587 6.02844 3.96648C6.02844 3.96648 6.02326 4.00169 6.01713 4.09244C6.01042 4.19167 6.00559 4.31852 6.00228 4.46104C6.00095 4.51848 5.99988 4.57739 5.99903 4.63679Z" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentcolor" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8.44444 3.3335L4 8.9335H8L7.55556 12.6668L12 7.06683H8L8.44444 3.3335Z" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentcolor">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.5 3.82091H10.5L10.8742 2.58205C11.0181 2.10562 10.6968 1.61362 10.2417 1.61362H9.16999C9.05845 1.61362 8.94869 1.58273 8.85076 1.52378L8.36758 1.23291C8.1881 1.12487 7.97364 1.11368 7.78573 1.20256L7.04244 1.55413C6.95946 1.59338 6.87011 1.61362 6.77983 1.61362H5.75828C5.30324 1.61362 4.98193 2.10562 5.12583 2.58205L5.5 3.82091ZM5.33333 4.59387H10.5833L13.5948 9.88508C13.8599 10.3703 14 10.9261 14 11.4927C14 12.2945 13.7197 13.0654 13.2175 13.6448L13.1121 13.7665C12.5082 14.4632 11.6725 14.8574 10.7988 14.8574H5.20115C4.32748 14.8574 3.49177 14.4632 2.88787 13.7665L2.78924 13.6527C2.28271 13.0682 2 12.2906 2 11.4819C2 10.922 2.13564 10.3722 2.39287 9.88961L5.33333 4.59387ZM10 10.9902C10 11.3502 9.87149 11.6577 9.63052 11.9127C9.38956 12.1677 9.06024 12.3477 8.6506 12.4377V13.0002H7.49398V12.4527C7.10843 12.3777 6.78715 12.2277 6.53012 11.9877C6.27309 11.7552 6.09639 11.4552 6 11.0802L7.1004 10.7877C7.18876 11.0727 7.3012 11.2677 7.43775 11.3727C7.56627 11.4852 7.76707 11.5377 8.03213 11.5377C8.28112 11.5377 8.4739 11.4927 8.61847 11.3952C8.76305 11.3052 8.83534 11.1702 8.83534 10.9902C8.83534 10.8627 8.77108 10.7577 8.65863 10.6752C8.53815 10.6002 8.32129 10.5327 8 10.4727C7.37349 10.3677 6.90763 10.1952 6.60241 9.95521C6.28916 9.71521 6.13655 9.38521 6.13655 8.96521C6.13655 8.60521 6.25703 8.29021 6.50602 8.03521C6.75502 7.78021 7.08434 7.61521 7.49398 7.52521V7.00021H8.6506V7.54771C8.97189 7.63771 9.24498 7.78771 9.45382 8.00521C9.66265 8.23021 9.81526 8.50771 9.90361 8.83771L8.80321 9.13021C8.73092 8.88271 8.63454 8.71021 8.52209 8.60521C8.40964 8.50021 8.24096 8.44771 8.03213 8.44771C7.79116 8.44771 7.61446 8.49271 7.48594 8.58271C7.35743 8.67271 7.3012 8.80021 7.3012 8.96521C7.3012 9.08521 7.36546 9.17521 7.49398 9.24271C7.62249 9.31021 7.86345 9.37771 8.20884 9.43771C8.81928 9.55771 9.26908 9.73771 9.55823 9.99271C9.84739 10.2477 10 10.5777 10 10.9902Z" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentcolor">
+            <path d="M10.9178 6.92233L10.6069 9.25728H8.97261V14.9022H6.78083V9.25728H5V6.92233H6.78083V5.14272C6.78083 3.11856 7.82742 2 9.43013 2C10.1973 2 11 2.15777 11 2.15777V4.14563H10.1151C9.24383 4.14563 8.97261 4.76882 8.97261 5.40777V6.92233H10.9178Z" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentcolor">
+            <path d="M5.39437 14C3.77687 14 2.26909 13.5295 1 12.7178C2.0775 12.7875 3.97903 12.6206 5.16179 11.4924C3.38254 11.4108 2.58013 10.0461 2.47547 9.46298C2.62665 9.5213 3.34765 9.59128 3.75467 9.42799C1.70795 8.91481 1.39396 7.11866 1.46374 6.57049C1.8475 6.83874 2.49873 6.93205 2.75457 6.90872C0.847396 5.54412 1.53351 3.49138 1.87076 3.04817C3.23941 4.94433 5.2906 6.00929 7.82819 6.06852C7.78034 5.85868 7.75508 5.64021 7.75508 5.41582C7.75508 3.80546 9.05671 2.5 10.6623 2.5C11.5013 2.5 12.2572 2.85638 12.7878 3.42642C13.3485 3.29505 14.1922 2.98753 14.6046 2.7216C14.3967 3.46805 13.7495 4.09075 13.358 4.32154C13.3612 4.32939 13.3548 4.31365 13.358 4.32154C13.7019 4.26952 14.6324 4.09068 15 3.84128C14.8182 4.26063 14.132 4.95786 13.5689 5.34821C13.6736 9.96903 10.1382 14 5.39437 14Z" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentcolor">
+            <path d="M4.89485 3.32955C4.89485 4.06383 4.24681 4.65909 3.44742 4.65909C2.64803 4.65909 2 4.06383 2 3.32955C2 2.59526 2.64803 2 3.44742 2C4.24681 2 4.89485 2.59526 4.89485 3.32955Z" />
+            <path d="M2.19794 5.63636H4.67216V13H2.19794V5.63636Z" />
+            <path d="M8.65567 5.63636H6.18144V13H8.65567C8.65567 13 8.65567 10.6818 8.65567 9.23239C8.65567 8.36241 8.95813 7.48864 10.1649 7.48864C11.5288 7.48864 11.5206 8.62713 11.5142 9.50914C11.5059 10.6621 11.5258 11.8386 11.5258 13H14V9.11364C13.979 6.63208 13.3207 5.48864 11.1546 5.48864C9.86832 5.48864 9.07097 6.06219 8.65567 6.5811V5.63636Z" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentcolor">
+            <path d="M12.2 4.7C12.2 5.19706 11.7971 5.6 11.3 5.6C10.8029 5.6 10.4 5.19706 10.4 4.7C10.4 4.20294 10.8029 3.8 11.3 3.8C11.7971 3.8 12.2 4.20294 12.2 4.7Z" />
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8 11C9.65685 11 11 9.65685 11 8C11 6.34315 9.65685 5 8 5C6.34315 5 5 6.34315 5 8C5 9.65685 6.34315 11 8 11ZM8 9.8C8.99411 9.8 9.8 8.99411 9.8 8C9.8 7.00589 8.99411 6.2 8 6.2C7.00589 6.2 6.2 7.00589 6.2 8C6.2 8.99411 7.00589 9.8 8 9.8Z" />
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M2 7.76C2 5.74381 2 4.73572 2.39238 3.96563C2.73752 3.28825 3.28825 2.73752 3.96563 2.39238C4.73572 2 5.74381 2 7.76 2H8.24C10.2562 2 11.2643 2 12.0344 2.39238C12.7117 2.73752 13.2625 3.28825 13.6076 3.96563C14 4.73572 14 5.74381 14 7.76V8.24C14 10.2562 14 11.2643 13.6076 12.0344C13.2625 12.7117 12.7117 13.2625 12.0344 13.6076C11.2643 14 10.2562 14 8.24 14H7.76C5.74381 14 4.73572 14 3.96563 13.6076C3.28825 13.2625 2.73752 12.7117 2.39238 12.0344C2 11.2643 2 10.2562 2 8.24V7.76ZM7.76 3.2H8.24C9.2679 3.2 9.96665 3.20093 10.5068 3.24506C11.0329 3.28805 11.3019 3.36596 11.4896 3.46158C11.9412 3.69168 12.3083 4.05883 12.5384 4.51042C12.634 4.6981 12.712 4.96715 12.7549 5.49325C12.7991 6.03335 12.8 6.7321 12.8 7.76V8.24C12.8 9.2679 12.7991 9.96665 12.7549 10.5068C12.712 11.0329 12.634 11.3019 12.5384 11.4896C12.3083 11.9412 11.9412 12.3083 11.4896 12.5384C11.3019 12.634 11.0329 12.712 10.5068 12.7549C9.96665 12.7991 9.2679 12.8 8.24 12.8H7.76C6.7321 12.8 6.03335 12.7991 5.49325 12.7549C4.96715 12.712 4.6981 12.634 4.51042 12.5384C4.05883 12.3083 3.69168 11.9412 3.46158 11.4896C3.36596 11.3019 3.28805 11.0329 3.24506 10.5068C3.20093 9.96665 3.2 9.2679 3.2 8.24V7.76C3.2 6.7321 3.20093 6.03335 3.24506 5.49325C3.28805 4.96715 3.36596 4.6981 3.46158 4.51042C3.69168 4.05883 4.05883 3.69168 4.51042 3.46158C4.6981 3.36596 4.96715 3.28805 5.49325 3.24506C6.03335 3.20093 6.7321 3.2 7.76 3.2Z" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentcolor">
+            <path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 10.4343 3.44973 12.5301 5.53292 13.4709C5.53572 13.406 5.53886 13.3465 5.54156 13.2955C5.54523 13.2259 5.54808 13.1721 5.54808 13.1418C5.54808 12.9615 5.67067 12.0673 5.67067 12.0673L6.42067 8.98798C6.30529 8.80048 6.21875 8.40384 6.21875 8.10096C6.21875 6.70192 6.9976 6.39903 7.47356 6.39903C8.07933 6.39903 8.21635 7.05528 8.21635 7.53846C8.21635 7.79403 8.08378 8.19407 7.94735 8.60574C7.80276 9.04204 7.65385 9.4914 7.65385 9.79567C7.65385 10.387 8.23798 10.6827 8.64183 10.6827C9.70914 10.6827 10.6899 9.34134 10.6899 8C10.6899 6.65865 10.0625 5.03605 8.00721 5.03605C5.95192 5.03605 5.02885 6.60096 5.02885 7.79807C5.02885 8.60576 5.33173 9.19711 5.48317 9.29807C5.52644 9.33653 5.6 9.45528 5.54808 9.62259C5.49615 9.7899 5.40144 10.1635 5.36058 10.3293C5.35577 10.3678 5.3101 10.4332 5.16587 10.387C4.98558 10.3293 3.83894 9.60817 3.83894 7.79807C3.83894 5.98798 5.25962 3.88221 8.00721 3.88221C10.7548 3.88221 12.1611 5.72836 12.1611 8C12.1611 10.2716 10.3221 11.7211 8.92308 11.7211C7.80385 11.7211 7.36539 11.2211 7.28606 10.9711L6.86058 12.5937C6.76011 12.8629 6.5727 13.3467 6.34159 13.7679C6.8683 13.919 7.42469 14 8 14Z" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentcolor">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.46757 12.6404C8.03019 12.7583 7.56903 12.8214 7.09259 12.8214C4.28003 12.8214 2 10.6228 2 7.91071C2 5.1986 4.28003 3 7.09259 3C9.90515 3 12.1852 5.1986 12.1852 7.91071C12.1852 9.46017 11.441 10.842 10.2785 11.742C10.5987 12.1319 10.9703 12.4338 11.3764 12.4338C12.0463 12.4338 12.2479 11.9138 12.2649 11.6539H13C13 13.03 12.1467 13.9525 10.7438 13.9964C10.2493 14.0119 9.42077 14.0378 8.46757 12.6404ZM8.01933 11.8887C7.75065 11.9845 7.44331 12.0357 7.09259 12.0357C4.9859 12.0357 4.44444 10.1889 4.44444 7.91071C4.44444 5.63254 4.98639 3.78571 7.09259 3.78571C9.19879 3.78571 9.74074 5.63254 9.74074 7.91071C9.74074 8.83534 9.65155 9.68891 9.40472 10.3768C9.00564 9.6999 8.37597 8.89286 7.21522 8.89286C6.24874 8.89286 5.50855 9.27441 5.25926 9.46519L5.56608 10.0564C5.6513 10.0291 5.8665 9.97463 6.04548 9.97463C6.26919 9.97463 7.06181 9.90544 7.82885 11.5092C7.89269 11.6427 7.9562 11.7691 8.01933 11.8887Z" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentcolor">
+            <path d="M8.31016 12.9869L5.4379 12.9327C4.50793 12.9138 3.57564 12.9515 2.6639 12.7557C1.27694 12.4631 1.17868 11.0285 1.07587 9.82519C0.934196 8.13346 0.989041 6.41102 1.25639 4.73341C1.40732 3.7921 2.00128 3.23041 2.91982 3.16928C6.02058 2.94746 9.14195 2.97375 12.2358 3.07724C12.5626 3.08672 12.8916 3.13858 13.2138 3.1976C14.8042 3.48547 14.843 5.11115 14.9461 6.47967C15.0489 7.86232 15.0055 9.25206 14.809 10.6253C14.6513 11.7623 14.3497 12.7158 13.0767 12.8078C11.4817 12.9282 9.92331 13.0251 8.32384 12.9942C8.32391 12.9869 8.31472 12.9869 8.31016 12.9869ZM6.62155 10.1083C7.8235 9.39574 9.00252 8.695 10.1976 7.98717C8.9934 7.27456 7.81663 6.57382 6.62155 5.86599V10.1083Z" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentcolor">
+            <path d="M8.718 9.81704C8.49761 9.93729 8.25056 10.0003 7.9995 10.0003C7.74844 10.0003 7.50139 9.93729 7.281 9.81704L2 6.93604V11C2 11.5305 2.21071 12.0392 2.58579 12.4142C2.96086 12.7893 3.46957 13 4 13H12C12.5304 13 13.0391 12.7893 13.4142 12.4142C13.7893 12.0392 14 11.5305 14 11V6.93604L8.718 9.81704Z" />
+            <path d="M8 8.5C7.91649 8.49994 7.83432 8.47897 7.761 8.439L2.261 5.439C2.18206 5.39604 2.11615 5.33259 2.07022 5.25534C2.02429 5.17808 2.00003 5.08988 2 5V5C2 4.46957 2.21071 3.96086 2.58579 3.58579C2.96086 3.21071 3.46957 3 4 3H12C12.5304 3 13.0391 3.21071 13.4142 3.58579C13.7893 3.96086 14 4.46957 14 5C14.0001 5.08978 13.976 5.17791 13.9302 5.25516C13.8845 5.3324 13.8188 5.39591 13.74 5.439L8.24 8.439C8.16638 8.47914 8.08385 8.50011 8 8.5Z" />
+          </svg>
+        </div>
+
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="16" viewBox="0 0 21 16" fill="none">
+            <path d="M0 0H21V16H0V0Z" fill="#003399" />
+            <path d="M10.5446 7.27393L10.3076 8.06405L10.7026 8.14306L10.5446 7.27393Z" fill="#FFCC00" />
+            <path d="M10.5446 7.27393L10.7816 8.06405L10.3866 8.14306L10.5446 7.27393Z" fill="#FFCC00" />
+            <path d="M11.2961 7.81967L10.4714 7.8384L10.5183 8.23854L11.2961 7.81967Z" fill="#FFCC00" />
+            <path d="M11.296 7.81949L10.6178 8.28908L10.4206 7.93777L11.296 7.81949Z" fill="#FFCC00" />
+            <path d="M11.009 8.70329L10.7364 7.92474L10.3703 8.09303L11.009 8.70329Z" fill="#FFCC00" />
+            <path d="M11.009 8.70345L10.3528 8.20355L10.626 7.90742L11.009 8.70345Z" fill="#FFCC00" />
+            <path d="M9.79315 7.81967L10.6178 7.8384L10.5709 8.23854L9.79315 7.81967Z" fill="#FFCC00" />
+            <path d="M9.79316 7.81949L10.4714 8.28908L10.6686 7.93777L9.79316 7.81949Z" fill="#FFCC00" />
+            <path d="M10.0802 8.70329L10.3528 7.92474L10.7189 8.09303L10.0802 8.70329Z" fill="#FFCC00" />
+            <path d="M10.0802 8.70345L10.7364 8.20355L10.4632 7.90742L10.0802 8.70345Z" fill="#FFCC00" />
+            <path d="M10.5446 7.27393L10.3076 8.06405L10.7026 8.14306L10.5446 7.27393Z" fill="#FFCC00" />
+            <path d="M10.5446 7.27393L10.7816 8.06405L10.3866 8.14306L10.5446 7.27393Z" fill="#FFCC00" />
+            <path d="M11.2961 7.81967L10.4714 7.8384L10.5183 8.23854L11.2961 7.81967Z" fill="#FFCC00" />
+            <path d="M11.296 7.81949L10.6178 8.28908L10.4206 7.93777L11.296 7.81949Z" fill="#FFCC00" />
+            <path d="M11.009 8.70329L10.7364 7.92474L10.3703 8.09303L11.009 8.70329Z" fill="#FFCC00" />
+            <path d="M11.009 8.70345L10.3528 8.20355L10.626 7.90742L11.009 8.70345Z" fill="#FFCC00" />
+            <path d="M9.79315 7.81967L10.6178 7.8384L10.5709 8.23854L9.79315 7.81967Z" fill="#FFCC00" />
+            <path d="M9.79316 7.81949L10.4714 8.28908L10.6686 7.93777L9.79316 7.81949Z" fill="#FFCC00" />
+            <path d="M10.0802 8.70329L10.3528 7.92474L10.7189 8.09303L10.0802 8.70329Z" fill="#FFCC00" />
+            <path d="M10.0802 8.70345L10.7364 8.20355L10.4632 7.90742L10.0802 8.70345Z" fill="#FFCC00" />
+            <path d="M10.5446 7.27393L10.3076 8.06405L10.7026 8.14306L10.5446 7.27393Z" fill="#FFCC00" />
+            <path d="M10.5446 7.27393L10.7816 8.06405L10.3866 8.14306L10.5446 7.27393Z" fill="#FFCC00" />
+            <path d="M11.2961 7.81967L10.4714 7.8384L10.5183 8.23854L11.2961 7.81967Z" fill="#FFCC00" />
+            <path d="M11.296 7.81949L10.6178 8.28908L10.4206 7.93777L11.296 7.81949Z" fill="#FFCC00" />
+            <path d="M11.009 8.70329L10.7364 7.92474L10.3703 8.09303L11.009 8.70329Z" fill="#FFCC00" />
+            <path d="M11.009 8.70345L10.3528 8.20355L10.626 7.90742L11.009 8.70345Z" fill="#FFCC00" />
+            <path d="M9.79315 7.81967L10.6178 7.8384L10.5709 8.23854L9.79315 7.81967Z" fill="#FFCC00" />
+            <path d="M9.79316 7.81949L10.4714 8.28908L10.6686 7.93777L9.79316 7.81949Z" fill="#FFCC00" />
+            <path d="M10.0802 8.70329L10.3528 7.92474L10.7189 8.09303L10.0802 8.70329Z" fill="#FFCC00" />
+            <path d="M10.0802 8.70345L10.7364 8.20355L10.4632 7.90742L10.0802 8.70345Z" fill="#FFCC00" />
+            <path d="M7.76813 4.63411L8.42432 4.13421L8.15115 3.83808L7.76813 4.63411Z" fill="#FFCC00" />
+            <path d="M7.76812 4.63396L8.04078 3.85541L8.40683 4.02369L7.76812 4.63396Z" fill="#FFCC00" />
+            <path d="M7.48112 3.75015L8.15932 4.21975L8.35655 3.86844L7.48112 3.75015Z" fill="#FFCC00" />
+            <path d="M7.4811 3.75034L8.3058 3.76906L8.25887 4.16921L7.4811 3.75034Z" fill="#FFCC00" />
+            <path d="M8.23258 3.2041L7.99554 3.99422L8.39061 4.07324L8.23258 3.2041Z" fill="#FFCC00" />
+            <path d="M8.23257 3.2041L8.4696 3.99422L8.07454 4.07324L8.23257 3.2041Z" fill="#FFCC00" />
+            <path d="M8.69699 4.63362L8.0408 4.13373L8.31396 3.83759L8.69699 4.63362Z" fill="#FFCC00" />
+            <path d="M8.697 4.63347L8.42434 3.85492L8.05829 4.02321L8.697 4.63347Z" fill="#FFCC00" />
+            <path d="M8.984 3.75015L8.3058 4.21975L8.10857 3.86844L8.984 3.75015Z" fill="#FFCC00" />
+            <path d="M8.98402 3.75034L8.15931 3.76906L8.20625 4.16921L8.98402 3.75034Z" fill="#FFCC00" />
+            <path d="M6.93924 6.39128L6.66659 5.61273L6.30054 5.78102L6.93924 6.39128Z" fill="#FFCC00" />
+            <path d="M6.93923 6.39143L6.28304 5.89154L6.55621 5.5954L6.93923 6.39143Z" fill="#FFCC00" />
+            <path d="M6.01041 6.39143L6.6666 5.89154L6.39343 5.5954L6.01041 6.39143Z" fill="#FFCC00" />
+            <path d="M6.0104 6.39128L6.28306 5.61273L6.64911 5.78102L6.0104 6.39128Z" fill="#FFCC00" />
+            <path d="M5.72339 5.50796L6.4016 5.97756L6.59882 5.62625L5.72339 5.50796Z" fill="#FFCC00" />
+            <path d="M5.72338 5.50815L6.54808 5.52688L6.50115 5.92702L5.72338 5.50815Z" fill="#FFCC00" />
+            <path d="M7.22628 5.50796L6.54808 5.97756L6.35085 5.62625L7.22628 5.50796Z" fill="#FFCC00" />
+            <path d="M7.22629 5.50815L6.40159 5.52688L6.44853 5.92702L7.22629 5.50815Z" fill="#FFCC00" />
+            <path d="M6.47482 4.96191L6.71185 5.75204L6.31679 5.83105L6.47482 4.96191Z" fill="#FFCC00" />
+            <path d="M6.47483 4.96191L6.23779 5.75204L6.63285 5.83105L6.47483 4.96191Z" fill="#FFCC00" />
+            <path d="M7.22715 10.2601L6.40245 10.2788L6.44938 10.679L7.22715 10.2601Z" fill="#FFCC00" />
+            <path d="M7.22714 10.2599L6.54893 10.7295L6.35171 10.3782L7.22714 10.2599Z" fill="#FFCC00" />
+            <path d="M6.94013 11.1432L6.66747 10.3647L6.30142 10.533L6.94013 11.1432Z" fill="#FFCC00" />
+            <path d="M6.94012 11.1434L6.28393 10.6435L6.5571 10.3474L6.94012 11.1434Z" fill="#FFCC00" />
+            <path d="M6.01127 11.1439L6.66746 10.644L6.39429 10.3478L6.01127 11.1439Z" fill="#FFCC00" />
+            <path d="M6.01126 11.1437L6.28391 10.3652L6.64997 10.5335L6.01126 11.1437Z" fill="#FFCC00" />
+            <path d="M6.4757 9.71387L6.71274 10.504L6.31768 10.583L6.4757 9.71387Z" fill="#FFCC00" />
+            <path d="M6.47571 9.71387L6.23868 10.504L6.63374 10.583L6.47571 9.71387Z" fill="#FFCC00" />
+            <path d="M5.72424 10.2596L6.54894 10.2783L6.502 10.6785L5.72424 10.2596Z" fill="#FFCC00" />
+            <path d="M5.72425 10.2594L6.40245 10.729L6.59968 10.3777L5.72425 10.2594Z" fill="#FFCC00" />
+            <path d="M8.94199 11.8504L8.11729 11.8692L8.16423 12.2693L8.94199 11.8504Z" fill="#FFCC00" />
+            <path d="M8.94198 11.8502L8.26378 12.3198L8.06655 11.9685L8.94198 11.8502Z" fill="#FFCC00" />
+            <path d="M8.65497 12.7336L8.38232 11.955L8.01626 12.1233L8.65497 12.7336Z" fill="#FFCC00" />
+            <path d="M8.65496 12.7337L7.99877 12.2338L8.27194 11.9377L8.65496 12.7337Z" fill="#FFCC00" />
+            <path d="M7.72611 12.7342L8.3823 12.2343L8.10913 11.9382L7.72611 12.7342Z" fill="#FFCC00" />
+            <path d="M7.7261 12.7341L7.99876 11.9555L8.36481 12.1238L7.7261 12.7341Z" fill="#FFCC00" />
+            <path d="M8.19054 11.3042L8.42758 12.0943L8.03252 12.1733L8.19054 11.3042Z" fill="#FFCC00" />
+            <path d="M8.19056 11.3042L7.95352 12.0943L8.34858 12.1733L8.19056 11.3042Z" fill="#FFCC00" />
+            <path d="M7.43908 11.8499L8.26378 11.8687L8.21685 12.2688L7.43908 11.8499Z" fill="#FFCC00" />
+            <path d="M7.43909 11.8498L8.1173 12.3194L8.31452 11.968L7.43909 11.8498Z" fill="#FFCC00" />
+            <path d="M10.5446 7.27393L10.7816 8.06405L10.3866 8.14306L10.5446 7.27393Z" fill="#FFCC00" />
+            <path d="M10.5446 7.27393L10.3076 8.06405L10.7026 8.14306L10.5446 7.27393Z" fill="#FFCC00" />
+            <path d="M9.79318 7.81967L10.6179 7.8384L10.5709 8.23854L9.79318 7.81967Z" fill="#FFCC00" />
+            <path d="M9.79319 7.81949L10.4714 8.28908L10.6686 7.93777L9.79319 7.81949Z" fill="#FFCC00" />
+            <path d="M10.0802 8.70329L10.3529 7.92474L10.7189 8.09303L10.0802 8.70329Z" fill="#FFCC00" />
+            <path d="M10.0802 8.70345L10.7364 8.20355L10.4632 7.90742L10.0802 8.70345Z" fill="#FFCC00" />
+            <path d="M11.2961 7.81967L10.4714 7.8384L10.5183 8.23854L11.2961 7.81967Z" fill="#FFCC00" />
+            <path d="M11.2961 7.81949L10.6179 8.28908L10.4206 7.93777L11.2961 7.81949Z" fill="#FFCC00" />
+            <path d="M11.0091 8.70329L10.7364 7.92474L10.3704 8.09303L11.0091 8.70329Z" fill="#FFCC00" />
+            <path d="M11.0091 8.70345L10.3529 8.20355L10.626 7.90742L11.0091 8.70345Z" fill="#FFCC00" />
+            <path d="M13.3211 4.63411L12.6649 4.13421L12.9381 3.83808L13.3211 4.63411Z" fill="#FFCC00" />
+            <path d="M13.3211 4.63396L13.0485 3.85541L12.6824 4.02369L13.3211 4.63396Z" fill="#FFCC00" />
+            <path d="M13.6081 3.75015L12.9299 4.21975L12.7327 3.86844L13.6081 3.75015Z" fill="#FFCC00" />
+            <path d="M13.6081 3.75034L12.7834 3.76906L12.8304 4.16921L13.6081 3.75034Z" fill="#FFCC00" />
+            <path d="M12.8567 3.2041L13.0937 3.99422L12.6986 4.07324L12.8567 3.2041Z" fill="#FFCC00" />
+            <path d="M12.8567 3.2041L12.6196 3.99422L13.0147 4.07324L12.8567 3.2041Z" fill="#FFCC00" />
+            <path d="M12.3922 4.63362L13.0484 4.13373L12.7753 3.83759L12.3922 4.63362Z" fill="#FFCC00" />
+            <path d="M12.3922 4.63347L12.6649 3.85492L13.0309 4.02321L12.3922 4.63347Z" fill="#FFCC00" />
+            <path d="M12.1052 3.75015L12.7834 4.21975L12.9807 3.86844L12.1052 3.75015Z" fill="#FFCC00" />
+            <path d="M12.1052 3.75034L12.9299 3.76906L12.883 4.16921L12.1052 3.75034Z" fill="#FFCC00" />
+            <path d="M14.15 6.39128L14.4226 5.61273L14.7887 5.78102L14.15 6.39128Z" fill="#FFCC00" />
+            <path d="M14.15 6.39143L14.8062 5.89154L14.533 5.5954L14.15 6.39143Z" fill="#FFCC00" />
+            <path d="M15.0788 6.39143L14.4226 5.89154L14.6958 5.5954L15.0788 6.39143Z" fill="#FFCC00" />
+            <path d="M15.0788 6.39128L14.8062 5.61273L14.4401 5.78102L15.0788 6.39128Z" fill="#FFCC00" />
+            <path d="M15.3658 5.50796L14.6876 5.97756L14.4904 5.62625L15.3658 5.50796Z" fill="#FFCC00" />
+            <path d="M15.3659 5.50815L14.5412 5.52688L14.5881 5.92702L15.3659 5.50815Z" fill="#FFCC00" />
+            <path d="M13.863 5.50796L14.5412 5.97756L14.7384 5.62625L13.863 5.50796Z" fill="#FFCC00" />
+            <path d="M13.8629 5.50815L14.6876 5.52688L14.6407 5.92702L13.8629 5.50815Z" fill="#FFCC00" />
+            <path d="M14.6144 4.96191L14.3774 5.75204L14.7724 5.83105L14.6144 4.96191Z" fill="#FFCC00" />
+            <path d="M14.6144 4.96191L14.8514 5.75204L14.4564 5.83105L14.6144 4.96191Z" fill="#FFCC00" />
+            <path d="M13.8621 10.2601L14.6868 10.2788L14.6398 10.679L13.8621 10.2601Z" fill="#FFCC00" />
+            <path d="M13.8621 10.2599L14.5403 10.7295L14.7375 10.3782L13.8621 10.2599Z" fill="#FFCC00" />
+            <path d="M14.1491 11.1432L14.4218 10.3647L14.7878 10.533L14.1491 11.1432Z" fill="#FFCC00" />
+            <path d="M14.1491 11.1434L14.8053 10.6435L14.5321 10.3474L14.1491 11.1434Z" fill="#FFCC00" />
+            <path d="M15.078 11.1439L14.4218 10.644L14.6949 10.3478L15.078 11.1439Z" fill="#FFCC00" />
+            <path d="M15.078 11.1437L14.8053 10.3652L14.4393 10.5335L15.078 11.1437Z" fill="#FFCC00" />
+            <path d="M14.6135 9.71387L14.3765 10.504L14.7716 10.583L14.6135 9.71387Z" fill="#FFCC00" />
+            <path d="M14.6135 9.71387L14.8506 10.504L14.4555 10.583L14.6135 9.71387Z" fill="#FFCC00" />
+            <path d="M15.365 10.2596L14.5403 10.2783L14.5872 10.6785L15.365 10.2596Z" fill="#FFCC00" />
+            <path d="M15.365 10.2594L14.6868 10.729L14.4896 10.3777L15.365 10.2594Z" fill="#FFCC00" />
+            <path d="M12.1472 11.8504L12.9719 11.8692L12.925 12.2693L12.1472 11.8504Z" fill="#FFCC00" />
+            <path d="M12.1473 11.8502L12.8255 12.3198L13.0227 11.9685L12.1473 11.8502Z" fill="#FFCC00" />
+            <path d="M12.4343 12.7336L12.7069 11.955L13.073 12.1233L12.4343 12.7336Z" fill="#FFCC00" />
+            <path d="M12.4343 12.7337L13.0905 12.2338L12.8173 11.9377L12.4343 12.7337Z" fill="#FFCC00" />
+            <path d="M13.3631 12.7342L12.7069 12.2343L12.9801 11.9382L13.3631 12.7342Z" fill="#FFCC00" />
+            <path d="M13.3631 12.7341L13.0905 11.9555L12.7244 12.1238L13.3631 12.7341Z" fill="#FFCC00" />
+            <path d="M12.8987 11.3042L12.6617 12.0943L13.0567 12.1733L12.8987 11.3042Z" fill="#FFCC00" />
+            <path d="M12.8987 11.3042L13.1357 12.0943L12.7407 12.1733L12.8987 11.3042Z" fill="#FFCC00" />
+            <path d="M13.6502 11.8499L12.8255 11.8687L12.8724 12.2688L13.6502 11.8499Z" fill="#FFCC00" />
+            <path d="M13.6501 11.8498L12.9719 12.3194L12.7747 11.968L13.6501 11.8498Z" fill="#FFCC00" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="16" viewBox="0 0 21 16" fill="none">
+            <path d="M4.84 0H16.1619V16H4.84003L4.84 0Z" fill="white" />
+            <path d="M0 0H4.83936V16H0V7.89373V0ZM16.1613 0H21V7.7625V16H16.1644L16.1613 0ZM6.53626 7.73127L6.09249 7.88127L8.13936 9.67813C8.29563 10.1375 8.08626 10.2719 7.95186 10.5156L10.1706 10.2344L10.1175 12.4687L10.58 12.4562L10.4769 10.2375L12.7019 10.5031C12.5644 10.2125 12.4425 10.0594 12.5675 9.59687L14.6113 7.89373L14.255 7.7625C13.9612 7.5375 14.38 6.67813 14.4425 6.13437C14.4425 6.13437 13.2519 6.54373 13.1737 6.32813L12.8675 5.74377L11.7831 6.9375C11.6644 6.96563 11.6144 6.91873 11.5863 6.81873L12.0863 4.325L11.2925 4.77187C11.2269 4.80313 11.1612 4.77813 11.1175 4.7L10.3519 3.16873L9.56436 4.7594C9.50499 4.81563 9.44563 4.82187 9.39563 4.7844L8.63936 4.3594L9.09563 6.83123C9.05813 6.93123 8.97063 6.95623 8.87063 6.90313L7.82999 5.725C7.69563 5.94377 7.60499 6.29687 7.42376 6.37813C7.24563 6.45313 6.64249 6.22813 6.23936 6.14063C6.37686 6.6375 6.80813 7.4625 6.53626 7.73437V7.73127Z" fill="#D52B1E" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="16" viewBox="0 0 21 16" fill="none">
+            <path d="M0 0H21V16H0V0Z" fill="#012169" />
+            <path d="M2.46094 0L10.4672 6.03333L18.4406 0H21V2.06667L13.125 8.03333L21 13.9667V16H18.375L10.5 10.0333L2.65781 16H0V14L7.84219 8.06667L0 2.13333V0H2.46094Z" fill="white" />
+            <path d="M13.9125 9.36667L21 14.6667V16L12.1078 9.36667H13.9125ZM7.875 10.0333L8.07187 11.2L1.77187 16H0L7.875 10.0333ZM21 0V0.1L12.8297 6.36667L12.8953 4.9L19.3594 0H21ZM0 0L7.84219 5.86667H5.87344L0 1.4V0Z" fill="#C8102E" />
+            <path d="M7.90781 0V16H13.1578V0H7.90781ZM0 5.33333V10.6667H21V5.33333H0Z" fill="white" />
+            <path d="M0 6.43333V9.63333H21V6.43333H0ZM8.95781 0V16H12.1078V0H8.95781Z" fill="#C8102E" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0H21V16H0V0Z" fill="#000066" />
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99333 13.0831L8.53666 13.2098L8.73666 14.6564L7.73333 13.5998L6.72999 14.6564L6.92999 13.2098L5.47333 13.0831L6.72999 12.3398L5.91999 11.1231L7.28666 11.6398L7.73333 10.2498L8.18333 11.6398L9.54999 11.1231L8.73999 12.3398M16.22 14.4164L15.8667 13.8898L16.46 14.1131L16.6533 13.5098L16.8467 14.1131L17.44 13.8898L17.09 14.4164L17.6367 14.7398L17.0033 14.7964L17.09 15.4264L16.6567 14.9631L16.2167 15.4264L16.3033 14.7964L15.67 14.7431M16.2167 5.01311L15.8667 4.48645L16.46 4.70978L16.6533 4.10645L16.8467 4.70978L17.44 4.48645L17.09 5.01311L17.6367 5.33978L17.0033 5.39311L17.09 6.02311L16.6567 5.56311L16.2167 6.01978L16.3033 5.39311L15.67 5.33978M12.6933 8.83311L12.3433 8.30645L12.9367 8.52978L13.13 7.92645L13.3267 8.52978L13.92 8.30645L13.5667 8.83311L14.1133 9.15645L13.48 9.21311L13.57 9.84311L13.13 9.37978L12.6967 9.84311L12.78 9.21311L12.1467 9.15978M19.3567 7.89311L19 7.36645L19.5933 7.58978L19.7867 6.98645L19.9833 7.58978L20.5767 7.36645L20.2267 7.89311L20.77 8.21645L20.1367 8.27311L20.2233 8.89978L19.79 8.43978L19.35 8.89978L19.4367 8.27311L18.8033 8.21645M18.0667 10.6664L17.7233 10.8831L17.82 10.4864L17.51 10.2264L17.9133 10.1931L18.0667 9.81978L18.2233 10.1964L18.6267 10.2264L18.3167 10.4864L18.4133 10.8831" fill="white" />
+            <path d="M0 0H10.6667V8H0V0Z" fill="#000066" />
+            <path d="M1.25 0L5.31667 3.01667L9.36667 0H10.6667V1.03333L6.66667 4.01667L10.6667 6.98333V8H9.33333L5.33333 5.01667L1.35 8H0V7L3.98333 4.03333L0 1.06667V0H1.25Z" fill="white" />
+            <path d="M7.06667 4.68333L10.6667 7.33333V8L6.15 4.68333H7.06667ZM4 5.01667L4.1 5.6L0.9 8H0L4 5.01667ZM10.6667 0V0.05L6.51667 3.18333L6.55 2.45L9.83333 0H10.6667ZM0 0L3.98333 2.93333H2.98333L0 0.7V0Z" fill="#C8102E" />
+            <path d="M4.01667 0V8H6.68333V0H4.01667ZM0 2.66667V5.33333H10.6667V2.66667H0Z" fill="white" />
+            <path d="M0 3.21667V4.81667H10.6667V3.21667H0ZM4.55 0V8H6.15V0H4.55Z" fill="#C8102E" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H21V1.23127H0V0ZM0 2.4625H21V3.69377H0V2.4625ZM0 4.92187H21V6.15623H0V4.92187ZM0 7.38437H21V8.61563H0V7.38437ZM0 9.84687H21V11.0781H0V9.84687ZM0 12.3062H21V13.5375H0V12.3062ZM0 14.7687H21V16H0V14.7687Z" fill="#BD3D44" />
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.23145H21V2.46268H0V1.23145ZM0 3.69391H21V4.92205H0V3.69391ZM0 6.15331H21V7.38455H0V6.15331ZM0 8.61581H21V9.84705H0V8.61581ZM0 11.0783H21V12.3095H0V11.0783ZM0 13.5377H21V14.7689H0V13.5377Z" fill="white" />
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H12.1594V8.61563H0V0Z" fill="#192F5D" />
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.0125 0.368652L1.125 0.709219H1.48126L1.19373 0.918619L1.30313 1.26235L1.0125 1.04985L0.724996 1.25922L0.834362 0.918619L0.543762 0.709219H0.906262L1.0125 0.368652ZM3.04063 0.368652L3.15 0.709219H3.50936L3.21873 0.918619L3.32813 1.26235L3.04063 1.04985L2.75 1.25922L2.85936 0.918619L2.57186 0.709219H2.92813L3.04063 0.368652ZM5.06563 0.368652L5.17813 0.709252H5.53126L5.24376 0.918652L5.3531 1.26239L5.0625 1.04989L4.775 1.25925L4.88436 0.918652L4.59373 0.709252H4.95313L5.06563 0.368652ZM7.09376 0.368652L7.2031 0.709252H7.5625L7.27186 0.918652L7.38436 1.26239L7.09373 1.04989L6.80313 1.25925L6.91563 0.918652L6.625 0.709252H6.98126L7.09376 0.368652ZM9.11876 0.368652L9.23126 0.709252H9.5875L9.3 0.918652L9.40936 1.26239L9.11873 1.04989L8.83123 1.25925L8.94063 0.918652L8.65313 0.709252H9.00936L9.11876 0.368652ZM11.1469 0.368652L11.2562 0.709252H11.6156L11.325 0.918652L11.4375 1.26239L11.1469 1.04989L10.8562 1.25925L10.9687 0.918652L10.6781 0.709252H11.0375L11.1469 0.368652ZM2.02813 1.23109L2.1375 1.57175H2.49686L2.20623 1.78109L2.3125 2.12175L2.03123 1.91235L1.74063 2.12172L1.84373 1.78112L1.5625 1.57172H1.91876L2.02813 1.23109ZM4.05313 1.23109L4.16563 1.57175H4.52186L4.23123 1.78109L4.34376 2.12175L4.0531 1.91235L3.7625 2.12172L3.875 1.78112L3.58436 1.57172H3.94373L4.05313 1.23109ZM6.08126 1.23109L6.1906 1.57175H6.55L6.25936 1.78109L6.36873 2.12175L6.08123 1.91235L5.79063 2.12172L5.9 1.78115L5.6125 1.57175H5.96876L6.08126 1.23109ZM8.10626 1.23109L8.21876 1.57175H8.575L8.28436 1.78109L8.39686 2.12175L8.10623 1.91235L7.81873 2.12172L7.92813 1.78112L7.6375 1.57172H8L8.10626 1.23109ZM10.1344 1.23109L10.2437 1.57175H10.6031L10.3125 1.78109L10.4219 2.12175L10.1344 1.91235L9.84373 2.12172L9.95313 1.78112L9.66563 1.57172H10.0219L10.1344 1.23109ZM1.0125 2.09055L1.125 2.43742H1.48126L1.19373 2.64679L1.30313 2.98742L1.0125 2.77492L0.724996 2.98742L0.834362 2.64365L0.543762 2.43432H0.906262L1.0125 2.09055ZM3.04063 2.09055L3.15 2.43422H3.50936L3.21873 2.64359L3.32813 2.98425L3.04063 2.77172L2.75 2.98422L2.85936 2.64049L2.57186 2.43112H2.92813L3.04063 2.09055ZM5.06563 2.09055L5.17813 2.43429H5.53126L5.24376 2.64365L5.3531 2.98432L5.0625 2.77179L4.775 2.98429L4.88436 2.64055L4.59373 2.43119H4.95313L5.06563 2.09055ZM7.09376 2.09055L7.2031 2.43429H7.5625L7.27186 2.64365L7.38436 2.98432L7.09373 2.77179L6.80313 2.98429L6.91563 2.64055L6.625 2.43119H6.98126L7.09376 2.09055ZM9.11876 2.09055L9.23126 2.43429H9.5875L9.3 2.64362L9.40936 2.98429L9.11873 2.77175L8.83123 2.98425L8.94063 2.64052L8.65313 2.43115H9.00936L9.11876 2.09055ZM11.1469 2.09055L11.2562 2.43429H11.6156L11.325 2.64365L11.4375 2.98432L11.1469 2.77179L10.8562 2.98429L10.9687 2.64055L10.6781 2.43119H11.0375L11.1469 2.09055ZM2.02813 2.95302L2.1375 3.29365H2.49686L2.20623 3.50299L2.31563 3.84675L2.02813 3.63425L1.7375 3.84362L1.84686 3.50302L1.55936 3.29365H1.91566L2.02813 2.95302ZM4.05313 2.95302L4.16563 3.29365H4.52186L4.23123 3.50299L4.34376 3.84675L4.0531 3.63425L3.7625 3.84362L3.875 3.50302L3.58436 3.29365H3.94373L4.05313 2.95302ZM6.08126 2.95302L6.1906 3.29365H6.55L6.25936 3.50299L6.36873 3.84675L6.08123 3.63425L5.79063 3.84362L5.9 3.50302L5.6125 3.29365H5.96876L6.08126 2.95302ZM8.10626 2.95302L8.21876 3.29365H8.575L8.2875 3.50299L8.39686 3.84675L8.10623 3.63425L7.81873 3.84362L7.92813 3.50302L7.6375 3.29365H8L8.10626 2.95302ZM10.1344 2.95302L10.2437 3.29365H10.6031L10.3125 3.50299L10.4219 3.84675L10.1344 3.63425L9.84373 3.84362L9.95313 3.50302L9.66563 3.29365H10.0219L10.1344 2.95302ZM1.0125 3.81552L1.125 4.15615H1.48126L1.19373 4.36549L1.30313 4.70925L1.0125 4.49675L0.724996 4.70612L0.834362 4.36552L0.543762 4.15615H0.906262L1.0125 3.81552ZM3.04063 3.81552L3.15 4.15615H3.50936L3.21873 4.36549L3.32813 4.70615L3.04063 4.49675L2.75 4.70612L2.85936 4.36552L2.57186 4.15615H2.92813L3.04063 3.81552ZM5.06563 3.81552L5.17813 4.15615H5.53126L5.24376 4.36549L5.3531 4.70925L5.0625 4.49675L4.775 4.70612L4.88436 4.36552L4.59373 4.15615H4.95313L5.06563 3.81552ZM7.09376 3.81552L7.2031 4.15615H7.5625L7.27186 4.36549L7.38436 4.70925L7.09373 4.49675L6.80313 4.70612L6.91563 4.36552L6.625 4.15615H6.98126L7.09376 3.81552ZM9.11876 3.81552L9.23126 4.15615H9.5875L9.3 4.36549L9.40936 4.70925L9.11873 4.49675L8.83123 4.70612L8.94063 4.36552L8.65313 4.15615H9.00936L9.11876 3.81552ZM11.1469 3.81552L11.2562 4.15615H11.6156L11.325 4.36549L11.4375 4.70925L11.1469 4.49675L10.8562 4.70612L10.9687 4.36552L10.6781 4.15615H11.0375L11.1469 3.81552ZM2.02813 4.67802L2.1375 5.01865H2.49686L2.20623 5.22799L2.31563 5.56865L2.02813 5.35615L1.7375 5.56865L1.84686 5.22489L1.55936 5.01552H1.91566L2.02813 4.67802ZM4.05313 4.67802L4.16563 5.01865H4.52186L4.23123 5.22799L4.34376 5.56865L4.0531 5.35615L3.7625 5.56865L3.875 5.22489L3.58436 5.01552H3.94373L4.05313 4.67802ZM6.08126 4.67802L6.1906 5.01865H6.55L6.25936 5.22799L6.36873 5.56865L6.08123 5.35615L5.79063 5.56865L5.9 5.22489L5.6125 5.01552H5.96876L6.08126 4.67802ZM8.10626 4.67802L8.21876 5.01865H8.575L8.2875 5.22799L8.39686 5.56865L8.10623 5.35615L7.81873 5.56865L7.92813 5.22489L7.6375 5.01552H8L8.10626 4.67802ZM10.1344 4.67802L10.2437 5.01865H10.6031L10.3125 5.22799L10.4219 5.56865L10.1344 5.35615L9.84373 5.56865L9.95313 5.22489L9.66563 5.01552H10.0219L10.1344 4.67802ZM1.0125 5.53739L1.125 5.88115H1.48126L1.19373 6.09049L1.30313 6.42802L1.0125 6.21865L0.724996 6.42799L0.834362 6.08739L0.543762 5.87802H0.906262L1.0125 5.53739ZM3.04063 5.53739L3.15 5.88115H3.50936L3.21873 6.09049L3.33126 6.42802L3.0406 6.21865L2.75 6.42799L2.8625 6.08739L2.57186 5.87802H2.92813L3.04063 5.53739ZM5.06563 5.53739L5.17813 5.88115H5.53126L5.24376 6.09049L5.3531 6.42802L5.0625 6.21865L4.775 6.42799L4.88436 6.08739L4.59373 5.87802H4.95313L5.06563 5.53739ZM7.09376 5.53739L7.2031 5.88115H7.5625L7.27186 6.09049L7.38436 6.42802L7.09373 6.21865L6.80313 6.42799L6.91563 6.08739L6.625 5.87802H6.98126L7.09376 5.53739ZM9.11876 5.53739L9.23126 5.88115H9.5875L9.3 6.09049L9.40936 6.42802L9.11873 6.21865L8.83123 6.42799L8.94063 6.08739L8.65313 5.87802H9.00936L9.11876 5.53739ZM11.1469 5.53739L11.2562 5.88115H11.6156L11.325 6.09049L11.4375 6.42802L11.1469 6.21865L10.8562 6.42799L10.9687 6.08739L10.6781 5.87802H11.0375L11.1469 5.53739ZM2.02813 6.39989L2.1375 6.74052H2.49686L2.20623 6.94989L2.31563 7.29365L2.02813 7.08115L1.7375 7.29049L1.84686 6.94989L1.55936 6.74052H1.91566L2.02813 6.39989ZM4.05313 6.39989L4.16563 6.74052H4.52186L4.23123 6.94989L4.34376 7.29365L4.0531 7.08115L3.7625 7.29049L3.875 6.94989L3.58436 6.74052H3.94373L4.05313 6.39989ZM6.08126 6.39989L6.1906 6.74052H6.55L6.25936 6.94989L6.36873 7.29365L6.08123 7.08115L5.79063 7.29049L5.9 6.94989L5.6125 6.74052H5.96876L6.08126 6.39989ZM8.10626 6.39989L8.21876 6.74052H8.575L8.2875 6.94989L8.39686 7.29365L8.10623 7.08115L7.81873 7.29049L7.92813 6.94989L7.6375 6.74052H8L8.10626 6.39989ZM10.1344 6.39989L10.2437 6.74052H10.6031L10.3125 6.94989L10.4219 7.29365L10.1344 7.08115L9.84373 7.29049L9.95313 6.94989L9.66563 6.74052H10.0219L10.1344 6.39989ZM1.0125 7.26239L1.125 7.60302H1.48126L1.19373 7.81239L1.30313 8.15302L1.0125 7.94365L0.724996 8.15299L0.834362 7.80925L0.543762 7.59989H0.906262L1.0125 7.26239ZM3.04063 7.26239L3.15 7.60302H3.50936L3.21873 7.81239L3.33126 8.15302L3.0406 7.94365L2.75 8.15299L2.8625 7.80925L2.57186 7.59989H2.92813L3.04063 7.26239ZM5.06563 7.26239L5.17813 7.60302H5.53126L5.25 7.81239L5.35936 8.15302L5.06873 7.94365L4.78123 8.15299L4.89063 7.80925L4.6 7.59989H4.95936L5.06563 7.26239ZM7.09376 7.26239L7.2031 7.60302H7.5625L7.27186 7.81239L7.38436 8.15302L7.09373 7.94365L6.80313 8.15299L6.91563 7.80925L6.625 7.59989H6.98126L7.09376 7.26239ZM9.11876 7.26239L9.23126 7.60302H9.5875L9.3 7.81239L9.40936 8.15302L9.11873 7.94365L8.83123 8.15299L8.94063 7.80925L8.65313 7.59989H9.00936L9.11876 7.26239ZM11.1469 7.26239L11.2562 7.60302H11.6156L11.325 7.81239L11.4375 8.15302L11.1469 7.94365L10.8562 8.15299L10.9687 7.80925L10.6781 7.59989H11.0375L11.1469 7.26239Z" fill="white" />
+          </svg>
+        </div>
+      </div>
+
+      <h3 class="mt-8 mb-4 text-h3">Large Size (24px)</h3>
+      <div class="grid gap-px grid-cols-4 -mx-5 sm:mx-0 lg:grid-cols-8">
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M5 12H19" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M5 6H19" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M5 18H19" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M14 2V8H20" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M16 13H8" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M16 17H8" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M10 9H9H8" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M21 21H4.6C4.03995 21 3.75992 21 3.54601 20.891C3.35785 20.7951 3.20487 20.6422 3.10899 20.454C3 20.2401 3 19.9601 3 19.4V3M21 7L15.5657 12.4343C15.3677 12.6323 15.2687 12.7313 15.1545 12.7684C15.0541 12.8011 14.9459 12.8011 14.8455 12.7684C14.7313 12.7313 14.6323 12.6323 14.4343 12.4343L12.5657 10.5657C12.3677 10.3677 12.2687 10.2687 12.1545 10.2316C12.0541 10.1989 11.9459 10.1989 11.8455 10.2316C11.7313 10.2687 11.6323 10.3677 11.4343 10.5657L7 15M21 7H17M21 7V11" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M5 9.00002V17M9.5 9.00002V17M14.5 9.00002V17M19 9.00002V17M3 18.6L3 19.4C3 19.9601 3 20.2401 3.10899 20.454C3.20487 20.6422 3.35785 20.7952 3.54601 20.891C3.75992 21 4.03995 21 4.6 21H19.4C19.9601 21 20.2401 21 20.454 20.891C20.6422 20.7952 20.7951 20.6422 20.891 20.454C21 20.2401 21 19.9601 21 19.4V18.6C21 18.04 21 17.7599 20.891 17.546C20.7951 17.3579 20.6422 17.2049 20.454 17.109C20.2401 17 19.9601 17 19.4 17H4.6C4.03995 17 3.75992 17 3.54601 17.109C3.35785 17.2049 3.20487 17.3579 3.10899 17.546C3 17.7599 3 18.04 3 18.6ZM11.6529 3.07715L4.25291 4.7216C3.80585 4.82094 3.58232 4.87062 3.41546 4.99082C3.26829 5.09685 3.15273 5.24092 3.08115 5.40759C3 5.59654 3 5.82553 3 6.28349L3 7.40002C3 7.96007 3 8.2401 3.10899 8.45401C3.20487 8.64217 3.35785 8.79515 3.54601 8.89103C3.75992 9.00002 4.03995 9.00002 4.6 9.00002H19.4C19.9601 9.00002 20.2401 9.00002 20.454 8.89103C20.6422 8.79515 20.7951 8.64217 20.891 8.45401C21 8.2401 21 7.96007 21 7.40002V6.2835C21 5.82553 21 5.59655 20.9188 5.40759C20.8473 5.24092 20.7317 5.09685 20.5845 4.99082C20.4177 4.87062 20.1942 4.82094 19.7471 4.7216L12.3471 3.07715C12.2176 3.04837 12.1528 3.03398 12.0874 3.02824C12.0292 3.02314 11.9708 3.02314 11.9126 3.02824C11.8472 3.03398 11.7824 3.04837 11.6529 3.07715Z" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M8.5 14.6667C8.5 15.9553 9.54467 17 10.8333 17H13C14.3807 17 15.5 15.8807 15.5 14.5C15.5 13.1193 14.3807 12 13 12H11C9.61929 12 8.5 10.8807 8.5 9.5C8.5 8.11929 9.61929 7 11 7H13.1667C14.4553 7 15.5 8.04467 15.5 9.33333M12 5.5V7M12 17V18.5M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M11.2826 3.45307C11.5131 2.98613 11.6283 2.75266 11.7848 2.67807C11.9209 2.61317 12.0791 2.61317 12.2152 2.67807C12.3716 2.75266 12.4869 2.98613 12.7174 3.45307L14.904 7.88304C14.9721 8.02089 15.0061 8.08982 15.0558 8.14333C15.0998 8.19071 15.1526 8.22911 15.2113 8.25638C15.2775 8.28718 15.3536 8.2983 15.5057 8.32053L20.397 9.03546C20.912 9.11075 21.1696 9.14839 21.2888 9.27419C21.3924 9.38365 21.4412 9.53405 21.4215 9.68353C21.3988 9.85533 21.2123 10.0369 20.8394 10.4001L17.3014 13.8462C17.1911 13.9536 17.136 14.0073 17.1004 14.0712C17.0689 14.1278 17.0487 14.19 17.0409 14.2543C17.0321 14.3269 17.0451 14.4027 17.0711 14.5545L17.9059 19.4219C17.994 19.9352 18.038 20.1919 17.9553 20.3443C17.8833 20.4768 17.7553 20.5697 17.607 20.5972C17.4366 20.6288 17.2061 20.5076 16.7451 20.2652L12.3723 17.9656C12.2361 17.8939 12.168 17.8581 12.0962 17.844C12.0327 17.8316 11.9673 17.8316 11.9038 17.844C11.832 17.8581 11.7639 17.8939 11.6276 17.9656L7.25489 20.2652C6.79388 20.5076 6.56338 20.6288 6.39294 20.5972C6.24465 20.5697 6.11669 20.4768 6.04471 20.3443C5.96197 20.1919 6.00599 19.9352 6.09404 19.4219L6.92886 14.5545C6.95488 14.4027 6.96789 14.3269 6.95909 14.2543C6.95129 14.19 6.93108 14.1278 6.89958 14.0712C6.86399 14.0073 6.80885 13.9536 6.69855 13.8462L3.16053 10.4001C2.78763 10.0369 2.60118 9.85533 2.5785 9.68353C2.55876 9.53405 2.60752 9.38365 2.71122 9.27419C2.8304 9.14839 3.08794 9.11075 3.60301 9.03546L8.49428 8.32053C8.64639 8.2983 8.72245 8.28718 8.78869 8.25638C8.84733 8.22911 8.90013 8.19071 8.94415 8.14333C8.99388 8.08982 9.0279 8.02089 9.09594 7.88304L11.2826 3.45307Z" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M8 14C8 14 9.5 16 12 16C14.5 16 16 14 16 14M17 9.24C16.605 9.725 16.065 10 15.5 10C14.935 10 14.41 9.725 14 9.24M10 9.24C9.605 9.725 9.065 10 8.5 10C7.935 10 7.41 9.725 7 9.24M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M6 11V15M18 9V13M17 4C19.4487 4 20.7731 4.37476 21.4321 4.66544C21.5199 4.70415 21.5638 4.72351 21.6904 4.84437C21.7663 4.91682 21.9049 5.12939 21.9405 5.22809C22 5.39274 22 5.48274 22 5.66274V16.4111C22 17.3199 22 17.7743 21.8637 18.0079C21.7251 18.2454 21.5914 18.3559 21.3319 18.4472C21.0769 18.5369 20.562 18.438 19.5322 18.2401C18.8114 18.1017 17.9565 18 17 18C14 18 11 20 7 20C4.55129 20 3.22687 19.6252 2.56788 19.3346C2.48012 19.2958 2.43624 19.2765 2.3096 19.1556C2.23369 19.0832 2.09512 18.8706 2.05947 18.7719C2 18.6073 2 18.5173 2 18.3373L2 7.58885C2 6.68009 2 6.2257 2.13628 5.99214C2.2749 5.75456 2.40859 5.64412 2.66806 5.55281C2.92314 5.46305 3.43803 5.56198 4.46783 5.75985C5.18862 5.89834 6.04348 6 7 6C10 6 13 4 17 4ZM14.5 12C14.5 13.3807 13.3807 14.5 12 14.5C10.6193 14.5 9.5 13.3807 9.5 12C9.5 10.6193 10.6193 9.5 12 9.5C13.3807 9.5 14.5 10.6193 14.5 12Z" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M9 11.4999L11 13.4999L15.5 8.99987M20 11.9999C20 16.9083 14.646 20.4783 12.698 21.6147C12.4766 21.7439 12.3659 21.8085 12.2097 21.842C12.0884 21.868 11.9116 21.868 11.7903 21.842C11.6341 21.8085 11.5234 21.7439 11.302 21.6147C9.35396 20.4783 4 16.9083 4 11.9999V7.21747C4 6.41796 4 6.0182 4.13076 5.67457C4.24627 5.37101 4.43398 5.10015 4.67766 4.8854C4.9535 4.64231 5.3278 4.50195 6.0764 4.22122L11.4382 2.21054C11.6461 2.13258 11.75 2.0936 11.857 2.07815C11.9518 2.06444 12.0482 2.06444 12.143 2.07815C12.25 2.0936 12.3539 2.13258 12.5618 2.21054L17.9236 4.22122C18.6722 4.50195 19.0465 4.64231 19.3223 4.8854C19.566 5.10015 19.7537 5.37101 19.8692 5.67457C20 6.0182 20 6.41796 20 7.21747V11.9999Z" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M7.96668 14.7219L7 22L11.5884 19.247C11.7381 19.1572 11.8129 19.1123 11.8928 19.0947C11.9634 19.0792 12.0366 19.0792 12.1072 19.0947C12.1871 19.1123 12.2619 19.1572 12.4116 19.247L17 22L16.0343 14.7212M19 9C19 12.866 15.866 16 12 16C8.13401 16 5 12.866 5 9C5 5.13401 8.13401 2 12 2C15.866 2 19 5.13401 19 9Z" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M11 3H7.8C6.11984 3 5.27976 3 4.63803 3.32698C4.07354 3.6146 3.6146 4.07354 3.32698 4.63803C3 5.27976 3 6.11984 3 7.8V16.2C3 17.8802 3 18.7202 3.32698 19.362C3.6146 19.9265 4.07354 20.3854 4.63803 20.673C5.27976 21 6.11984 21 7.8 21H16.2C17.8802 21 18.7202 21 19.362 20.673C19.9265 20.3854 20.3854 19.9265 20.673 19.362C21 18.7202 21 17.8802 21 16.2V13M12 8H16V12M15.5 3.5V2M19.4393 4.56066L20.5 3.5M20.5103 8.5H22.0103M3 13.3471C3.65194 13.4478 4.31987 13.5 5 13.5C9.38636 13.5 13.2653 11.3276 15.6197 8" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M9 18L15 12L9 6" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 18L9 12L15 6" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 6L6 18" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M6 6L18 18" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 4.5L18 12L6 19.5V4.5Z" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1724 7C8.86805 7 7 8.86805 7 11.1724C7 13.4768 8.86805 15.3448 11.1724 15.3448C13.4768 15.3448 15.3448 13.4768 15.3448 11.1724C15.3448 8.86805 13.4768 7 11.1724 7ZM5 11.1724C5 7.76348 7.76348 5 11.1724 5C14.5814 5 17.3448 7.76349 17.3448 11.1724C17.3448 12.5159 16.9156 13.7592 16.1868 14.7725L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L14.7725 16.1868C13.7592 16.9156 12.5159 17.3448 11.1724 17.3448C7.76349 17.3448 5 14.5814 5 11.1724Z" fill="currentcolor" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17 19L12 15.1111L7 19V6.55556C7 6.143 7.15051 5.74733 7.41842 5.45561C7.68633 5.16389 8.04969 5 8.42857 5H15.5714C15.9503 5 16.3137 5.16389 16.5816 5.45561C16.8495 5.74733 17 6.143 17 6.55556V19Z" fill="currentcolor" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.6667 5L6 13.4H12L11.3333 19L18 10.6H12L12.6667 5Z" fill="currentcolor" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 18V11" stroke="currentcolor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M18 18V6" stroke="currentcolor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M6 18V15" stroke="currentcolor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 12H19" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M13.5 6L19.5 12L13.5 18" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 12H19" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M10.5 6L4.5 12L10.5 18" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.8126 11.25L12.1584 6.11199C12.208 5.37505 11.6236 4.75 10.885 4.75C10.2378 4.75 9.6931 5.23441 9.61748 5.87716L8.75009 13.25L7.14633 11.3273C6.53444 10.5937 5.42116 10.5538 4.75822 11.2416C4.75328 11.2467 4.75182 11.2543 4.7545 11.2609L6.73335 16.1319C7.49918 18.017 9.33096 19.25 11.3657 19.25H15.2501C17.4592 19.25 19.2501 17.4591 19.2501 15.25V14.25C19.2501 12.5931 17.9069 11.25 16.2501 11.25H11.8126Z" fill="currentcolor" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M5 7.0001C5 7.0001 5.35 6.52988 6.25 6.17187M15.7656 5.75C17.8443 6.34258 19.25 7.25 19.25 7.25" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M20 9H4V18C4 19.1046 4.89543 20 6 20H18C19.1046 20 20 19.1046 20 18V9ZM10 13C9.44772 13 9 13.4477 9 14C9 14.5523 9.44772 15 10 15H14C14.5523 15 15 14.5523 15 14C15 13.4477 14.5523 13 14 13H10Z" />
+            <path d="M21 4H3C2.44772 4 2 4.44772 2 5V6C2 6.55228 2.44772 7 3 7H21C21.5523 7 22 6.55228 22 6V5C22 4.44772 21.5523 4 21 4Z" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15.8767 10.4857L15.4103 13.5622H12.9589V21H9.67125V13.5622H7V10.4857H9.67125V8.14086C9.67125 5.47381 11.2411 4 13.6452 4C14.7959 4 16 4.20787 16 4.20787V6.8271H14.6726C13.3657 6.8271 12.9589 7.64822 12.9589 8.49009V10.4857H15.8767Z" fill="currentcolor" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.64991 20C6.57026 20 4.63168 19.3864 3 18.3276C4.38535 18.4185 6.83019 18.2007 8.35087 16.7292C6.06326 16.6227 5.0316 14.8428 4.89703 14.0822C5.0914 14.1582 6.01841 14.2495 6.54172 14.0365C3.91022 13.3671 3.50652 11.0243 3.59624 10.3093C4.08964 10.6592 4.92694 10.7809 5.25587 10.7505C2.8038 8.97059 3.68595 6.2931 4.11954 5.71501C5.87924 8.18826 8.51649 9.57733 11.7791 9.65459C11.7176 9.38089 11.6851 9.09593 11.6851 8.80325C11.6851 6.70277 13.3586 5 15.423 5C16.5016 5 17.4735 5.46484 18.1558 6.20837C18.8766 6.03703 19.9613 5.63591 20.4916 5.28905C20.2243 6.26268 19.3922 7.07488 18.8888 7.37592C18.893 7.38616 18.8847 7.36563 18.8888 7.37592C19.331 7.30807 20.5274 7.07481 21 6.74949C20.7663 7.29647 19.884 8.20591 19.16 8.71506C19.2947 14.7422 14.7492 20 8.64991 20Z" fill="currentcolor" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.34227 4.99432C7.34227 6.09575 6.37022 6.98864 5.17113 6.98864C3.97205 6.98864 3 6.09575 3 4.99432C3 3.89289 3.97205 3 5.17113 3C6.37022 3 7.34227 3.89289 7.34227 4.99432Z" fill="currentcolor" />
+            <path d="M3.29691 8.45455H7.00825V19.5H3.29691V8.45455Z" fill="currentcolor" />
+            <path d="M12.9835 8.45455H9.27217V19.5H12.9835C12.9835 19.5 12.9835 16.0227 12.9835 13.8486C12.9835 12.5436 13.4372 11.233 15.2474 11.233C17.2932 11.233 17.2809 12.9407 17.2714 14.2637C17.2589 15.9931 17.2887 17.7579 17.2887 19.5H21V13.6705C20.9686 9.94812 19.981 8.23295 16.732 8.23295C14.8025 8.23295 13.6065 9.09328 12.9835 9.87165V8.45455Z" fill="currentcolor" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.4243 18.5923L8.49658 18.5204C7.22488 18.4954 5.95001 18.5454 4.70324 18.286C2.80662 17.8986 2.67226 15.9988 2.53166 14.4052C2.33793 12.1649 2.41293 9.88389 2.77852 7.66224C2.98491 6.41567 3.79713 5.67182 5.0532 5.59088C9.29336 5.29712 13.5617 5.33194 17.7925 5.46898C18.2393 5.48155 18.6892 5.55022 19.1298 5.62838C21.3046 6.0096 21.3577 8.16248 21.4986 9.9748C21.6392 11.8058 21.5799 13.6462 21.3112 15.4648C21.0956 16.9705 20.6831 18.2332 18.9423 18.3551C16.7612 18.5145 14.6302 18.6428 12.443 18.602C12.4431 18.5923 12.4305 18.5923 12.4243 18.5923ZM10.1152 14.7802C11.7588 13.8365 13.3711 12.9085 15.0053 11.9712C13.3586 11.0275 11.7494 10.0995 10.1152 9.1621V14.7802Z" fill="currentcolor" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentcolor">
+            <path d="M16.628 14.8899C15.3216 15.818 13.7245 16.3636 12 16.3636C10.2758 16.3636 8.67907 15.8182 7.37283 14.8905L6.55337 21.0601C6.50741 21.4062 6.66366 21.748 6.95542 21.9397C7.24719 22.1313 7.62293 22.139 7.92227 21.9594L12 19.5127L16.0777 21.9594C16.3771 22.139 16.7528 22.1313 17.0445 21.9397C17.3363 21.7481 17.4926 21.4063 17.4466 21.0603L16.628 14.8899Z" />
+            <path d="M12 14.7273C15.5145 14.7273 18.3636 11.8782 18.3636 8.36364C18.3636 4.8491 15.5145 2 12 2C8.48546 2 5.63636 4.8491 5.63636 8.36364C5.63636 11.8782 8.48546 14.7273 12 14.7273Z" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 7.63623L13.0909 14.5453L9.45455 10.909L4 16.3635" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M15.6364 7.63623H20V11.9999" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentcolor">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.3599 2.067C12.1283 1.97767 11.8717 1.97767 11.6401 2.067L4.64013 4.767C4.2544 4.91578 4 5.28658 4 5.7V12C4 15.1348 6.01795 17.6365 7.83104 19.2683C8.75654 20.1012 9.67757 20.7521 10.3655 21.1943C10.7105 21.4161 10.9994 21.587 11.2044 21.7038C11.307 21.7622 11.3888 21.8071 11.4462 21.8382C11.475 21.8537 11.4977 21.8657 11.5139 21.8743L11.5333 21.8844L11.5392 21.8875L11.542 21.889C11.8291 22.0366 12.1703 22.0369 12.4573 21.8893L12 21C12.4573 21.8893 12.4584 21.8887 12.4587 21.8886L12.4608 21.8875L12.4667 21.8844L12.4861 21.8743C12.5023 21.8657 12.525 21.8537 12.5538 21.8382C12.6112 21.8071 12.693 21.7622 12.7956 21.7038C13.0006 21.587 13.2895 21.4161 13.6345 21.1943C14.3224 20.7521 15.2435 20.1012 16.169 19.2683C17.982 17.6365 20 15.1348 20 12V5.7C20 5.28658 19.7456 4.91578 19.3599 4.767L12.3599 2.067ZM12 21L11.542 21.889C11.5424 21.8891 11.5427 21.8893 12 21ZM15.7071 11.0533C16.0976 10.6627 16.0976 10.0296 15.7071 9.63905C15.3166 9.24853 14.6834 9.24853 14.2929 9.63905L11.1923 12.7396L10.2071 11.7544C9.81658 11.3639 9.18342 11.3639 8.79289 11.7544C8.40237 12.145 8.40237 12.7781 8.79289 13.1687L10.4852 14.861C10.8757 15.2515 11.5089 15.2515 11.8994 14.861L15.7071 11.0533Z" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.0161 12.2305L14.2588 16.4731L10.0161 20.7157" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M15.6019 11.7157L11.3593 7.47311L15.6019 3.23047" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M11.3593 7.47318H21.2588" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M4.35927 16.4732H14.2588" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17Z" fill="currentcolor" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M12 1V3" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M12 21V23" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M4.21997 4.22021L5.63997 5.64021" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M18.36 18.3599L19.78 19.7799" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M1 12H3" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M21 12H23" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M4.21997 19.7799L5.63997 18.3599" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M18.36 5.64021L19.78 4.22021" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentcolor">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0051 3H11.9949C11.6258 3 11.136 3 10.6987 3.01C10.4795 3.01502 10.264 3.02274 10.0783 3.03507C9.91732 3.04576 9.70126 3.06398 9.5249 3.10901C8.36885 3.40419 7.43612 4.27374 7.11258 5.42438C7.05999 5.61139 7.04098 5.8449 7.03024 6.00377C7.0173 6.19519 7.00921 6.41883 7.00396 6.64511C7.0016 6.7467 6.99977 6.85081 6.99835 6.95518L6.52463 6.95518H6.52463H6.52463H6.52462C6.10686 6.95516 5.73753 6.95515 5.43151 6.97897C5.10654 7.00427 4.7681 7.06096 4.43685 7.22179C3.95183 7.45728 3.54845 7.83754 3.29254 8.31613C3.11518 8.64783 3.0529 8.98779 3.02546 9.30782C2.99995 9.60526 2.99998 9.96233 3 10.357V10.3571V17.5981V17.5981C2.99998 17.9928 2.99995 18.3499 3.02546 18.6474C3.0529 18.9674 3.11518 19.3074 3.29254 19.6391C3.54845 20.1176 3.95183 20.4979 4.43685 20.7334C4.7681 20.8942 5.10654 20.9509 5.43151 20.9762C5.73751 21 6.10681 21 6.52454 21H6.52455H6.52457H6.52458H17.4753H17.4754H17.4754H17.4754C17.8931 21 18.2625 21 18.5685 20.9762C18.8935 20.9509 19.2319 20.8942 19.5632 20.7334C20.0482 20.4979 20.4516 20.1176 20.7075 19.6391C20.8848 19.3074 20.9471 18.9674 20.9746 18.6474C21.0001 18.3499 21 17.9928 21 17.5981V10.3571C21 9.96236 21.0001 9.60527 20.9746 9.30782C20.9471 8.98779 20.8848 8.64783 20.7075 8.31613C20.4516 7.83754 20.0482 7.45728 19.5632 7.22179C19.2319 7.06096 18.8935 7.00427 18.5685 6.97897C18.2625 6.95515 17.8931 6.95516 17.4754 6.95518L16.9905 6.95518C16.9891 6.85081 16.9873 6.7467 16.9849 6.64511C16.9797 6.41883 16.9716 6.19519 16.9586 6.00377C16.9479 5.8449 16.9289 5.61139 16.8763 5.42438C16.5528 4.27374 15.62 3.40419 14.464 3.10901C14.2881 3.06409 14.0732 3.04582 13.9128 3.0351C13.728 3.02275 13.5138 3.01502 13.2959 3.01001C12.8613 3 12.3742 3 12.0051 3ZM8.99854 6.95518H14.9904C14.9891 6.86608 14.9875 6.77771 14.9855 6.69156C14.9805 6.47779 14.9733 6.2875 14.9632 6.13866C14.954 6.00254 14.9464 5.94996 14.9464 5.94996C14.8218 5.52903 14.4634 5.17303 13.9692 5.04684C13.9777 5.04902 13.9771 5.04894 13.9646 5.04741C13.9429 5.04476 13.8857 5.03775 13.7794 5.03065C13.6363 5.02109 13.4549 5.0142 13.2498 5.00948C12.8404 5.00005 12.3743 5 12 5C11.6257 5 11.1568 5.00005 10.7445 5.00948C10.538 5.0142 10.3551 5.0211 10.2108 5.03068C10.104 5.03777 10.0464 5.04477 10.0244 5.04744C10.0116 5.049 10.0109 5.04908 10.0197 5.04684C9.52548 5.17303 9.16732 5.5288 9.04265 5.94973C9.04265 5.94973 9.04047 5.95666 9.03791 5.96577L9.04265 5.94973C9.04265 5.94973 9.03489 6.00254 9.02569 6.13865C9.01563 6.2875 9.00838 6.47779 9.00342 6.69156C9.00142 6.77771 8.99982 6.86608 8.99854 6.95518ZM13 11C13 10.4477 12.5523 10 12 10C11.4477 10 11 10.4477 11 11V13H9C8.44772 13 8 13.4477 8 14C8 14.5523 8.44772 15 9 15H11V17C11 17.5523 11.4477 18 12 18C12.5523 18 13 17.5523 13 17V15H15C15.5523 15 16 14.5523 16 14C16 13.4477 15.5523 13 15 13H13V11Z" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentcolor">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.8253 2.03203C11.9415 2.02183 12.0585 2.02183 12.1747 2.03203C12.3084 2.04376 12.436 2.07229 12.5372 2.09494C12.5463 2.09699 12.5553 2.099 12.564 2.10093L19.9907 3.7513C20.1911 3.79581 20.3903 3.84006 20.5587 3.89068C20.7467 3.94718 20.9607 4.02928 21.1691 4.17943C21.4634 4.39149 21.6945 4.67961 21.8377 5.01295C21.9391 5.24897 21.9728 5.47562 21.9872 5.67138C22.0001 5.84679 22 6.05087 22 6.25617V7.43191C22 7.68428 22.0001 7.93007 21.9831 8.13822C21.9644 8.36681 21.9203 8.63655 21.782 8.90797C21.5903 9.28429 21.2843 9.59026 20.908 9.782C20.6366 9.9203 20.3668 9.96437 20.1382 9.98304C20.0938 9.98668 20.0476 9.98953 20 9.99178V16.0082C20.0476 16.0104 20.0938 16.0133 20.1382 16.0169C20.3668 16.0356 20.6366 16.0797 20.908 16.218C21.2843 16.4097 21.5903 16.7157 21.782 17.092C21.9203 17.3634 21.9644 17.6332 21.9831 17.8618C22.0001 18.0699 22 18.3157 22 18.5681V19.4319C22 19.6843 22.0001 19.9301 21.9831 20.1382C21.9644 20.3668 21.9203 20.6365 21.782 20.908C21.5903 21.2843 21.2843 21.5903 20.908 21.782C20.6366 21.9203 20.3668 21.9644 20.1382 21.983C19.9301 22.0001 19.6843 22 19.4319 22H4.56808C4.31571 22 4.06992 22.0001 3.86177 21.983C3.63317 21.9644 3.36344 21.9203 3.09202 21.782C2.71569 21.5903 2.40973 21.2843 2.21798 20.908C2.07969 20.6365 2.03562 20.3668 2.01694 20.1382C1.99994 19.9301 1.99996 19.6843 1.99999 19.4319L1.99999 18.5681C1.99996 18.3157 1.99994 18.0699 2.01694 17.8618C2.03562 17.6332 2.07969 17.3634 2.21798 17.092C2.40973 16.7157 2.71569 16.4097 3.09202 16.218C3.36344 16.0797 3.63317 16.0356 3.86177 16.0169C3.90623 16.0133 3.95241 16.0104 4 16.0082V9.99178C3.95241 9.98953 3.90623 9.98668 3.86177 9.98304C3.63317 9.96437 3.36344 9.9203 3.09202 9.782C2.71569 9.59026 2.40973 9.28429 2.21798 8.90797C2.07969 8.63655 2.03562 8.36681 2.01694 8.13822C1.99994 7.93006 1.99996 7.68427 1.99999 7.43189C2 7.42126 2 7.41063 2 7.39999L2 6.28346C2 6.27436 2 6.26526 2 6.25617C1.99997 6.05087 1.99994 5.84679 2.01283 5.67138C2.02721 5.47562 2.06094 5.24897 2.1623 5.01295C2.30545 4.67961 2.53658 4.39148 2.83093 4.17942C3.03934 4.02928 3.25328 3.94718 3.44126 3.89068C3.60969 3.84005 3.80892 3.79581 4.00933 3.7513C4.01821 3.74933 4.02709 3.74735 4.03598 3.74538L11.436 2.10093C11.4447 2.099 11.4536 2.09699 11.4628 2.09494C11.564 2.07229 11.6916 2.04376 11.8253 2.03203ZM6 9.99999V16H8.5V9.99999H6ZM4.6 7.99999C4.30347 7.99999 4.14122 7.99921 4.02463 7.98969C4.01999 7.98931 4.0156 7.98892 4.01145 7.98854C4.01106 7.98439 4.01068 7.98 4.0103 7.97536C4.00078 7.85877 4 7.69652 4 7.39999V6.28346C4 6.03995 4.00062 5.91092 4.00746 5.81788C4.00769 5.81467 4.00793 5.81161 4.00817 5.80871C4.01095 5.80785 4.01388 5.80696 4.01696 5.80603C4.10631 5.77918 4.23212 5.75058 4.46984 5.69775L11.8698 4.05331C11.9394 4.03786 11.9734 4.03038 11.9983 4.02552C11.9989 4.0254 11.9994 4.02529 12 4.02519C12.0005 4.02529 12.0011 4.0254 12.0017 4.02552C12.0266 4.03038 12.0606 4.03786 12.1302 4.05331L19.5302 5.69775C19.7679 5.75058 19.8937 5.77918 19.983 5.80603C19.9861 5.80696 19.989 5.80785 19.9918 5.80871C19.9921 5.81161 19.9923 5.81467 19.9925 5.81788C19.9994 5.91093 20 6.03995 20 6.28346V7.39999C20 7.69652 19.9992 7.85877 19.9897 7.97536C19.9893 7.97999 19.9889 7.98438 19.9886 7.98853C19.9844 7.98892 19.98 7.98931 19.9754 7.98969C19.8588 7.99921 19.6965 7.99999 19.4 7.99999H4.6ZM10.5 9.99999V16H13.5V9.99999H10.5ZM15.5 9.99999V16H18V9.99999H15.5ZM4.6 18C4.30347 18 4.14122 18.0008 4.02463 18.0103C4.01999 18.0107 4.0156 18.0111 4.01145 18.0114C4.01106 18.0156 4.01068 18.02 4.0103 18.0246C4.00078 18.1412 4 18.3035 4 18.6V19.4C4 19.6965 4.00078 19.8588 4.0103 19.9754C4.01068 19.98 4.01106 19.9844 4.01145 19.9885C4.01559 19.9889 4.01999 19.9893 4.02463 19.9897C4.14122 19.9992 4.30347 20 4.6 20H19.4C19.6965 20 19.8588 19.9992 19.9754 19.9897C19.98 19.9893 19.9844 19.9889 19.9886 19.9885C19.9889 19.9844 19.9893 19.98 19.9897 19.9754C19.9992 19.8588 20 19.6965 20 19.4V18.6C20 18.3035 19.9992 18.1412 19.9897 18.0246C19.9893 18.02 19.9889 18.0156 19.9885 18.0114C19.9844 18.0111 19.98 18.0107 19.9754 18.0103C19.8588 18.0008 19.6965 18 19.4 18H4.6Z" />
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M20.454 8.891C20.2401 8.99999 19.9601 8.99999 19.4 8.99999H4.6C4.03995 8.99999 3.75992 8.99999 3.54601 8.891C3.35785 8.79512 3.20487 8.64214 3.10899 8.45398C3 8.24007 3 7.96004 3 7.39999V6.28346C3 5.8255 3 5.59651 3.08115 5.40756C3.15273 5.24089 3.26829 5.09682 3.41546 4.99079C3.58232 4.87058 3.80585 4.82091 4.25291 4.72156L11.6529 3.07712L11.6529 3.07712L11.6529 3.07712C11.7824 3.04834 11.8472 3.03395 11.9126 3.02821C11.9708 3.02311 12.0292 3.02311 12.0874 3.02821C12.1528 3.03395 12.2176 3.04834 12.3471 3.07712L19.7471 4.72157C20.1942 4.82091 20.4177 4.87059 20.5845 4.99079C20.7317 5.09682 20.8473 5.24089 20.9188 5.40756C21 5.59652 21 5.8255 21 6.28346V7.39999C21 7.96004 21 8.24007 20.891 8.45398C20.7951 8.64214 20.6422 8.79512 20.454 8.891ZM19.4 21H19.4H4.6C4.03995 21 3.75992 21 3.54601 20.891C3.35785 20.7951 3.20487 20.6421 3.10899 20.454C3 20.2401 3 19.96 3 19.4V18.6C3 18.0399 3 17.7599 3.10899 17.546C3.20487 17.3578 3.35785 17.2049 3.54601 17.109C3.75992 17 4.03995 17 4.6 17H19.4C19.9601 17 20.2401 17 20.454 17.109C20.6422 17.2049 20.7951 17.3578 20.891 17.546C21 17.7599 21 18.0399 21 18.6V19.4C21 19.96 21 20.2401 20.891 20.454C20.7951 20.6421 20.6422 20.7951 20.454 20.891C20.2401 21 19.9601 21 19.4 21ZM12 7.27594C12.8284 7.27594 13.5 6.60437 13.5 5.77594C13.5 4.94751 12.8284 4.27594 12 4.27594C11.1716 4.27594 10.5 4.94751 10.5 5.77594C10.5 6.60437 11.1716 7.27594 12 7.27594Z" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.412 5.3094C11.601 4.92667 11.6954 4.73531 11.8236 4.67417C11.9352 4.62098 12.0648 4.62098 12.1764 4.67417C12.3046 4.73531 12.3991 4.92667 12.588 5.3094L14.3803 8.94037C14.4361 9.05336 14.4639 9.10985 14.5047 9.15372C14.5408 9.19255 14.5841 9.22402 14.6321 9.24637C14.6864 9.27162 14.7488 9.28073 14.8734 9.29896L18.8825 9.88494C19.3047 9.94665 19.5158 9.9775 19.6135 10.0806C19.6985 10.1703 19.7384 10.2936 19.7222 10.4161C19.7036 10.5569 19.5508 10.7058 19.2452 11.0035L16.3453 13.828C16.2549 13.916 16.2097 13.9601 16.1805 14.0124C16.1547 14.0588 16.1381 14.1098 16.1317 14.1625C16.1245 14.222 16.1352 14.2842 16.1565 14.4086L16.8408 18.3981C16.9129 18.8188 16.949 19.0292 16.8812 19.1541C16.8222 19.2627 16.7173 19.3389 16.5958 19.3614C16.4561 19.3873 16.2671 19.288 15.8893 19.0893L12.3052 17.2044C12.1935 17.1457 12.1377 17.1163 12.0789 17.1048C12.0268 17.0946 11.9732 17.0946 11.9211 17.1048C11.8623 17.1163 11.8065 17.1457 11.6948 17.2044L8.11075 19.0893C7.73289 19.288 7.54396 19.3873 7.40426 19.3614C7.28272 19.3389 7.17784 19.2627 7.11884 19.1541C7.05102 19.0292 7.08711 18.8188 7.15927 18.3981L7.84352 14.4086C7.86485 14.2842 7.87552 14.222 7.8683 14.1625C7.86191 14.1098 7.84534 14.0588 7.81952 14.0124C7.79035 13.9601 7.74515 13.916 7.65476 13.828L4.75485 11.0035C4.44921 10.7058 4.29639 10.5569 4.27779 10.4161C4.26161 10.2936 4.30158 10.1703 4.38658 10.0806C4.48427 9.9775 4.69535 9.94665 5.11753 9.88494L9.1266 9.29896C9.25128 9.28073 9.31362 9.27162 9.36791 9.24637C9.41598 9.22402 9.45925 9.19255 9.49534 9.15372C9.53609 9.10985 9.56398 9.05336 9.61975 8.94037L11.412 5.3094Z" fill="currentcolor" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentcolor">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.25 2.375H6.75C6.05381 2.375 5.38613 2.65156 4.89384 3.14384C4.40156 3.63613 4.125 4.30381 4.125 5V19C4.125 19.6962 4.40156 20.3639 4.89384 20.8562C5.38613 21.3484 6.05381 21.625 6.75 21.625H17.25C17.9462 21.625 18.6139 21.3484 19.1062 20.8562C19.5984 20.3639 19.875 19.6962 19.875 19V8.75H14C13.5858 8.75 13.25 8.41421 13.25 8V2.375ZM18.9874 7.25L14.75 3.01256V7.25H18.9874ZM7.75 10C7.75 9.58579 8.08579 9.25 8.5 9.25H10.25C10.6642 9.25 11 9.58579 11 10C11 10.4142 10.6642 10.75 10.25 10.75H8.5C8.08579 10.75 7.75 10.4142 7.75 10ZM8.5 12.75C8.08579 12.75 7.75 13.0858 7.75 13.5C7.75 13.9142 8.08579 14.25 8.5 14.25H15.5C15.9142 14.25 16.25 13.9142 16.25 13.5C16.25 13.0858 15.9142 12.75 15.5 12.75H8.5ZM8.5 16.25C8.08579 16.25 7.75 16.5858 7.75 17C7.75 17.4142 8.08579 17.75 8.5 17.75H15.5C15.9142 17.75 16.25 17.4142 16.25 17C16.25 16.5858 15.9142 16.25 15.5 16.25H8.5Z" />
+          </svg>
+        </div>
+        <div data-preview class="flex items-center justify-center p-5 bg-gray-800">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19 14.2069C19 18.6207 15.9201 20 11.9999 20C7.52002 20 5 16.8552 5 14.2069C5 11.5586 6.40001 9.14943 7.52002 8.41379C7.52002 11.5034 10.5066 13.4712 11.9999 13.3793C9.31197 9.4069 11.6266 5.0115 13.12 4C13.12 8.96552 19 9.7931 19 14.2069Z" fill="currentcolor" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+      </div>
+
+      <h2 class="mt-16 mb-4 text-h2 text-white">Indicators</h2>
+      <h3 class="mt-4 mb-4 text-h3">Guage Gradient</h3>
+      <div class="grid gap-px grid-cols-4 -mx-5 sm:mx-0 lg:grid-cols-7">
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <div class="relative w-[32px] h-[18px]">
+            <svg width="32" height="18" viewBox="0 0 32 18" fill="none">
+              <path d="M0 16.3833C1.99972e-07 14.0959 0.490459 11.8351 1.4383 9.75329L5.07873 11.4108C4.36784 12.9721 4 14.6677 4 16.3833L0 16.3833Z" fill="#D94A49" />
+              <path d="M1.59419 9.42107C2.58953 7.36157 4.0149 5.53943 5.77417 4.07751L8.33063 7.15396C7.01117 8.2504 5.94215 9.617 5.19564 11.1616L1.59419 9.42107Z" fill="#FF8A00" />
+              <path d="M6.00918 3.88596C7.85603 2.40952 10.0072 1.36076 12.3078 0.815135L13.2309 4.70718C11.5054 5.1164 9.89203 5.90297 8.50689 7.01029L6.00918 3.88596Z" fill="#FEBE2B" />
+              <path d="M12.5683 0.755658C14.8024 0.265047 17.1158 0.259184 19.3525 0.738464L18.5144 4.64967C16.8369 4.29021 15.1018 4.29461 13.4262 4.66257L12.5683 0.755658Z" fill="#FBE94D" />
+              <path d="M19.6829 0.812932C21.9089 1.33945 23.9961 2.33713 25.8038 3.73871L23.3528 6.89986C21.9971 5.84867 20.4316 5.10041 18.7622 4.70552L19.6829 0.812932Z" fill="#C3EC4E" />
+              <path d="M26.1077 3.98028C27.8808 5.4253 29.3236 7.23372 30.3386 9.28361L26.7539 11.0585C25.9927 9.52112 24.9106 8.1648 23.5808 7.08103L26.1077 3.98028Z" fill="#6EE15B" />
+              <path d="M30.4914 9.60101C31.461 11.6727 31.9751 13.9283 31.9991 16.2156L27.9993 16.2575C27.9814 14.5421 27.5958 12.8504 26.8685 11.2966L30.4914 9.60101Z" fill="#00C064" />
+            </svg>
+            <svg width="6" height="14" viewBox="0 0 6 14" class="absolute -bottom-px left-1/2 -ml-[3px] fill-red origin-[50%_85%] rotate-[-75deg]">
+              <path d="M2.80424 0.99661C2.84641 0.781923 3.15439 0.785967 3.19678 1.00177L5.22573 11.3313C5.49859 12.7204 4.44901 14 3.03674 14V14C1.60023 14 0.509469 12.6786 0.785599 11.2729L2.80424 0.99661Z" />
+            </svg>
+          </div>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <div class="relative w-[32px] h-[18px]">
+            <svg width="32" height="18" viewBox="0 0 32 18" fill="none">
+              <path d="M0 16.3833C1.99972e-07 14.0959 0.490459 11.8351 1.4383 9.75329L5.07873 11.4108C4.36784 12.9721 4 14.6677 4 16.3833L0 16.3833Z" fill="#D94A49" />
+              <path d="M1.59419 9.42107C2.58953 7.36157 4.0149 5.53943 5.77417 4.07751L8.33063 7.15396C7.01117 8.2504 5.94215 9.617 5.19564 11.1616L1.59419 9.42107Z" fill="#FF8A00" />
+              <path d="M6.00918 3.88596C7.85603 2.40952 10.0072 1.36076 12.3078 0.815135L13.2309 4.70718C11.5054 5.1164 9.89203 5.90297 8.50689 7.01029L6.00918 3.88596Z" fill="#FEBE2B" />
+              <path d="M12.5683 0.755658C14.8024 0.265047 17.1158 0.259184 19.3525 0.738464L18.5144 4.64967C16.8369 4.29021 15.1018 4.29461 13.4262 4.66257L12.5683 0.755658Z" fill="#FBE94D" />
+              <path d="M19.6829 0.812932C21.9089 1.33945 23.9961 2.33713 25.8038 3.73871L23.3528 6.89986C21.9971 5.84867 20.4316 5.10041 18.7622 4.70552L19.6829 0.812932Z" fill="#C3EC4E" />
+              <path d="M26.1077 3.98028C27.8808 5.4253 29.3236 7.23372 30.3386 9.28361L26.7539 11.0585C25.9927 9.52112 24.9106 8.1648 23.5808 7.08103L26.1077 3.98028Z" fill="#6EE15B" />
+              <path d="M30.4914 9.60101C31.461 11.6727 31.9751 13.9283 31.9991 16.2156L27.9993 16.2575C27.9814 14.5421 27.5958 12.8504 26.8685 11.2966L30.4914 9.60101Z" fill="#00C064" />
+            </svg>
+            <svg width="6" height="14" viewBox="0 0 6 14" class="absolute -bottom-px left-1/2 -ml-[3px] fill-orange origin-[50%_85%] rotate-[-51deg]">
+              <path d="M2.80424 0.99661C2.84641 0.781923 3.15439 0.785967 3.19678 1.00177L5.22573 11.3313C5.49859 12.7204 4.44901 14 3.03674 14V14C1.60023 14 0.509469 12.6786 0.785599 11.2729L2.80424 0.99661Z" />
+            </svg>
+          </div>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <div class="relative w-[32px] h-[18px]">
+            <svg width="32" height="18" viewBox="0 0 32 18" fill="none">
+              <path d="M0 16.3833C1.99972e-07 14.0959 0.490459 11.8351 1.4383 9.75329L5.07873 11.4108C4.36784 12.9721 4 14.6677 4 16.3833L0 16.3833Z" fill="#D94A49" />
+              <path d="M1.59419 9.42107C2.58953 7.36157 4.0149 5.53943 5.77417 4.07751L8.33063 7.15396C7.01117 8.2504 5.94215 9.617 5.19564 11.1616L1.59419 9.42107Z" fill="#FF8A00" />
+              <path d="M6.00918 3.88596C7.85603 2.40952 10.0072 1.36076 12.3078 0.815135L13.2309 4.70718C11.5054 5.1164 9.89203 5.90297 8.50689 7.01029L6.00918 3.88596Z" fill="#FEBE2B" />
+              <path d="M12.5683 0.755658C14.8024 0.265047 17.1158 0.259184 19.3525 0.738464L18.5144 4.64967C16.8369 4.29021 15.1018 4.29461 13.4262 4.66257L12.5683 0.755658Z" fill="#FBE94D" />
+              <path d="M19.6829 0.812932C21.9089 1.33945 23.9961 2.33713 25.8038 3.73871L23.3528 6.89986C21.9971 5.84867 20.4316 5.10041 18.7622 4.70552L19.6829 0.812932Z" fill="#C3EC4E" />
+              <path d="M26.1077 3.98028C27.8808 5.4253 29.3236 7.23372 30.3386 9.28361L26.7539 11.0585C25.9927 9.52112 24.9106 8.1648 23.5808 7.08103L26.1077 3.98028Z" fill="#6EE15B" />
+              <path d="M30.4914 9.60101C31.461 11.6727 31.9751 13.9283 31.9991 16.2156L27.9993 16.2575C27.9814 14.5421 27.5958 12.8504 26.8685 11.2966L30.4914 9.60101Z" fill="#00C064" />
+            </svg>
+            <svg width="6" height="14" viewBox="0 0 6 14" class="absolute -bottom-px left-1/2 -ml-[3px] fill-yellow origin-[50%_85%] rotate-[-26deg]">
+              <path d="M2.80424 0.99661C2.84641 0.781923 3.15439 0.785967 3.19678 1.00177L5.22573 11.3313C5.49859 12.7204 4.44901 14 3.03674 14V14C1.60023 14 0.509469 12.6786 0.785599 11.2729L2.80424 0.99661Z" />
+            </svg>
+          </div>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <div class="relative w-[32px] h-[18px]">
+            <svg width="32" height="18" viewBox="0 0 32 18" fill="none">
+              <path d="M0 16.3833C1.99972e-07 14.0959 0.490459 11.8351 1.4383 9.75329L5.07873 11.4108C4.36784 12.9721 4 14.6677 4 16.3833L0 16.3833Z" fill="#D94A49" />
+              <path d="M1.59419 9.42107C2.58953 7.36157 4.0149 5.53943 5.77417 4.07751L8.33063 7.15396C7.01117 8.2504 5.94215 9.617 5.19564 11.1616L1.59419 9.42107Z" fill="#FF8A00" />
+              <path d="M6.00918 3.88596C7.85603 2.40952 10.0072 1.36076 12.3078 0.815135L13.2309 4.70718C11.5054 5.1164 9.89203 5.90297 8.50689 7.01029L6.00918 3.88596Z" fill="#FEBE2B" />
+              <path d="M12.5683 0.755658C14.8024 0.265047 17.1158 0.259184 19.3525 0.738464L18.5144 4.64967C16.8369 4.29021 15.1018 4.29461 13.4262 4.66257L12.5683 0.755658Z" fill="#FBE94D" />
+              <path d="M19.6829 0.812932C21.9089 1.33945 23.9961 2.33713 25.8038 3.73871L23.3528 6.89986C21.9971 5.84867 20.4316 5.10041 18.7622 4.70552L19.6829 0.812932Z" fill="#C3EC4E" />
+              <path d="M26.1077 3.98028C27.8808 5.4253 29.3236 7.23372 30.3386 9.28361L26.7539 11.0585C25.9927 9.52112 24.9106 8.1648 23.5808 7.08103L26.1077 3.98028Z" fill="#6EE15B" />
+              <path d="M30.4914 9.60101C31.461 11.6727 31.9751 13.9283 31.9991 16.2156L27.9993 16.2575C27.9814 14.5421 27.5958 12.8504 26.8685 11.2966L30.4914 9.60101Z" fill="#00C064" />
+            </svg>
+            <svg width="6" height="14" viewBox="0 0 6 14" class="absolute -bottom-px left-1/2 -ml-[3px] fill-yellow-light origin-[50%_85%]">
+              <path d="M2.80424 0.99661C2.84641 0.781923 3.15439 0.785967 3.19678 1.00177L5.22573 11.3313C5.49859 12.7204 4.44901 14 3.03674 14V14C1.60023 14 0.509469 12.6786 0.785599 11.2729L2.80424 0.99661Z" />
+            </svg>
+          </div>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <div class="relative w-[32px] h-[18px]">
+            <svg width="32" height="18" viewBox="0 0 32 18" fill="none">
+              <path d="M0 16.3833C1.99972e-07 14.0959 0.490459 11.8351 1.4383 9.75329L5.07873 11.4108C4.36784 12.9721 4 14.6677 4 16.3833L0 16.3833Z" fill="#D94A49" />
+              <path d="M1.59419 9.42107C2.58953 7.36157 4.0149 5.53943 5.77417 4.07751L8.33063 7.15396C7.01117 8.2504 5.94215 9.617 5.19564 11.1616L1.59419 9.42107Z" fill="#FF8A00" />
+              <path d="M6.00918 3.88596C7.85603 2.40952 10.0072 1.36076 12.3078 0.815135L13.2309 4.70718C11.5054 5.1164 9.89203 5.90297 8.50689 7.01029L6.00918 3.88596Z" fill="#FEBE2B" />
+              <path d="M12.5683 0.755658C14.8024 0.265047 17.1158 0.259184 19.3525 0.738464L18.5144 4.64967C16.8369 4.29021 15.1018 4.29461 13.4262 4.66257L12.5683 0.755658Z" fill="#FBE94D" />
+              <path d="M19.6829 0.812932C21.9089 1.33945 23.9961 2.33713 25.8038 3.73871L23.3528 6.89986C21.9971 5.84867 20.4316 5.10041 18.7622 4.70552L19.6829 0.812932Z" fill="#C3EC4E" />
+              <path d="M26.1077 3.98028C27.8808 5.4253 29.3236 7.23372 30.3386 9.28361L26.7539 11.0585C25.9927 9.52112 24.9106 8.1648 23.5808 7.08103L26.1077 3.98028Z" fill="#6EE15B" />
+              <path d="M30.4914 9.60101C31.461 11.6727 31.9751 13.9283 31.9991 16.2156L27.9993 16.2575C27.9814 14.5421 27.5958 12.8504 26.8685 11.2966L30.4914 9.60101Z" fill="#00C064" />
+            </svg>
+            <svg width="6" height="14" viewBox="0 0 6 14" class="absolute -bottom-px left-1/2 -ml-[3px] fill-lime origin-[50%_85%] rotate-[26deg]">
+              <path d="M2.80424 0.99661C2.84641 0.781923 3.15439 0.785967 3.19678 1.00177L5.22573 11.3313C5.49859 12.7204 4.44901 14 3.03674 14V14C1.60023 14 0.509469 12.6786 0.785599 11.2729L2.80424 0.99661Z" />
+            </svg>
+          </div>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <div class="relative w-[32px] h-[18px]">
+            <svg width="32" height="18" viewBox="0 0 32 18" fill="none">
+              <path d="M0 16.3833C1.99972e-07 14.0959 0.490459 11.8351 1.4383 9.75329L5.07873 11.4108C4.36784 12.9721 4 14.6677 4 16.3833L0 16.3833Z" fill="#D94A49" />
+              <path d="M1.59419 9.42107C2.58953 7.36157 4.0149 5.53943 5.77417 4.07751L8.33063 7.15396C7.01117 8.2504 5.94215 9.617 5.19564 11.1616L1.59419 9.42107Z" fill="#FF8A00" />
+              <path d="M6.00918 3.88596C7.85603 2.40952 10.0072 1.36076 12.3078 0.815135L13.2309 4.70718C11.5054 5.1164 9.89203 5.90297 8.50689 7.01029L6.00918 3.88596Z" fill="#FEBE2B" />
+              <path d="M12.5683 0.755658C14.8024 0.265047 17.1158 0.259184 19.3525 0.738464L18.5144 4.64967C16.8369 4.29021 15.1018 4.29461 13.4262 4.66257L12.5683 0.755658Z" fill="#FBE94D" />
+              <path d="M19.6829 0.812932C21.9089 1.33945 23.9961 2.33713 25.8038 3.73871L23.3528 6.89986C21.9971 5.84867 20.4316 5.10041 18.7622 4.70552L19.6829 0.812932Z" fill="#C3EC4E" />
+              <path d="M26.1077 3.98028C27.8808 5.4253 29.3236 7.23372 30.3386 9.28361L26.7539 11.0585C25.9927 9.52112 24.9106 8.1648 23.5808 7.08103L26.1077 3.98028Z" fill="#6EE15B" />
+              <path d="M30.4914 9.60101C31.461 11.6727 31.9751 13.9283 31.9991 16.2156L27.9993 16.2575C27.9814 14.5421 27.5958 12.8504 26.8685 11.2966L30.4914 9.60101Z" fill="#00C064" />
+            </svg>
+            <svg width="6" height="14" viewBox="0 0 6 14" class="absolute -bottom-px left-1/2 -ml-[3px] fill-green-light origin-[50%_85%] rotate-[51deg]">
+              <path d="M2.80424 0.99661C2.84641 0.781923 3.15439 0.785967 3.19678 1.00177L5.22573 11.3313C5.49859 12.7204 4.44901 14 3.03674 14V14C1.60023 14 0.509469 12.6786 0.785599 11.2729L2.80424 0.99661Z" />
+            </svg>
+          </div>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <div class="relative w-[32px] h-[18px]">
+            <svg width="32" height="18" viewBox="0 0 32 18" fill="none">
+              <path d="M0 16.3833C1.99972e-07 14.0959 0.490459 11.8351 1.4383 9.75329L5.07873 11.4108C4.36784 12.9721 4 14.6677 4 16.3833L0 16.3833Z" fill="#D94A49" />
+              <path d="M1.59419 9.42107C2.58953 7.36157 4.0149 5.53943 5.77417 4.07751L8.33063 7.15396C7.01117 8.2504 5.94215 9.617 5.19564 11.1616L1.59419 9.42107Z" fill="#FF8A00" />
+              <path d="M6.00918 3.88596C7.85603 2.40952 10.0072 1.36076 12.3078 0.815135L13.2309 4.70718C11.5054 5.1164 9.89203 5.90297 8.50689 7.01029L6.00918 3.88596Z" fill="#FEBE2B" />
+              <path d="M12.5683 0.755658C14.8024 0.265047 17.1158 0.259184 19.3525 0.738464L18.5144 4.64967C16.8369 4.29021 15.1018 4.29461 13.4262 4.66257L12.5683 0.755658Z" fill="#FBE94D" />
+              <path d="M19.6829 0.812932C21.9089 1.33945 23.9961 2.33713 25.8038 3.73871L23.3528 6.89986C21.9971 5.84867 20.4316 5.10041 18.7622 4.70552L19.6829 0.812932Z" fill="#C3EC4E" />
+              <path d="M26.1077 3.98028C27.8808 5.4253 29.3236 7.23372 30.3386 9.28361L26.7539 11.0585C25.9927 9.52112 24.9106 8.1648 23.5808 7.08103L26.1077 3.98028Z" fill="#6EE15B" />
+              <path d="M30.4914 9.60101C31.461 11.6727 31.9751 13.9283 31.9991 16.2156L27.9993 16.2575C27.9814 14.5421 27.5958 12.8504 26.8685 11.2966L30.4914 9.60101Z" fill="#00C064" />
+            </svg>
+            <svg width="6" height="14" viewBox="0 0 6 14" class="absolute -bottom-px left-1/2 -ml-[3px] fill-green origin-[50%_85%] rotate-[75deg]">
+              <path d="M2.80424 0.99661C2.84641 0.781923 3.15439 0.785967 3.19678 1.00177L5.22573 11.3313C5.49859 12.7204 4.44901 14 3.03674 14V14C1.60023 14 0.509469 12.6786 0.785599 11.2729L2.80424 0.99661Z" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="mt-8 mb-4 text-h3">Guage with Label</h3>
+      <div class="grid gap-px grid-cols-2 -mx-5 sm:mx-0 lg:grid-cols-4">
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <div class="flex items-center gap-2">
+            <div class="relative w-[32px] h-[18px]">
+              <svg width="32" height="18" viewBox="0 0 32 18" class="fill-red">
+                <path d="M0 15.75C3.70975e-07 11.5728 1.68571 7.56677 4.68629 4.61307C7.68687 1.65937 11.7565 4.48144e-07 16 0C20.2435 -4.48144e-07 24.3131 1.65937 27.3137 4.61307C30.3143 7.56676 32 11.5728 32 15.75L28.8 15.75C28.8 12.4083 27.4514 9.20341 25.051 6.84045C22.6505 4.47749 19.3948 3.15 16 3.15C12.6052 3.15 9.3495 4.4775 6.94903 6.84045C4.54857 9.20341 3.2 12.4083 3.2 15.75L0 15.75Z" />
+              </svg>
+              <svg width="6" height="14" viewBox="0 0 6 14" class="absolute -bottom-px left-1/2 -ml-[3px] fill-red origin-[50%_85%] rotate-[-75deg]">
+                <path d="M2.80424 0.99661C2.84641 0.781923 3.15439 0.785967 3.19678 1.00177L5.22573 11.3313C5.49859 12.7204 4.44901 14 3.03674 14V14C1.60023 14 0.509469 12.6786 0.785599 11.2729L2.80424 0.99661Z" />
+              </svg>
+            </div>
+            <div class="mt-px text-sm text-white">Bearish</div>
+          </div>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <div class="flex items-center gap-2">
+            <div class="relative w-[32px] h-[18px]">
+              <svg width="32" height="18" viewBox="0 0 32 18" class="fill-orange">
+                <path d="M0 15.75C3.70975e-07 11.5728 1.68571 7.56677 4.68629 4.61307C7.68687 1.65937 11.7565 4.48144e-07 16 0C20.2435 -4.48144e-07 24.3131 1.65937 27.3137 4.61307C30.3143 7.56676 32 11.5728 32 15.75L28.8 15.75C28.8 12.4083 27.4514 9.20341 25.051 6.84045C22.6505 4.47749 19.3948 3.15 16 3.15C12.6052 3.15 9.3495 4.4775 6.94903 6.84045C4.54857 9.20341 3.2 12.4083 3.2 15.75L0 15.75Z" />
+              </svg>
+              <svg width="6" height="14" viewBox="0 0 6 14" class="absolute -bottom-px left-1/2 -ml-[3px] fill-orange origin-[50%_85%] rotate-[-33deg]">
+                <path d="M2.80424 0.99661C2.84641 0.781923 3.15439 0.785967 3.19678 1.00177L5.22573 11.3313C5.49859 12.7204 4.44901 14 3.03674 14V14C1.60023 14 0.509469 12.6786 0.785599 11.2729L2.80424 0.99661Z" />
+              </svg>
+            </div>
+            <div class="mt-px text-sm text-white">Bearish</div>
+          </div>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <div class="flex items-center gap-2">
+            <div class="relative w-[32px] h-[18px]">
+              <svg width="32" height="18" viewBox="0 0 32 18" class="fill-yellow">
+                <path d="M0 15.75C3.70975e-07 11.5728 1.68571 7.56677 4.68629 4.61307C7.68687 1.65937 11.7565 4.48144e-07 16 0C20.2435 -4.48144e-07 24.3131 1.65937 27.3137 4.61307C30.3143 7.56676 32 11.5728 32 15.75L28.8 15.75C28.8 12.4083 27.4514 9.20341 25.051 6.84045C22.6505 4.47749 19.3948 3.15 16 3.15C12.6052 3.15 9.3495 4.4775 6.94903 6.84045C4.54857 9.20341 3.2 12.4083 3.2 15.75L0 15.75Z" />
+              </svg>
+              <svg width="6" height="14" viewBox="0 0 6 14" class="absolute -bottom-px left-1/2 -ml-[3px] fill-yellow origin-[50%_85%] rotate-[33deg]">
+                <path d="M2.80424 0.99661C2.84641 0.781923 3.15439 0.785967 3.19678 1.00177L5.22573 11.3313C5.49859 12.7204 4.44901 14 3.03674 14V14C1.60023 14 0.509469 12.6786 0.785599 11.2729L2.80424 0.99661Z" />
+              </svg>
+            </div>
+            <div class="mt-px text-sm text-white">Bullish</div>
+          </div>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <div class="flex items-center gap-2">
+            <div class="relative w-[32px] h-[18px]">
+              <svg width="32" height="18" viewBox="0 0 32 18" class="fill-green">
+                <path d="M0 15.75C3.70975e-07 11.5728 1.68571 7.56677 4.68629 4.61307C7.68687 1.65937 11.7565 4.48144e-07 16 0C20.2435 -4.48144e-07 24.3131 1.65937 27.3137 4.61307C30.3143 7.56676 32 11.5728 32 15.75L28.8 15.75C28.8 12.4083 27.4514 9.20341 25.051 6.84045C22.6505 4.47749 19.3948 3.15 16 3.15C12.6052 3.15 9.3495 4.4775 6.94903 6.84045C4.54857 9.20341 3.2 12.4083 3.2 15.75L0 15.75Z" />
+              </svg>
+              <svg width="6" height="14" viewBox="0 0 6 14" class="absolute -bottom-px left-1/2 -ml-[3px] fill-green origin-[50%_85%] rotate-[75deg]">
+                <path d="M2.80424 0.99661C2.84641 0.781923 3.15439 0.785967 3.19678 1.00177L5.22573 11.3313C5.49859 12.7204 4.44901 14 3.03674 14V14C1.60023 14 0.509469 12.6786 0.785599 11.2729L2.80424 0.99661Z" />
+              </svg>
+            </div>
+            <div class="mt-px text-sm text-white">Bullish</div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="mt-8 mb-4 text-h3">Progress Bar</h3>
+      <div class="grid gap-px grid-cols-3 -mx-5 sm:grid-cols-3 sm:mx-0 lg:grid-cols-7">
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <div class="relative w-[76px] h-[20px]">
+            <div class="absolute inset-0 rounded-md overflow-hidden bg-red-bg">
+              <div class="absolute top-0 bottom-0 left-0 w-[14%] bg-red"></div>
+            </div>
+            <div class="absolute -top-1 -bottom-1 left-1/2 border-l border-dashed border-gray-500"></div>
+          </div>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <div class="relative w-[76px] h-[20px]">
+            <div class="absolute inset-0 rounded-md overflow-hidden bg-orange-bg">
+              <div class="absolute top-0 bottom-0 left-0 w-[29%] bg-orange"></div>
+            </div>
+            <div class="absolute -top-1 -bottom-1 left-1/2 border-l border-dashed border-gray-500"></div>
+          </div>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <div class="relative w-[76px] h-[20px]">
+            <div class="absolute inset-0 rounded-md overflow-hidden bg-yellow-bg">
+              <div class="absolute top-0 bottom-0 left-0 w-[43%] bg-yellow"></div>
+            </div>
+            <div class="absolute -top-1 -bottom-1 left-1/2 border-l border-dashed border-gray-500"></div>
+          </div>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <div class="relative w-[76px] h-[20px]">
+            <div class="absolute inset-0 rounded-md overflow-hidden bg-yellow-bg">
+              <div class="absolute top-0 bottom-0 left-0 w-[57%] bg-yellow-light"></div>
+            </div>
+            <div class="absolute -top-1 -bottom-1 left-1/2 border-l border-dashed border-gray-500"></div>
+          </div>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <div class="relative w-[76px] h-[20px]">
+            <div class="absolute inset-0 rounded-md overflow-hidden bg-green-bg">
+              <div class="absolute top-0 bottom-0 left-0 w-[71%] bg-lime"></div>
+            </div>
+            <div class="absolute -top-1 -bottom-1 left-1/2 border-l border-dashed border-gray-500"></div>
+          </div>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <div class="relative w-[76px] h-[20px]">
+            <div class="absolute inset-0 rounded-md overflow-hidden bg-green-bg">
+              <div class="absolute top-0 bottom-0 left-0 w-[86%] bg-green-light"></div>
+            </div>
+            <div class="absolute -top-1 -bottom-1 left-1/2 border-l border-dashed border-gray-500"></div>
+          </div>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <div class="relative w-[76px] h-[20px]">
+            <div class="absolute inset-0 rounded-md overflow-hidden bg-green-bg">
+              <div class="absolute top-0 bottom-0 left-0 w-[100%] bg-green"></div>
+            </div>
+            <div class="absolute -top-1 -bottom-1 left-1/2 border-l border-dashed border-gray-500"></div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="mt-10 mb-4 text-h3">Colour Guard</h3>
+      <div class="grid gap-px grid-cols-3 -mx-5 sm:grid-cols-3 sm:mx-0 lg:grid-cols-5">
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <div class="flex items-center justify-center w-[76px] h-[20px] rounded-md bg-red text-white">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8 12.833L8 3.49968" />
+              <path d="M4 9L8 13L12 9" />
+            </svg>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="-ml-1">
+              <path d="M8 12.833L8 3.49968" />
+              <path d="M4 9L8 13L12 9" />
+            </svg>
+          </div>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <div class="flex items-center justify-center w-[76px] h-[20px] rounded-md bg-red text-white">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8 12.833L8 3.49968" />
+              <path d="M4 9L8 13L12 9" />
+            </svg>
+          </div>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <div class="flex items-center justify-center w-[76px] h-[20px] rounded-md bg-yellow text-yellow-text">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3.33301 8H12.6663" />
+              <path d="M9 4L13 8L9 12" />
+            </svg>
+          </div>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <div class="flex items-center justify-center w-[76px] h-[20px] rounded-md bg-green text-white">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8 12.833L8 3.49968" />
+              <path d="M4 7.16699L8 3.16699L12 7.16699" />
+            </svg>
+          </div>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <div class="flex items-center justify-center w-[76px] h-[20px] rounded-md bg-green text-white">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8 12.833L8 3.49968" />
+              <path d="M4 7.16699L8 3.16699L12 7.16699" />
+            </svg>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="-ml-1">
+              <path d="M8 12.833L8 3.49968" />
+              <path d="M4 7.16699L8 3.16699L12 7.16699" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="mt-16 mb-4 text-h2 text-white">Learning Progress</h2>
+      <div class="grid gap-px grid-cols-4 -mx-5 sm:mx-0">
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <div class="relative flex items-center justify-center h-[30px] w-[30px]">
+            <svg width="16" height="16" viewBox="0 0 16 16" class="fill-gray-400">
+              <path d="M8.55733 9.66804C8.34993 9.74227 8.14025 9.75771 8.0002 9.75771C7.86015 9.75771 7.65111 9.74227 7.44308 9.66804L3.42871 8.23438V10.3858C3.42871 11.9641 5.47553 12.6715 8.00014 12.6715C10.5247 12.6715 12.5716 11.9641 12.5716 10.3858V8.23438L8.55733 9.66804Z" />
+              <path d="M2.57171 10.1433C2.57171 10.6166 2.1879 11.0004 1.71456 11.0004C1.24123 11.0004 0.857422 10.6166 0.857422 10.1433C0.857422 9.66994 1.24123 9.28613 1.71456 9.28613C2.1879 9.28613 2.57171 9.66994 2.57171 10.1433Z" />
+              <path d="M2.91868 13.5921C2.56498 13.9458 0.863823 13.9458 0.510125 13.5921C0.155905 13.2379 0.0141903 11.5624 1.71473 10.4287C3.41523 11.5624 3.27352 13.2379 2.91868 13.5921Z" />
+              <path d="M0.269133 5.70057C0.0908178 5.76409 0 5.89317 0 6.08231V6.11777C0 6.30744 0.0908145 6.43601 0.269133 6.49952L1.82169 7.05436C1.14339 7.78115 1.14286 8.83026 1.14286 9.52858H2.28572C2.28572 8.53828 2.34745 7.81544 3.1509 7.52858L7.9042 5.83088C8.05446 5.77718 8.21619 5.8555 8.26939 6.00397C8.32258 6.15257 8.24477 6.31596 8.0963 6.36916L3.99998 7.8314L7.63492 9.12975C7.76578 9.17605 7.90584 9.18638 8.00011 9.18638C8.09438 9.18638 8.23442 9.17605 8.3653 9.12975L15.7315 6.49889C15.9092 6.4355 16 6.30693 16 6.11715V6.08169C16 5.89253 15.9092 5.76345 15.7309 5.69994L8.36532 3.06984C8.10422 2.97672 7.89668 2.97672 7.63559 3.06984L0.269133 5.70057Z" />
+            </svg>
+            <div class="absolute top-1/2 right-1/2 w-1.5 h-1.5 -mt-[7px] -mr-[9px] rounded bg-green border border-gray-900"></div>
+          </div>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <div class="relative flex items-center justify-center h-[30px] w-[30px]">
+            <svg width="16" height="16" viewBox="0 0 16 16" class="fill-gray-400">
+              <path d="M8.55733 9.66804C8.34993 9.74227 8.14025 9.75771 8.0002 9.75771C7.86015 9.75771 7.65111 9.74227 7.44308 9.66804L3.42871 8.23438V10.3858C3.42871 11.9641 5.47553 12.6715 8.00014 12.6715C10.5247 12.6715 12.5716 11.9641 12.5716 10.3858V8.23438L8.55733 9.66804Z" />
+              <path d="M2.57171 10.1433C2.57171 10.6166 2.1879 11.0004 1.71456 11.0004C1.24123 11.0004 0.857422 10.6166 0.857422 10.1433C0.857422 9.66994 1.24123 9.28613 1.71456 9.28613C2.1879 9.28613 2.57171 9.66994 2.57171 10.1433Z" />
+              <path d="M2.91868 13.5921C2.56498 13.9458 0.863823 13.9458 0.510125 13.5921C0.155905 13.2379 0.0141903 11.5624 1.71473 10.4287C3.41523 11.5624 3.27352 13.2379 2.91868 13.5921Z" />
+              <path d="M0.269133 5.70057C0.0908178 5.76409 0 5.89317 0 6.08231V6.11777C0 6.30744 0.0908145 6.43601 0.269133 6.49952L1.82169 7.05436C1.14339 7.78115 1.14286 8.83026 1.14286 9.52858H2.28572C2.28572 8.53828 2.34745 7.81544 3.1509 7.52858L7.9042 5.83088C8.05446 5.77718 8.21619 5.8555 8.26939 6.00397C8.32258 6.15257 8.24477 6.31596 8.0963 6.36916L3.99998 7.8314L7.63492 9.12975C7.76578 9.17605 7.90584 9.18638 8.00011 9.18638C8.09438 9.18638 8.23442 9.17605 8.3653 9.12975L15.7315 6.49889C15.9092 6.4355 16 6.30693 16 6.11715V6.08169C16 5.89253 15.9092 5.76345 15.7309 5.69994L8.36532 3.06984C8.10422 2.97672 7.89668 2.97672 7.63559 3.06984L0.269133 5.70057Z" />
+            </svg>
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" class="absolute top-0 left-0">
+              <path d="M30 15C30 23.2843 23.2843 30 15 30C6.71573 30 0 23.2843 0 15C0 6.71573 6.71573 0 15 0C23.2843 0 30 6.71573 30 15ZM3 15C3 21.6274 8.37258 27 15 27C21.6274 27 27 21.6274 27 15C27 8.37258 21.6274 3 15 3C8.37258 3 3 8.37258 3 15Z" class="fill-gray-600" />
+              <path d="M15 1.5C15 0.671573 15.6732 -0.00776793 16.4975 0.0749379C17.9536 0.221038 19.3833 0.579722 20.7403 1.14181C22.5601 1.89563 24.2137 3.00052 25.6066 4.3934C26.9995 5.78628 28.1044 7.43987 28.8582 9.25975C29.4203 10.6167 29.779 12.0464 29.9251 13.5025C30.0078 14.3268 29.3284 15 28.5 15V15C27.6716 15 27.0097 14.3259 26.9064 13.5039C26.7729 12.4421 26.4978 11.4006 26.0866 10.4078C25.4835 8.95189 24.5996 7.62902 23.4853 6.51472C22.371 5.40042 21.0481 4.5165 19.5922 3.91345C18.5994 3.5022 17.5579 3.22705 16.4961 3.09363C15.6741 2.99034 15 2.32843 15 1.5V1.5Z" class="fill-green" />
+            </svg>
+          </div>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <div class="relative flex items-center justify-center h-[30px] w-[30px]">
+            <svg width="16" height="16" viewBox="0 0 16 16" class="fill-gray-400">
+              <path d="M8.55733 9.66804C8.34993 9.74227 8.14025 9.75771 8.0002 9.75771C7.86015 9.75771 7.65111 9.74227 7.44308 9.66804L3.42871 8.23438V10.3858C3.42871 11.9641 5.47553 12.6715 8.00014 12.6715C10.5247 12.6715 12.5716 11.9641 12.5716 10.3858V8.23438L8.55733 9.66804Z" />
+              <path d="M2.57171 10.1433C2.57171 10.6166 2.1879 11.0004 1.71456 11.0004C1.24123 11.0004 0.857422 10.6166 0.857422 10.1433C0.857422 9.66994 1.24123 9.28613 1.71456 9.28613C2.1879 9.28613 2.57171 9.66994 2.57171 10.1433Z" />
+              <path d="M2.91868 13.5921C2.56498 13.9458 0.863823 13.9458 0.510125 13.5921C0.155905 13.2379 0.0141903 11.5624 1.71473 10.4287C3.41523 11.5624 3.27352 13.2379 2.91868 13.5921Z" />
+              <path d="M0.269133 5.70057C0.0908178 5.76409 0 5.89317 0 6.08231V6.11777C0 6.30744 0.0908145 6.43601 0.269133 6.49952L1.82169 7.05436C1.14339 7.78115 1.14286 8.83026 1.14286 9.52858H2.28572C2.28572 8.53828 2.34745 7.81544 3.1509 7.52858L7.9042 5.83088C8.05446 5.77718 8.21619 5.8555 8.26939 6.00397C8.32258 6.15257 8.24477 6.31596 8.0963 6.36916L3.99998 7.8314L7.63492 9.12975C7.76578 9.17605 7.90584 9.18638 8.00011 9.18638C8.09438 9.18638 8.23442 9.17605 8.3653 9.12975L15.7315 6.49889C15.9092 6.4355 16 6.30693 16 6.11715V6.08169C16 5.89253 15.9092 5.76345 15.7309 5.69994L8.36532 3.06984C8.10422 2.97672 7.89668 2.97672 7.63559 3.06984L0.269133 5.70057Z" />
+            </svg>
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" class="absolute top-0 left-0">
+              <path d="M30 15C30 23.2843 23.2843 30 15 30C6.71573 30 0 23.2843 0 15C0 6.71573 6.71573 0 15 0C23.2843 0 30 6.71573 30 15ZM3 15C3 21.6274 8.37258 27 15 27C21.6274 27 27 21.6274 27 15C27 8.37258 21.6274 3 15 3C8.37258 3 3 8.37258 3 15Z" class="fill-gray-600" />
+              <path d="M15 1.5C15 0.671573 15.6732 -0.00776793 16.4975 0.0749379C17.9536 0.221038 19.3833 0.579722 20.7403 1.14181C22.5601 1.89563 24.2137 3.00052 25.6066 4.3934C26.9995 5.78628 28.1044 7.43987 28.8582 9.25975C29.612 11.0796 30 13.0302 30 15C30 16.9698 29.612 18.9204 28.8582 20.7403C28.1044 22.5601 26.9995 24.2137 25.6066 25.6066C24.2137 26.9995 22.5601 28.1044 20.7402 28.8582C19.3833 29.4203 17.9536 29.779 16.4975 29.9251C15.6732 30.0078 15 29.3284 15 28.5V28.5C15 27.6716 15.6741 27.0097 16.4961 26.9064C17.5579 26.7729 18.5994 26.4978 19.5922 26.0866C21.0481 25.4835 22.371 24.5996 23.4853 23.4853C24.5996 22.371 25.4835 21.0481 26.0866 19.5922C26.6896 18.1363 27 16.5759 27 15C27 13.4241 26.6896 11.8637 26.0866 10.4078C25.4835 8.95189 24.5996 7.62902 23.4853 6.51472C22.371 5.40042 21.0481 4.5165 19.5922 3.91345C18.5994 3.5022 17.5579 3.22705 16.4961 3.09363C15.6741 2.99034 15 2.32843 15 1.5V1.5Z" class="fill-green" />
+            </svg>
+          </div>
+        </div>
+        <div data-preview class="relative flex items-center justify-center p-5 bg-gray-800">
+          <div class="relative flex items-center justify-center h-[30px] w-[30px]">
+            <svg width="16" height="16" viewBox="0 0 16 16" class="fill-gray-400">
+              <path d="M8.55733 9.66804C8.34993 9.74227 8.14025 9.75771 8.0002 9.75771C7.86015 9.75771 7.65111 9.74227 7.44308 9.66804L3.42871 8.23438V10.3858C3.42871 11.9641 5.47553 12.6715 8.00014 12.6715C10.5247 12.6715 12.5716 11.9641 12.5716 10.3858V8.23438L8.55733 9.66804Z" />
+              <path d="M2.57171 10.1433C2.57171 10.6166 2.1879 11.0004 1.71456 11.0004C1.24123 11.0004 0.857422 10.6166 0.857422 10.1433C0.857422 9.66994 1.24123 9.28613 1.71456 9.28613C2.1879 9.28613 2.57171 9.66994 2.57171 10.1433Z" />
+              <path d="M2.91868 13.5921C2.56498 13.9458 0.863823 13.9458 0.510125 13.5921C0.155905 13.2379 0.0141903 11.5624 1.71473 10.4287C3.41523 11.5624 3.27352 13.2379 2.91868 13.5921Z" />
+              <path d="M0.269133 5.70057C0.0908178 5.76409 0 5.89317 0 6.08231V6.11777C0 6.30744 0.0908145 6.43601 0.269133 6.49952L1.82169 7.05436C1.14339 7.78115 1.14286 8.83026 1.14286 9.52858H2.28572C2.28572 8.53828 2.34745 7.81544 3.1509 7.52858L7.9042 5.83088C8.05446 5.77718 8.21619 5.8555 8.26939 6.00397C8.32258 6.15257 8.24477 6.31596 8.0963 6.36916L3.99998 7.8314L7.63492 9.12975C7.76578 9.17605 7.90584 9.18638 8.00011 9.18638C8.09438 9.18638 8.23442 9.17605 8.3653 9.12975L15.7315 6.49889C15.9092 6.4355 16 6.30693 16 6.11715V6.08169C16 5.89253 15.9092 5.76345 15.7309 5.69994L8.36532 3.06984C8.10422 2.97672 7.89668 2.97672 7.63559 3.06984L0.269133 5.70057Z" />
+            </svg>
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" class="absolute top-0 left-0">
+              <path d="M30 15C30 23.2843 23.2843 30 15 30C6.71573 30 0 23.2843 0 15C0 6.71573 6.71573 0 15 0C23.2843 0 30 6.71573 30 15ZM3 15C3 21.6274 8.37258 27 15 27C21.6274 27 27 21.6274 27 15C27 8.37258 21.6274 3 15 3C8.37258 3 3 8.37258 3 15Z" class="fill-gray-600" />
+              <path d="M15 1.5C15 0.671573 15.6733 -0.00777211 16.4976 0.0749321C18.9352 0.319507 21.2839 1.15845 23.3336 2.52796C25.8003 4.17618 27.7229 6.51886 28.8582 9.25975C29.9935 12.0006 30.2906 15.0166 29.7118 17.9264C29.133 20.8361 27.7044 23.5088 25.6066 25.6066C23.5088 27.7044 20.8361 29.133 17.9264 29.7118C15.0166 30.2906 12.0006 29.9935 9.25975 28.8582C6.51886 27.7229 4.17618 25.8003 2.52796 23.3336C1.15845 21.2839 0.319506 18.9352 0.0749319 16.4976C-0.00777217 15.6733 0.671573 15 1.5 15V15C2.32843 15 2.99034 15.6742 3.09362 16.4961C3.32524 18.3394 3.9827 20.1109 5.02236 21.6668C6.34094 23.6402 8.21509 25.1783 10.4078 26.0866C12.6005 26.9948 15.0133 27.2324 17.3411 26.7694C19.6689 26.3064 21.8071 25.1635 23.4853 23.4853C25.1635 21.8071 26.3064 19.6689 26.7694 17.3411C27.2324 15.0133 26.9948 12.6005 26.0866 10.4078C25.1783 8.21509 23.6402 6.34094 21.6668 5.02236C20.1109 3.9827 18.3394 3.32524 16.4961 3.09362C15.6742 2.99034 15 2.32843 15 1.5V1.5Z" class="fill-green" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ content -->
+  </body>
+</html>

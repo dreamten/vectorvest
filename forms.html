@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>VectorVest UI</title>
+
+    <meta name="theme-color" content="#131d28" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description" content="VectorVest tells you when to buy, what to buy, and when to sell. It's that simple." />
+
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+    <link rel="stylesheet" type="text/css" href="css/output.css" />
+
+    <script defer src="js/jquery-3.6.0.min.js"></script>
+    <script defer src="js/main.js"></script>
+  </head>
+
+  <body>
+    <!-- header -->
+    <div class="sticky z-header top-0 right-0 left-0 flex items-center h-[51px] border-b border-gray-600 bg-gray-700">
+      <div class="flex items-center justify-center w-[50px] h-[50px] mr-5">
+        <img src="img/logo.png" srcset="img/logo@2x.png 2x" width="26" height="26" alt="" />
+      </div>
+      <div class="flex gap-5 items-stretch overflow-hidden">
+        <a href="index.html" class="relative flex items-center h-[51px] hover:text-white">
+          <span>Elements</span>
+        </a>
+        <a href="forms.html" class="relative flex items-center h-[51px] text-white hover:text-white">
+          <span>Forms</span>
+          <span class="absolute right-0 -bottom-0.5 left-0 h-1 bg-blue-600"></span>
+        </a>
+        <a href="popups.html" class="relative flex items-center h-[51px] hover:text-white">
+          <span>Popups</span>
+        </a>
+        <a href="widgets.html" class="relative flex items-center h-[51px] hover:text-white">
+          <span>Widgets</span>
+        </a>
+      </div>
+    </div>
+    <!--/ header -->
+
+    <!-- content -->
+    <div class="p-5 max-w-[1436px] mr-auto ml-auto md:p-6 xl:p-8">
+      <h1 class="text-h1 text-white">Forms</h1>
+
+      <h2 class="mt-16 mb-4 text-h2 text-white">Sign In Form</h2>
+      <div data-preview class="flex justify-center -mx-5 p-5 bg-gray-800 sm:mx-0">
+        <form action="#" class="w-80">
+          <h1 class="text-h1xl text-white">Welcome Back!</h1>
+          <h3 class="mt-2 text-h3">Login to your account to continue.</h3>
+          <label for="" class="block mt-10 mb-2 text-sm">Email</label>
+          <input type="text" placeholder="name@domain.com" class="appearance-none block w-full py-1.5 px-[9px] rounded-md border border-gray-600 bg-gray-800 text-white placeholder:text-gray-500 hover:border-gray-500 focus:outline-0 focus:border-blue-selected focus:bg-gray-900" />
+          <label for="" class="block mt-6 mb-2 text-sm">Password</label>
+          <div class="relative">
+            <input type="password" placeholder="Password" class="appearance-none block w-full py-1.5 px-[9px] pr-[69px] rounded-md border border-gray-600 bg-gray-800 text-white placeholder:text-gray-500 hover:border-gray-500 focus:outline-0 focus:border-blue-selected focus:bg-gray-900" />
+            <a href="#" class="absolute top-1/2 right-2.5 text-gray-500 -translate-y-1/2 hover:text-gray-300">Forgot?</a>
+          </div>
+          <label for="remember-me" class="group inline-flex gap-2 items-center mt-6 cursor-pointer">
+            <input type="checkbox" id="remember-me" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
+            <span>Remember Me</span>
+          </label>
+          <button type="submit" class="relative flex gap-1 items-center justify-center w-full h-[32px] mt-6 px-3 rounded-md bg-gradient-to-b from-blue-600 to-blue-800 shadow-button text-white hover:shadow-button-hover">
+            <span>Login</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3.33398 8H12.6673"></path>
+              <path d="M9 4L13 8L9 12"></path>
+            </svg>
+          </button>
+          <div class="mt-6 text-sm">New to VectorVest?&nbsp; <a href="#" class="underline text-white hover:no-underline">Register Now</a></div>
+        </form>
+      </div>
+
+      <h2 class="mt-16 mb-4 text-h2 text-white">Sign Up Form</h2>
+      <div data-preview class="flex justify-center -mx-5 p-5 bg-gray-800 sm:mx-0">
+        <form action="#" class="w-80">
+          <h1 class="text-h1xl text-white">Try VectorVest for 30 Days, Risk Free!</h1>
+          <h3 class="mt-2 text-h3">Create an account to continue.</h3>
+          <p class="mt-5">Already have an account?&nbsp; <a href="#" class="underline text-white hover:no-underline">Login</a></p>
+          <label for="" class="block mt-10 mb-2 text-sm">Email</label>
+          <input type="text" placeholder="name@domain.com" class="appearance-none block w-full py-1.5 px-[9px] rounded-md border border-gray-600 bg-gray-800 text-white placeholder:text-gray-500 hover:border-gray-500 focus:outline-0 focus:border-blue-selected focus:bg-gray-900" />
+          <label for="" class="block mt-6 mb-2 text-sm">Password</label>
+          <div class="relative">
+            <input type="password" placeholder="Password" class="appearance-none block w-full py-1.5 px-[9px] pr-[30px] rounded-md border border-gray-600 bg-gray-800 text-white placeholder:text-gray-500 hover:border-gray-500 focus:outline-0 focus:border-blue-selected focus:bg-gray-900" />
+            <button type="button" class="absolute top-0 right-0 flex items-center justify-center w-[32px] h-[32px] text-gray-500 opacity-60 hover:opacity-100">
+              <svg width="18" height="16" viewBox="0 0 18 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M1.66602 8.00033C1.66602 8.00033 4.33268 2.66699 8.99935 2.66699C13.666 2.66699 16.3327 8.00033 16.3327 8.00033C16.3327 8.00033 13.666 13.3337 8.99935 13.3337C4.33268 13.3337 1.66602 8.00033 1.66602 8.00033Z" />
+                <path d="M9 10C10.1046 10 11 9.10457 11 8C11 6.89543 10.1046 6 9 6C7.89543 6 7 6.89543 7 8C7 9.10457 7.89543 10 9 10Z" />
+              </svg>
+            </button>
+          </div>
+          <label for="" class="block mt-6 mb-2 text-sm">Country</label>
+          <div class="relative">
+            <select required="" class="appearance-none block w-full py-1.5 pr-[30px] pl-[9px] rounded-md border border-gray-600 bg-gray-800 text-white placeholder:text-gray-500 hover:border-gray-500 focus:outline-0 focus:border-blue-selected focus:bg-gray-900">
+              <option disabled="" selected="" value="">Select Country</option>
+              <option value="US">United States</option>
+            </select>
+            <div class="absolute top-0 right-0 flex items-center justify-center w-[32px] h-[32px] text-gray-500 opacity-60 pointer-events-none">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 6L8 10L12 6" />
+              </svg>
+            </div>
+          </div>
+          <label for="terms-accept" class="group inline-flex gap-2 items-center mt-6 cursor-pointer">
+            <input type="checkbox" id="terms-accept" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
+            <span>I accept VectorVest <a href="#" class="underline text-white hover:no-underline">Terms & Condition</a></span>
+          </label>
+          <button type="submit" class="relative flex gap-1 items-center justify-center w-full h-[32px] mt-6 px-3 rounded-md bg-gradient-to-b from-blue-600 to-blue-800 shadow-button text-white hover:shadow-button-hover">
+            <span>Create Account</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3.33398 8H12.6673"></path>
+              <path d="M9 4L13 8L9 12"></path>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+    <!--/ content -->
+  </body>
+</html>

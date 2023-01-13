@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Modern Era';
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fnt/ModernEra-Regular.woff2') format('woff2'), url('../fnt/ModernEra-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Modern Era';
+  font-weight: 500;
+  font-display: swap;
+  src: url('../fnt/ModernEra-Medium.woff2') format('woff2'), url('../fnt/ModernEra-Medium.woff') format('woff');
+}
+@font-face {
+  font-family: 'Modern Era';
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fnt/ModernEra-Bold.woff2') format('woff2'), url('../fnt/ModernEra-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Modern Era';
+  font-weight: 800;
+  font-display: swap;
+  src: url('../fnt/ModernEra-ExtraBold.woff2') format('woff2'), url('../fnt/ModernEra-ExtraBold.woff') format('woff');
+}
+
+@layer base {
+  body {
+    @apply bg-gray-900 text-md font-medium text-gray-400 subpixel-antialiased;
+  }
+  :focus-visible {
+    outline: none !important;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    transition-duration: 5000s;
+    transition-property: background-color;
+    -webkit-text-fill-color: white !important;
+  }
+}
+
+@layer components {
+  select:invalid {
+    @apply text-gray-500;
+  }
+  input[type='checkbox']:checked {
+    border: none;
+    background: url('data:image/svg+xml;utf8,<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 9.5L7.7 12.5L12.5001 5.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>'), linear-gradient(#0060dd, #004aab);
+  }
+  [data-preview='']:hover [data-source=''] {
+    @apply opacity-100;
+  }
+}

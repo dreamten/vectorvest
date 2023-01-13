@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>VectorVest UI</title>
+
+    <meta name="theme-color" content="#131d28" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description" content="VectorVest tells you when to buy, what to buy, and when to sell. It's that simple." />
+
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+    <link rel="stylesheet" type="text/css" href="css/output.css" />
+
+    <script defer src="js/jquery-3.6.0.min.js"></script>
+    <script defer src="js/main.js"></script>
+  </head>
+
+  <body>
+    <!-- header -->
+    <div class="sticky z-header top-0 right-0 left-0 flex items-center h-[51px] border-b border-gray-600 bg-gray-700">
+      <div class="flex items-center justify-center w-[50px] h-[50px] mr-5">
+        <img src="img/logo.png" srcset="img/logo@2x.png 2x" width="26" height="26" alt="" />
+      </div>
+      <div class="flex gap-5 items-stretch overflow-hidden">
+        <a href="index.html" class="relative flex items-center h-[51px] hover:text-white">
+          <span>Elements</span>
+        </a>
+        <a href="forms.html" class="relative flex items-center h-[51px] hover:text-white">
+          <span>Forms</span>
+        </a>
+        <a href="popups.html" class="relative flex items-center h-[51px] text-white hover:text-white">
+          <span>Popups</span>
+          <span class="absolute right-0 -bottom-0.5 left-0 h-1 bg-blue-600"></span>
+        </a>
+        <a href="widgets.html" class="relative flex items-center h-[51px] hover:text-white">
+          <span>Widgets</span>
+        </a>
+      </div>
+    </div>
+    <!--/ header -->
+
+    <!-- content -->
+    <div class="p-5 max-w-[1436px] mr-auto ml-auto md:p-6 xl:p-8">
+      <h1 class="text-h1 text-white">Popups</h1>
+
+      <h2 class="mt-16 mb-4 text-h2 text-white">Main Search</h2>
+      <div class="grid gap-px grid-cols-1 -mx-5 sm:mx-0 lg:grid-cols-3">
+        <div data-preview class="flex items-start justify-center p-5 bg-gray-800">
+          <div class="w-full max-w-[266px] rounded-md border border-gray-500/30 bg-gray-600 shadow-modal">
+            <div class="py-2.5-px px-5-px">
+              <div class="mb-1 text-h6 uppercase">Popular stocks</div>
+              <a href="#" class="flex items-center justify-between -mx-2.5 py-2 px-2.5 rounded-md hover:bg-gray-700">
+                <div class="">
+                  <div class="text-white">NAT</div>
+                  <div class="text-sm">Nordic AmerTnk</div>
+                </div>
+                <div class="text-right">
+                  <div class="flex gap-1 items-center justify-end text-sm text-gray-300">
+                    <span>13.81%</span>
+                    <svg width="12" height="12" viewBox="0 0 12 12" class="fill-green">
+                      <path d="M6.38411 3.46093L10.3166 8.17991C10.588 8.50557 10.3564 9 9.93248 9L2.06752 9C1.6436 9 1.41202 8.50557 1.68341 8.17991L5.61589 3.46093C5.81579 3.22106 6.18421 3.22105 6.38411 3.46093Z" />
+                    </svg>
+                  </div>
+                  <svg width="60" height="16" viewBox="0 0 60 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.8" d="M0.5 13L3.1087 11.0952L5.71739 9.8254L8.32609 11.0952L10.9348 9.8254L13.5435 6.96825L16.1522 8.93254L18.7609 8.39683L21.3696 6.1746L23.9783 8.97222L26.587 4.26984L29.1957 6.1746L31.8043 5.50992L34.413 11.0952L37.0217 9.8254L39.6304 6.96825L42.2391 4.26984L44.8478 3L47.4565 5.06349L50.0652 9.8254L52.6739 11.0952L55.2826 8.39683L57.8913 6.96825H60.5" stroke="#00C064" />
+                  </svg>
+                </div>
+              </a>
+              <div class="border-b border-gray-500/30"></div>
+              <a href="#" class="flex items-center justify-between -mx-2.5 py-2 px-2.5 rounded-md hover:bg-gray-700">
+                <div class="">
+                  <div class="text-white">SGML</div>
+                  <div class="text-sm">Sigma Lithium</div>
+                </div>
+                <div class="text-right">
+                  <div class="flex gap-1 items-center justify-end text-sm text-gray-300">
+                    <span>8.81%</span>
+                    <svg width="12" height="12" viewBox="0 0 12 12" class="fill-green">
+                      <path d="M6.38411 3.46093L10.3166 8.17991C10.588 8.50557 10.3564 9 9.93248 9L2.06752 9C1.6436 9 1.41202 8.50557 1.68341 8.17991L5.61589 3.46093C5.81579 3.22106 6.18421 3.22105 6.38411 3.46093Z" />
+                    </svg>
+                  </div>
+                  <svg width="60" height="16" viewBox="0 0 60 16" fill="none" stroke="currentcolor" class="text-green opacity-80">
+                    <path d="M0.5 13L3.1087 11.0952L5.71739 9.8254L8.32609 11.0952L10.9348 9.8254L13.5435 6.96825L16.1522 8.93254L18.7609 8.39683L21.3696 6.1746L23.9783 8.97222L26.587 4.26984L29.1957 6.1746L31.8043 5.50992L34.413 11.0952L37.0217 9.8254L39.6304 6.96825L42.2391 4.26984L44.8478 3L47.4565 5.06349L50.0652 9.8254L52.6739 11.0952L55.2826 8.39683L57.8913 6.96825H60.5" />
+                  </svg>
+                </div>
+              </a>
+              <div class="border-b border-gray-500/30"></div>
+              <a href="#" class="flex items-center justify-between -mx-2.5 py-2 px-2.5 rounded-md hover:bg-gray-700">
+                <div class="">
+                  <div class="text-white">TNK</div>
+                  <div class="text-sm">Teekay Tankers</div>
+                </div>
+                <div class="text-right">
+                  <div class="flex gap-1 items-center justify-end text-sm text-gray-300">
+                    <span>5.72%</span>
+                    <svg width="12" height="12" viewBox="0 0 12 12" class="fill-red">
+                      <path d="M5.61589 8.53907L1.68341 3.82009C1.41202 3.49443 1.6436 3 2.06752 3L9.93248 3C10.3564 3 10.588 3.49443 10.3166 3.82009L6.38411 8.53907C6.18421 8.77894 5.81579 8.77894 5.61589 8.53907Z" />
+                    </svg>
+                  </div>
+                  <svg width="60" height="16" viewBox="0 0 60 16" fill="none" stroke="currentcolor" class="text-red opacity-80">
+                    <path d="M59.5 3L56.8913 4.90476L54.2826 6.1746L51.6739 4.90476L49.0652 6.1746L46.4565 9.03175L43.8478 7.06746L41.2391 7.60317L38.6304 9.8254L36.0217 7.02778L33.413 11.7302L30.8043 9.8254L28.1957 10.4901L25.587 4.90476L22.9783 6.1746L20.3696 9.03175L17.7609 11.7302L15.1522 13L12.5435 10.9365L9.93478 6.1746L7.32608 4.90476L4.71739 7.60317L2.10869 9.03175H-0.500001" />
+                  </svg>
+                </div>
+              </a>
+              <div class="border-b border-gray-500/30"></div>
+              <a href="#" class="flex items-center justify-between -mx-2.5 py-2 px-2.5 rounded-md hover:bg-gray-700">
+                <div class="">
+                  <div class="text-white">INSW</div>
+                  <div class="text-sm">Int’l Seaways</div>
+                </div>
+                <div class="text-right">
+                  <div class="flex gap-1 items-center justify-end text-sm text-gray-300">
+                    <span>11.52%</span>
+                    <svg width="12" height="12" viewBox="0 0 12 12" class="fill-green">
+                      <path d="M6.38411 3.46093L10.3166 8.17991C10.588 8.50557 10.3564 9 9.93248 9L2.06752 9C1.6436 9 1.41202 8.50557 1.68341 8.17991L5.61589 3.46093C5.81579 3.22106 6.18421 3.22105 6.38411 3.46093Z" />
+                    </svg>
+                  </div>
+                  <svg width="60" height="16" viewBox="0 0 60 16" fill="none" stroke="currentcolor" class="text-green opacity-80">
+                    <path d="M0.5 13L3.1087 11.0952L5.71739 9.8254L8.32609 11.0952L10.9348 9.8254L13.5435 6.96825L16.1522 8.93254L18.7609 8.39683L21.3696 6.1746L23.9783 8.97222L26.587 4.26984L29.1957 6.1746L31.8043 5.50992L34.413 11.0952L37.0217 9.8254L39.6304 6.96825L42.2391 4.26984L44.8478 3L47.4565 5.06349L50.0652 9.8254L52.6739 11.0952L55.2826 8.39683L57.8913 6.96825H60.5" />
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div data-preview class="flex items-start justify-center p-5 bg-gray-800">
+          <div class="w-full max-w-[266px] rounded-md border border-gray-500/30 bg-gray-600 shadow-modal">
+            <div class="p-4-px">
+              <svg width="32" height="28" viewBox="0 0 32 28" fill="none" class="mx-auto">
+                <g opacity="0.4">
+                  <path d="M14 2L6 2C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4L4 20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z" fill="#6F7B8E" />
+                  <path d="M14 2V8H20" stroke="#2F3C4D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M16 13H8" stroke="#2F3C4D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M16 17H8" stroke="#2F3C4D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M10 9H9H8" stroke="#2F3C4D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M19.1724 10.75C16.73 10.75 14.75 12.73 14.75 15.1724C14.75 17.6149 16.73 19.5948 19.1724 19.5948C21.6149 19.5948 23.5948 17.6149 23.5948 15.1724C23.5948 12.73 21.6149 10.75 19.1724 10.75ZM13.25 15.1724C13.25 11.9016 15.9016 9.25 19.1724 9.25C22.4433 9.25 25.0948 11.9016 25.0948 15.1724C25.0948 16.5375 24.633 17.7947 23.857 18.7964L26.5303 21.4697C26.8232 21.7626 26.8232 22.2374 26.5303 22.5303C26.2374 22.8232 25.7626 22.8232 25.4697 22.5303L22.7964 19.857C21.7947 20.633 20.5375 21.0948 19.1724 21.0948C15.9016 21.0948 13.25 18.4433 13.25 15.1724Z" fill="#8F9DB0" />
+              </svg>
+              <div class="mt-1 text-sm text-center">No results found.</div>
+            </div>
+          </div>
+        </div>
+        <div data-preview class="flex items-start justify-center p-5 bg-gray-800">
+          <div class="w-full max-w-[266px] rounded-md border border-gray-500/30 bg-gray-600 shadow-modal">
+            <div class="max-h-[390px] py-2.5-px px-5-px overflow-auto">
+              <div class="mb-1 text-h6 uppercase">Stocks</div>
+              <a href="#" class="flex items-center justify-between -mx-2.5 py-2 px-2.5 rounded-md hover:bg-gray-700">
+                <div class="">
+                  <div class="text-white"><span class="bg-blue-500/40">AA</span></div>
+                  <div class="text-sm">Alcoa</div>
+                </div>
+                <div class="text-right">
+                  <div class="flex gap-1 items-center justify-end text-sm text-gray-300">
+                    <span>13.81%</span>
+                    <svg width="12" height="12" viewBox="0 0 12 12" class="fill-green">
+                      <path d="M6.38411 3.46093L10.3166 8.17991C10.588 8.50557 10.3564 9 9.93248 9L2.06752 9C1.6436 9 1.41202 8.50557 1.68341 8.17991L5.61589 3.46093C5.81579 3.22106 6.18421 3.22105 6.38411 3.46093Z" />
+                    </svg>
+                  </div>
+                  <svg width="60" height="16" viewBox="0 0 60 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.8" d="M0.5 13L3.1087 11.0952L5.71739 9.8254L8.32609 11.0952L10.9348 9.8254L13.5435 6.96825L16.1522 8.93254L18.7609 8.39683L21.3696 6.1746L23.9783 8.97222L26.587 4.26984L29.1957 6.1746L31.8043 5.50992L34.413 11.0952L37.0217 9.8254L39.6304 6.96825L42.2391 4.26984L44.8478 3L47.4565 5.06349L50.0652 9.8254L52.6739 11.0952L55.2826 8.39683L57.8913 6.96825H60.5" stroke="#00C064" />
+                  </svg>
+                </div>
+              </a>
+              <div class="border-b border-gray-500/30"></div>
+              <a href="#" class="flex items-center justify-between -mx-2.5 py-2 px-2.5 rounded-md hover:bg-gray-700">
+                <div class="">
+                  <div class="text-white"><span class="bg-blue-500/40">AA</span>C</div>
+                  <div class="text-sm">Ares Acquisition</div>
+                </div>
+                <div class="text-right">
+                  <div class="flex gap-1 items-center justify-end text-sm text-gray-300">
+                    <span>6.89%</span>
+                    <svg width="12" height="12" viewBox="0 0 12 12" class="fill-red">
+                      <path d="M5.61589 8.53907L1.68341 3.82009C1.41202 3.49443 1.6436 3 2.06752 3L9.93248 3C10.3564 3 10.588 3.49443 10.3166 3.82009L6.38411 8.53907C6.18421 8.77894 5.81579 8.77894 5.61589 8.53907Z" />
+                    </svg>
+                  </div>
+                  <svg width="60" height="16" viewBox="0 0 60 16" fill="none" stroke="currentcolor" class="text-red opacity-80">
+                    <path d="M59.5 3L56.8913 4.90476L54.2826 6.1746L51.6739 4.90476L49.0652 6.1746L46.4565 9.03175L43.8478 7.06746L41.2391 7.60317L38.6304 9.8254L36.0217 7.02778L33.413 11.7302L30.8043 9.8254L28.1957 10.4901L25.587 4.90476L22.9783 6.1746L20.3696 9.03175L17.7609 11.7302L15.1522 13L12.5435 10.9365L9.93478 6.1746L7.32608 4.90476L4.71739 7.60317L2.10869 9.03175H-0.500001" />
+                  </svg>
+                </div>
+              </a>
+              <div class="mt-4 mb-1 text-h6 uppercase">Watchlists</div>
+              <a href="#" class="block -mx-2.5 py-2 px-2.5 rounded-md text-white hover:bg-gray-700"><span class="bg-blue-500/40">A</span> New Watchlist #1 </a>
+              <div class="border-b border-gray-500/30"></div>
+              <a href="#" class="block -mx-2.5 py-2 px-2.5 rounded-md text-white hover:bg-gray-700"><span class="bg-blue-500/40">A</span>nother Watchlist #2 </a>
+              <div class="mt-4 mb-1 text-h6 uppercase">Courses</div>
+              <a href="#" class="flex gap-3 items-center -mx-2.5 py-2 px-2.5 rounded-md text-white hover:bg-gray-700">
+                <img src="https://source.unsplash.com/JpflvzEl5cg/210x210" srcset="https://source.unsplash.com/JpflvzEl5cg/420x420 2x" alt="" class="shrink-0 w-10 h-10 rounded-md object-cover" />
+                <div><span class="bg-blue-500/40">A</span> step-by-step roadmap to a secure retiment</div>
+              </a>
+            </div>
+            <a href="#" class="flex gap-1 items-start py-2.5-px px-5-px border-t border-gray-500/30 text-sm text-blue-300 hover:text-white">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="currentcolor" class="shrink-0">
+                <path d="M7.33366 4.53589C5.44669 4.53589 3.91699 6.06558 3.91699 7.95256C3.91699 9.83954 5.44668 11.3692 7.33366 11.3692C9.22064 11.3692 10.7503 9.83954 10.7503 7.95256C10.7503 6.06558 9.22064 4.53589 7.33366 4.53589ZM2.41699 7.95256C2.41699 5.23715 4.61826 3.03589 7.33366 3.03589C10.0491 3.03589 12.2503 5.23716 12.2503 7.95256C12.2503 9.03966 11.8975 10.0444 11.3002 10.8584L13.364 12.9222C13.6569 13.2151 13.6569 13.69 13.364 13.9829C13.0711 14.2758 12.5962 14.2758 12.3033 13.9829L10.2395 11.919C9.42546 12.5164 8.42076 12.8692 7.33366 12.8692C4.61826 12.8692 2.41699 10.668 2.41699 7.95256Z" />
+              </svg>
+              <span>All search results for "AA"</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="mt-16 mb-4 text-h2 text-white">Company Search</h2>
+      <div class="grid gap-px grid-cols-1 -mx-5 sm:mx-0 lg:grid-cols-3">
+        <div data-preview class="flex items-start justify-center p-5 bg-gray-800">
+          <div class="w-full max-w-[266px] p-2.5-px pb-0 rounded-md border border-gray-500/30 bg-gray-600 shadow-modal">
+            <div class="relative">
+              <input type="text" placeholder="Search company or symbol" class="appearance-none block w-full py-1.5 px-[9px] pr-[30px] rounded-md border border-gray-500/50 bg-gray-700 text-white placeholder:text-gray-500 hover:border-gray-500 focus:outline-0 focus:border-blue-selected focus:bg-gray-900" />
+              <div class="absolute top-0 right-0 flex items-center justify-center w-[32px] h-[32px] text-gray-500 opacity-60 pointer-events-none">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentcolor">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.33335 3.91666C5.44638 3.91666 3.91669 5.44635 3.91669 7.33332C3.91669 9.22031 5.44638 10.75 7.33335 10.75C9.22034 10.75 10.75 9.22031 10.75 7.33332C10.75 5.44635 9.22034 3.91666 7.33335 3.91666ZM2.41669 7.33332C2.41669 4.61792 4.61795 2.41666 7.33335 2.41666C10.0488 2.41666 12.25 4.61792 12.25 7.33332C12.25 8.42043 11.8972 9.42512 11.2998 10.2392L13.3637 12.303C13.6566 12.5959 13.6566 13.0708 13.3637 13.3637C13.0708 13.6565 12.5959 13.6565 12.303 13.3637L10.2392 11.2998C9.42515 11.8972 8.42046 12.25 7.33335 12.25C4.61795 12.25 2.41669 10.0487 2.41669 7.33332Z"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="max-h-[246px] overflow-auto -mx-2.5-px py-2.5-px px-5-px pt-4">
+              <div class="mb-1 text-h6 uppercase">Popular stocks</div>
+              <a href="#" class="flex items-center justify-between -mx-2.5 py-2 px-2.5 rounded-md hover:bg-gray-700">
+                <div class="">
+                  <div class="text-white">NAT</div>
+                  <div class="text-sm">Nordic AmerTnk</div>
+                </div>
+                <div class="text-right">
+                  <div class="flex gap-1 items-center justify-end text-sm text-gray-300">
+                    <span>13.81%</span>
+                    <svg width="12" height="12" viewBox="0 0 12 12" class="fill-green">
+                      <path d="M6.38411 3.46093L10.3166 8.17991C10.588 8.50557 10.3564 9 9.93248 9L2.06752 9C1.6436 9 1.41202 8.50557 1.68341 8.17991L5.61589 3.46093C5.81579 3.22106 6.18421 3.22105 6.38411 3.46093Z" />
+                    </svg>
+                  </div>
+                  <svg width="60" height="16" viewBox="0 0 60 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.8" d="M0.5 13L3.1087 11.0952L5.71739 9.8254L8.32609 11.0952L10.9348 9.8254L13.5435 6.96825L16.1522 8.93254L18.7609 8.39683L21.3696 6.1746L23.9783 8.97222L26.587 4.26984L29.1957 6.1746L31.8043 5.50992L34.413 11.0952L37.0217 9.8254L39.6304 6.96825L42.2391 4.26984L44.8478 3L47.4565 5.06349L50.0652 9.8254L52.6739 11.0952L55.2826 8.39683L57.8913 6.96825H60.5" stroke="#00C064" />
+                  </svg>
+                </div>
+              </a>
+              <div class="border-b border-gray-500/30"></div>
+              <a href="#" class="flex items-center justify-between -mx-2.5 py-2 px-2.5 rounded-md hover:bg-gray-700">
+                <div class="">
+                  <div class="text-white">SGML</div>
+                  <div class="text-sm">Sigma Lithium</div>
+                </div>
+                <div class="text-right">
+                  <div class="flex gap-1 items-center justify-end text-sm text-gray-300">
+                    <span>8.81%</span>
+                    <svg width="12" height="12" viewBox="0 0 12 12" class="fill-green">
+                      <path d="M6.38411 3.46093L10.3166 8.17991C10.588 8.50557 10.3564 9 9.93248 9L2.06752 9C1.6436 9 1.41202 8.50557 1.68341 8.17991L5.61589 3.46093C5.81579 3.22106 6.18421 3.22105 6.38411 3.46093Z" />
+                    </svg>
+                  </div>
+                  <svg width="60" height="16" viewBox="0 0 60 16" fill="none" stroke="currentcolor" class="text-green opacity-80">
+                    <path d="M0.5 13L3.1087 11.0952L5.71739 9.8254L8.32609 11.0952L10.9348 9.8254L13.5435 6.96825L16.1522 8.93254L18.7609 8.39683L21.3696 6.1746L23.9783 8.97222L26.587 4.26984L29.1957 6.1746L31.8043 5.50992L34.413 11.0952L37.0217 9.8254L39.6304 6.96825L42.2391 4.26984L44.8478 3L47.4565 5.06349L50.0652 9.8254L52.6739 11.0952L55.2826 8.39683L57.8913 6.96825H60.5" />
+                  </svg>
+                </div>
+              </a>
+              <div class="border-b border-gray-500/30"></div>
+              <a href="#" class="flex items-center justify-between -mx-2.5 py-2 px-2.5 rounded-md hover:bg-gray-700">
+                <div class="">
+                  <div class="text-white">TNK</div>
+                  <div class="text-sm">Teekay Tankers</div>
+                </div>
+                <div class="text-right">
+                  <div class="flex gap-1 items-center justify-end text-sm text-gray-300">
+                    <span>5.72%</span>
+                    <svg width="12" height="12" viewBox="0 0 12 12" class="fill-red">
+                      <path d="M5.61589 8.53907L1.68341 3.82009C1.41202 3.49443 1.6436 3 2.06752 3L9.93248 3C10.3564 3 10.588 3.49443 10.3166 3.82009L6.38411 8.53907C6.18421 8.77894 5.81579 8.77894 5.61589 8.53907Z" />
+                    </svg>
+                  </div>
+                  <svg width="60" height="16" viewBox="0 0 60 16" fill="none" stroke="currentcolor" class="text-red opacity-80">
+                    <path d="M59.5 3L56.8913 4.90476L54.2826 6.1746L51.6739 4.90476L49.0652 6.1746L46.4565 9.03175L43.8478 7.06746L41.2391 7.60317L38.6304 9.8254L36.0217 7.02778L33.413 11.7302L30.8043 9.8254L28.1957 10.4901L25.587 4.90476L22.9783 6.1746L20.3696 9.03175L17.7609 11.7302L15.1522 13L12.5435 10.9365L9.93478 6.1746L7.32608 4.90476L4.71739 7.60317L2.10869 9.03175H-0.500001" />
+                  </svg>
+                </div>
+              </a>
+              <div class="border-b border-gray-500/30"></div>
+              <a href="#" class="flex items-center justify-between -mx-2.5 py-2 px-2.5 rounded-md hover:bg-gray-700">
+                <div class="">
+                  <div class="text-white">INSW</div>
+                  <div class="text-sm">Int’l Seaways</div>
+                </div>
+                <div class="text-right">
+                  <div class="flex gap-1 items-center justify-end text-sm text-gray-300">
+                    <span>11.52%</span>
+                    <svg width="12" height="12" viewBox="0 0 12 12" class="fill-green">
+                      <path d="M6.38411 3.46093L10.3166 8.17991C10.588 8.50557 10.3564 9 9.93248 9L2.06752 9C1.6436 9 1.41202 8.50557 1.68341 8.17991L5.61589 3.46093C5.81579 3.22106 6.18421 3.22105 6.38411 3.46093Z" />
+                    </svg>
+                  </div>
+                  <svg width="60" height="16" viewBox="0 0 60 16" fill="none" stroke="currentcolor" class="text-green opacity-80">
+                    <path d="M0.5 13L3.1087 11.0952L5.71739 9.8254L8.32609 11.0952L10.9348 9.8254L13.5435 6.96825L16.1522 8.93254L18.7609 8.39683L21.3696 6.1746L23.9783 8.97222L26.587 4.26984L29.1957 6.1746L31.8043 5.50992L34.413 11.0952L37.0217 9.8254L39.6304 6.96825L42.2391 4.26984L44.8478 3L47.4565 5.06349L50.0652 9.8254L52.6739 11.0952L55.2826 8.39683L57.8913 6.96825H60.5" />
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div data-preview class="flex items-start justify-center p-5 bg-gray-800">
+          <div class="w-full max-w-[266px] p-2.5-px pb-0 rounded-md border border-gray-500/30 bg-gray-600 shadow-modal">
+            <div class="relative">
+              <input type="text" placeholder="Search company or symbol" value="Figma" class="appearance-none block w-full py-1.5 px-[9px] pr-[30px] rounded-md border border-gray-500/50 bg-gray-700 text-white placeholder:text-gray-500 hover:border-gray-500 focus:outline-0 focus:border-blue-selected focus:bg-gray-900" />
+              <div class="absolute top-0 right-0 flex items-center justify-center w-[32px] h-[32px] text-gray-500 opacity-60 pointer-events-none">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentcolor">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.33335 3.91666C5.44638 3.91666 3.91669 5.44635 3.91669 7.33332C3.91669 9.22031 5.44638 10.75 7.33335 10.75C9.22034 10.75 10.75 9.22031 10.75 7.33332C10.75 5.44635 9.22034 3.91666 7.33335 3.91666ZM2.41669 7.33332C2.41669 4.61792 4.61795 2.41666 7.33335 2.41666C10.0488 2.41666 12.25 4.61792 12.25 7.33332C12.25 8.42043 11.8972 9.42512 11.2998 10.2392L13.3637 12.303C13.6566 12.5959 13.6566 13.0708 13.3637 13.3637C13.0708 13.6565 12.5959 13.6565 12.303 13.3637L10.2392 11.2998C9.42515 11.8972 8.42046 12.25 7.33335 12.25C4.61795 12.25 2.41669 10.0487 2.41669 7.33332Z"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="py-4-px">
+              <svg width="32" height="28" viewBox="0 0 32 28" fill="none" class="mx-auto">
+                <g opacity="0.4">
+                  <path d="M14 2L6 2C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4L4 20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z" fill="#6F7B8E" />
+                  <path d="M14 2V8H20" stroke="#2F3C4D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M16 13H8" stroke="#2F3C4D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M16 17H8" stroke="#2F3C4D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M10 9H9H8" stroke="#2F3C4D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M19.1724 10.75C16.73 10.75 14.75 12.73 14.75 15.1724C14.75 17.6149 16.73 19.5948 19.1724 19.5948C21.6149 19.5948 23.5948 17.6149 23.5948 15.1724C23.5948 12.73 21.6149 10.75 19.1724 10.75ZM13.25 15.1724C13.25 11.9016 15.9016 9.25 19.1724 9.25C22.4433 9.25 25.0948 11.9016 25.0948 15.1724C25.0948 16.5375 24.633 17.7947 23.857 18.7964L26.5303 21.4697C26.8232 21.7626 26.8232 22.2374 26.5303 22.5303C26.2374 22.8232 25.7626 22.8232 25.4697 22.5303L22.7964 19.857C21.7947 20.633 20.5375 21.0948 19.1724 21.0948C15.9016 21.0948 13.25 18.4433 13.25 15.1724Z" fill="#8F9DB0" />
+              </svg>
+              <div class="mt-1 text-sm text-center">No matching results. Please try again.</div>
+            </div>
+          </div>
+        </div>
+        <div data-preview class="flex items-start justify-center p-5 bg-gray-800">
+          <div class="w-full max-w-[266px] p-2.5-px pb-0 rounded-md border border-gray-500/30 bg-gray-600 shadow-modal">
+            <div class="relative">
+              <input type="text" placeholder="Search company or symbol" value="AA" class="appearance-none block w-full py-1.5 px-[9px] pr-[30px] rounded-md border border-gray-500/50 bg-gray-700 text-white placeholder:text-gray-500 hover:border-gray-500 focus:outline-0 focus:border-blue-selected focus:bg-gray-900" />
+              <div class="absolute top-0 right-0 flex items-center justify-center w-[32px] h-[32px] text-gray-500 opacity-60 pointer-events-none">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentcolor">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.33335 3.91666C5.44638 3.91666 3.91669 5.44635 3.91669 7.33332C3.91669 9.22031 5.44638 10.75 7.33335 10.75C9.22034 10.75 10.75 9.22031 10.75 7.33332C10.75 5.44635 9.22034 3.91666 7.33335 3.91666ZM2.41669 7.33332C2.41669 4.61792 4.61795 2.41666 7.33335 2.41666C10.0488 2.41666 12.25 4.61792 12.25 7.33332C12.25 8.42043 11.8972 9.42512 11.2998 10.2392L13.3637 12.303C13.6566 12.5959 13.6566 13.0708 13.3637 13.3637C13.0708 13.6565 12.5959 13.6565 12.303 13.3637L10.2392 11.2998C9.42515 11.8972 8.42046 12.25 7.33335 12.25C4.61795 12.25 2.41669 10.0487 2.41669 7.33332Z"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="max-h-[228px] overflow-auto -mx-2.5-px py-2.5-px px-5-px pt-4">
+              <a href="#" class="flex items-center justify-between -mx-2.5 py-2 px-2.5 rounded-md hover:bg-gray-700">
+                <div class="">
+                  <div class="text-white"><span class="bg-blue-500/40">AA</span></div>
+                  <div class="text-sm">Alcoa</div>
+                </div>
+                <div class="text-right">
+                  <div class="flex gap-1 items-center justify-end text-sm text-gray-300">
+                    <span>13.81%</span>
+                    <svg width="12" height="12" viewBox="0 0 12 12" class="fill-green">
+                      <path d="M6.38411 3.46093L10.3166 8.17991C10.588 8.50557 10.3564 9 9.93248 9L2.06752 9C1.6436 9 1.41202 8.50557 1.68341 8.17991L5.61589 3.46093C5.81579 3.22106 6.18421 3.22105 6.38411 3.46093Z" />
+                    </svg>
+                  </div>
+                  <svg width="60" height="16" viewBox="0 0 60 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.8" d="M0.5 13L3.1087 11.0952L5.71739 9.8254L8.32609 11.0952L10.9348 9.8254L13.5435 6.96825L16.1522 8.93254L18.7609 8.39683L21.3696 6.1746L23.9783 8.97222L26.587 4.26984L29.1957 6.1746L31.8043 5.50992L34.413 11.0952L37.0217 9.8254L39.6304 6.96825L42.2391 4.26984L44.8478 3L47.4565 5.06349L50.0652 9.8254L52.6739 11.0952L55.2826 8.39683L57.8913 6.96825H60.5" stroke="#00C064" />
+                  </svg>
+                </div>
+              </a>
+              <div class="border-b border-gray-500/30"></div>
+              <a href="#" class="flex items-center justify-between -mx-2.5 py-2 px-2.5 rounded-md hover:bg-gray-700">
+                <div class="">
+                  <div class="text-white"><span class="bg-blue-500/40">AA</span>C</div>
+                  <div class="text-sm">Ares Acquisition</div>
+                </div>
+                <div class="text-right">
+                  <div class="flex gap-1 items-center justify-end text-sm text-gray-300">
+                    <span>8.81%</span>
+                    <svg width="12" height="12" viewBox="0 0 12 12" class="fill-green">
+                      <path d="M6.38411 3.46093L10.3166 8.17991C10.588 8.50557 10.3564 9 9.93248 9L2.06752 9C1.6436 9 1.41202 8.50557 1.68341 8.17991L5.61589 3.46093C5.81579 3.22106 6.18421 3.22105 6.38411 3.46093Z" />
+                    </svg>
+                  </div>
+                  <svg width="60" height="16" viewBox="0 0 60 16" fill="none" stroke="currentcolor" class="text-green opacity-80">
+                    <path d="M0.5 13L3.1087 11.0952L5.71739 9.8254L8.32609 11.0952L10.9348 9.8254L13.5435 6.96825L16.1522 8.93254L18.7609 8.39683L21.3696 6.1746L23.9783 8.97222L26.587 4.26984L29.1957 6.1746L31.8043 5.50992L34.413 11.0952L37.0217 9.8254L39.6304 6.96825L42.2391 4.26984L44.8478 3L47.4565 5.06349L50.0652 9.8254L52.6739 11.0952L55.2826 8.39683L57.8913 6.96825H60.5" />
+                  </svg>
+                </div>
+              </a>
+              <div class="border-b border-gray-500/30"></div>
+              <a href="#" class="flex items-center justify-between -mx-2.5 py-2 px-2.5 rounded-md hover:bg-gray-700">
+                <div class="">
+                  <div class="text-white"><span class="bg-blue-500/40">AA</span>CG</div>
+                  <div class="text-sm">ATA Creativity Global</div>
+                </div>
+                <div class="text-right">
+                  <div class="flex gap-1 items-center justify-end text-sm text-gray-300">
+                    <span>5.72%</span>
+                    <svg width="12" height="12" viewBox="0 0 12 12" class="fill-red">
+                      <path d="M5.61589 8.53907L1.68341 3.82009C1.41202 3.49443 1.6436 3 2.06752 3L9.93248 3C10.3564 3 10.588 3.49443 10.3166 3.82009L6.38411 8.53907C6.18421 8.77894 5.81579 8.77894 5.61589 8.53907Z" />
+                    </svg>
+                  </div>
+                  <svg width="60" height="16" viewBox="0 0 60 16" fill="none" stroke="currentcolor" class="text-red opacity-80">
+                    <path d="M59.5 3L56.8913 4.90476L54.2826 6.1746L51.6739 4.90476L49.0652 6.1746L46.4565 9.03175L43.8478 7.06746L41.2391 7.60317L38.6304 9.8254L36.0217 7.02778L33.413 11.7302L30.8043 9.8254L28.1957 10.4901L25.587 4.90476L22.9783 6.1746L20.3696 9.03175L17.7609 11.7302L15.1522 13L12.5435 10.9365L9.93478 6.1746L7.32608 4.90476L4.71739 7.60317L2.10869 9.03175H-0.500001" />
+                  </svg>
+                </div>
+              </a>
+              <div class="border-b border-gray-500/30"></div>
+              <a href="#" class="flex items-center justify-between -mx-2.5 py-2 px-2.5 rounded-md hover:bg-gray-700">
+                <div class="">
+                  <div class="text-white"><span class="bg-blue-500/40">AA</span>DI</div>
+                  <div class="text-sm">Aadi Bioscience</div>
+                </div>
+                <div class="text-right">
+                  <div class="flex gap-1 items-center justify-end text-sm text-gray-300">
+                    <span>11.52%</span>
+                    <svg width="12" height="12" viewBox="0 0 12 12" class="fill-green">
+                      <path d="M6.38411 3.46093L10.3166 8.17991C10.588 8.50557 10.3564 9 9.93248 9L2.06752 9C1.6436 9 1.41202 8.50557 1.68341 8.17991L5.61589 3.46093C5.81579 3.22106 6.18421 3.22105 6.38411 3.46093Z" />
+                    </svg>
+                  </div>
+                  <svg width="60" height="16" viewBox="0 0 60 16" fill="none" stroke="currentcolor" class="text-green opacity-80">
+                    <path d="M0.5 13L3.1087 11.0952L5.71739 9.8254L8.32609 11.0952L10.9348 9.8254L13.5435 6.96825L16.1522 8.93254L18.7609 8.39683L21.3696 6.1746L23.9783 8.97222L26.587 4.26984L29.1957 6.1746L31.8043 5.50992L34.413 11.0952L37.0217 9.8254L39.6304 6.96825L42.2391 4.26984L44.8478 3L47.4565 5.06349L50.0652 9.8254L52.6739 11.0952L55.2826 8.39683L57.8913 6.96825H60.5" />
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="mt-16 mb-4 text-h2 text-white">Add New Stocks</h2>
+      <div data-preview class="flex justify-center -mx-5 p-5 bg-gray-800 sm:mx-0">
+        <div class="grow max-w-[368px] p-5 overflow-hidden rounded border border-gray-600 bg-gray-700 shadow-modal">
+          <div class="flex items-center justify-between">
+            <h2 class="text-h2 text-white">Add New Stocks</h2>
+            <button type="button" class="flex items-center justify-center w-7 h-7 -m-1 hover:text-white">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M15 5L5 15" />
+                <path d="M5 5L15 15" />
+              </svg>
+            </button>
+          </div>
+          <div class="relative mt-4">
+            <input type="text" placeholder="Search company name or symbol" class="appearance-none block w-full py-1.5 px-[9px] pr-[30px] rounded-md border border-gray-600 bg-gray-800 text-white placeholder:text-gray-500 hover:border-gray-500 focus:outline-0 focus:border-blue-selected focus:bg-gray-900" />
+            <div class="absolute top-0 right-0 flex items-center justify-center w-[32px] h-[32px] text-gray-500 opacity-60 pointer-events-none">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="currentcolor">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.33335 3.91666C5.44638 3.91666 3.91669 5.44635 3.91669 7.33332C3.91669 9.22031 5.44638 10.75 7.33335 10.75C9.22034 10.75 10.75 9.22031 10.75 7.33332C10.75 5.44635 9.22034 3.91666 7.33335 3.91666ZM2.41669 7.33332C2.41669 4.61792 4.61795 2.41666 7.33335 2.41666C10.0488 2.41666 12.25 4.61792 12.25 7.33332C12.25 8.42043 11.8972 9.42512 11.2998 10.2392L13.3637 12.303C13.6566 12.5959 13.6566 13.0708 13.3637 13.3637C13.0708 13.6565 12.5959 13.6565 12.303 13.3637L10.2392 11.2998C9.42515 11.8972 8.42046 12.25 7.33335 12.25C4.61795 12.25 2.41669 10.0487 2.41669 7.33332Z" />
+              </svg>
+            </div>
+          </div>
+          <div class="h-[358px] -mx-5 py-4 px-5 overflow-auto">
+            <div class="text-h6 uppercase">Stock Suggestions</div>
+            <label for="add-new-stocks-nat" class="group flex gap-3 py-3 border-b border-gray-600 cursor-pointer last:border-0">
+              <input type="checkbox" id="add-new-stocks-nat" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
+              <div>
+                <div class="text-white">NAT</div>
+                <div class="mt-0.5 text-sm">Nordic AmerTnk</div>
+              </div>
+            </label>
+            <label for="add-new-stocks-sgml" class="group flex gap-3 py-3 border-b border-gray-600 cursor-pointer last:border-0">
+              <input type="checkbox" id="add-new-stocks-sgml" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
+              <div>
+                <div class="text-white">SGML</div>
+                <div class="mt-0.5 text-sm">Sigma Lithium</div>
+              </div>
+            </label>
+            <label for="add-new-stocks-tnk" class="group flex gap-3 py-3 border-b border-gray-600 cursor-pointer last:border-0">
+              <input type="checkbox" id="add-new-stocks-tnk" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
+              <div>
+                <div class="text-white">TNK</div>
+                <div class="mt-0.5 text-sm">Teekay Tankers</div>
+              </div>
+            </label>
+            <label for="add-new-stocks-insw" class="group flex gap-3 py-3 border-b border-gray-600 cursor-pointer last:border-0">
+              <input type="checkbox" id="add-new-stocks-insw" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
+              <div>
+                <div class="text-white">INSW</div>
+                <div class="mt-0.5 text-sm">Int’l Seaways</div>
+              </div>
+            </label>
+          </div>
+          <div class="flex gap-2 items-center justify-end -mr-5 -mb-5 -ml-5 py-2.5 px-4 border-t border-gray-500/30">
+            <button type="button" class="flex gap-1 items-center justify-center h-[32px] px-3-px rounded-md border border-blue-300/30 bg-gray-700 text-blue-300 hover:shadow-button-ter-hover hover:text-white">
+              <span>Cancel</span>
+            </button>
+            <button type="submit" class="relative flex gap-1 items-center justify-center h-[32px] px-3 rounded-md bg-gradient-to-b from-blue-600 to-blue-800 shadow-button text-white hover:shadow-button-hover">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="-ml-0.5">
+                <path d="M8 4V12" />
+                <path d="M4 8H12" />
+              </svg>
+              <span>Add Selection</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <h3 class="mt-8 mb-4 text-h3">Search Results</h3>
+      <div data-preview class="flex justify-center -mx-5 p-5 bg-gray-800 sm:mx-0">
+        <div class="grow max-w-[368px] p-5 overflow-hidden rounded border border-gray-600 bg-gray-700 shadow-modal">
+          <div class="flex items-center justify-between">
+            <h2 class="text-h2 text-white">Add New Stocks</h2>
+            <button type="button" class="flex items-center justify-center w-7 h-7 -m-1 hover:text-white">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M15 5L5 15" />
+                <path d="M5 5L15 15" />
+              </svg>
+            </button>
+          </div>
+          <div class="relative mt-4">
+            <input type="text" placeholder="Search company name or symbol" value="AA" class="appearance-none block w-full py-1.5 px-[9px] pr-[30px] rounded-md border border-gray-600 bg-gray-800 text-white placeholder:text-gray-500 hover:border-gray-500 focus:outline-0 focus:border-blue-selected focus:bg-gray-900" />
+            <div class="absolute top-0 right-0 flex items-center justify-center w-[32px] h-[32px] text-gray-500 opacity-60 pointer-events-none">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="currentcolor">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.33335 3.91666C5.44638 3.91666 3.91669 5.44635 3.91669 7.33332C3.91669 9.22031 5.44638 10.75 7.33335 10.75C9.22034 10.75 10.75 9.22031 10.75 7.33332C10.75 5.44635 9.22034 3.91666 7.33335 3.91666ZM2.41669 7.33332C2.41669 4.61792 4.61795 2.41666 7.33335 2.41666C10.0488 2.41666 12.25 4.61792 12.25 7.33332C12.25 8.42043 11.8972 9.42512 11.2998 10.2392L13.3637 12.303C13.6566 12.5959 13.6566 13.0708 13.3637 13.3637C13.0708 13.6565 12.5959 13.6565 12.303 13.3637L10.2392 11.2998C9.42515 11.8972 8.42046 12.25 7.33335 12.25C4.61795 12.25 2.41669 10.0487 2.41669 7.33332Z" />
+              </svg>
+            </div>
+          </div>
+          <div class="h-[358px] -mx-5 py-4 px-5 overflow-auto">
+            <label for="add-new-stocks-aa" class="group flex gap-3 py-3 border-b border-gray-600 cursor-pointer last:border-0">
+              <input type="checkbox" id="add-new-stocks-aa" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
+              <div>
+                <div class="text-white">AA</div>
+                <div class="mt-0.5 text-sm">Alcoa</div>
+              </div>
+            </label>
+            <label for="add-new-stocks-aac" class="group flex gap-3 py-3 border-b border-gray-600 cursor-pointer last:border-0">
+              <input type="checkbox" id="add-new-stocks-aac" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
+              <div>
+                <div class="text-white">AAC</div>
+                <div class="mt-0.5 text-sm">Ares Acquisition</div>
+              </div>
+            </label>
+            <label for="add-new-stocks-aacg" class="group flex gap-3 py-3 border-b border-gray-600 cursor-pointer last:border-0">
+              <input type="checkbox" id="add-new-stocks-aacg" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
+              <div>
+                <div class="text-white">AACG</div>
+                <div class="mt-0.5 text-sm">ATA Creativity Global</div>
+              </div>
+            </label>
+            <label for="add-new-stocks-aadi" class="group flex gap-3 py-3 border-b border-gray-600 cursor-pointer last:border-0">
+              <input type="checkbox" id="add-new-stocks-aadi" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
+              <div>
+                <div class="text-white">AADI</div>
+                <div class="mt-0.5 text-sm">Aadi Bioscience</div>
+              </div>
+            </label>
+            <label for="add-new-stocks-aal" class="group flex gap-3 py-3 border-b border-gray-600 cursor-pointer last:border-0">
+              <input type="checkbox" id="add-new-stocks-aal" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
+              <div>
+                <div class="text-white">AAL</div>
+                <div class="mt-0.5 text-sm">American Airlines Group</div>
+              </div>
+            </label>
+            <label for="add-new-stocks-aapl" class="group flex gap-3 py-3 border-b border-gray-600 cursor-pointer last:border-0">
+              <input type="checkbox" id="add-new-stocks-aapl" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
+              <div>
+                <div class="text-white">AAPL</div>
+                <div class="mt-0.5 text-sm">Apple</div>
+              </div>
+            </label>
+          </div>
+          <div class="flex gap-2 items-center justify-end -mr-5 -mb-5 -ml-5 py-2.5 px-4 border-t border-gray-500/30 shadow-[0px_-4px_20px_rgba(0,0,0,0.2)]">
+            <button type="button" class="flex gap-1 items-center justify-center h-[32px] px-3-px rounded-md border border-blue-300/30 bg-gray-700 text-blue-300 hover:shadow-button-ter-hover hover:text-white">
+              <span>Cancel</span>
+            </button>
+            <button type="submit" class="relative flex gap-1 items-center justify-center h-[32px] px-3 rounded-md bg-gradient-to-b from-blue-600 to-blue-800 shadow-button text-white hover:shadow-button-hover">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="-ml-0.5">
+                <path d="M8 4V12" />
+                <path d="M4 8H12" />
+              </svg>
+              <span>Add Selection</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <h3 class="mt-8 mb-4 text-h3">Empty Search Results</h3>
+      <div data-preview class="flex justify-center -mx-5 p-5 bg-gray-800 sm:mx-0">
+        <div class="grow max-w-[368px] p-5 overflow-hidden rounded border border-gray-600 bg-gray-700 shadow-modal">
+          <div class="flex items-center justify-between">
+            <h2 class="text-h2 text-white">Add New Stocks</h2>
+            <button type="button" class="flex items-center justify-center w-7 h-7 -m-1 hover:text-white">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M15 5L5 15" />
+                <path d="M5 5L15 15" />
+              </svg>
+            </button>
+          </div>
+          <div class="relative mt-4">
+            <input type="text" placeholder="Search company name or symbol" value="Figma" class="appearance-none block w-full py-1.5 px-[9px] pr-[30px] rounded-md border border-gray-600 bg-gray-800 text-white placeholder:text-gray-500 hover:border-gray-500 focus:outline-0 focus:border-blue-selected focus:bg-gray-900" />
+            <div class="absolute top-0 right-0 flex items-center justify-center w-[32px] h-[32px] text-gray-500 opacity-60 pointer-events-none">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="currentcolor">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.33335 3.91666C5.44638 3.91666 3.91669 5.44635 3.91669 7.33332C3.91669 9.22031 5.44638 10.75 7.33335 10.75C9.22034 10.75 10.75 9.22031 10.75 7.33332C10.75 5.44635 9.22034 3.91666 7.33335 3.91666ZM2.41669 7.33332C2.41669 4.61792 4.61795 2.41666 7.33335 2.41666C10.0488 2.41666 12.25 4.61792 12.25 7.33332C12.25 8.42043 11.8972 9.42512 11.2998 10.2392L13.3637 12.303C13.6566 12.5959 13.6566 13.0708 13.3637 13.3637C13.0708 13.6565 12.5959 13.6565 12.303 13.3637L10.2392 11.2998C9.42515 11.8972 8.42046 12.25 7.33335 12.25C4.61795 12.25 2.41669 10.0487 2.41669 7.33332Z" />
+              </svg>
+            </div>
+          </div>
+          <div class="h-[358px] -mx-5 py-4 px-5 overflow-auto">
+            <div class="text-sm">No matching results. Please try again.</div>
+          </div>
+          <div class="flex gap-2 items-center justify-end -mr-5 -mb-5 -ml-5 py-2.5 px-4 border-t border-gray-500/30">
+            <button type="button" class="flex gap-1 items-center justify-center h-[32px] px-3-px rounded-md border border-blue-300/30 bg-gray-700 text-blue-300 hover:shadow-button-ter-hover hover:text-white">
+              <span>Cancel</span>
+            </button>
+            <button disabled="" type="submit" class="relative flex gap-1 items-center justify-center h-[32px] px-3 rounded-md bg-gray-700 text-gray-500">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="-ml-0.5">
+                <path d="M8 4V12" />
+                <path d="M4 8H12" />
+              </svg>
+              <span>Add Selection</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ content -->
+  </body>
+</html>
