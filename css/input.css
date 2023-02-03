@@ -29,7 +29,10 @@
 
 @layer base {
   body {
-    @apply bg-gray-900 text-md font-medium text-gray-400 subpixel-antialiased;
+    @apply bg-gray-900 text-md font-medium text-gray-400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
   }
   :focus-visible {
     outline: none !important;
@@ -57,5 +60,17 @@
   }
   [data-preview='']:hover [data-source=''] {
     @apply opacity-100;
+  }
+  [data-js-accordion-item] {
+    @apply hidden;
+  }
+  [data-js-accordion-item]:has(label.flex) {
+    @apply block;
+  }
+  [data-js-popover-open='#layout-menu'].pointer-events-none {
+    @apply text-white opacity-100;
+  }
+  div:has(> [data-js-popover-open='#layout-menu'].pointer-events-none) {
+    @apply bg-gray-800;
   }
 }

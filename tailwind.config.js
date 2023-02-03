@@ -106,15 +106,21 @@ module.exports = {
         '2xl': '1440px',
       },
       spacing: {
+        '1-px': '3px',
         '2-px': '7px',
         '2.5-px': '9px',
         '3-px': '11px',
         '4-px': '15px',
         '5-px': '19px',
+        13: '3.25rem',
         30: '7.5rem',
+        76: '19rem',
+        88: '22rem',
       },
       zIndex: {
+        dropdown: '99',
         header: '100',
+        popover: '500',
         tooltip: '1000',
       },
       maxWidth: {

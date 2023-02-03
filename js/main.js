@@ -7,11 +7,11 @@ $(document).on('click', '[data-source]', function () {
   const $prnt = $(this).parent();
   const $textarea = $('<textarea></textarea>');
   $(this).remove();
-  $prnt.append(copiedMsg);
   $('body').append($textarea);
   $textarea.val($prnt.html()).select();
   document.execCommand('copy');
   $textarea.remove();
+  $prnt.append(copiedMsg);
   setTimeout(() => {
     $prnt.find('[data-copied]').remove();
     $prnt.append(sourceButton);
@@ -112,7 +112,7 @@ if (document.getElementById('chart1')) {
     container.appendChild(tooltip);
     chart.subscribeCrosshairMove(function (param) {
       if (param.point === undefined || !param.time || param.point.x < 0 || param.point.x > container.clientWidth || param.point.y < 0 || param.point.y > container.clientHeight) {
-        //tooltip.style.display = 'none';
+        tooltip.style.display = 'none';
       } else {
         const price = param.seriesPrices.get(series);
         const coordinateTop = series.priceToCoordinate(price);
@@ -121,7 +121,7 @@ if (document.getElementById('chart1')) {
         tooltip.innerHTML = '<div class="mt-0.5 text-xs text-white">' + price + '</div>' + unixTimestampToString(param.time);
         tooltip.innerHTML += '<div class="absolute top-full left-1/2 border-6 border-transparent border-t-gray-1000 -translate-x-1/2"></div>';
         tooltip.style.top = coordinateTop + 'px';
-        //tooltip.style.left = 50 + param.point.x + 'px';
+        tooltip.style.left = 50 + param.point.x + 'px';
         tooltip.style.left = 50 + coordinateLeft + 'px';
       }
     });
