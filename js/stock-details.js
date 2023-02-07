@@ -1,4 +1,4 @@
-const headerHeight = 50 + 36;
+const headerHeight = $('#content').offset().top;
 
 function debounce(func) {
   var timer;
@@ -47,8 +47,8 @@ window.onscroll = function () {
   $(slides.get().reverse()).each(function () {
     const $this = $(this);
     if (window.scrollY + headerHeight + 33 > $this.offset().top) {
-      $('[data-js-track-item]').eq($this.index()).find('div').addClass('bg-gradient-to-b from-blue-600 to-blue-800').removeClass('group hover:bg-gray-700');
-      $('[data-js-track-item]').eq($this.index()).siblings().find('div').removeClass('bg-gradient-to-b from-blue-600 to-blue-800').addClass('group hover:bg-gray-700');
+      $('[data-js-track-item]').eq($this.index()).find('div').attr('aria-selected', true);
+      $('[data-js-track-item]').eq($this.index()).siblings().find('div').attr('aria-selected', false);
       return false;
     }
   });

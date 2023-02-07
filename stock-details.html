@@ -19,39 +19,142 @@
   </head>
 
   <body>
-    <div class="overflow-hidden pt-[50px] pl-48">
+    <div class="overflow-hidden pt-[50px] xl:pl-48">
       <!-- header -->
-      <div class="fixed top-0 right-0 left-0 z-header flex h-[50px] items-center border-b border-gray-600 bg-gray-700">
-        <div class="mt-px mr-1 flex h-[48px] w-[50px] items-center justify-center">
+      <div class="fixed top-0 right-0 left-0 z-header flex h-[50px] items-center border-b border-gray-600 bg-gray-700 pt-px pr-3">
+        <div class="mr-1 flex h-[48px] w-[50px] items-center justify-center">
           <img src="img/logo.png" srcset="img/logo@2x.png 2x" width="26" height="26" alt="" />
         </div>
-        <div class="flex items-stretch gap-5 overflow-hidden">
-          <a href="index.html" class="relative flex h-[50px] items-center text-white hover:text-white">
+        <div class="mr-auto hidden h-12 items-stretch gap-4 md:flex">
+          <a href="index.html" class="relative flex items-center text-white hover:text-white">
             <span>Home</span>
-            <span class="absolute right-0 -bottom-0.5 left-0 h-1 bg-blue-600"></span>
+            <span class="absolute right-0 -bottom-px left-0 h-0.5 bg-blue-600"></span>
           </a>
-          <a href="forms.html" class="relative flex h-[50px] items-center gap-1 hover:text-white">
+          <a href="forms.html" class="relative flex items-center gap-1 hover:text-white">
             <span>My Stocks</span>
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
               <path d="M4 6L8 10L12 6"></path>
             </svg>
           </a>
-          <a href="popups.html" class="relative flex h-[50px] items-center gap-1 hover:text-white">
+          <a href="popups.html" class="relative flex items-center gap-1 hover:text-white">
             <span>Stock Picks</span>
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
               <path d="M4 6L8 10L12 6"></path>
             </svg>
           </a>
-          <a href="widgets.html" class="relative flex h-[50px] items-center hover:text-white">
+          <a href="widgets.html" class="relative flex items-center hover:text-white">
             <span>Education</span>
           </a>
+        </div>
+        <div class="relative mr-5 ml-auto max-w-[280px] grow md:hidden lg:block">
+          <input type="text" placeholder="Search stocks, resources or people" class="block w-full appearance-none rounded-md border border-gray-700 bg-gray-800 py-1.5 px-[9px] pr-[30px] text-white placeholder:text-gray-500 hover:border-gray-500 focus:border-blue-selected focus:bg-gray-900 focus:outline-0" />
+          <div class="pointer-events-none absolute top-0 right-0 flex h-[32px] w-[32px] items-center justify-center text-gray-500 opacity-60">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentcolor">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.33335 3.91666C5.44638 3.91666 3.91669 5.44635 3.91669 7.33332C3.91669 9.22031 5.44638 10.75 7.33335 10.75C9.22034 10.75 10.75 9.22031 10.75 7.33332C10.75 5.44635 9.22034 3.91666 7.33335 3.91666ZM2.41669 7.33332C2.41669 4.61792 4.61795 2.41666 7.33335 2.41666C10.0488 2.41666 12.25 4.61792 12.25 7.33332C12.25 8.42043 11.8972 9.42512 11.2998 10.2392L13.3637 12.303C13.6566 12.5959 13.6566 13.0708 13.3637 13.3637C13.0708 13.6565 12.5959 13.6565 12.303 13.3637L10.2392 11.2998C9.42515 11.8972 8.42046 12.25 7.33335 12.25C4.61795 12.25 2.41669 10.0487 2.41669 7.33332Z"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 md:gap-5">
+          <button type="button" class="hidden hover:text-white md:block lg:hidden">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentcolor">
+              <path d="M11.1724 6.75C8.72998 6.75 6.75 8.72998 6.75 11.1724C6.75 13.6149 8.72998 15.5948 11.1724 15.5948C13.6149 15.5948 15.5948 13.6149 15.5948 11.1724C15.5948 8.72998 13.6149 6.75 11.1724 6.75ZM5.25 11.1724C5.25 7.90155 7.90155 5.25 11.1724 5.25C14.4433 5.25 17.0948 7.90156 17.0948 11.1724C17.0948 12.5375 16.633 13.7947 15.857 14.7964L18.5303 17.4697C18.8232 17.7626 18.8232 18.2374 18.5303 18.5303C18.2374 18.8232 17.7626 18.8232 17.4697 18.5303L14.7964 15.857C13.7947 16.633 12.5375 17.0948 11.1724 17.0948C7.90156 17.0948 5.25 14.4433 5.25 11.1724Z" />
+            </svg>
+          </button>
+          <div class="relative hidden h-[30px] w-[30px] items-center justify-center md:flex">
+            <svg width="16" height="16" viewBox="0 0 16 16" class="fill-gray-400">
+              <path d="M8.55733 9.66804C8.34993 9.74227 8.14025 9.75771 8.0002 9.75771C7.86015 9.75771 7.65111 9.74227 7.44308 9.66804L3.42871 8.23438V10.3858C3.42871 11.9641 5.47553 12.6715 8.00014 12.6715C10.5247 12.6715 12.5716 11.9641 12.5716 10.3858V8.23438L8.55733 9.66804Z"></path>
+              <path d="M2.57171 10.1433C2.57171 10.6166 2.1879 11.0004 1.71456 11.0004C1.24123 11.0004 0.857422 10.6166 0.857422 10.1433C0.857422 9.66994 1.24123 9.28613 1.71456 9.28613C2.1879 9.28613 2.57171 9.66994 2.57171 10.1433Z"></path>
+              <path d="M2.91868 13.5921C2.56498 13.9458 0.863823 13.9458 0.510125 13.5921C0.155905 13.2379 0.0141903 11.5624 1.71473 10.4287C3.41523 11.5624 3.27352 13.2379 2.91868 13.5921Z"></path>
+              <path d="M0.269133 5.70057C0.0908178 5.76409 0 5.89317 0 6.08231V6.11777C0 6.30744 0.0908145 6.43601 0.269133 6.49952L1.82169 7.05436C1.14339 7.78115 1.14286 8.83026 1.14286 9.52858H2.28572C2.28572 8.53828 2.34745 7.81544 3.1509 7.52858L7.9042 5.83088C8.05446 5.77718 8.21619 5.8555 8.26939 6.00397C8.32258 6.15257 8.24477 6.31596 8.0963 6.36916L3.99998 7.8314L7.63492 9.12975C7.76578 9.17605 7.90584 9.18638 8.00011 9.18638C8.09438 9.18638 8.23442 9.17605 8.3653 9.12975L15.7315 6.49889C15.9092 6.4355 16 6.30693 16 6.11715V6.08169C16 5.89253 15.9092 5.76345 15.7309 5.69994L8.36532 3.06984C8.10422 2.97672 7.89668 2.97672 7.63559 3.06984L0.269133 5.70057Z"></path>
+            </svg>
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" class="absolute top-0 left-0">
+              <path d="M30 15C30 23.2843 23.2843 30 15 30C6.71573 30 0 23.2843 0 15C0 6.71573 6.71573 0 15 0C23.2843 0 30 6.71573 30 15ZM3 15C3 21.6274 8.37258 27 15 27C21.6274 27 27 21.6274 27 15C27 8.37258 21.6274 3 15 3C8.37258 3 3 8.37258 3 15Z" class="fill-gray-600"></path>
+              <path d="M15 1.5C15 0.671573 15.6733 -0.00777211 16.4976 0.0749321C18.9352 0.319507 21.2839 1.15845 23.3336 2.52796C25.8003 4.17618 27.7229 6.51886 28.8582 9.25975C29.9935 12.0006 30.2906 15.0166 29.7118 17.9264C29.133 20.8361 27.7044 23.5088 25.6066 25.6066C23.5088 27.7044 20.8361 29.133 17.9264 29.7118C15.0166 30.2906 12.0006 29.9935 9.25975 28.8582C6.51886 27.7229 4.17618 25.8003 2.52796 23.3336C1.15845 21.2839 0.319506 18.9352 0.0749319 16.4976C-0.00777217 15.6733 0.671573 15 1.5 15V15C2.32843 15 2.99034 15.6742 3.09362 16.4961C3.32524 18.3394 3.9827 20.1109 5.02236 21.6668C6.34094 23.6402 8.21509 25.1783 10.4078 26.0866C12.6005 26.9948 15.0133 27.2324 17.3411 26.7694C19.6689 26.3064 21.8071 25.1635 23.4853 23.4853C25.1635 21.8071 26.3064 19.6689 26.7694 17.3411C27.2324 15.0133 26.9948 12.6005 26.0866 10.4078C25.1783 8.21509 23.6402 6.34094 21.6668 5.02236C20.1109 3.9827 18.3394 3.32524 16.4961 3.09362C15.6742 2.99034 15 2.32843 15 1.5V1.5Z" class="fill-green"></path>
+            </svg>
+          </div>
+          <div class="flex flex-col items-center gap-px md:flex-row md:gap-2">
+            <div class="relative h-[18px] w-[32px]">
+              <svg width="32" height="18" viewBox="0 0 32 18" class="fill-orange">
+                <path d="M0 15.75C3.70975e-07 11.5728 1.68571 7.56677 4.68629 4.61307C7.68687 1.65937 11.7565 4.48144e-07 16 0C20.2435 -4.48144e-07 24.3131 1.65937 27.3137 4.61307C30.3143 7.56676 32 11.5728 32 15.75L28.8 15.75C28.8 12.4083 27.4514 9.20341 25.051 6.84045C22.6505 4.47749 19.3948 3.15 16 3.15C12.6052 3.15 9.3495 4.4775 6.94903 6.84045C4.54857 9.20341 3.2 12.4083 3.2 15.75L0 15.75Z"></path>
+              </svg>
+              <svg width="6" height="14" viewBox="0 0 6 14" class="absolute -bottom-px left-1/2 -ml-[3px] origin-[50%_85%] rotate-[-33deg] fill-orange">
+                <path d="M2.80424 0.99661C2.84641 0.781923 3.15439 0.785967 3.19678 1.00177L5.22573 11.3313C5.49859 12.7204 4.44901 14 3.03674 14V14C1.60023 14 0.509469 12.6786 0.785599 11.2729L2.80424 0.99661Z"></path>
+              </svg>
+            </div>
+            <div class="mt-px text-sm text-white">Bearish</div>
+          </div>
+          <button type="button" class="hover:text-white">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentcolor">
+              <path d="M11 5.7C11 4.85131 10.6839 4.03737 10.1213 3.43726C9.55871 2.83714 8.79565 2.5 8 2.5C7.20435 2.5 6.44129 2.83714 5.87868 3.43726C5.31607 4.03737 5 4.85131 5 5.7C5 9.43333 3.5 10.5 3.5 10.5H12.5C12.5 10.5 11 9.43333 11 5.7Z" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M10.3103 12.1804C10.3103 12.4838 10.2505 12.7842 10.1344 13.0646C10.0183 13.3449 9.84811 13.5996 9.63357 13.8141C9.41903 14.0287 9.16433 14.1988 8.88402 14.3149C8.60371 14.4311 8.30327 14.4908 7.99986 14.4908C7.69646 14.4908 7.39602 14.4311 7.11571 14.3149C6.8354 14.1988 6.5807 14.0287 6.36616 13.8141C6.15161 13.5996 5.98143 13.3449 5.86532 13.0646C5.74921 12.7842 5.68945 12.4838 5.68945 12.1804L7.99986 12.1804H10.3103Z" />
+            </svg>
+          </button>
+          <button type="button" class="hidden items-center gap-2 text-sm hover:text-white md:flex">
+            <svg width="21" height="16" viewBox="0 0 21 16" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H21V1.23127H0V0ZM0 2.4625H21V3.69377H0V2.4625ZM0 4.92187H21V6.15623H0V4.92187ZM0 7.38437H21V8.61563H0V7.38437ZM0 9.84687H21V11.0781H0V9.84687ZM0 12.3062H21V13.5375H0V12.3062ZM0 14.7687H21V16H0V14.7687Z" fill="#BD3D44"></path>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.23145H21V2.46268H0V1.23145ZM0 3.69391H21V4.92205H0V3.69391ZM0 6.15331H21V7.38455H0V6.15331ZM0 8.61581H21V9.84705H0V8.61581ZM0 11.0783H21V12.3095H0V11.0783ZM0 13.5377H21V14.7689H0V13.5377Z" fill="white"></path>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H12.1594V8.61563H0V0Z" fill="#192F5D"></path>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M1.0125 0.368652L1.125 0.709219H1.48126L1.19373 0.918619L1.30313 1.26235L1.0125 1.04985L0.724996 1.25922L0.834362 0.918619L0.543762 0.709219H0.906262L1.0125 0.368652ZM3.04063 0.368652L3.15 0.709219H3.50936L3.21873 0.918619L3.32813 1.26235L3.04063 1.04985L2.75 1.25922L2.85936 0.918619L2.57186 0.709219H2.92813L3.04063 0.368652ZM5.06563 0.368652L5.17813 0.709252H5.53126L5.24376 0.918652L5.3531 1.26239L5.0625 1.04989L4.775 1.25925L4.88436 0.918652L4.59373 0.709252H4.95313L5.06563 0.368652ZM7.09376 0.368652L7.2031 0.709252H7.5625L7.27186 0.918652L7.38436 1.26239L7.09373 1.04989L6.80313 1.25925L6.91563 0.918652L6.625 0.709252H6.98126L7.09376 0.368652ZM9.11876 0.368652L9.23126 0.709252H9.5875L9.3 0.918652L9.40936 1.26239L9.11873 1.04989L8.83123 1.25925L8.94063 0.918652L8.65313 0.709252H9.00936L9.11876 0.368652ZM11.1469 0.368652L11.2562 0.709252H11.6156L11.325 0.918652L11.4375 1.26239L11.1469 1.04989L10.8562 1.25925L10.9687 0.918652L10.6781 0.709252H11.0375L11.1469 0.368652ZM2.02813 1.23109L2.1375 1.57175H2.49686L2.20623 1.78109L2.3125 2.12175L2.03123 1.91235L1.74063 2.12172L1.84373 1.78112L1.5625 1.57172H1.91876L2.02813 1.23109ZM4.05313 1.23109L4.16563 1.57175H4.52186L4.23123 1.78109L4.34376 2.12175L4.0531 1.91235L3.7625 2.12172L3.875 1.78112L3.58436 1.57172H3.94373L4.05313 1.23109ZM6.08126 1.23109L6.1906 1.57175H6.55L6.25936 1.78109L6.36873 2.12175L6.08123 1.91235L5.79063 2.12172L5.9 1.78115L5.6125 1.57175H5.96876L6.08126 1.23109ZM8.10626 1.23109L8.21876 1.57175H8.575L8.28436 1.78109L8.39686 2.12175L8.10623 1.91235L7.81873 2.12172L7.92813 1.78112L7.6375 1.57172H8L8.10626 1.23109ZM10.1344 1.23109L10.2437 1.57175H10.6031L10.3125 1.78109L10.4219 2.12175L10.1344 1.91235L9.84373 2.12172L9.95313 1.78112L9.66563 1.57172H10.0219L10.1344 1.23109ZM1.0125 2.09055L1.125 2.43742H1.48126L1.19373 2.64679L1.30313 2.98742L1.0125 2.77492L0.724996 2.98742L0.834362 2.64365L0.543762 2.43432H0.906262L1.0125 2.09055ZM3.04063 2.09055L3.15 2.43422H3.50936L3.21873 2.64359L3.32813 2.98425L3.04063 2.77172L2.75 2.98422L2.85936 2.64049L2.57186 2.43112H2.92813L3.04063 2.09055ZM5.06563 2.09055L5.17813 2.43429H5.53126L5.24376 2.64365L5.3531 2.98432L5.0625 2.77179L4.775 2.98429L4.88436 2.64055L4.59373 2.43119H4.95313L5.06563 2.09055ZM7.09376 2.09055L7.2031 2.43429H7.5625L7.27186 2.64365L7.38436 2.98432L7.09373 2.77179L6.80313 2.98429L6.91563 2.64055L6.625 2.43119H6.98126L7.09376 2.09055ZM9.11876 2.09055L9.23126 2.43429H9.5875L9.3 2.64362L9.40936 2.98429L9.11873 2.77175L8.83123 2.98425L8.94063 2.64052L8.65313 2.43115H9.00936L9.11876 2.09055ZM11.1469 2.09055L11.2562 2.43429H11.6156L11.325 2.64365L11.4375 2.98432L11.1469 2.77179L10.8562 2.98429L10.9687 2.64055L10.6781 2.43119H11.0375L11.1469 2.09055ZM2.02813 2.95302L2.1375 3.29365H2.49686L2.20623 3.50299L2.31563 3.84675L2.02813 3.63425L1.7375 3.84362L1.84686 3.50302L1.55936 3.29365H1.91566L2.02813 2.95302ZM4.05313 2.95302L4.16563 3.29365H4.52186L4.23123 3.50299L4.34376 3.84675L4.0531 3.63425L3.7625 3.84362L3.875 3.50302L3.58436 3.29365H3.94373L4.05313 2.95302ZM6.08126 2.95302L6.1906 3.29365H6.55L6.25936 3.50299L6.36873 3.84675L6.08123 3.63425L5.79063 3.84362L5.9 3.50302L5.6125 3.29365H5.96876L6.08126 2.95302ZM8.10626 2.95302L8.21876 3.29365H8.575L8.2875 3.50299L8.39686 3.84675L8.10623 3.63425L7.81873 3.84362L7.92813 3.50302L7.6375 3.29365H8L8.10626 2.95302ZM10.1344 2.95302L10.2437 3.29365H10.6031L10.3125 3.50299L10.4219 3.84675L10.1344 3.63425L9.84373 3.84362L9.95313 3.50302L9.66563 3.29365H10.0219L10.1344 2.95302ZM1.0125 3.81552L1.125 4.15615H1.48126L1.19373 4.36549L1.30313 4.70925L1.0125 4.49675L0.724996 4.70612L0.834362 4.36552L0.543762 4.15615H0.906262L1.0125 3.81552ZM3.04063 3.81552L3.15 4.15615H3.50936L3.21873 4.36549L3.32813 4.70615L3.04063 4.49675L2.75 4.70612L2.85936 4.36552L2.57186 4.15615H2.92813L3.04063 3.81552ZM5.06563 3.81552L5.17813 4.15615H5.53126L5.24376 4.36549L5.3531 4.70925L5.0625 4.49675L4.775 4.70612L4.88436 4.36552L4.59373 4.15615H4.95313L5.06563 3.81552ZM7.09376 3.81552L7.2031 4.15615H7.5625L7.27186 4.36549L7.38436 4.70925L7.09373 4.49675L6.80313 4.70612L6.91563 4.36552L6.625 4.15615H6.98126L7.09376 3.81552ZM9.11876 3.81552L9.23126 4.15615H9.5875L9.3 4.36549L9.40936 4.70925L9.11873 4.49675L8.83123 4.70612L8.94063 4.36552L8.65313 4.15615H9.00936L9.11876 3.81552ZM11.1469 3.81552L11.2562 4.15615H11.6156L11.325 4.36549L11.4375 4.70925L11.1469 4.49675L10.8562 4.70612L10.9687 4.36552L10.6781 4.15615H11.0375L11.1469 3.81552ZM2.02813 4.67802L2.1375 5.01865H2.49686L2.20623 5.22799L2.31563 5.56865L2.02813 5.35615L1.7375 5.56865L1.84686 5.22489L1.55936 5.01552H1.91566L2.02813 4.67802ZM4.05313 4.67802L4.16563 5.01865H4.52186L4.23123 5.22799L4.34376 5.56865L4.0531 5.35615L3.7625 5.56865L3.875 5.22489L3.58436 5.01552H3.94373L4.05313 4.67802ZM6.08126 4.67802L6.1906 5.01865H6.55L6.25936 5.22799L6.36873 5.56865L6.08123 5.35615L5.79063 5.56865L5.9 5.22489L5.6125 5.01552H5.96876L6.08126 4.67802ZM8.10626 4.67802L8.21876 5.01865H8.575L8.2875 5.22799L8.39686 5.56865L8.10623 5.35615L7.81873 5.56865L7.92813 5.22489L7.6375 5.01552H8L8.10626 4.67802ZM10.1344 4.67802L10.2437 5.01865H10.6031L10.3125 5.22799L10.4219 5.56865L10.1344 5.35615L9.84373 5.56865L9.95313 5.22489L9.66563 5.01552H10.0219L10.1344 4.67802ZM1.0125 5.53739L1.125 5.88115H1.48126L1.19373 6.09049L1.30313 6.42802L1.0125 6.21865L0.724996 6.42799L0.834362 6.08739L0.543762 5.87802H0.906262L1.0125 5.53739ZM3.04063 5.53739L3.15 5.88115H3.50936L3.21873 6.09049L3.33126 6.42802L3.0406 6.21865L2.75 6.42799L2.8625 6.08739L2.57186 5.87802H2.92813L3.04063 5.53739ZM5.06563 5.53739L5.17813 5.88115H5.53126L5.24376 6.09049L5.3531 6.42802L5.0625 6.21865L4.775 6.42799L4.88436 6.08739L4.59373 5.87802H4.95313L5.06563 5.53739ZM7.09376 5.53739L7.2031 5.88115H7.5625L7.27186 6.09049L7.38436 6.42802L7.09373 6.21865L6.80313 6.42799L6.91563 6.08739L6.625 5.87802H6.98126L7.09376 5.53739ZM9.11876 5.53739L9.23126 5.88115H9.5875L9.3 6.09049L9.40936 6.42802L9.11873 6.21865L8.83123 6.42799L8.94063 6.08739L8.65313 5.87802H9.00936L9.11876 5.53739ZM11.1469 5.53739L11.2562 5.88115H11.6156L11.325 6.09049L11.4375 6.42802L11.1469 6.21865L10.8562 6.42799L10.9687 6.08739L10.6781 5.87802H11.0375L11.1469 5.53739ZM2.02813 6.39989L2.1375 6.74052H2.49686L2.20623 6.94989L2.31563 7.29365L2.02813 7.08115L1.7375 7.29049L1.84686 6.94989L1.55936 6.74052H1.91566L2.02813 6.39989ZM4.05313 6.39989L4.16563 6.74052H4.52186L4.23123 6.94989L4.34376 7.29365L4.0531 7.08115L3.7625 7.29049L3.875 6.94989L3.58436 6.74052H3.94373L4.05313 6.39989ZM6.08126 6.39989L6.1906 6.74052H6.55L6.25936 6.94989L6.36873 7.29365L6.08123 7.08115L5.79063 7.29049L5.9 6.94989L5.6125 6.74052H5.96876L6.08126 6.39989ZM8.10626 6.39989L8.21876 6.74052H8.575L8.2875 6.94989L8.39686 7.29365L8.10623 7.08115L7.81873 7.29049L7.92813 6.94989L7.6375 6.74052H8L8.10626 6.39989ZM10.1344 6.39989L10.2437 6.74052H10.6031L10.3125 6.94989L10.4219 7.29365L10.1344 7.08115L9.84373 7.29049L9.95313 6.94989L9.66563 6.74052H10.0219L10.1344 6.39989ZM1.0125 7.26239L1.125 7.60302H1.48126L1.19373 7.81239L1.30313 8.15302L1.0125 7.94365L0.724996 8.15299L0.834362 7.80925L0.543762 7.59989H0.906262L1.0125 7.26239ZM3.04063 7.26239L3.15 7.60302H3.50936L3.21873 7.81239L3.33126 8.15302L3.0406 7.94365L2.75 8.15299L2.8625 7.80925L2.57186 7.59989H2.92813L3.04063 7.26239ZM5.06563 7.26239L5.17813 7.60302H5.53126L5.25 7.81239L5.35936 8.15302L5.06873 7.94365L4.78123 8.15299L4.89063 7.80925L4.6 7.59989H4.95936L5.06563 7.26239ZM7.09376 7.26239L7.2031 7.60302H7.5625L7.27186 7.81239L7.38436 8.15302L7.09373 7.94365L6.80313 8.15299L6.91563 7.80925L6.625 7.59989H6.98126L7.09376 7.26239ZM9.11876 7.26239L9.23126 7.60302H9.5875L9.3 7.81239L9.40936 8.15302L9.11873 7.94365L8.83123 8.15299L8.94063 7.80925L8.65313 7.59989H9.00936L9.11876 7.26239ZM11.1469 7.26239L11.2562 7.60302H11.6156L11.325 7.81239L11.4375 8.15302L11.1469 7.94365L10.8562 8.15299L10.9687 7.80925L10.6781 7.59989H11.0375L11.1469 7.26239Z" fill="white"></path>
+            </svg>
+            <span class="text-white">James F.</span>
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="currentcolor">
+              <path d="M4.61589 5.53907L0.68341 0.820092C0.412024 0.494429 0.643602 0 1.06752 0L8.93248 0C9.3564 0 9.58798 0.494428 9.31659 0.820091L5.38411 5.53907C5.18421 5.77894 4.81579 5.77894 4.61589 5.53907Z" />
+            </svg>
+          </button>
+          <button type="button" class="hover:text-white md:hidden">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12H19" />
+              <path d="M5 6H19" />
+              <path d="M5 18H19" />
+            </svg>
+          </button>
         </div>
       </div>
       <!--/ header -->
 
+      <!-- toolbar -->
+      <div class="fixed top-[118px] right-0 left-0 z-header flex h-9 items-center justify-between gap-3 border-b border-gray-600 bg-gray-800 px-5 xl:top-[50px] xl:left-48">
+        <div class="flex items-center gap-3 text-sm">
+          <button type="button" class="text-white">1D</button>
+          <button type="button" class="hidden text-gray-500 hover:text-white md:block">2D</button>
+          <button type="button" class="hidden text-gray-500 hover:text-white md:block">3D</button>
+          <button type="button" class="hidden text-gray-500 hover:text-white md:block">4D</button>
+          <button type="button" class="text-gray-500 hover:text-white">5D</button>
+          <button type="button" class="text-gray-500 hover:text-white">1M</button>
+          <button type="button" class="text-gray-500 hover:text-white">3M</button>
+          <button type="button" class="text-gray-500 hover:text-white">6M</button>
+          <button type="button" class="text-gray-500 hover:text-white">1Y</button>
+          <button type="button" class="text-gray-500 hover:text-white">5Y</button>
+          <button type="button" class="hidden text-gray-500 hover:text-white md:block">10Y</button>
+        </div>
+
+        <div class="absolute top-full right-0 left-0 mt-px flex h-[34px] items-center gap-1.5 overflow-auto whitespace-nowrap border-b border-gray-600 bg-gray-800 px-3 xl:static xl:mt-0 xl:ml-auto xl:h-auto xl:border-0">
+          <button type="button" class="rounded-full border border-blue-selected bg-gray-700 py-1-px px-2 text-sm text-white">Current</button>
+          <button type="button" class="rounded-full border border-gray-400/50 py-1-px px-2 text-sm text-white hover:border-gray-400">High Low</button>
+          <button type="button" class="rounded-full border border-gray-400/50 py-1-px px-2 text-sm text-white hover:border-gray-400">Splits</button>
+          <button type="button" class="rounded-full border border-gray-400/50 py-1-px px-2 text-sm text-white hover:border-gray-400">Log</button>
+          <button type="button" class="flex items-center gap-1 rounded-full border border-gray-400/50 py-1-px px-2 text-sm text-white hover:border-gray-400">
+            <span>RTX-Kikcker</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="-mr-0.5 text-gray-400">
+              <path d="M4 6L8 10L12 6" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+          <button type="button" class="rounded-full border border-gray-400/50 py-1-px px-2 text-sm text-white hover:border-gray-400">Last Close</button>
+        </div>
+
+        <div class="ml-auto hidden text-sm md:block">Default Layout</div>
+        <button type="button" data-js-toggle-sidebar class="flex h-[26px] items-center justify-center gap-1 rounded-md bg-button-secondary px-2.5 text-sm text-blue-300 shadow-button hover:text-white">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentcolor" class="-ml-0.5">
+            <path d="M6.99351 1.3335C6.67418 1.3335 6.4012 1.55923 6.33987 1.87256L6.11721 3.01579C5.57004 3.2227 5.06409 3.51177 4.61982 3.87646L3.52346 3.49886C3.22146 3.39486 2.88919 3.51974 2.72919 3.79574L1.72398 5.53792C1.56465 5.81459 1.62264 6.16583 1.8633 6.37516L2.74221 7.13949C2.6965 7.42039 2.66669 7.70635 2.66669 8.00016C2.66669 8.29397 2.6965 8.57994 2.74221 8.86084L1.8633 9.62516C1.62264 9.8345 1.56465 10.1857 1.72398 10.4624L2.72919 12.2046C2.88852 12.4813 3.22146 12.6061 3.52346 12.5028L4.61982 12.1252C5.06395 12.4896 5.57029 12.7777 6.11721 12.9845L6.33987 14.1278C6.4012 14.4411 6.67418 14.6668 6.99351 14.6668H9.00653C9.32587 14.6668 9.59885 14.4411 9.66018 14.1278L9.88284 12.9845C10.43 12.7776 10.936 12.4886 11.3802 12.1239L12.4766 12.5015C12.7786 12.6055 13.1109 12.4813 13.2709 12.2046L14.2761 10.4611C14.4354 10.1844 14.3774 9.8345 14.1367 9.62516L13.2578 8.86084C13.3035 8.57994 13.3334 8.29397 13.3334 8.00016C13.3334 7.70635 13.3035 7.42039 13.2578 7.13949L14.1367 6.37516C14.3774 6.16583 14.4354 5.81459 14.2761 5.53792L13.2709 3.79574C13.1115 3.51907 12.7786 3.39423 12.4766 3.49756L11.3802 3.87516C10.9361 3.51069 10.4298 3.2226 9.88284 3.01579L9.66018 1.87256C9.59885 1.55923 9.32587 1.3335 9.00653 1.3335H6.99351ZM8.00002 5.3335C9.47269 5.3335 10.6667 6.5275 10.6667 8.00016C10.6667 9.47283 9.47269 10.6668 8.00002 10.6668C6.52736 10.6668 5.33336 9.47283 5.33336 8.00016C5.33336 6.5275 6.52736 5.3335 8.00002 5.3335Z"></path>
+          </svg>
+          <span>Edit <span class="hidden md:inline">Data</span><span class="md:hidden">(5)</span></span>
+        </button>
+      </div>
+      <!--/ toolbar -->
+
       <!-- content -->
-      <div class="px-5 pt-9 pb-5">
-        <div data-js-slide class="relative pt-5 pb-8">
+      <div id="content" class="mt-[138px] px-5 pb-5 xl:mt-9">
+        <div data-js-slide class="relative pt-5 pb-5 xl:pb-8">
           <div class="flex items-start justify-between">
             <div>
               <div class="flex items-center gap-2.5">
@@ -68,17 +171,10 @@
                 </svg>
                 <span>Add to Watchlist</span>
               </button>
-              <button type="button" class="flex h-[26px] w-[26px] items-center justify-center gap-1 rounded-md border border-blue-300/30 bg-gray-700 text-sm text-blue-300 hover:text-white hover:shadow-button-ter-hover">
+              <button type="button" class="hidden h-[26px] w-[26px] items-center justify-center gap-1 rounded-md border border-blue-300/30 bg-gray-700 text-sm text-blue-300 hover:text-white hover:shadow-button-ter-hover sm:flex">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M11 6.2C11 5.35131 10.6839 4.53737 10.1213 3.93726C9.55871 3.33714 8.79565 3 8 3C7.20435 3 6.44129 3.33714 5.87868 3.93726C5.31607 4.53737 5 5.35131 5 6.2C5 9.93333 3.5 11 3.5 11H12.5C12.5 11 11 9.93333 11 6.2Z"></path>
                   <path d="M9.5 13C9.34756 13.3042 9.12877 13.5566 8.86551 13.7321C8.60226 13.9076 8.3038 14 8 14C7.6962 14 7.39774 13.9076 7.13449 13.7321C6.87123 13.5566 6.65244 13.3042 6.5 13"></path>
-                </svg>
-              </button>
-              <button type="button" class="flex h-[26px] w-[26px] items-center justify-center gap-1 rounded-md border border-blue-300/30 bg-gray-700 text-sm text-blue-300 hover:text-white hover:shadow-button-ter-hover">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentcolor">
-                  <path d="M3 9.5C3.82843 9.5 4.5 8.82843 4.5 8C4.5 7.17157 3.82843 6.5 3 6.5C2.17157 6.5 1.5 7.17157 1.5 8C1.5 8.82843 2.17157 9.5 3 9.5Z"></path>
-                  <path d="M8 9.5C8.82843 9.5 9.5 8.82843 9.5 8C9.5 7.17157 8.82843 6.5 8 6.5C7.17157 6.5 6.5 7.17157 6.5 8C6.5 8.82843 7.17157 9.5 8 9.5Z"></path>
-                  <path d="M13 9.5C13.8284 9.5 14.5 8.82843 14.5 8C14.5 7.17157 13.8284 6.5 13 6.5C12.1716 6.5 11.5 7.17157 11.5 8C11.5 8.82843 12.1716 9.5 13 9.5Z"></path>
                 </svg>
               </button>
               <button type="button" class="flex h-[26px] w-[26px] items-center justify-center gap-1 rounded-md border border-blue-300/30 bg-gray-700 text-sm text-blue-300 hover:text-white hover:shadow-button-ter-hover">
@@ -89,10 +185,17 @@
                   <path d="M3 13L7 9"></path>
                 </svg>
               </button>
+              <button type="button" class="flex h-[26px] w-[26px] items-center justify-center gap-1 rounded-md border border-blue-300/30 bg-gray-700 text-sm text-blue-300 hover:text-white hover:shadow-button-ter-hover">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentcolor">
+                  <path d="M3 9.5C3.82843 9.5 4.5 8.82843 4.5 8C4.5 7.17157 3.82843 6.5 3 6.5C2.17157 6.5 1.5 7.17157 1.5 8C1.5 8.82843 2.17157 9.5 3 9.5Z"></path>
+                  <path d="M8 9.5C8.82843 9.5 9.5 8.82843 9.5 8C9.5 7.17157 8.82843 6.5 8 6.5C7.17157 6.5 6.5 7.17157 6.5 8C6.5 8.82843 7.17157 9.5 8 9.5Z"></path>
+                  <path d="M13 9.5C13.8284 9.5 14.5 8.82843 14.5 8C14.5 7.17157 13.8284 6.5 13 6.5C12.1716 6.5 11.5 7.17157 11.5 8C11.5 8.82843 12.1716 9.5 13 9.5Z"></path>
+                </svg>
+              </button>
             </div>
           </div>
 
-          <div data-js-slide-cont class="mt-5 flex h-[480px] gap-12">
+          <div data-js-slide-cont class="-mr-16 -ml-3 mt-5 flex h-[480px] gap-12 md:mr-0 md:ml-0">
             <div class="flex grow flex-col">
               <div class="flex shrink-0 items-center text-xxs text-gray-500">
                 <div class="flex h-2.5 grow">
@@ -169,7 +272,7 @@
                 <div id="chart-rt" class="absolute inset-0"></div>
               </div>
             </div>
-            <div class="w-76 shrink-0">
+            <div class="hidden w-76 shrink-0 lg:block">
               <label class="flex cursor-pointer items-center gap-2 bg-gray-600/40 py-1.5 px-2">
                 <input type="checkbox" checked="" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -274,7 +377,7 @@
             </div>
           </div>
 
-          <div class="pointer-events-none absolute right-0 bottom-0 left-0">
+          <div class="pointer-events-none absolute right-0 bottom-0 left-0 hidden xl:block">
             <div class="absolute top-1/2 right-0 left-0 h-px -translate-y-1/2 bg-gray-600"></div>
             <div class="relative m-auto flex h-4 w-5 items-center justify-center rounded bg-gray-700">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
@@ -284,7 +387,7 @@
           </div>
         </div>
 
-        <div data-js-slide class="relative pt-5 pb-8">
+        <div data-js-slide class="relative pt-5 pb-5 xl:pb-8">
           <div class="flex items-start justify-between">
             <div>
               <div class="flex items-center gap-2.5">
@@ -295,7 +398,7 @@
             </div>
           </div>
 
-          <div data-js-slide-cont class="mt-5 flex h-[480px] gap-12">
+          <div data-js-slide-cont class="-mr-16 -ml-3 mt-5 flex h-[480px] gap-12 md:mr-0 md:ml-0">
             <div class="flex grow flex-col">
               <div class="flex shrink-0 items-center text-xxs text-gray-500">
                 <div class="flex h-2.5 grow">
@@ -334,12 +437,12 @@
                 <div id="chart-rt-2" class="absolute inset-0"></div>
               </div>
             </div>
-            <div class="w-76 shrink-0">
+            <div class="hidden w-76 shrink-0 lg:block">
               <div class="h-[423px] bg-gray-800"></div>
             </div>
           </div>
 
-          <div class="pointer-events-none absolute right-0 bottom-0 left-0">
+          <div class="pointer-events-none absolute right-0 bottom-0 left-0 hidden xl:block">
             <div class="absolute top-1/2 right-0 left-0 h-px -translate-y-1/2 bg-gray-600"></div>
             <div class="relative m-auto flex h-4 w-5 items-center justify-center rounded bg-gray-700">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
@@ -349,7 +452,7 @@
           </div>
         </div>
 
-        <div data-js-slide class="relative pt-5 pb-8">
+        <div data-js-slide class="relative pt-5 pb-5 xl:pb-8">
           <div class="flex items-start justify-between">
             <div>
               <div class="flex items-center gap-2.5">
@@ -360,7 +463,7 @@
             </div>
           </div>
 
-          <div data-js-slide-cont class="mt-5 flex h-[480px] gap-12">
+          <div data-js-slide-cont class="-mr-16 -ml-3 mt-5 flex h-[480px] gap-12 md:mr-0 md:ml-0">
             <div class="flex grow flex-col">
               <div class="flex shrink-0 items-center text-xxs text-gray-500">
                 <div class="flex h-2.5 grow">
@@ -399,12 +502,12 @@
                 <div id="chart-rt-3" class="absolute inset-0"></div>
               </div>
             </div>
-            <div class="w-76 shrink-0">
+            <div class="hidden w-76 shrink-0 lg:block">
               <div class="h-[423px] bg-gray-800"></div>
             </div>
           </div>
 
-          <div class="pointer-events-none absolute right-0 bottom-0 left-0">
+          <div class="pointer-events-none absolute right-0 bottom-0 left-0 hidden xl:block">
             <div class="absolute top-1/2 right-0 left-0 h-px -translate-y-1/2 bg-gray-600"></div>
             <div class="relative m-auto flex h-4 w-5 items-center justify-center rounded bg-gray-700">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
@@ -414,7 +517,7 @@
           </div>
         </div>
 
-        <div data-js-slide class="relative pt-5 pb-8">
+        <div data-js-slide class="relative pt-5 pb-5 xl:pb-8">
           <div class="flex items-start justify-between">
             <div>
               <div class="flex items-center gap-2.5">
@@ -425,7 +528,7 @@
             </div>
           </div>
 
-          <div data-js-slide-cont class="mt-5 flex h-[480px] gap-12">
+          <div data-js-slide-cont class="-mr-16 -ml-3 mt-5 flex h-[480px] gap-12 md:mr-0 md:ml-0">
             <div class="flex grow flex-col">
               <div class="flex shrink-0 items-center text-xxs text-gray-500">
                 <div class="flex h-2.5 grow">
@@ -464,12 +567,12 @@
                 <div id="chart-rt-4" class="absolute inset-0"></div>
               </div>
             </div>
-            <div class="w-76 shrink-0">
+            <div class="hidden w-76 shrink-0 lg:block">
               <div class="h-[423px] bg-gray-800"></div>
             </div>
           </div>
 
-          <div class="pointer-events-none absolute right-0 bottom-0 left-0">
+          <div class="pointer-events-none absolute right-0 bottom-0 left-0 hidden xl:block">
             <div class="absolute top-1/2 right-0 left-0 h-px -translate-y-1/2 bg-gray-600"></div>
             <div class="relative m-auto flex h-4 w-5 items-center justify-center rounded bg-gray-700">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
@@ -479,7 +582,7 @@
           </div>
         </div>
 
-        <div data-js-slide class="relative pt-5 pb-8">
+        <div data-js-slide class="relative pt-5 pb-5 xl:pb-8">
           <div class="flex items-start justify-between">
             <div>
               <div class="flex items-center gap-2.5">
@@ -490,7 +593,7 @@
             </div>
           </div>
 
-          <div data-js-slide-cont class="mt-5 flex h-[480px] gap-12">
+          <div data-js-slide-cont class="-mr-16 -ml-3 mt-5 flex h-[480px] gap-12 md:mr-0 md:ml-0">
             <div class="flex grow flex-col">
               <div class="flex shrink-0 items-center text-xxs text-gray-500">
                 <div class="flex h-2.5 grow">
@@ -529,12 +632,12 @@
                 <div id="chart-rt-5" class="absolute inset-0"></div>
               </div>
             </div>
-            <div class="w-76 shrink-0">
+            <div class="hidden w-76 shrink-0 lg:block">
               <div class="h-[423px] bg-gray-800"></div>
             </div>
           </div>
 
-          <div class="pointer-events-none absolute right-0 bottom-0 left-0">
+          <div class="pointer-events-none absolute right-0 bottom-0 left-0 hidden xl:block">
             <div class="absolute top-1/2 right-0 left-0 h-px -translate-y-1/2 bg-gray-600"></div>
             <div class="relative m-auto flex h-4 w-5 items-center justify-center rounded bg-gray-700">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
@@ -544,7 +647,7 @@
           </div>
         </div>
 
-        <div data-js-slide class="relative pt-5 pb-8">
+        <div data-js-slide class="relative pt-5 pb-5 xl:pb-8">
           <div class="flex items-start justify-between">
             <div>
               <div class="flex items-center gap-2.5">
@@ -555,7 +658,7 @@
             </div>
           </div>
 
-          <div data-js-slide-cont class="mt-5 flex h-[480px] gap-12">
+          <div data-js-slide-cont class="-mr-16 -ml-3 mt-5 flex h-[480px] gap-12 md:mr-0 md:ml-0">
             <div class="flex grow flex-col">
               <div class="flex shrink-0 items-center text-xxs text-gray-500">
                 <div class="flex h-2.5 grow">
@@ -594,12 +697,12 @@
                 <div id="chart-rt-6" class="absolute inset-0"></div>
               </div>
             </div>
-            <div class="w-76 shrink-0">
+            <div class="hidden w-76 shrink-0 lg:block">
               <div class="h-[423px] bg-gray-800"></div>
             </div>
           </div>
 
-          <div class="pointer-events-none absolute right-0 bottom-0 left-0">
+          <div class="pointer-events-none absolute right-0 bottom-0 left-0 hidden xl:block">
             <div class="absolute top-1/2 right-0 left-0 h-px -translate-y-1/2 bg-gray-600"></div>
             <div class="relative m-auto flex h-4 w-5 items-center justify-center rounded bg-gray-700">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
@@ -609,7 +712,7 @@
           </div>
         </div>
 
-        <div data-js-slide class="relative pt-5 pb-8">
+        <div data-js-slide class="relative pt-5 pb-5 xl:pb-8">
           <div class="flex items-start justify-between">
             <div>
               <div class="flex items-center gap-2.5">
@@ -620,7 +723,7 @@
             </div>
           </div>
 
-          <div data-js-slide-cont class="mt-5 flex h-[480px] gap-12">
+          <div data-js-slide-cont class="-mr-16 -ml-3 mt-5 flex h-[480px] gap-12 md:mr-0 md:ml-0">
             <div class="flex grow flex-col">
               <div class="flex shrink-0 items-center text-xxs text-gray-500">
                 <div class="flex h-2.5 grow">
@@ -659,12 +762,12 @@
                 <div id="chart-rt-7" class="absolute inset-0"></div>
               </div>
             </div>
-            <div class="w-76 shrink-0">
+            <div class="hidden w-76 shrink-0 lg:block">
               <div class="h-[423px] bg-gray-800"></div>
             </div>
           </div>
 
-          <div class="pointer-events-none absolute right-0 bottom-0 left-0">
+          <div class="pointer-events-none absolute right-0 bottom-0 left-0 hidden xl:block">
             <div class="absolute top-1/2 right-0 left-0 h-px -translate-y-1/2 bg-gray-600"></div>
             <div class="relative m-auto flex h-4 w-5 items-center justify-center rounded bg-gray-700">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
@@ -674,7 +777,7 @@
           </div>
         </div>
 
-        <div data-js-slide class="relative pt-5 pb-8">
+        <div data-js-slide class="relative pt-5 pb-5 xl:pb-8">
           <div class="flex items-start justify-between">
             <div>
               <div class="flex items-center gap-2.5">
@@ -685,7 +788,7 @@
             </div>
           </div>
 
-          <div data-js-slide-cont class="mt-5 flex h-[480px] gap-12">
+          <div data-js-slide-cont class="-mr-16 -ml-3 mt-5 flex h-[480px] gap-12 md:mr-0 md:ml-0">
             <div class="flex grow flex-col">
               <div class="flex shrink-0 items-center text-xxs text-gray-500">
                 <div class="flex h-2.5 grow">
@@ -724,12 +827,12 @@
                 <div id="chart-rt-8" class="absolute inset-0"></div>
               </div>
             </div>
-            <div class="w-76 shrink-0">
+            <div class="hidden w-76 shrink-0 lg:block">
               <div class="h-[423px] bg-gray-800"></div>
             </div>
           </div>
 
-          <div class="pointer-events-none absolute right-0 bottom-0 left-0">
+          <div class="pointer-events-none absolute right-0 bottom-0 left-0 hidden xl:block">
             <div class="absolute top-1/2 right-0 left-0 h-px -translate-y-1/2 bg-gray-600"></div>
             <div class="relative m-auto flex h-4 w-5 items-center justify-center rounded bg-gray-700">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
@@ -739,7 +842,7 @@
           </div>
         </div>
 
-        <div data-js-slide class="relative pt-5 pb-8">
+        <div data-js-slide class="relative pt-5 pb-5 xl:pb-8">
           <div class="flex items-start justify-between">
             <div>
               <div class="flex items-center gap-2.5">
@@ -750,7 +853,7 @@
             </div>
           </div>
 
-          <div data-js-slide-cont class="mt-5 flex h-[480px] gap-12">
+          <div data-js-slide-cont class="-mr-16 -ml-3 mt-5 flex h-[480px] gap-12 md:mr-0 md:ml-0">
             <div class="flex grow flex-col">
               <div class="flex shrink-0 items-center text-xxs text-gray-500">
                 <div class="flex h-2.5 grow">
@@ -789,12 +892,12 @@
                 <div id="chart-rt-9" class="absolute inset-0"></div>
               </div>
             </div>
-            <div class="w-76 shrink-0">
+            <div class="hidden w-76 shrink-0 lg:block">
               <div class="h-[423px] bg-gray-800"></div>
             </div>
           </div>
 
-          <div class="pointer-events-none absolute right-0 bottom-0 left-0">
+          <div class="pointer-events-none absolute right-0 bottom-0 left-0 hidden xl:block">
             <div class="absolute top-1/2 right-0 left-0 h-px -translate-y-1/2 bg-gray-600"></div>
             <div class="relative m-auto flex h-4 w-5 items-center justify-center rounded bg-gray-700">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
@@ -804,7 +907,7 @@
           </div>
         </div>
 
-        <div data-js-slide class="relative pt-5 pb-8">
+        <div data-js-slide class="relative pt-5 pb-5 xl:pb-8">
           <div class="flex items-start justify-between">
             <div>
               <div class="flex items-center gap-2.5">
@@ -815,7 +918,7 @@
             </div>
           </div>
 
-          <div data-js-slide-cont class="mt-5 flex h-[480px] gap-12">
+          <div data-js-slide-cont class="-mr-16 -ml-3 mt-5 flex h-[480px] gap-12 md:mr-0 md:ml-0">
             <div class="flex grow flex-col">
               <div class="flex shrink-0 items-center text-xxs text-gray-500">
                 <div class="flex h-2.5 grow">
@@ -854,12 +957,12 @@
                 <div id="chart-rt-10" class="absolute inset-0"></div>
               </div>
             </div>
-            <div class="w-76 shrink-0">
+            <div class="hidden w-76 shrink-0 lg:block">
               <div class="h-[423px] bg-gray-800"></div>
             </div>
           </div>
 
-          <div class="pointer-events-none absolute right-0 bottom-0 left-0">
+          <div class="pointer-events-none absolute right-0 bottom-0 left-0 hidden xl:block">
             <div class="absolute top-1/2 right-0 left-0 h-px -translate-y-1/2 bg-gray-600"></div>
             <div class="relative m-auto flex h-4 w-5 items-center justify-center rounded bg-gray-700">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
@@ -869,7 +972,7 @@
           </div>
         </div>
 
-        <div data-js-slide class="relative pt-5 pb-8">
+        <div data-js-slide class="relative pt-5 pb-5 xl:pb-8">
           <div class="flex items-start justify-between">
             <div>
               <div class="flex items-center gap-2.5">
@@ -880,7 +983,7 @@
             </div>
           </div>
 
-          <div data-js-slide-cont class="mt-5 flex h-[480px] gap-12">
+          <div data-js-slide-cont class="-mr-16 -ml-3 mt-5 flex h-[480px] gap-12 md:mr-0 md:ml-0">
             <div class="flex grow flex-col">
               <div class="flex shrink-0 items-center text-xxs text-gray-500">
                 <div class="flex h-2.5 grow">
@@ -919,12 +1022,12 @@
                 <div id="chart-rt-11" class="absolute inset-0"></div>
               </div>
             </div>
-            <div class="w-76 shrink-0">
+            <div class="hidden w-76 shrink-0 lg:block">
               <div class="h-[423px] bg-gray-800"></div>
             </div>
           </div>
 
-          <div class="pointer-events-none absolute right-0 bottom-0 left-0">
+          <div class="pointer-events-none absolute right-0 bottom-0 left-0 hidden xl:block">
             <div class="absolute top-1/2 right-0 left-0 h-px -translate-y-1/2 bg-gray-600"></div>
             <div class="relative m-auto flex h-4 w-5 items-center justify-center rounded bg-gray-700">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
@@ -934,7 +1037,7 @@
           </div>
         </div>
 
-        <div data-js-slide class="relative pt-5 pb-8">
+        <div data-js-slide class="relative pt-5 pb-5 xl:pb-8">
           <div class="flex items-start justify-between">
             <div>
               <div class="flex items-center gap-2.5">
@@ -945,7 +1048,7 @@
             </div>
           </div>
 
-          <div data-js-slide-cont class="mt-5 flex h-[480px] gap-12">
+          <div data-js-slide-cont class="-mr-16 -ml-3 mt-5 flex h-[480px] gap-12 md:mr-0 md:ml-0">
             <div class="flex grow flex-col">
               <div class="flex shrink-0 items-center text-xxs text-gray-500">
                 <div class="flex h-2.5 grow">
@@ -984,12 +1087,12 @@
                 <div id="chart-rt-12" class="absolute inset-0"></div>
               </div>
             </div>
-            <div class="w-76 shrink-0">
+            <div class="hidden w-76 shrink-0 lg:block">
               <div class="h-[423px] bg-gray-800"></div>
             </div>
           </div>
 
-          <div class="pointer-events-none absolute right-0 bottom-0 left-0">
+          <div class="pointer-events-none absolute right-0 bottom-0 left-0 hidden xl:block">
             <div class="absolute top-1/2 right-0 left-0 h-px -translate-y-1/2 bg-gray-600"></div>
             <div class="relative m-auto flex h-4 w-5 items-center justify-center rounded bg-gray-700">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
@@ -999,7 +1102,7 @@
           </div>
         </div>
 
-        <div data-js-slide class="relative pt-5 pb-8">
+        <div data-js-slide class="relative pt-5 pb-5 xl:pb-8">
           <div class="flex items-start justify-between">
             <div>
               <div class="flex items-center gap-2.5">
@@ -1010,7 +1113,7 @@
             </div>
           </div>
 
-          <div data-js-slide-cont class="mt-5 flex h-[480px] gap-12">
+          <div data-js-slide-cont class="-mr-16 -ml-3 mt-5 flex h-[480px] gap-12 md:mr-0 md:ml-0">
             <div class="flex grow flex-col">
               <div class="flex shrink-0 items-center text-xxs text-gray-500">
                 <div class="flex h-2.5 grow">
@@ -1049,12 +1152,12 @@
                 <div id="chart-rt-13" class="absolute inset-0"></div>
               </div>
             </div>
-            <div class="w-76 shrink-0">
+            <div class="hidden w-76 shrink-0 lg:block">
               <div class="h-[423px] bg-gray-800"></div>
             </div>
           </div>
 
-          <div class="pointer-events-none absolute right-0 bottom-0 left-0">
+          <div class="pointer-events-none absolute right-0 bottom-0 left-0 hidden xl:block">
             <div class="absolute top-1/2 right-0 left-0 h-px -translate-y-1/2 bg-gray-600"></div>
             <div class="relative m-auto flex h-4 w-5 items-center justify-center rounded bg-gray-700">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
@@ -1064,7 +1167,7 @@
           </div>
         </div>
 
-        <div data-js-slide class="relative pt-5 pb-8">
+        <div data-js-slide class="relative pt-5 pb-5 xl:pb-8">
           <div class="flex items-start justify-between">
             <div>
               <div class="flex items-center gap-2.5">
@@ -1075,7 +1178,7 @@
             </div>
           </div>
 
-          <div data-js-slide-cont class="mt-5 flex h-[480px] gap-12">
+          <div data-js-slide-cont class="-mr-16 -ml-3 mt-5 flex h-[480px] gap-12 md:mr-0 md:ml-0">
             <div class="flex grow flex-col">
               <div class="flex shrink-0 items-center text-xxs text-gray-500">
                 <div class="flex h-2.5 grow">
@@ -1114,12 +1217,12 @@
                 <div id="chart-rt-14" class="absolute inset-0"></div>
               </div>
             </div>
-            <div class="w-76 shrink-0">
+            <div class="hidden w-76 shrink-0 lg:block">
               <div class="h-[423px] bg-gray-800"></div>
             </div>
           </div>
 
-          <div class="pointer-events-none absolute right-0 bottom-0 left-0">
+          <div class="pointer-events-none absolute right-0 bottom-0 left-0 hidden xl:block">
             <div class="absolute top-1/2 right-0 left-0 h-px -translate-y-1/2 bg-gray-600"></div>
             <div class="relative m-auto flex h-4 w-5 items-center justify-center rounded bg-gray-700">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
@@ -1129,7 +1232,7 @@
           </div>
         </div>
 
-        <div data-js-slide class="relative pt-5 pb-8">
+        <div data-js-slide class="relative pt-5 pb-5 xl:pb-8">
           <div class="flex items-start justify-between">
             <div>
               <div class="flex items-center gap-2.5">
@@ -1140,7 +1243,7 @@
             </div>
           </div>
 
-          <div data-js-slide-cont class="mt-5 flex h-[480px] gap-12">
+          <div data-js-slide-cont class="-mr-16 -ml-3 mt-5 flex h-[480px] gap-12 md:mr-0 md:ml-0">
             <div class="flex grow flex-col">
               <div class="flex shrink-0 items-center text-xxs text-gray-500">
                 <div class="flex h-2.5 grow">
@@ -1179,12 +1282,12 @@
                 <div id="chart-rt-15" class="absolute inset-0"></div>
               </div>
             </div>
-            <div class="w-76 shrink-0">
+            <div class="hidden w-76 shrink-0 lg:block">
               <div class="h-[423px] bg-gray-800"></div>
             </div>
           </div>
 
-          <div class="pointer-events-none absolute right-0 bottom-0 left-0">
+          <div class="pointer-events-none absolute right-0 bottom-0 left-0 hidden xl:block">
             <div class="absolute top-1/2 right-0 left-0 h-px -translate-y-1/2 bg-gray-600"></div>
             <div class="relative m-auto flex h-4 w-5 items-center justify-center rounded bg-gray-700">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
@@ -1194,7 +1297,7 @@
           </div>
         </div>
 
-        <div data-js-slide class="relative pt-5 pb-8">
+        <div data-js-slide class="relative pt-5 pb-5 xl:pb-8">
           <div class="flex items-start justify-between">
             <div>
               <div class="flex items-center gap-2.5">
@@ -1205,7 +1308,7 @@
             </div>
           </div>
 
-          <div data-js-slide-cont class="mt-5 flex h-[480px] gap-12">
+          <div data-js-slide-cont class="-mr-16 -ml-3 mt-5 flex h-[480px] gap-12 md:mr-0 md:ml-0">
             <div class="flex grow flex-col">
               <div class="flex shrink-0 items-center text-xxs text-gray-500">
                 <div class="flex h-2.5 grow">
@@ -1244,12 +1347,12 @@
                 <div id="chart-rt-16" class="absolute inset-0"></div>
               </div>
             </div>
-            <div class="w-76 shrink-0">
+            <div class="hidden w-76 shrink-0 lg:block">
               <div class="h-[423px] bg-gray-800"></div>
             </div>
           </div>
 
-          <div class="pointer-events-none absolute right-0 bottom-0 left-0">
+          <div class="pointer-events-none absolute right-0 bottom-0 left-0 hidden xl:block">
             <div class="absolute top-1/2 right-0 left-0 h-px -translate-y-1/2 bg-gray-600"></div>
             <div class="relative m-auto flex h-4 w-5 items-center justify-center rounded bg-gray-700">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
@@ -1262,8 +1365,8 @@
       <!--/ content -->
 
       <!-- left sidebar -->
-      <div class="fixed top-[50px] bottom-0 left-0 z-header w-48 border-r border-gray-700">
-        <div class="flex h-9 items-center border-b border-gray-700 px-2.5">
+      <div class="fixed top-[50px] right-0 left-0 z-header border-gray-700 bg-gray-900 xl:bottom-0 xl:w-48 xl:border-r">
+        <div class="flex h-9 items-center px-2.5 xl:border-b xl:border-gray-700">
           <button type="button" class="flex items-center justify-center gap-1 text-xs text-blue-300 hover:text-white">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="-ml-0.5">
               <path d="M12.6666 8L3.33329 8"></path>
@@ -1272,24 +1375,26 @@
             <span>Back to My Watchlist #2</span>
           </button>
         </div>
-        <div class="absolute top-9 right-0 bottom-0 left-0 overflow-auto py-3 px-5">
-          <div class="text-h6 uppercase">Stocks (43)</div>
-          <div class="mt-2 -mr-2 mb-3 text-xs">
-            Use Up
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="currentcolor" class="mt-px inline-block rounded-sm bg-gray-700 align-top text-gray-500">
-              <path d="M4.91429 10.5C4.80383 10.5 4.71429 10.4105 4.71429 10.3V6.84286C4.71429 6.7324 4.62474 6.64286 4.51429 6.64286H1.94075C1.76892 6.64286 1.67709 6.44047 1.79024 6.31116L5.84948 1.67202C5.92917 1.58095 6.07083 1.58095 6.15052 1.67202L10.2098 6.31116C10.3229 6.44047 10.2311 6.64286 10.0592 6.64286H7.48571C7.37526 6.64286 7.28571 6.7324 7.28571 6.84286V10.3C7.28571 10.4105 7.19617 10.5 7.08571 10.5H4.91429Z"></path>
-            </svg>
-            and Down
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="currentcolor" class="mt-px inline-block rounded-sm bg-gray-700 align-top text-gray-500">
-              <path d="M4.91429 1.5C4.80383 1.5 4.71429 1.58954 4.71429 1.7V5.15714C4.71429 5.2676 4.62474 5.35714 4.51429 5.35714H1.94075C1.76892 5.35714 1.67709 5.55953 1.79024 5.68884L5.84948 10.328C5.92917 10.419 6.07083 10.419 6.15052 10.328L10.2098 5.68884C10.3229 5.55953 10.2311 5.35714 10.0592 5.35714H7.48571C7.37526 5.35714 7.28571 5.2676 7.28571 5.15714V1.7C7.28571 1.58954 7.19617 1.5 7.08571 1.5H4.91429Z"></path>
-            </svg>
-            keys to navigate between stocks
+        <div class="absolute top-9 right-0 left-0 overflow-auto font-bold xl:bottom-0 xl:py-3 xl:px-5">
+          <div class="hidden xl:block">
+            <div class="text-h6 uppercase">Stocks (43)</div>
+            <div class="mt-2 -mr-2 mb-3 text-xs">
+              Use Up
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="currentcolor" class="mt-px inline-block rounded-sm bg-gray-700 align-top text-gray-500">
+                <path d="M4.91429 10.5C4.80383 10.5 4.71429 10.4105 4.71429 10.3V6.84286C4.71429 6.7324 4.62474 6.64286 4.51429 6.64286H1.94075C1.76892 6.64286 1.67709 6.44047 1.79024 6.31116L5.84948 1.67202C5.92917 1.58095 6.07083 1.58095 6.15052 1.67202L10.2098 6.31116C10.3229 6.44047 10.2311 6.64286 10.0592 6.64286H7.48571C7.37526 6.64286 7.28571 6.7324 7.28571 6.84286V10.3C7.28571 10.4105 7.19617 10.5 7.08571 10.5H4.91429Z"></path>
+              </svg>
+              and Down
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="currentcolor" class="mt-px inline-block rounded-sm bg-gray-700 align-top text-gray-500">
+                <path d="M4.91429 1.5C4.80383 1.5 4.71429 1.58954 4.71429 1.7V5.15714C4.71429 5.2676 4.62474 5.35714 4.51429 5.35714H1.94075C1.76892 5.35714 1.67709 5.55953 1.79024 5.68884L5.84948 10.328C5.92917 10.419 6.07083 10.419 6.15052 10.328L10.2098 5.68884C10.3229 5.55953 10.2311 5.35714 10.0592 5.35714H7.48571C7.37526 5.35714 7.28571 5.2676 7.28571 5.15714V1.7C7.28571 1.58954 7.19617 1.5 7.08571 1.5H4.91429Z"></path>
+              </svg>
+              keys to navigate between stocks
+            </div>
           </div>
-          <div data-js-track class="relative -mx-2.5">
-            <div data-js-track-item class="py-0.5">
-              <div class="flex h-[30px] cursor-pointer items-center justify-between rounded-md bg-gradient-to-b from-blue-600 to-blue-800 px-2.5">
+          <div data-js-track class="relative flex overflow-auto bg-gray-700 xl:-mx-2.5 xl:block xl:overflow-visible xl:bg-transparent">
+            <div data-js-track-item class="border-l border-gray-600 first:border-0 xl:border-0 xl:py-0.5">
+              <div aria-selected="true" class="group flex h-8 cursor-pointer items-center justify-between border-b border-gray-600 px-5 pt-px aria-selected:border-blue-selected aria-selected:bg-gray-800 xl:h-[30px] xl:rounded-md xl:border-0 xl:px-2.5 xl:hover:bg-gray-700 xl:aria-selected:pointer-events-none xl:aria-selected:cursor-default xl:aria-selected:bg-gradient-to-b xl:aria-selected:from-blue-600 xl:aria-selected:to-blue-800">
                 <span class="text-white">AAPL</span>
-                <button type="button" class="-m-1 hidden p-1 hover:text-white group-hover:block">
+                <button type="button" class="-m-1 hidden p-1 hover:text-white xl:group-hover:block">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 4L4 12"></path>
                     <path d="M4 4L12 12"></path>
@@ -1297,10 +1402,10 @@
                 </button>
               </div>
             </div>
-            <div data-js-track-item class="py-0.5">
-              <div class="group flex h-[30px] cursor-pointer items-center justify-between rounded-md px-2.5 hover:bg-gray-700">
+            <div data-js-track-item class="border-l border-gray-600 first:border-0 xl:border-0 xl:py-0.5">
+              <div class="group flex h-8 cursor-pointer items-center justify-between border-b border-gray-600 px-5 pt-px aria-selected:border-blue-selected aria-selected:bg-gray-800 xl:h-[30px] xl:rounded-md xl:border-0 xl:px-2.5 xl:hover:bg-gray-700 xl:aria-selected:pointer-events-none xl:aria-selected:cursor-default xl:aria-selected:bg-gradient-to-b xl:aria-selected:from-blue-600 xl:aria-selected:to-blue-800">
                 <span class="text-white">MSFT</span>
-                <button type="button" class="-m-1 hidden p-1 hover:text-white group-hover:block">
+                <button type="button" class="-m-1 hidden p-1 hover:text-white xl:group-hover:block">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 4L4 12"></path>
                     <path d="M4 4L12 12"></path>
@@ -1308,10 +1413,10 @@
                 </button>
               </div>
             </div>
-            <div data-js-track-item class="py-0.5">
-              <div class="group flex h-[30px] cursor-pointer items-center justify-between rounded-md px-2.5 hover:bg-gray-700">
+            <div data-js-track-item class="border-l border-gray-600 first:border-0 xl:border-0 xl:py-0.5">
+              <div class="group flex h-8 cursor-pointer items-center justify-between border-b border-gray-600 px-5 pt-px aria-selected:border-blue-selected aria-selected:bg-gray-800 xl:h-[30px] xl:rounded-md xl:border-0 xl:px-2.5 xl:hover:bg-gray-700 xl:aria-selected:pointer-events-none xl:aria-selected:cursor-default xl:aria-selected:bg-gradient-to-b xl:aria-selected:from-blue-600 xl:aria-selected:to-blue-800">
                 <span class="text-white">TSLA</span>
-                <button type="button" class="-m-1 hidden p-1 hover:text-white group-hover:block">
+                <button type="button" class="-m-1 hidden p-1 hover:text-white xl:group-hover:block">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 4L4 12"></path>
                     <path d="M4 4L12 12"></path>
@@ -1319,10 +1424,10 @@
                 </button>
               </div>
             </div>
-            <div data-js-track-item class="py-0.5">
-              <div class="group flex h-[30px] cursor-pointer items-center justify-between rounded-md px-2.5 hover:bg-gray-700">
+            <div data-js-track-item class="border-l border-gray-600 first:border-0 xl:border-0 xl:py-0.5">
+              <div class="group flex h-8 cursor-pointer items-center justify-between border-b border-gray-600 px-5 pt-px aria-selected:border-blue-selected aria-selected:bg-gray-800 xl:h-[30px] xl:rounded-md xl:border-0 xl:px-2.5 xl:hover:bg-gray-700 xl:aria-selected:pointer-events-none xl:aria-selected:cursor-default xl:aria-selected:bg-gradient-to-b xl:aria-selected:from-blue-600 xl:aria-selected:to-blue-800">
                 <span class="text-white">AMZN</span>
-                <button type="button" class="-m-1 hidden p-1 hover:text-white group-hover:block">
+                <button type="button" class="-m-1 hidden p-1 hover:text-white xl:group-hover:block">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 4L4 12"></path>
                     <path d="M4 4L12 12"></path>
@@ -1330,10 +1435,10 @@
                 </button>
               </div>
             </div>
-            <div data-js-track-item class="py-0.5">
-              <div class="group flex h-[30px] cursor-pointer items-center justify-between rounded-md px-2.5 hover:bg-gray-700">
+            <div data-js-track-item class="border-l border-gray-600 first:border-0 xl:border-0 xl:py-0.5">
+              <div class="group flex h-8 cursor-pointer items-center justify-between border-b border-gray-600 px-5 pt-px aria-selected:border-blue-selected aria-selected:bg-gray-800 xl:h-[30px] xl:rounded-md xl:border-0 xl:px-2.5 xl:hover:bg-gray-700 xl:aria-selected:pointer-events-none xl:aria-selected:cursor-default xl:aria-selected:bg-gradient-to-b xl:aria-selected:from-blue-600 xl:aria-selected:to-blue-800">
                 <span class="text-white">NFLX</span>
-                <button type="button" class="-m-1 hidden p-1 hover:text-white group-hover:block">
+                <button type="button" class="-m-1 hidden p-1 hover:text-white xl:group-hover:block">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 4L4 12"></path>
                     <path d="M4 4L12 12"></path>
@@ -1341,10 +1446,10 @@
                 </button>
               </div>
             </div>
-            <div data-js-track-item class="py-0.5">
-              <div class="group flex h-[30px] cursor-pointer items-center justify-between rounded-md px-2.5 hover:bg-gray-700">
+            <div data-js-track-item class="border-l border-gray-600 first:border-0 xl:border-0 xl:py-0.5">
+              <div class="group flex h-8 cursor-pointer items-center justify-between border-b border-gray-600 px-5 pt-px aria-selected:border-blue-selected aria-selected:bg-gray-800 xl:h-[30px] xl:rounded-md xl:border-0 xl:px-2.5 xl:hover:bg-gray-700 xl:aria-selected:pointer-events-none xl:aria-selected:cursor-default xl:aria-selected:bg-gradient-to-b xl:aria-selected:from-blue-600 xl:aria-selected:to-blue-800">
                 <span class="text-white">NVDA</span>
-                <button type="button" class="-m-1 hidden p-1 hover:text-white group-hover:block">
+                <button type="button" class="-m-1 hidden p-1 hover:text-white xl:group-hover:block">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 4L4 12"></path>
                     <path d="M4 4L12 12"></path>
@@ -1352,10 +1457,10 @@
                 </button>
               </div>
             </div>
-            <div data-js-track-item class="py-0.5">
-              <div class="group flex h-[30px] cursor-pointer items-center justify-between rounded-md px-2.5 hover:bg-gray-700">
+            <div data-js-track-item class="border-l border-gray-600 first:border-0 xl:border-0 xl:py-0.5">
+              <div class="group flex h-8 cursor-pointer items-center justify-between border-b border-gray-600 px-5 pt-px aria-selected:border-blue-selected aria-selected:bg-gray-800 xl:h-[30px] xl:rounded-md xl:border-0 xl:px-2.5 xl:hover:bg-gray-700 xl:aria-selected:pointer-events-none xl:aria-selected:cursor-default xl:aria-selected:bg-gradient-to-b xl:aria-selected:from-blue-600 xl:aria-selected:to-blue-800">
                 <span class="text-white">MSFT</span>
-                <button type="button" class="-m-1 hidden p-1 hover:text-white group-hover:block">
+                <button type="button" class="-m-1 hidden p-1 hover:text-white xl:group-hover:block">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 4L4 12"></path>
                     <path d="M4 4L12 12"></path>
@@ -1363,10 +1468,10 @@
                 </button>
               </div>
             </div>
-            <div data-js-track-item class="py-0.5">
-              <div class="group flex h-[30px] cursor-pointer items-center justify-between rounded-md px-2.5 hover:bg-gray-700">
+            <div data-js-track-item class="border-l border-gray-600 first:border-0 xl:border-0 xl:py-0.5">
+              <div class="group flex h-8 cursor-pointer items-center justify-between border-b border-gray-600 px-5 pt-px aria-selected:border-blue-selected aria-selected:bg-gray-800 xl:h-[30px] xl:rounded-md xl:border-0 xl:px-2.5 xl:hover:bg-gray-700 xl:aria-selected:pointer-events-none xl:aria-selected:cursor-default xl:aria-selected:bg-gradient-to-b xl:aria-selected:from-blue-600 xl:aria-selected:to-blue-800">
                 <span class="text-white">TSLA</span>
-                <button type="button" class="-m-1 hidden p-1 hover:text-white group-hover:block">
+                <button type="button" class="-m-1 hidden p-1 hover:text-white xl:group-hover:block">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 4L4 12"></path>
                     <path d="M4 4L12 12"></path>
@@ -1374,10 +1479,10 @@
                 </button>
               </div>
             </div>
-            <div data-js-track-item class="py-0.5">
-              <div class="group flex h-[30px] cursor-pointer items-center justify-between rounded-md px-2.5 hover:bg-gray-700">
+            <div data-js-track-item class="border-l border-gray-600 first:border-0 xl:border-0 xl:py-0.5">
+              <div class="group flex h-8 cursor-pointer items-center justify-between border-b border-gray-600 px-5 pt-px aria-selected:border-blue-selected aria-selected:bg-gray-800 xl:h-[30px] xl:rounded-md xl:border-0 xl:px-2.5 xl:hover:bg-gray-700 xl:aria-selected:pointer-events-none xl:aria-selected:cursor-default xl:aria-selected:bg-gradient-to-b xl:aria-selected:from-blue-600 xl:aria-selected:to-blue-800">
                 <span class="text-white">AMZN</span>
-                <button type="button" class="-m-1 hidden p-1 hover:text-white group-hover:block">
+                <button type="button" class="-m-1 hidden p-1 hover:text-white xl:group-hover:block">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 4L4 12"></path>
                     <path d="M4 4L12 12"></path>
@@ -1385,10 +1490,10 @@
                 </button>
               </div>
             </div>
-            <div data-js-track-item class="py-0.5">
-              <div class="group flex h-[30px] cursor-pointer items-center justify-between rounded-md px-2.5 hover:bg-gray-700">
+            <div data-js-track-item class="border-l border-gray-600 first:border-0 xl:border-0 xl:py-0.5">
+              <div class="group flex h-8 cursor-pointer items-center justify-between border-b border-gray-600 px-5 pt-px aria-selected:border-blue-selected aria-selected:bg-gray-800 xl:h-[30px] xl:rounded-md xl:border-0 xl:px-2.5 xl:hover:bg-gray-700 xl:aria-selected:pointer-events-none xl:aria-selected:cursor-default xl:aria-selected:bg-gradient-to-b xl:aria-selected:from-blue-600 xl:aria-selected:to-blue-800">
                 <span class="text-white">NFLX</span>
-                <button type="button" class="-m-1 hidden p-1 hover:text-white group-hover:block">
+                <button type="button" class="-m-1 hidden p-1 hover:text-white xl:group-hover:block">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 4L4 12"></path>
                     <path d="M4 4L12 12"></path>
@@ -1396,10 +1501,10 @@
                 </button>
               </div>
             </div>
-            <div data-js-track-item class="py-0.5">
-              <div class="group flex h-[30px] cursor-pointer items-center justify-between rounded-md px-2.5 hover:bg-gray-700">
+            <div data-js-track-item class="border-l border-gray-600 first:border-0 xl:border-0 xl:py-0.5">
+              <div class="group flex h-8 cursor-pointer items-center justify-between border-b border-gray-600 px-5 pt-px aria-selected:border-blue-selected aria-selected:bg-gray-800 xl:h-[30px] xl:rounded-md xl:border-0 xl:px-2.5 xl:hover:bg-gray-700 xl:aria-selected:pointer-events-none xl:aria-selected:cursor-default xl:aria-selected:bg-gradient-to-b xl:aria-selected:from-blue-600 xl:aria-selected:to-blue-800">
                 <span class="text-white">NVDA</span>
-                <button type="button" class="-m-1 hidden p-1 hover:text-white group-hover:block">
+                <button type="button" class="-m-1 hidden p-1 hover:text-white xl:group-hover:block">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 4L4 12"></path>
                     <path d="M4 4L12 12"></path>
@@ -1407,10 +1512,10 @@
                 </button>
               </div>
             </div>
-            <div data-js-track-item class="py-0.5">
-              <div class="group flex h-[30px] cursor-pointer items-center justify-between rounded-md px-2.5 hover:bg-gray-700">
+            <div data-js-track-item class="border-l border-gray-600 first:border-0 xl:border-0 xl:py-0.5">
+              <div class="group flex h-8 cursor-pointer items-center justify-between border-b border-gray-600 px-5 pt-px aria-selected:border-blue-selected aria-selected:bg-gray-800 xl:h-[30px] xl:rounded-md xl:border-0 xl:px-2.5 xl:hover:bg-gray-700 xl:aria-selected:pointer-events-none xl:aria-selected:cursor-default xl:aria-selected:bg-gradient-to-b xl:aria-selected:from-blue-600 xl:aria-selected:to-blue-800">
                 <span class="text-white">MSFT</span>
-                <button type="button" class="-m-1 hidden p-1 hover:text-white group-hover:block">
+                <button type="button" class="-m-1 hidden p-1 hover:text-white xl:group-hover:block">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 4L4 12"></path>
                     <path d="M4 4L12 12"></path>
@@ -1418,10 +1523,10 @@
                 </button>
               </div>
             </div>
-            <div data-js-track-item class="py-0.5">
-              <div class="group flex h-[30px] cursor-pointer items-center justify-between rounded-md px-2.5 hover:bg-gray-700">
+            <div data-js-track-item class="border-l border-gray-600 first:border-0 xl:border-0 xl:py-0.5">
+              <div class="group flex h-8 cursor-pointer items-center justify-between border-b border-gray-600 px-5 pt-px aria-selected:border-blue-selected aria-selected:bg-gray-800 xl:h-[30px] xl:rounded-md xl:border-0 xl:px-2.5 xl:hover:bg-gray-700 xl:aria-selected:pointer-events-none xl:aria-selected:cursor-default xl:aria-selected:bg-gradient-to-b xl:aria-selected:from-blue-600 xl:aria-selected:to-blue-800">
                 <span class="text-white">TSLA</span>
-                <button type="button" class="-m-1 hidden p-1 hover:text-white group-hover:block">
+                <button type="button" class="-m-1 hidden p-1 hover:text-white xl:group-hover:block">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 4L4 12"></path>
                     <path d="M4 4L12 12"></path>
@@ -1429,10 +1534,10 @@
                 </button>
               </div>
             </div>
-            <div data-js-track-item class="py-0.5">
-              <div class="group flex h-[30px] cursor-pointer items-center justify-between rounded-md px-2.5 hover:bg-gray-700">
+            <div data-js-track-item class="border-l border-gray-600 first:border-0 xl:border-0 xl:py-0.5">
+              <div class="group flex h-8 cursor-pointer items-center justify-between border-b border-gray-600 px-5 pt-px aria-selected:border-blue-selected aria-selected:bg-gray-800 xl:h-[30px] xl:rounded-md xl:border-0 xl:px-2.5 xl:hover:bg-gray-700 xl:aria-selected:pointer-events-none xl:aria-selected:cursor-default xl:aria-selected:bg-gradient-to-b xl:aria-selected:from-blue-600 xl:aria-selected:to-blue-800">
                 <span class="text-white">AMZN</span>
-                <button type="button" class="-m-1 hidden p-1 hover:text-white group-hover:block">
+                <button type="button" class="-m-1 hidden p-1 hover:text-white xl:group-hover:block">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 4L4 12"></path>
                     <path d="M4 4L12 12"></path>
@@ -1440,10 +1545,10 @@
                 </button>
               </div>
             </div>
-            <div data-js-track-item class="py-0.5">
-              <div class="group flex h-[30px] cursor-pointer items-center justify-between rounded-md px-2.5 hover:bg-gray-700">
+            <div data-js-track-item class="border-l border-gray-600 first:border-0 xl:border-0 xl:py-0.5">
+              <div class="group flex h-8 cursor-pointer items-center justify-between border-b border-gray-600 px-5 pt-px aria-selected:border-blue-selected aria-selected:bg-gray-800 xl:h-[30px] xl:rounded-md xl:border-0 xl:px-2.5 xl:hover:bg-gray-700 xl:aria-selected:pointer-events-none xl:aria-selected:cursor-default xl:aria-selected:bg-gradient-to-b xl:aria-selected:from-blue-600 xl:aria-selected:to-blue-800">
                 <span class="text-white">NFLX</span>
-                <button type="button" class="-m-1 hidden p-1 hover:text-white group-hover:block">
+                <button type="button" class="-m-1 hidden p-1 hover:text-white xl:group-hover:block">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 4L4 12"></path>
                     <path d="M4 4L12 12"></path>
@@ -1451,10 +1556,10 @@
                 </button>
               </div>
             </div>
-            <div data-js-track-item class="py-0.5">
-              <div class="group flex h-[30px] cursor-pointer items-center justify-between rounded-md px-2.5 hover:bg-gray-700">
+            <div data-js-track-item class="border-l border-gray-600 first:border-0 xl:border-0 xl:py-0.5">
+              <div class="group flex h-8 cursor-pointer items-center justify-between border-b border-gray-600 px-5 pt-px aria-selected:border-blue-selected aria-selected:bg-gray-800 xl:h-[30px] xl:rounded-md xl:border-0 xl:px-2.5 xl:hover:bg-gray-700 xl:aria-selected:pointer-events-none xl:aria-selected:cursor-default xl:aria-selected:bg-gradient-to-b xl:aria-selected:from-blue-600 xl:aria-selected:to-blue-800">
                 <span class="text-white">NVDA</span>
-                <button type="button" class="-m-1 hidden p-1 hover:text-white group-hover:block">
+                <button type="button" class="-m-1 hidden p-1 hover:text-white xl:group-hover:block">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 4L4 12"></path>
                     <path d="M4 4L12 12"></path>
@@ -1462,14 +1567,14 @@
                 </button>
               </div>
             </div>
-            <div data-js-track-frame class="pointer-events-none absolute top-0 -right-[5px] -left-[5px] box-content h-[34px] -translate-y-1 rounded-xl border border-dashed border-gray-600 py-1"></div>
+            <div data-js-track-frame class="pointer-events-none absolute top-0 -right-[5px] -left-[5px] box-content hidden h-[34px] -translate-y-1 rounded-xl border border-dashed border-gray-600 py-1 xl:block"></div>
           </div>
         </div>
       </div>
       <!--/ left sidebar -->
 
       <!-- right sidebar -->
-      <div id="sidebar" class="fixed top-[86px] right-0 bottom-0 z-header w-96 translate-x-full border-l border-gray-600 bg-gray-700 transition-all duration-300">
+      <div id="sidebar" class="fixed right-0 bottom-0 top-[154px] z-header w-full translate-x-full bg-gray-700 transition-all duration-300 sm:w-96 sm:border-l sm:border-gray-600 xl:top-[86px]">
         <!-- right sidebar tabs -->
         <div class="flex">
           <button type="button" data-js-tab="#parameters" class="flex h-9 w-1/2 items-center justify-center border-b border-blue-selected font-bold text-white hover:text-white">Parameters</button>
@@ -2390,46 +2495,6 @@
         </div>
       </div>
       <!--/ right sidebar -->
-
-      <!-- toolbar -->
-      <div class="fixed top-[50px] right-0 bottom-0 left-48 z-header flex h-9 items-center gap-3 border-b border-gray-700 bg-gray-800 px-5">
-        <div class="flex items-center gap-3 text-sm">
-          <button type="button" class="text-white">1D</button>
-          <button type="button" class="text-gray-500 hover:text-white">2D</button>
-          <button type="button" class="text-gray-500 hover:text-white">3D</button>
-          <button type="button" class="text-gray-500 hover:text-white">4D</button>
-          <button type="button" class="text-gray-500 hover:text-white">5D</button>
-          <button type="button" class="text-gray-500 hover:text-white">1M</button>
-          <button type="button" class="text-gray-500 hover:text-white">3M</button>
-          <button type="button" class="text-gray-500 hover:text-white">6M</button>
-          <button type="button" class="text-gray-500 hover:text-white">1Y</button>
-          <button type="button" class="text-gray-500 hover:text-white">5Y</button>
-          <button type="button" class="text-gray-500 hover:text-white">10Y</button>
-        </div>
-
-        <div class="mx-auto flex gap-1.5">
-          <button type="button" class="rounded-full border border-blue-selected bg-gray-700 py-1-px px-2 text-sm text-white">Current</button>
-          <button type="button" class="rounded-full border border-gray-400/50 py-1-px px-2 text-sm text-white hover:border-gray-400">High Low</button>
-          <button type="button" class="rounded-full border border-gray-400/50 py-1-px px-2 text-sm text-white hover:border-gray-400">Splits</button>
-          <button type="button" class="rounded-full border border-gray-400/50 py-1-px px-2 text-sm text-white hover:border-gray-400">Log</button>
-          <button type="button" class="flex items-center gap-1 rounded-full border border-gray-400/50 py-1-px px-2 text-sm text-white hover:border-gray-400">
-            <span>RTX-Kikcker</span>
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="-mr-0.5 text-gray-400">
-              <path d="M4 6L8 10L12 6" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-          </button>
-          <button type="button" class="rounded-full border border-gray-400/50 py-1-px px-2 text-sm text-white hover:border-gray-400">Last Close</button>
-        </div>
-
-        <div class="text-sm">Default Layout</div>
-        <button type="button" data-js-toggle-sidebar class="flex h-[26px] items-center justify-center gap-1 rounded-md bg-button-secondary px-2.5 text-sm text-blue-300 shadow-button hover:text-white">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentcolor" class="-ml-0.5">
-            <path d="M6.99351 1.3335C6.67418 1.3335 6.4012 1.55923 6.33987 1.87256L6.11721 3.01579C5.57004 3.2227 5.06409 3.51177 4.61982 3.87646L3.52346 3.49886C3.22146 3.39486 2.88919 3.51974 2.72919 3.79574L1.72398 5.53792C1.56465 5.81459 1.62264 6.16583 1.8633 6.37516L2.74221 7.13949C2.6965 7.42039 2.66669 7.70635 2.66669 8.00016C2.66669 8.29397 2.6965 8.57994 2.74221 8.86084L1.8633 9.62516C1.62264 9.8345 1.56465 10.1857 1.72398 10.4624L2.72919 12.2046C2.88852 12.4813 3.22146 12.6061 3.52346 12.5028L4.61982 12.1252C5.06395 12.4896 5.57029 12.7777 6.11721 12.9845L6.33987 14.1278C6.4012 14.4411 6.67418 14.6668 6.99351 14.6668H9.00653C9.32587 14.6668 9.59885 14.4411 9.66018 14.1278L9.88284 12.9845C10.43 12.7776 10.936 12.4886 11.3802 12.1239L12.4766 12.5015C12.7786 12.6055 13.1109 12.4813 13.2709 12.2046L14.2761 10.4611C14.4354 10.1844 14.3774 9.8345 14.1367 9.62516L13.2578 8.86084C13.3035 8.57994 13.3334 8.29397 13.3334 8.00016C13.3334 7.70635 13.3035 7.42039 13.2578 7.13949L14.1367 6.37516C14.3774 6.16583 14.4354 5.81459 14.2761 5.53792L13.2709 3.79574C13.1115 3.51907 12.7786 3.39423 12.4766 3.49756L11.3802 3.87516C10.9361 3.51069 10.4298 3.2226 9.88284 3.01579L9.66018 1.87256C9.59885 1.55923 9.32587 1.3335 9.00653 1.3335H6.99351ZM8.00002 5.3335C9.47269 5.3335 10.6667 6.5275 10.6667 8.00016C10.6667 9.47283 9.47269 10.6668 8.00002 10.6668C6.52736 10.6668 5.33336 9.47283 5.33336 8.00016C5.33336 6.5275 6.52736 5.3335 8.00002 5.3335Z"></path>
-          </svg>
-          <span>Edit Data</span>
-        </button>
-      </div>
-      <!--/ toolbar -->
 
       <!-- chart menu -->
       <div data-js-popover="" id="chart-menu" class="fixed z-popover hidden whitespace-nowrap rounded-md border border-gray-500/30 bg-gray-600 p-2-px shadow-modal">
