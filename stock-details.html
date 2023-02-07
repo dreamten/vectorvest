@@ -19,30 +19,30 @@
   </head>
 
   <body>
-    <div class="pt-[50px] pl-48 overflow-hidden">
+    <div class="overflow-hidden pt-[50px] pl-48">
       <!-- header -->
-      <div class="fixed z-header top-0 right-0 left-0 flex items-center h-[50px] border-b border-gray-600 bg-gray-700">
-        <div class="flex items-center justify-center w-[50px] h-[48px] mt-px mr-1">
+      <div class="fixed top-0 right-0 left-0 z-header flex h-[50px] items-center border-b border-gray-600 bg-gray-700">
+        <div class="mt-px mr-1 flex h-[48px] w-[50px] items-center justify-center">
           <img src="img/logo.png" srcset="img/logo@2x.png 2x" width="26" height="26" alt="" />
         </div>
-        <div class="flex gap-5 items-stretch overflow-hidden">
-          <a href="index.html" class="relative flex items-center h-[50px] text-white hover:text-white">
+        <div class="flex items-stretch gap-5 overflow-hidden">
+          <a href="index.html" class="relative flex h-[50px] items-center text-white hover:text-white">
             <span>Home</span>
             <span class="absolute right-0 -bottom-0.5 left-0 h-1 bg-blue-600"></span>
           </a>
-          <a href="forms.html" class="relative flex items-center gap-1 h-[50px] hover:text-white">
+          <a href="forms.html" class="relative flex h-[50px] items-center gap-1 hover:text-white">
             <span>My Stocks</span>
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
               <path d="M4 6L8 10L12 6"></path>
             </svg>
           </a>
-          <a href="popups.html" class="relative flex items-center gap-1 h-[50px] hover:text-white">
+          <a href="popups.html" class="relative flex h-[50px] items-center gap-1 hover:text-white">
             <span>Stock Picks</span>
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
               <path d="M4 6L8 10L12 6"></path>
             </svg>
           </a>
-          <a href="widgets.html" class="relative flex items-center h-[50px] hover:text-white">
+          <a href="widgets.html" class="relative flex h-[50px] items-center hover:text-white">
             <span>Education</span>
           </a>
         </div>
@@ -50,38 +50,38 @@
       <!--/ header -->
 
       <!-- content -->
-      <div class="pt-9 pb-5 px-5">
+      <div class="px-5 pt-9 pb-5">
         <div data-js-slide class="relative pt-5 pb-8">
           <div class="flex items-start justify-between">
             <div>
-              <div class="flex gap-2.5 items-center">
+              <div class="flex items-center gap-2.5">
                 <div class="text-h1 text-white">AAPL</div>
-                <div class="flex items-center h-5 px-2 rounded-full bg-red text-h6 uppercase text-white">Sell</div>
+                <div class="flex h-5 items-center rounded-full bg-red px-2 text-h6 uppercase text-white">Sell</div>
               </div>
               <div class="mt-1">Apple, Inc.</div>
             </div>
-            <div class="flex gap-2 items-center">
-              <button type="button" class="flex gap-1 items-center justify-center h-[26px] px-2.5-px rounded-md border border-blue-300/30 bg-gray-700 text-sm text-blue-300 hover:shadow-button-ter-hover hover:text-white">
+            <div class="flex items-center gap-2">
+              <button type="button" class="flex h-[26px] items-center justify-center gap-1 rounded-md border border-blue-300/30 bg-gray-700 px-2.5-px text-sm text-blue-300 hover:text-white hover:shadow-button-ter-hover">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="-ml-0.5">
                   <path d="M8 4V12"></path>
                   <path d="M4 8H12"></path>
                 </svg>
                 <span>Add to Watchlist</span>
               </button>
-              <button type="button" class="flex gap-1 items-center justify-center w-[26px] h-[26px] rounded-md border border-blue-300/30 bg-gray-700 text-sm text-blue-300 hover:shadow-button-ter-hover hover:text-white">
+              <button type="button" class="flex h-[26px] w-[26px] items-center justify-center gap-1 rounded-md border border-blue-300/30 bg-gray-700 text-sm text-blue-300 hover:text-white hover:shadow-button-ter-hover">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M11 6.2C11 5.35131 10.6839 4.53737 10.1213 3.93726C9.55871 3.33714 8.79565 3 8 3C7.20435 3 6.44129 3.33714 5.87868 3.93726C5.31607 4.53737 5 5.35131 5 6.2C5 9.93333 3.5 11 3.5 11H12.5C12.5 11 11 9.93333 11 6.2Z"></path>
                   <path d="M9.5 13C9.34756 13.3042 9.12877 13.5566 8.86551 13.7321C8.60226 13.9076 8.3038 14 8 14C7.6962 14 7.39774 13.9076 7.13449 13.7321C6.87123 13.5566 6.65244 13.3042 6.5 13"></path>
                 </svg>
               </button>
-              <button type="button" class="flex gap-1 items-center justify-center w-[26px] h-[26px] rounded-md border border-blue-300/30 bg-gray-700 text-sm text-blue-300 hover:shadow-button-ter-hover hover:text-white">
+              <button type="button" class="flex h-[26px] w-[26px] items-center justify-center gap-1 rounded-md border border-blue-300/30 bg-gray-700 text-sm text-blue-300 hover:text-white hover:shadow-button-ter-hover">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="currentcolor">
                   <path d="M3 9.5C3.82843 9.5 4.5 8.82843 4.5 8C4.5 7.17157 3.82843 6.5 3 6.5C2.17157 6.5 1.5 7.17157 1.5 8C1.5 8.82843 2.17157 9.5 3 9.5Z"></path>
                   <path d="M8 9.5C8.82843 9.5 9.5 8.82843 9.5 8C9.5 7.17157 8.82843 6.5 8 6.5C7.17157 6.5 6.5 7.17157 6.5 8C6.5 8.82843 7.17157 9.5 8 9.5Z"></path>
                   <path d="M13 9.5C13.8284 9.5 14.5 8.82843 14.5 8C14.5 7.17157 13.8284 6.5 13 6.5C12.1716 6.5 11.5 7.17157 11.5 8C11.5 8.82843 12.1716 9.5 13 9.5Z"></path>
                 </svg>
               </button>
-              <button type="button" class="flex gap-1 items-center justify-center w-[26px] h-[26px] rounded-md border border-blue-300/30 bg-gray-700 text-sm text-blue-300 hover:shadow-button-ter-hover hover:text-white">
+              <button type="button" class="flex h-[26px] w-[26px] items-center justify-center gap-1 rounded-md border border-blue-300/30 bg-gray-700 text-sm text-blue-300 hover:text-white hover:shadow-button-ter-hover">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M10 3H13V6"></path>
                   <path d="M6 13H3V10"></path>
@@ -92,10 +92,10 @@
             </div>
           </div>
 
-          <div data-js-slide-cont class="flex gap-12 h-[480px] mt-5">
-            <div class="flex flex-col grow">
-              <div class="shrink-0 flex items-center text-xxs text-gray-500">
-                <div class="flex grow h-2.5">
+          <div data-js-slide-cont class="mt-5 flex h-[480px] gap-12">
+            <div class="flex grow flex-col">
+              <div class="flex shrink-0 items-center text-xxs text-gray-500">
+                <div class="flex h-2.5 grow">
                   <div class="w-[3%] bg-green"></div>
                   <div class="w-[1%] bg-red"></div>
                   <div class="w-[2%] bg-green"></div>
@@ -122,42 +122,42 @@
                   <div class="w-[1%] bg-red"></div>
                   <div class="w-[6%] bg-green"></div>
                 </div>
-                <div class="w-[52px] -my-0.5 pl-2">Rating</div>
+                <div class="-my-0.5 w-[52px] pl-2">Rating</div>
               </div>
-              <div class="relative grow mt-2">
+              <div class="relative mt-2 grow">
                 <div id="chart-price" class="absolute inset-0"></div>
               </div>
-              <div class="shrink-0 flex gap-5 mt-6 border-b border-gray-700">
-                <div class="flex items-center gap-1.5 -mb-px pb-2.5 border-b border-gray-700 cursor-pointer hover:text-white">
+              <div class="mt-6 flex shrink-0 gap-5 border-b border-gray-700">
+                <div class="-mb-px flex cursor-pointer items-center gap-1.5 border-b border-gray-700 pb-2.5 hover:text-white">
                   <span>Value</span>
-                  <button type="button" class="flex items-center justify-center w-4 h-4 rounded-full bg-gray-700 text-gray-500 hover:text-white">
+                  <button type="button" class="flex h-4 w-4 items-center justify-center rounded-full bg-gray-700 text-gray-500 hover:text-white">
                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                       <path d="M9 3L3 9" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                       <path d="M3 3L9 9" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                   </button>
                 </div>
-                <div class="flex items-center gap-1.5 -mb-px pb-2.5 border-b border-blue-selected text-white hover:text-white">
+                <div class="-mb-px flex items-center gap-1.5 border-b border-blue-selected pb-2.5 text-white hover:text-white">
                   <span>RV</span>
-                  <button type="button" class="flex items-center justify-center w-4 h-4 rounded-full bg-gray-700 text-gray-500 hover:text-white">
+                  <button type="button" class="flex h-4 w-4 items-center justify-center rounded-full bg-gray-700 text-gray-500 hover:text-white">
                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                       <path d="M9 3L3 9" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                       <path d="M3 3L9 9" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                   </button>
                 </div>
-                <div class="flex items-center gap-1.5 -mb-px pb-2.5 border-b border-gray-700 cursor-pointer hover:text-white">
+                <div class="-mb-px flex cursor-pointer items-center gap-1.5 border-b border-gray-700 pb-2.5 hover:text-white">
                   <span>RS</span>
-                  <button type="button" class="flex items-center justify-center w-4 h-4 rounded-full bg-gray-700 text-gray-500 hover:text-white">
+                  <button type="button" class="flex h-4 w-4 items-center justify-center rounded-full bg-gray-700 text-gray-500 hover:text-white">
                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                       <path d="M9 3L3 9" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                       <path d="M3 3L9 9" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                   </button>
                 </div>
-                <div class="flex items-center gap-1.5 -mb-px pb-2.5 border-b border-gray-700 cursor-pointer hover:text-white">
+                <div class="-mb-px flex cursor-pointer items-center gap-1.5 border-b border-gray-700 pb-2.5 hover:text-white">
                   <span>P/E</span>
-                  <button type="button" class="flex items-center justify-center w-4 h-4 rounded-full bg-gray-700 text-gray-500 hover:text-white">
+                  <button type="button" class="flex h-4 w-4 items-center justify-center rounded-full bg-gray-700 text-gray-500 hover:text-white">
                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                       <path d="M9 3L3 9" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                       <path d="M3 3L9 9" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -165,21 +165,21 @@
                   </button>
                 </div>
               </div>
-              <div class="relative grow mt-4">
+              <div class="relative mt-4 grow">
                 <div id="chart-rt" class="absolute inset-0"></div>
               </div>
             </div>
-            <div class="shrink-0 w-76">
-              <label class="flex gap-2 items-center py-1.5 px-2 bg-gray-600/40 cursor-pointer">
-                <input type="checkbox" checked="" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+            <div class="w-76 shrink-0">
+              <label class="flex cursor-pointer items-center gap-2 bg-gray-600/40 py-1.5 px-2">
+                <input type="checkbox" checked="" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                   <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="#C3EC4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
                 <span>Value</span>
                 <span class="ml-auto text-white">200.2456</span>
               </label>
-              <label class="flex gap-2 items-center py-1.5 px-2 cursor-pointer">
-                <input type="checkbox" checked="" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+              <label class="flex cursor-pointer items-center gap-2 py-1.5 px-2">
+                <input type="checkbox" checked="" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                   <rect x="3" width="1" height="4" class="fill-red" />
                   <rect x="1.5" y="4.5" width="4" height="7" class="fill-red stroke-red" />
@@ -210,62 +210,62 @@
                   </tr>
                 </table>
               </div>
-              <label class="flex gap-2 items-center py-1.5 px-2 bg-gray-600/40 cursor-pointer">
-                <input type="checkbox" checked="" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+              <label class="flex cursor-pointer items-center gap-2 bg-gray-600/40 py-1.5 px-2">
+                <input type="checkbox" checked="" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="text-[#FEBE2B]">
                   <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
                 <span>RV</span>
                 <span class="ml-auto text-white">200.2456</span>
               </label>
-              <label class="flex gap-2 items-center py-1.5 px-2 cursor-pointer">
-                <input type="checkbox" checked="" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+              <label class="flex cursor-pointer items-center gap-2 py-1.5 px-2">
+                <input type="checkbox" checked="" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                   <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="#A1B1EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
                 <span>RS</span>
                 <span class="ml-auto text-white">200.2456</span>
               </label>
-              <label class="flex gap-2 items-center py-1.5 px-2 bg-gray-600/40 cursor-pointer">
-                <input type="checkbox" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+              <label class="flex cursor-pointer items-center gap-2 bg-gray-600/40 py-1.5 px-2">
+                <input type="checkbox" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                   <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="#A16319" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
                 <span>GRT</span>
                 <span class="ml-auto text-white">200.2456</span>
               </label>
-              <label class="flex gap-2 items-center py-1.5 px-2 cursor-pointer">
-                <input type="checkbox" checked="" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+              <label class="flex cursor-pointer items-center gap-2 py-1.5 px-2">
+                <input type="checkbox" checked="" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                   <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="#C5443C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
                 <span>P/E</span>
                 <span class="ml-auto text-white">200.2456</span>
               </label>
-              <label class="flex gap-2 items-center py-1.5 px-2 bg-gray-600/40 cursor-pointer">
-                <input type="checkbox" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+              <label class="flex cursor-pointer items-center gap-2 bg-gray-600/40 py-1.5 px-2">
+                <input type="checkbox" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                   <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="#FFC9A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
                 <span>CI</span>
                 <span class="ml-auto text-white">200.2456</span>
               </label>
-              <label class="flex gap-2 items-center py-1.5 px-2 cursor-pointer">
-                <input type="checkbox" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+              <label class="flex cursor-pointer items-center gap-2 py-1.5 px-2">
+                <input type="checkbox" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="text-[#FFCDCB]">
                   <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
                 <span>Dividends</span>
               </label>
-              <label class="flex gap-2 items-center py-1.5 px-2 bg-gray-600/40 cursor-pointer">
-                <input type="checkbox" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+              <label class="flex cursor-pointer items-center gap-2 bg-gray-600/40 py-1.5 px-2">
+                <input type="checkbox" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="text-[#FBE94D]">
                   <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
                 <span>Earnings</span>
               </label>
-              <label class="flex gap-2 items-center py-1.5 px-2 cursor-pointer">
-                <input type="checkbox" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+              <label class="flex cursor-pointer items-center gap-2 py-1.5 px-2">
+                <input type="checkbox" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="text-[#C8E7D1]">
                   <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
@@ -274,9 +274,9 @@
             </div>
           </div>
 
-          <div class="absolute right-0 bottom-0 left-0 pointer-events-none">
-            <div class="absolute top-1/2 right-0 left-0 h-px bg-gray-600 -translate-y-1/2"></div>
-            <div class="relative flex items-center justify-center w-5 h-4 m-auto rounded bg-gray-700">
+          <div class="pointer-events-none absolute right-0 bottom-0 left-0">
+            <div class="absolute top-1/2 right-0 left-0 h-px -translate-y-1/2 bg-gray-600"></div>
+            <div class="relative m-auto flex h-4 w-5 items-center justify-center rounded bg-gray-700">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                 <path d="M3 7.75L6 10.75L9 7.75M3 4.25L6 1.25L9 4.25" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
@@ -287,18 +287,18 @@
         <div data-js-slide class="relative pt-5 pb-8">
           <div class="flex items-start justify-between">
             <div>
-              <div class="flex gap-2.5 items-center">
+              <div class="flex items-center gap-2.5">
                 <div class="text-h1 text-white">MSFT</div>
-                <div class="flex items-center h-5 px-2 rounded-full bg-green text-h6 uppercase text-white">Buy</div>
+                <div class="flex h-5 items-center rounded-full bg-green px-2 text-h6 uppercase text-white">Buy</div>
               </div>
               <div class="mt-1">Microsoft</div>
             </div>
           </div>
 
-          <div data-js-slide-cont class="flex gap-12 h-[480px] mt-5">
-            <div class="flex flex-col grow">
-              <div class="shrink-0 flex items-center text-xxs text-gray-500">
-                <div class="flex grow h-2.5">
+          <div data-js-slide-cont class="mt-5 flex h-[480px] gap-12">
+            <div class="flex grow flex-col">
+              <div class="flex shrink-0 items-center text-xxs text-gray-500">
+                <div class="flex h-2.5 grow">
                   <div class="w-[3%] bg-green"></div>
                   <div class="w-[1%] bg-red"></div>
                   <div class="w-[2%] bg-green"></div>
@@ -325,23 +325,23 @@
                   <div class="w-[1%] bg-red"></div>
                   <div class="w-[6%] bg-green"></div>
                 </div>
-                <div class="w-[52px] -my-0.5 pl-2">Rating</div>
+                <div class="-my-0.5 w-[52px] pl-2">Rating</div>
               </div>
-              <div class="relative grow mt-2">
+              <div class="relative mt-2 grow">
                 <div id="chart-price-2" class="absolute inset-0"></div>
               </div>
-              <div class="relative grow mt-4">
+              <div class="relative mt-4 grow">
                 <div id="chart-rt-2" class="absolute inset-0"></div>
               </div>
             </div>
-            <div class="shrink-0 w-76">
+            <div class="w-76 shrink-0">
               <div class="h-[423px] bg-gray-800"></div>
             </div>
           </div>
 
-          <div class="absolute right-0 bottom-0 left-0 pointer-events-none">
-            <div class="absolute top-1/2 right-0 left-0 h-px bg-gray-600 -translate-y-1/2"></div>
-            <div class="relative flex items-center justify-center w-5 h-4 m-auto rounded bg-gray-700">
+          <div class="pointer-events-none absolute right-0 bottom-0 left-0">
+            <div class="absolute top-1/2 right-0 left-0 h-px -translate-y-1/2 bg-gray-600"></div>
+            <div class="relative m-auto flex h-4 w-5 items-center justify-center rounded bg-gray-700">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                 <path d="M3 7.75L6 10.75L9 7.75M3 4.25L6 1.25L9 4.25" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
@@ -352,18 +352,18 @@
         <div data-js-slide class="relative pt-5 pb-8">
           <div class="flex items-start justify-between">
             <div>
-              <div class="flex gap-2.5 items-center">
+              <div class="flex items-center gap-2.5">
                 <div class="text-h1 text-white">TSLA</div>
-                <div class="flex items-center h-5 px-2 rounded-full bg-green text-h6 uppercase text-white">Buy</div>
+                <div class="flex h-5 items-center rounded-full bg-green px-2 text-h6 uppercase text-white">Buy</div>
               </div>
               <div class="mt-1">Tesla</div>
             </div>
           </div>
 
-          <div data-js-slide-cont class="flex gap-12 h-[480px] mt-5">
-            <div class="flex flex-col grow">
-              <div class="shrink-0 flex items-center text-xxs text-gray-500">
-                <div class="flex grow h-2.5">
+          <div data-js-slide-cont class="mt-5 flex h-[480px] gap-12">
+            <div class="flex grow flex-col">
+              <div class="flex shrink-0 items-center text-xxs text-gray-500">
+                <div class="flex h-2.5 grow">
                   <div class="w-[3%] bg-green"></div>
                   <div class="w-[1%] bg-red"></div>
                   <div class="w-[2%] bg-green"></div>
@@ -390,23 +390,23 @@
                   <div class="w-[1%] bg-red"></div>
                   <div class="w-[6%] bg-green"></div>
                 </div>
-                <div class="w-[52px] -my-0.5 pl-2">Rating</div>
+                <div class="-my-0.5 w-[52px] pl-2">Rating</div>
               </div>
-              <div class="relative grow mt-2">
+              <div class="relative mt-2 grow">
                 <div id="chart-price-3" class="absolute inset-0"></div>
               </div>
-              <div class="relative grow mt-4">
+              <div class="relative mt-4 grow">
                 <div id="chart-rt-3" class="absolute inset-0"></div>
               </div>
             </div>
-            <div class="shrink-0 w-76">
+            <div class="w-76 shrink-0">
               <div class="h-[423px] bg-gray-800"></div>
             </div>
           </div>
 
-          <div class="absolute right-0 bottom-0 left-0 pointer-events-none">
-            <div class="absolute top-1/2 right-0 left-0 h-px bg-gray-600 -translate-y-1/2"></div>
-            <div class="relative flex items-center justify-center w-5 h-4 m-auto rounded bg-gray-700">
+          <div class="pointer-events-none absolute right-0 bottom-0 left-0">
+            <div class="absolute top-1/2 right-0 left-0 h-px -translate-y-1/2 bg-gray-600"></div>
+            <div class="relative m-auto flex h-4 w-5 items-center justify-center rounded bg-gray-700">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                 <path d="M3 7.75L6 10.75L9 7.75M3 4.25L6 1.25L9 4.25" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
@@ -417,18 +417,18 @@
         <div data-js-slide class="relative pt-5 pb-8">
           <div class="flex items-start justify-between">
             <div>
-              <div class="flex gap-2.5 items-center">
+              <div class="flex items-center gap-2.5">
                 <div class="text-h1 text-white">AMZN</div>
-                <div class="flex items-center h-5 px-2 rounded-full bg-red text-h6 uppercase text-white">Sell</div>
+                <div class="flex h-5 items-center rounded-full bg-red px-2 text-h6 uppercase text-white">Sell</div>
               </div>
               <div class="mt-1">Amazon</div>
             </div>
           </div>
 
-          <div data-js-slide-cont class="flex gap-12 h-[480px] mt-5">
-            <div class="flex flex-col grow">
-              <div class="shrink-0 flex items-center text-xxs text-gray-500">
-                <div class="flex grow h-2.5">
+          <div data-js-slide-cont class="mt-5 flex h-[480px] gap-12">
+            <div class="flex grow flex-col">
+              <div class="flex shrink-0 items-center text-xxs text-gray-500">
+                <div class="flex h-2.5 grow">
                   <div class="w-[3%] bg-green"></div>
                   <div class="w-[1%] bg-red"></div>
                   <div class="w-[2%] bg-green"></div>
@@ -455,23 +455,23 @@
                   <div class="w-[1%] bg-red"></div>
                   <div class="w-[6%] bg-green"></div>
                 </div>
-                <div class="w-[52px] -my-0.5 pl-2">Rating</div>
+                <div class="-my-0.5 w-[52px] pl-2">Rating</div>
               </div>
-              <div class="relative grow mt-2">
+              <div class="relative mt-2 grow">
                 <div id="chart-price-4" class="absolute inset-0"></div>
               </div>
-              <div class="relative grow mt-4">
+              <div class="relative mt-4 grow">
                 <div id="chart-rt-4" class="absolute inset-0"></div>
               </div>
             </div>
-            <div class="shrink-0 w-76">
+            <div class="w-76 shrink-0">
               <div class="h-[423px] bg-gray-800"></div>
             </div>
           </div>
 
-          <div class="absolute right-0 bottom-0 left-0 pointer-events-none">
-            <div class="absolute top-1/2 right-0 left-0 h-px bg-gray-600 -translate-y-1/2"></div>
-            <div class="relative flex items-center justify-center w-5 h-4 m-auto rounded bg-gray-700">
+          <div class="pointer-events-none absolute right-0 bottom-0 left-0">
+            <div class="absolute top-1/2 right-0 left-0 h-px -translate-y-1/2 bg-gray-600"></div>
+            <div class="relative m-auto flex h-4 w-5 items-center justify-center rounded bg-gray-700">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                 <path d="M3 7.75L6 10.75L9 7.75M3 4.25L6 1.25L9 4.25" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
@@ -482,18 +482,18 @@
         <div data-js-slide class="relative pt-5 pb-8">
           <div class="flex items-start justify-between">
             <div>
-              <div class="flex gap-2.5 items-center">
+              <div class="flex items-center gap-2.5">
                 <div class="text-h1 text-white">NFLX</div>
-                <div class="flex items-center h-5 px-2 rounded-full bg-green text-h6 uppercase text-white">Buy</div>
+                <div class="flex h-5 items-center rounded-full bg-green px-2 text-h6 uppercase text-white">Buy</div>
               </div>
               <div class="mt-1">Netflix</div>
             </div>
           </div>
 
-          <div data-js-slide-cont class="flex gap-12 h-[480px] mt-5">
-            <div class="flex flex-col grow">
-              <div class="shrink-0 flex items-center text-xxs text-gray-500">
-                <div class="flex grow h-2.5">
+          <div data-js-slide-cont class="mt-5 flex h-[480px] gap-12">
+            <div class="flex grow flex-col">
+              <div class="flex shrink-0 items-center text-xxs text-gray-500">
+                <div class="flex h-2.5 grow">
                   <div class="w-[3%] bg-green"></div>
                   <div class="w-[1%] bg-red"></div>
                   <div class="w-[2%] bg-green"></div>
@@ -520,23 +520,23 @@
                   <div class="w-[1%] bg-red"></div>
                   <div class="w-[6%] bg-green"></div>
                 </div>
-                <div class="w-[52px] -my-0.5 pl-2">Rating</div>
+                <div class="-my-0.5 w-[52px] pl-2">Rating</div>
               </div>
-              <div class="relative grow mt-2">
+              <div class="relative mt-2 grow">
                 <div id="chart-price-5" class="absolute inset-0"></div>
               </div>
-              <div class="relative grow mt-4">
+              <div class="relative mt-4 grow">
                 <div id="chart-rt-5" class="absolute inset-0"></div>
               </div>
             </div>
-            <div class="shrink-0 w-76">
+            <div class="w-76 shrink-0">
               <div class="h-[423px] bg-gray-800"></div>
             </div>
           </div>
 
-          <div class="absolute right-0 bottom-0 left-0 pointer-events-none">
-            <div class="absolute top-1/2 right-0 left-0 h-px bg-gray-600 -translate-y-1/2"></div>
-            <div class="relative flex items-center justify-center w-5 h-4 m-auto rounded bg-gray-700">
+          <div class="pointer-events-none absolute right-0 bottom-0 left-0">
+            <div class="absolute top-1/2 right-0 left-0 h-px -translate-y-1/2 bg-gray-600"></div>
+            <div class="relative m-auto flex h-4 w-5 items-center justify-center rounded bg-gray-700">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                 <path d="M3 7.75L6 10.75L9 7.75M3 4.25L6 1.25L9 4.25" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
@@ -547,18 +547,18 @@
         <div data-js-slide class="relative pt-5 pb-8">
           <div class="flex items-start justify-between">
             <div>
-              <div class="flex gap-2.5 items-center">
+              <div class="flex items-center gap-2.5">
                 <div class="text-h1 text-white">NVDA</div>
-                <div class="flex items-center h-5 px-2 rounded-full bg-green text-h6 uppercase text-white">Buy</div>
+                <div class="flex h-5 items-center rounded-full bg-green px-2 text-h6 uppercase text-white">Buy</div>
               </div>
               <div class="mt-1">NVIDIA</div>
             </div>
           </div>
 
-          <div data-js-slide-cont class="flex gap-12 h-[480px] mt-5">
-            <div class="flex flex-col grow">
-              <div class="shrink-0 flex items-center text-xxs text-gray-500">
-                <div class="flex grow h-2.5">
+          <div data-js-slide-cont class="mt-5 flex h-[480px] gap-12">
+            <div class="flex grow flex-col">
+              <div class="flex shrink-0 items-center text-xxs text-gray-500">
+                <div class="flex h-2.5 grow">
                   <div class="w-[3%] bg-green"></div>
                   <div class="w-[1%] bg-red"></div>
                   <div class="w-[2%] bg-green"></div>
@@ -585,23 +585,23 @@
                   <div class="w-[1%] bg-red"></div>
                   <div class="w-[6%] bg-green"></div>
                 </div>
-                <div class="w-[52px] -my-0.5 pl-2">Rating</div>
+                <div class="-my-0.5 w-[52px] pl-2">Rating</div>
               </div>
-              <div class="relative grow mt-2">
+              <div class="relative mt-2 grow">
                 <div id="chart-price-6" class="absolute inset-0"></div>
               </div>
-              <div class="relative grow mt-4">
+              <div class="relative mt-4 grow">
                 <div id="chart-rt-6" class="absolute inset-0"></div>
               </div>
             </div>
-            <div class="shrink-0 w-76">
+            <div class="w-76 shrink-0">
               <div class="h-[423px] bg-gray-800"></div>
             </div>
           </div>
 
-          <div class="absolute right-0 bottom-0 left-0 pointer-events-none">
-            <div class="absolute top-1/2 right-0 left-0 h-px bg-gray-600 -translate-y-1/2"></div>
-            <div class="relative flex items-center justify-center w-5 h-4 m-auto rounded bg-gray-700">
+          <div class="pointer-events-none absolute right-0 bottom-0 left-0">
+            <div class="absolute top-1/2 right-0 left-0 h-px -translate-y-1/2 bg-gray-600"></div>
+            <div class="relative m-auto flex h-4 w-5 items-center justify-center rounded bg-gray-700">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                 <path d="M3 7.75L6 10.75L9 7.75M3 4.25L6 1.25L9 4.25" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
@@ -612,18 +612,18 @@
         <div data-js-slide class="relative pt-5 pb-8">
           <div class="flex items-start justify-between">
             <div>
-              <div class="flex gap-2.5 items-center">
+              <div class="flex items-center gap-2.5">
                 <div class="text-h1 text-white">MSFT</div>
-                <div class="flex items-center h-5 px-2 rounded-full bg-green text-h6 uppercase text-white">Buy</div>
+                <div class="flex h-5 items-center rounded-full bg-green px-2 text-h6 uppercase text-white">Buy</div>
               </div>
               <div class="mt-1">Microsoft</div>
             </div>
           </div>
 
-          <div data-js-slide-cont class="flex gap-12 h-[480px] mt-5">
-            <div class="flex flex-col grow">
-              <div class="shrink-0 flex items-center text-xxs text-gray-500">
-                <div class="flex grow h-2.5">
+          <div data-js-slide-cont class="mt-5 flex h-[480px] gap-12">
+            <div class="flex grow flex-col">
+              <div class="flex shrink-0 items-center text-xxs text-gray-500">
+                <div class="flex h-2.5 grow">
                   <div class="w-[3%] bg-green"></div>
                   <div class="w-[1%] bg-red"></div>
                   <div class="w-[2%] bg-green"></div>
@@ -650,23 +650,23 @@
                   <div class="w-[1%] bg-red"></div>
                   <div class="w-[6%] bg-green"></div>
                 </div>
-                <div class="w-[52px] -my-0.5 pl-2">Rating</div>
+                <div class="-my-0.5 w-[52px] pl-2">Rating</div>
               </div>
-              <div class="relative grow mt-2">
+              <div class="relative mt-2 grow">
                 <div id="chart-price-7" class="absolute inset-0"></div>
               </div>
-              <div class="relative grow mt-4">
+              <div class="relative mt-4 grow">
                 <div id="chart-rt-7" class="absolute inset-0"></div>
               </div>
             </div>
-            <div class="shrink-0 w-76">
+            <div class="w-76 shrink-0">
               <div class="h-[423px] bg-gray-800"></div>
             </div>
           </div>
 
-          <div class="absolute right-0 bottom-0 left-0 pointer-events-none">
-            <div class="absolute top-1/2 right-0 left-0 h-px bg-gray-600 -translate-y-1/2"></div>
-            <div class="relative flex items-center justify-center w-5 h-4 m-auto rounded bg-gray-700">
+          <div class="pointer-events-none absolute right-0 bottom-0 left-0">
+            <div class="absolute top-1/2 right-0 left-0 h-px -translate-y-1/2 bg-gray-600"></div>
+            <div class="relative m-auto flex h-4 w-5 items-center justify-center rounded bg-gray-700">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                 <path d="M3 7.75L6 10.75L9 7.75M3 4.25L6 1.25L9 4.25" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
@@ -677,18 +677,18 @@
         <div data-js-slide class="relative pt-5 pb-8">
           <div class="flex items-start justify-between">
             <div>
-              <div class="flex gap-2.5 items-center">
+              <div class="flex items-center gap-2.5">
                 <div class="text-h1 text-white">TSLA</div>
-                <div class="flex items-center h-5 px-2 rounded-full bg-green text-h6 uppercase text-white">Buy</div>
+                <div class="flex h-5 items-center rounded-full bg-green px-2 text-h6 uppercase text-white">Buy</div>
               </div>
               <div class="mt-1">Tesla</div>
             </div>
           </div>
 
-          <div data-js-slide-cont class="flex gap-12 h-[480px] mt-5">
-            <div class="flex flex-col grow">
-              <div class="shrink-0 flex items-center text-xxs text-gray-500">
-                <div class="flex grow h-2.5">
+          <div data-js-slide-cont class="mt-5 flex h-[480px] gap-12">
+            <div class="flex grow flex-col">
+              <div class="flex shrink-0 items-center text-xxs text-gray-500">
+                <div class="flex h-2.5 grow">
                   <div class="w-[3%] bg-green"></div>
                   <div class="w-[1%] bg-red"></div>
                   <div class="w-[2%] bg-green"></div>
@@ -715,23 +715,23 @@
                   <div class="w-[1%] bg-red"></div>
                   <div class="w-[6%] bg-green"></div>
                 </div>
-                <div class="w-[52px] -my-0.5 pl-2">Rating</div>
+                <div class="-my-0.5 w-[52px] pl-2">Rating</div>
               </div>
-              <div class="relative grow mt-2">
+              <div class="relative mt-2 grow">
                 <div id="chart-price-8" class="absolute inset-0"></div>
               </div>
-              <div class="relative grow mt-4">
+              <div class="relative mt-4 grow">
                 <div id="chart-rt-8" class="absolute inset-0"></div>
               </div>
             </div>
-            <div class="shrink-0 w-76">
+            <div class="w-76 shrink-0">
               <div class="h-[423px] bg-gray-800"></div>
             </div>
           </div>
 
-          <div class="absolute right-0 bottom-0 left-0 pointer-events-none">
-            <div class="absolute top-1/2 right-0 left-0 h-px bg-gray-600 -translate-y-1/2"></div>
-            <div class="relative flex items-center justify-center w-5 h-4 m-auto rounded bg-gray-700">
+          <div class="pointer-events-none absolute right-0 bottom-0 left-0">
+            <div class="absolute top-1/2 right-0 left-0 h-px -translate-y-1/2 bg-gray-600"></div>
+            <div class="relative m-auto flex h-4 w-5 items-center justify-center rounded bg-gray-700">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                 <path d="M3 7.75L6 10.75L9 7.75M3 4.25L6 1.25L9 4.25" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
@@ -742,18 +742,18 @@
         <div data-js-slide class="relative pt-5 pb-8">
           <div class="flex items-start justify-between">
             <div>
-              <div class="flex gap-2.5 items-center">
+              <div class="flex items-center gap-2.5">
                 <div class="text-h1 text-white">AMZN</div>
-                <div class="flex items-center h-5 px-2 rounded-full bg-red text-h6 uppercase text-white">Sell</div>
+                <div class="flex h-5 items-center rounded-full bg-red px-2 text-h6 uppercase text-white">Sell</div>
               </div>
               <div class="mt-1">Amazon</div>
             </div>
           </div>
 
-          <div data-js-slide-cont class="flex gap-12 h-[480px] mt-5">
-            <div class="flex flex-col grow">
-              <div class="shrink-0 flex items-center text-xxs text-gray-500">
-                <div class="flex grow h-2.5">
+          <div data-js-slide-cont class="mt-5 flex h-[480px] gap-12">
+            <div class="flex grow flex-col">
+              <div class="flex shrink-0 items-center text-xxs text-gray-500">
+                <div class="flex h-2.5 grow">
                   <div class="w-[3%] bg-green"></div>
                   <div class="w-[1%] bg-red"></div>
                   <div class="w-[2%] bg-green"></div>
@@ -780,23 +780,23 @@
                   <div class="w-[1%] bg-red"></div>
                   <div class="w-[6%] bg-green"></div>
                 </div>
-                <div class="w-[52px] -my-0.5 pl-2">Rating</div>
+                <div class="-my-0.5 w-[52px] pl-2">Rating</div>
               </div>
-              <div class="relative grow mt-2">
+              <div class="relative mt-2 grow">
                 <div id="chart-price-9" class="absolute inset-0"></div>
               </div>
-              <div class="relative grow mt-4">
+              <div class="relative mt-4 grow">
                 <div id="chart-rt-9" class="absolute inset-0"></div>
               </div>
             </div>
-            <div class="shrink-0 w-76">
+            <div class="w-76 shrink-0">
               <div class="h-[423px] bg-gray-800"></div>
             </div>
           </div>
 
-          <div class="absolute right-0 bottom-0 left-0 pointer-events-none">
-            <div class="absolute top-1/2 right-0 left-0 h-px bg-gray-600 -translate-y-1/2"></div>
-            <div class="relative flex items-center justify-center w-5 h-4 m-auto rounded bg-gray-700">
+          <div class="pointer-events-none absolute right-0 bottom-0 left-0">
+            <div class="absolute top-1/2 right-0 left-0 h-px -translate-y-1/2 bg-gray-600"></div>
+            <div class="relative m-auto flex h-4 w-5 items-center justify-center rounded bg-gray-700">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                 <path d="M3 7.75L6 10.75L9 7.75M3 4.25L6 1.25L9 4.25" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
@@ -807,18 +807,18 @@
         <div data-js-slide class="relative pt-5 pb-8">
           <div class="flex items-start justify-between">
             <div>
-              <div class="flex gap-2.5 items-center">
+              <div class="flex items-center gap-2.5">
                 <div class="text-h1 text-white">NFLX</div>
-                <div class="flex items-center h-5 px-2 rounded-full bg-green text-h6 uppercase text-white">Buy</div>
+                <div class="flex h-5 items-center rounded-full bg-green px-2 text-h6 uppercase text-white">Buy</div>
               </div>
               <div class="mt-1">Netflix</div>
             </div>
           </div>
 
-          <div data-js-slide-cont class="flex gap-12 h-[480px] mt-5">
-            <div class="flex flex-col grow">
-              <div class="shrink-0 flex items-center text-xxs text-gray-500">
-                <div class="flex grow h-2.5">
+          <div data-js-slide-cont class="mt-5 flex h-[480px] gap-12">
+            <div class="flex grow flex-col">
+              <div class="flex shrink-0 items-center text-xxs text-gray-500">
+                <div class="flex h-2.5 grow">
                   <div class="w-[3%] bg-green"></div>
                   <div class="w-[1%] bg-red"></div>
                   <div class="w-[2%] bg-green"></div>
@@ -845,23 +845,23 @@
                   <div class="w-[1%] bg-red"></div>
                   <div class="w-[6%] bg-green"></div>
                 </div>
-                <div class="w-[52px] -my-0.5 pl-2">Rating</div>
+                <div class="-my-0.5 w-[52px] pl-2">Rating</div>
               </div>
-              <div class="relative grow mt-2">
+              <div class="relative mt-2 grow">
                 <div id="chart-price-10" class="absolute inset-0"></div>
               </div>
-              <div class="relative grow mt-4">
+              <div class="relative mt-4 grow">
                 <div id="chart-rt-10" class="absolute inset-0"></div>
               </div>
             </div>
-            <div class="shrink-0 w-76">
+            <div class="w-76 shrink-0">
               <div class="h-[423px] bg-gray-800"></div>
             </div>
           </div>
 
-          <div class="absolute right-0 bottom-0 left-0 pointer-events-none">
-            <div class="absolute top-1/2 right-0 left-0 h-px bg-gray-600 -translate-y-1/2"></div>
-            <div class="relative flex items-center justify-center w-5 h-4 m-auto rounded bg-gray-700">
+          <div class="pointer-events-none absolute right-0 bottom-0 left-0">
+            <div class="absolute top-1/2 right-0 left-0 h-px -translate-y-1/2 bg-gray-600"></div>
+            <div class="relative m-auto flex h-4 w-5 items-center justify-center rounded bg-gray-700">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                 <path d="M3 7.75L6 10.75L9 7.75M3 4.25L6 1.25L9 4.25" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
@@ -872,18 +872,18 @@
         <div data-js-slide class="relative pt-5 pb-8">
           <div class="flex items-start justify-between">
             <div>
-              <div class="flex gap-2.5 items-center">
+              <div class="flex items-center gap-2.5">
                 <div class="text-h1 text-white">NVDA</div>
-                <div class="flex items-center h-5 px-2 rounded-full bg-green text-h6 uppercase text-white">Buy</div>
+                <div class="flex h-5 items-center rounded-full bg-green px-2 text-h6 uppercase text-white">Buy</div>
               </div>
               <div class="mt-1">NVIDIA</div>
             </div>
           </div>
 
-          <div data-js-slide-cont class="flex gap-12 h-[480px] mt-5">
-            <div class="flex flex-col grow">
-              <div class="shrink-0 flex items-center text-xxs text-gray-500">
-                <div class="flex grow h-2.5">
+          <div data-js-slide-cont class="mt-5 flex h-[480px] gap-12">
+            <div class="flex grow flex-col">
+              <div class="flex shrink-0 items-center text-xxs text-gray-500">
+                <div class="flex h-2.5 grow">
                   <div class="w-[3%] bg-green"></div>
                   <div class="w-[1%] bg-red"></div>
                   <div class="w-[2%] bg-green"></div>
@@ -910,23 +910,23 @@
                   <div class="w-[1%] bg-red"></div>
                   <div class="w-[6%] bg-green"></div>
                 </div>
-                <div class="w-[52px] -my-0.5 pl-2">Rating</div>
+                <div class="-my-0.5 w-[52px] pl-2">Rating</div>
               </div>
-              <div class="relative grow mt-2">
+              <div class="relative mt-2 grow">
                 <div id="chart-price-11" class="absolute inset-0"></div>
               </div>
-              <div class="relative grow mt-4">
+              <div class="relative mt-4 grow">
                 <div id="chart-rt-11" class="absolute inset-0"></div>
               </div>
             </div>
-            <div class="shrink-0 w-76">
+            <div class="w-76 shrink-0">
               <div class="h-[423px] bg-gray-800"></div>
             </div>
           </div>
 
-          <div class="absolute right-0 bottom-0 left-0 pointer-events-none">
-            <div class="absolute top-1/2 right-0 left-0 h-px bg-gray-600 -translate-y-1/2"></div>
-            <div class="relative flex items-center justify-center w-5 h-4 m-auto rounded bg-gray-700">
+          <div class="pointer-events-none absolute right-0 bottom-0 left-0">
+            <div class="absolute top-1/2 right-0 left-0 h-px -translate-y-1/2 bg-gray-600"></div>
+            <div class="relative m-auto flex h-4 w-5 items-center justify-center rounded bg-gray-700">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                 <path d="M3 7.75L6 10.75L9 7.75M3 4.25L6 1.25L9 4.25" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
@@ -937,18 +937,18 @@
         <div data-js-slide class="relative pt-5 pb-8">
           <div class="flex items-start justify-between">
             <div>
-              <div class="flex gap-2.5 items-center">
+              <div class="flex items-center gap-2.5">
                 <div class="text-h1 text-white">MSFT</div>
-                <div class="flex items-center h-5 px-2 rounded-full bg-green text-h6 uppercase text-white">Buy</div>
+                <div class="flex h-5 items-center rounded-full bg-green px-2 text-h6 uppercase text-white">Buy</div>
               </div>
               <div class="mt-1">Microsoft</div>
             </div>
           </div>
 
-          <div data-js-slide-cont class="flex gap-12 h-[480px] mt-5">
-            <div class="flex flex-col grow">
-              <div class="shrink-0 flex items-center text-xxs text-gray-500">
-                <div class="flex grow h-2.5">
+          <div data-js-slide-cont class="mt-5 flex h-[480px] gap-12">
+            <div class="flex grow flex-col">
+              <div class="flex shrink-0 items-center text-xxs text-gray-500">
+                <div class="flex h-2.5 grow">
                   <div class="w-[3%] bg-green"></div>
                   <div class="w-[1%] bg-red"></div>
                   <div class="w-[2%] bg-green"></div>
@@ -975,23 +975,23 @@
                   <div class="w-[1%] bg-red"></div>
                   <div class="w-[6%] bg-green"></div>
                 </div>
-                <div class="w-[52px] -my-0.5 pl-2">Rating</div>
+                <div class="-my-0.5 w-[52px] pl-2">Rating</div>
               </div>
-              <div class="relative grow mt-2">
+              <div class="relative mt-2 grow">
                 <div id="chart-price-12" class="absolute inset-0"></div>
               </div>
-              <div class="relative grow mt-4">
+              <div class="relative mt-4 grow">
                 <div id="chart-rt-12" class="absolute inset-0"></div>
               </div>
             </div>
-            <div class="shrink-0 w-76">
+            <div class="w-76 shrink-0">
               <div class="h-[423px] bg-gray-800"></div>
             </div>
           </div>
 
-          <div class="absolute right-0 bottom-0 left-0 pointer-events-none">
-            <div class="absolute top-1/2 right-0 left-0 h-px bg-gray-600 -translate-y-1/2"></div>
-            <div class="relative flex items-center justify-center w-5 h-4 m-auto rounded bg-gray-700">
+          <div class="pointer-events-none absolute right-0 bottom-0 left-0">
+            <div class="absolute top-1/2 right-0 left-0 h-px -translate-y-1/2 bg-gray-600"></div>
+            <div class="relative m-auto flex h-4 w-5 items-center justify-center rounded bg-gray-700">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                 <path d="M3 7.75L6 10.75L9 7.75M3 4.25L6 1.25L9 4.25" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
@@ -1002,18 +1002,18 @@
         <div data-js-slide class="relative pt-5 pb-8">
           <div class="flex items-start justify-between">
             <div>
-              <div class="flex gap-2.5 items-center">
+              <div class="flex items-center gap-2.5">
                 <div class="text-h1 text-white">TSLA</div>
-                <div class="flex items-center h-5 px-2 rounded-full bg-green text-h6 uppercase text-white">Buy</div>
+                <div class="flex h-5 items-center rounded-full bg-green px-2 text-h6 uppercase text-white">Buy</div>
               </div>
               <div class="mt-1">Tesla</div>
             </div>
           </div>
 
-          <div data-js-slide-cont class="flex gap-12 h-[480px] mt-5">
-            <div class="flex flex-col grow">
-              <div class="shrink-0 flex items-center text-xxs text-gray-500">
-                <div class="flex grow h-2.5">
+          <div data-js-slide-cont class="mt-5 flex h-[480px] gap-12">
+            <div class="flex grow flex-col">
+              <div class="flex shrink-0 items-center text-xxs text-gray-500">
+                <div class="flex h-2.5 grow">
                   <div class="w-[3%] bg-green"></div>
                   <div class="w-[1%] bg-red"></div>
                   <div class="w-[2%] bg-green"></div>
@@ -1040,23 +1040,23 @@
                   <div class="w-[1%] bg-red"></div>
                   <div class="w-[6%] bg-green"></div>
                 </div>
-                <div class="w-[52px] -my-0.5 pl-2">Rating</div>
+                <div class="-my-0.5 w-[52px] pl-2">Rating</div>
               </div>
-              <div class="relative grow mt-2">
+              <div class="relative mt-2 grow">
                 <div id="chart-price-13" class="absolute inset-0"></div>
               </div>
-              <div class="relative grow mt-4">
+              <div class="relative mt-4 grow">
                 <div id="chart-rt-13" class="absolute inset-0"></div>
               </div>
             </div>
-            <div class="shrink-0 w-76">
+            <div class="w-76 shrink-0">
               <div class="h-[423px] bg-gray-800"></div>
             </div>
           </div>
 
-          <div class="absolute right-0 bottom-0 left-0 pointer-events-none">
-            <div class="absolute top-1/2 right-0 left-0 h-px bg-gray-600 -translate-y-1/2"></div>
-            <div class="relative flex items-center justify-center w-5 h-4 m-auto rounded bg-gray-700">
+          <div class="pointer-events-none absolute right-0 bottom-0 left-0">
+            <div class="absolute top-1/2 right-0 left-0 h-px -translate-y-1/2 bg-gray-600"></div>
+            <div class="relative m-auto flex h-4 w-5 items-center justify-center rounded bg-gray-700">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                 <path d="M3 7.75L6 10.75L9 7.75M3 4.25L6 1.25L9 4.25" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
@@ -1067,18 +1067,18 @@
         <div data-js-slide class="relative pt-5 pb-8">
           <div class="flex items-start justify-between">
             <div>
-              <div class="flex gap-2.5 items-center">
+              <div class="flex items-center gap-2.5">
                 <div class="text-h1 text-white">AMZN</div>
-                <div class="flex items-center h-5 px-2 rounded-full bg-red text-h6 uppercase text-white">Sell</div>
+                <div class="flex h-5 items-center rounded-full bg-red px-2 text-h6 uppercase text-white">Sell</div>
               </div>
               <div class="mt-1">Amazon</div>
             </div>
           </div>
 
-          <div data-js-slide-cont class="flex gap-12 h-[480px] mt-5">
-            <div class="flex flex-col grow">
-              <div class="shrink-0 flex items-center text-xxs text-gray-500">
-                <div class="flex grow h-2.5">
+          <div data-js-slide-cont class="mt-5 flex h-[480px] gap-12">
+            <div class="flex grow flex-col">
+              <div class="flex shrink-0 items-center text-xxs text-gray-500">
+                <div class="flex h-2.5 grow">
                   <div class="w-[3%] bg-green"></div>
                   <div class="w-[1%] bg-red"></div>
                   <div class="w-[2%] bg-green"></div>
@@ -1105,23 +1105,23 @@
                   <div class="w-[1%] bg-red"></div>
                   <div class="w-[6%] bg-green"></div>
                 </div>
-                <div class="w-[52px] -my-0.5 pl-2">Rating</div>
+                <div class="-my-0.5 w-[52px] pl-2">Rating</div>
               </div>
-              <div class="relative grow mt-2">
+              <div class="relative mt-2 grow">
                 <div id="chart-price-14" class="absolute inset-0"></div>
               </div>
-              <div class="relative grow mt-4">
+              <div class="relative mt-4 grow">
                 <div id="chart-rt-14" class="absolute inset-0"></div>
               </div>
             </div>
-            <div class="shrink-0 w-76">
+            <div class="w-76 shrink-0">
               <div class="h-[423px] bg-gray-800"></div>
             </div>
           </div>
 
-          <div class="absolute right-0 bottom-0 left-0 pointer-events-none">
-            <div class="absolute top-1/2 right-0 left-0 h-px bg-gray-600 -translate-y-1/2"></div>
-            <div class="relative flex items-center justify-center w-5 h-4 m-auto rounded bg-gray-700">
+          <div class="pointer-events-none absolute right-0 bottom-0 left-0">
+            <div class="absolute top-1/2 right-0 left-0 h-px -translate-y-1/2 bg-gray-600"></div>
+            <div class="relative m-auto flex h-4 w-5 items-center justify-center rounded bg-gray-700">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                 <path d="M3 7.75L6 10.75L9 7.75M3 4.25L6 1.25L9 4.25" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
@@ -1132,18 +1132,18 @@
         <div data-js-slide class="relative pt-5 pb-8">
           <div class="flex items-start justify-between">
             <div>
-              <div class="flex gap-2.5 items-center">
+              <div class="flex items-center gap-2.5">
                 <div class="text-h1 text-white">NFLX</div>
-                <div class="flex items-center h-5 px-2 rounded-full bg-green text-h6 uppercase text-white">Buy</div>
+                <div class="flex h-5 items-center rounded-full bg-green px-2 text-h6 uppercase text-white">Buy</div>
               </div>
               <div class="mt-1">Netflix</div>
             </div>
           </div>
 
-          <div data-js-slide-cont class="flex gap-12 h-[480px] mt-5">
-            <div class="flex flex-col grow">
-              <div class="shrink-0 flex items-center text-xxs text-gray-500">
-                <div class="flex grow h-2.5">
+          <div data-js-slide-cont class="mt-5 flex h-[480px] gap-12">
+            <div class="flex grow flex-col">
+              <div class="flex shrink-0 items-center text-xxs text-gray-500">
+                <div class="flex h-2.5 grow">
                   <div class="w-[3%] bg-green"></div>
                   <div class="w-[1%] bg-red"></div>
                   <div class="w-[2%] bg-green"></div>
@@ -1170,23 +1170,23 @@
                   <div class="w-[1%] bg-red"></div>
                   <div class="w-[6%] bg-green"></div>
                 </div>
-                <div class="w-[52px] -my-0.5 pl-2">Rating</div>
+                <div class="-my-0.5 w-[52px] pl-2">Rating</div>
               </div>
-              <div class="relative grow mt-2">
+              <div class="relative mt-2 grow">
                 <div id="chart-price-15" class="absolute inset-0"></div>
               </div>
-              <div class="relative grow mt-4">
+              <div class="relative mt-4 grow">
                 <div id="chart-rt-15" class="absolute inset-0"></div>
               </div>
             </div>
-            <div class="shrink-0 w-76">
+            <div class="w-76 shrink-0">
               <div class="h-[423px] bg-gray-800"></div>
             </div>
           </div>
 
-          <div class="absolute right-0 bottom-0 left-0 pointer-events-none">
-            <div class="absolute top-1/2 right-0 left-0 h-px bg-gray-600 -translate-y-1/2"></div>
-            <div class="relative flex items-center justify-center w-5 h-4 m-auto rounded bg-gray-700">
+          <div class="pointer-events-none absolute right-0 bottom-0 left-0">
+            <div class="absolute top-1/2 right-0 left-0 h-px -translate-y-1/2 bg-gray-600"></div>
+            <div class="relative m-auto flex h-4 w-5 items-center justify-center rounded bg-gray-700">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                 <path d="M3 7.75L6 10.75L9 7.75M3 4.25L6 1.25L9 4.25" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
@@ -1197,18 +1197,18 @@
         <div data-js-slide class="relative pt-5 pb-8">
           <div class="flex items-start justify-between">
             <div>
-              <div class="flex gap-2.5 items-center">
+              <div class="flex items-center gap-2.5">
                 <div class="text-h1 text-white">NVDA</div>
-                <div class="flex items-center h-5 px-2 rounded-full bg-green text-h6 uppercase text-white">Buy</div>
+                <div class="flex h-5 items-center rounded-full bg-green px-2 text-h6 uppercase text-white">Buy</div>
               </div>
               <div class="mt-1">NVIDIA</div>
             </div>
           </div>
 
-          <div data-js-slide-cont class="flex gap-12 h-[480px] mt-5">
-            <div class="flex flex-col grow">
-              <div class="shrink-0 flex items-center text-xxs text-gray-500">
-                <div class="flex grow h-2.5">
+          <div data-js-slide-cont class="mt-5 flex h-[480px] gap-12">
+            <div class="flex grow flex-col">
+              <div class="flex shrink-0 items-center text-xxs text-gray-500">
+                <div class="flex h-2.5 grow">
                   <div class="w-[3%] bg-green"></div>
                   <div class="w-[1%] bg-red"></div>
                   <div class="w-[2%] bg-green"></div>
@@ -1235,23 +1235,23 @@
                   <div class="w-[1%] bg-red"></div>
                   <div class="w-[6%] bg-green"></div>
                 </div>
-                <div class="w-[52px] -my-0.5 pl-2">Rating</div>
+                <div class="-my-0.5 w-[52px] pl-2">Rating</div>
               </div>
-              <div class="relative grow mt-2">
+              <div class="relative mt-2 grow">
                 <div id="chart-price-16" class="absolute inset-0"></div>
               </div>
-              <div class="relative grow mt-4">
+              <div class="relative mt-4 grow">
                 <div id="chart-rt-16" class="absolute inset-0"></div>
               </div>
             </div>
-            <div class="shrink-0 w-76">
+            <div class="w-76 shrink-0">
               <div class="h-[423px] bg-gray-800"></div>
             </div>
           </div>
 
-          <div class="absolute right-0 bottom-0 left-0 pointer-events-none">
-            <div class="absolute top-1/2 right-0 left-0 h-px bg-gray-600 -translate-y-1/2"></div>
-            <div class="relative flex items-center justify-center w-5 h-4 m-auto rounded bg-gray-700">
+          <div class="pointer-events-none absolute right-0 bottom-0 left-0">
+            <div class="absolute top-1/2 right-0 left-0 h-px -translate-y-1/2 bg-gray-600"></div>
+            <div class="relative m-auto flex h-4 w-5 items-center justify-center rounded bg-gray-700">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                 <path d="M3 7.75L6 10.75L9 7.75M3 4.25L6 1.25L9 4.25" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
@@ -1262,9 +1262,9 @@
       <!--/ content -->
 
       <!-- left sidebar -->
-      <div class="fixed z-header top-[50px] bottom-0 left-0 w-48 border-r border-gray-700">
-        <div class="flex items-center h-9 px-2.5 border-b border-gray-700">
-          <button type="button" class="flex gap-1 items-center justify-center text-xs text-blue-300 hover:text-white">
+      <div class="fixed top-[50px] bottom-0 left-0 z-header w-48 border-r border-gray-700">
+        <div class="flex h-9 items-center border-b border-gray-700 px-2.5">
+          <button type="button" class="flex items-center justify-center gap-1 text-xs text-blue-300 hover:text-white">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="-ml-0.5">
               <path d="M12.6666 8L3.33329 8"></path>
               <path d="M7 12L3 8L7 4"></path>
@@ -1272,24 +1272,24 @@
             <span>Back to My Watchlist #2</span>
           </button>
         </div>
-        <div class="absolute top-9 right-0 bottom-0 left-0 py-3 px-5 overflow-auto">
+        <div class="absolute top-9 right-0 bottom-0 left-0 overflow-auto py-3 px-5">
           <div class="text-h6 uppercase">Stocks (43)</div>
           <div class="mt-2 -mr-2 mb-3 text-xs">
             Use Up
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="currentcolor" class="inline-block align-top mt-px rounded-sm bg-gray-700 text-gray-500">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="currentcolor" class="mt-px inline-block rounded-sm bg-gray-700 align-top text-gray-500">
               <path d="M4.91429 10.5C4.80383 10.5 4.71429 10.4105 4.71429 10.3V6.84286C4.71429 6.7324 4.62474 6.64286 4.51429 6.64286H1.94075C1.76892 6.64286 1.67709 6.44047 1.79024 6.31116L5.84948 1.67202C5.92917 1.58095 6.07083 1.58095 6.15052 1.67202L10.2098 6.31116C10.3229 6.44047 10.2311 6.64286 10.0592 6.64286H7.48571C7.37526 6.64286 7.28571 6.7324 7.28571 6.84286V10.3C7.28571 10.4105 7.19617 10.5 7.08571 10.5H4.91429Z"></path>
             </svg>
             and Down
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="currentcolor" class="inline-block align-top mt-px rounded-sm bg-gray-700 text-gray-500">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="currentcolor" class="mt-px inline-block rounded-sm bg-gray-700 align-top text-gray-500">
               <path d="M4.91429 1.5C4.80383 1.5 4.71429 1.58954 4.71429 1.7V5.15714C4.71429 5.2676 4.62474 5.35714 4.51429 5.35714H1.94075C1.76892 5.35714 1.67709 5.55953 1.79024 5.68884L5.84948 10.328C5.92917 10.419 6.07083 10.419 6.15052 10.328L10.2098 5.68884C10.3229 5.55953 10.2311 5.35714 10.0592 5.35714H7.48571C7.37526 5.35714 7.28571 5.2676 7.28571 5.15714V1.7C7.28571 1.58954 7.19617 1.5 7.08571 1.5H4.91429Z"></path>
             </svg>
             keys to navigate between stocks
           </div>
           <div data-js-track class="relative -mx-2.5">
             <div data-js-track-item class="py-0.5">
-              <div class="flex items-center justify-between h-[30px] px-2.5 rounded-md cursor-pointer bg-gradient-to-b from-blue-600 to-blue-800">
+              <div class="flex h-[30px] cursor-pointer items-center justify-between rounded-md bg-gradient-to-b from-blue-600 to-blue-800 px-2.5">
                 <span class="text-white">AAPL</span>
-                <button type="button" class="-m-1 p-1 hidden hover:text-white group-hover:block">
+                <button type="button" class="-m-1 hidden p-1 hover:text-white group-hover:block">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 4L4 12"></path>
                     <path d="M4 4L12 12"></path>
@@ -1298,9 +1298,9 @@
               </div>
             </div>
             <div data-js-track-item class="py-0.5">
-              <div class="group flex items-center justify-between h-[30px] px-2.5 rounded-md cursor-pointer hover:bg-gray-700">
+              <div class="group flex h-[30px] cursor-pointer items-center justify-between rounded-md px-2.5 hover:bg-gray-700">
                 <span class="text-white">MSFT</span>
-                <button type="button" class="-m-1 p-1 hidden hover:text-white group-hover:block">
+                <button type="button" class="-m-1 hidden p-1 hover:text-white group-hover:block">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 4L4 12"></path>
                     <path d="M4 4L12 12"></path>
@@ -1309,9 +1309,9 @@
               </div>
             </div>
             <div data-js-track-item class="py-0.5">
-              <div class="group flex items-center justify-between h-[30px] px-2.5 rounded-md cursor-pointer hover:bg-gray-700">
+              <div class="group flex h-[30px] cursor-pointer items-center justify-between rounded-md px-2.5 hover:bg-gray-700">
                 <span class="text-white">TSLA</span>
-                <button type="button" class="-m-1 p-1 hidden hover:text-white group-hover:block">
+                <button type="button" class="-m-1 hidden p-1 hover:text-white group-hover:block">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 4L4 12"></path>
                     <path d="M4 4L12 12"></path>
@@ -1320,9 +1320,9 @@
               </div>
             </div>
             <div data-js-track-item class="py-0.5">
-              <div class="group flex items-center justify-between h-[30px] px-2.5 rounded-md cursor-pointer hover:bg-gray-700">
+              <div class="group flex h-[30px] cursor-pointer items-center justify-between rounded-md px-2.5 hover:bg-gray-700">
                 <span class="text-white">AMZN</span>
-                <button type="button" class="-m-1 p-1 hidden hover:text-white group-hover:block">
+                <button type="button" class="-m-1 hidden p-1 hover:text-white group-hover:block">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 4L4 12"></path>
                     <path d="M4 4L12 12"></path>
@@ -1331,9 +1331,9 @@
               </div>
             </div>
             <div data-js-track-item class="py-0.5">
-              <div class="group flex items-center justify-between h-[30px] px-2.5 rounded-md cursor-pointer hover:bg-gray-700">
+              <div class="group flex h-[30px] cursor-pointer items-center justify-between rounded-md px-2.5 hover:bg-gray-700">
                 <span class="text-white">NFLX</span>
-                <button type="button" class="-m-1 p-1 hidden hover:text-white group-hover:block">
+                <button type="button" class="-m-1 hidden p-1 hover:text-white group-hover:block">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 4L4 12"></path>
                     <path d="M4 4L12 12"></path>
@@ -1342,9 +1342,9 @@
               </div>
             </div>
             <div data-js-track-item class="py-0.5">
-              <div class="group flex items-center justify-between h-[30px] px-2.5 rounded-md cursor-pointer hover:bg-gray-700">
+              <div class="group flex h-[30px] cursor-pointer items-center justify-between rounded-md px-2.5 hover:bg-gray-700">
                 <span class="text-white">NVDA</span>
-                <button type="button" class="-m-1 p-1 hidden hover:text-white group-hover:block">
+                <button type="button" class="-m-1 hidden p-1 hover:text-white group-hover:block">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 4L4 12"></path>
                     <path d="M4 4L12 12"></path>
@@ -1353,9 +1353,9 @@
               </div>
             </div>
             <div data-js-track-item class="py-0.5">
-              <div class="group flex items-center justify-between h-[30px] px-2.5 rounded-md cursor-pointer hover:bg-gray-700">
+              <div class="group flex h-[30px] cursor-pointer items-center justify-between rounded-md px-2.5 hover:bg-gray-700">
                 <span class="text-white">MSFT</span>
-                <button type="button" class="-m-1 p-1 hidden hover:text-white group-hover:block">
+                <button type="button" class="-m-1 hidden p-1 hover:text-white group-hover:block">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 4L4 12"></path>
                     <path d="M4 4L12 12"></path>
@@ -1364,9 +1364,9 @@
               </div>
             </div>
             <div data-js-track-item class="py-0.5">
-              <div class="group flex items-center justify-between h-[30px] px-2.5 rounded-md cursor-pointer hover:bg-gray-700">
+              <div class="group flex h-[30px] cursor-pointer items-center justify-between rounded-md px-2.5 hover:bg-gray-700">
                 <span class="text-white">TSLA</span>
-                <button type="button" class="-m-1 p-1 hidden hover:text-white group-hover:block">
+                <button type="button" class="-m-1 hidden p-1 hover:text-white group-hover:block">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 4L4 12"></path>
                     <path d="M4 4L12 12"></path>
@@ -1375,9 +1375,9 @@
               </div>
             </div>
             <div data-js-track-item class="py-0.5">
-              <div class="group flex items-center justify-between h-[30px] px-2.5 rounded-md cursor-pointer hover:bg-gray-700">
+              <div class="group flex h-[30px] cursor-pointer items-center justify-between rounded-md px-2.5 hover:bg-gray-700">
                 <span class="text-white">AMZN</span>
-                <button type="button" class="-m-1 p-1 hidden hover:text-white group-hover:block">
+                <button type="button" class="-m-1 hidden p-1 hover:text-white group-hover:block">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 4L4 12"></path>
                     <path d="M4 4L12 12"></path>
@@ -1386,9 +1386,9 @@
               </div>
             </div>
             <div data-js-track-item class="py-0.5">
-              <div class="group flex items-center justify-between h-[30px] px-2.5 rounded-md cursor-pointer hover:bg-gray-700">
+              <div class="group flex h-[30px] cursor-pointer items-center justify-between rounded-md px-2.5 hover:bg-gray-700">
                 <span class="text-white">NFLX</span>
-                <button type="button" class="-m-1 p-1 hidden hover:text-white group-hover:block">
+                <button type="button" class="-m-1 hidden p-1 hover:text-white group-hover:block">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 4L4 12"></path>
                     <path d="M4 4L12 12"></path>
@@ -1397,9 +1397,9 @@
               </div>
             </div>
             <div data-js-track-item class="py-0.5">
-              <div class="group flex items-center justify-between h-[30px] px-2.5 rounded-md cursor-pointer hover:bg-gray-700">
+              <div class="group flex h-[30px] cursor-pointer items-center justify-between rounded-md px-2.5 hover:bg-gray-700">
                 <span class="text-white">NVDA</span>
-                <button type="button" class="-m-1 p-1 hidden hover:text-white group-hover:block">
+                <button type="button" class="-m-1 hidden p-1 hover:text-white group-hover:block">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 4L4 12"></path>
                     <path d="M4 4L12 12"></path>
@@ -1408,9 +1408,9 @@
               </div>
             </div>
             <div data-js-track-item class="py-0.5">
-              <div class="group flex items-center justify-between h-[30px] px-2.5 rounded-md cursor-pointer hover:bg-gray-700">
+              <div class="group flex h-[30px] cursor-pointer items-center justify-between rounded-md px-2.5 hover:bg-gray-700">
                 <span class="text-white">MSFT</span>
-                <button type="button" class="-m-1 p-1 hidden hover:text-white group-hover:block">
+                <button type="button" class="-m-1 hidden p-1 hover:text-white group-hover:block">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 4L4 12"></path>
                     <path d="M4 4L12 12"></path>
@@ -1419,9 +1419,9 @@
               </div>
             </div>
             <div data-js-track-item class="py-0.5">
-              <div class="group flex items-center justify-between h-[30px] px-2.5 rounded-md cursor-pointer hover:bg-gray-700">
+              <div class="group flex h-[30px] cursor-pointer items-center justify-between rounded-md px-2.5 hover:bg-gray-700">
                 <span class="text-white">TSLA</span>
-                <button type="button" class="-m-1 p-1 hidden hover:text-white group-hover:block">
+                <button type="button" class="-m-1 hidden p-1 hover:text-white group-hover:block">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 4L4 12"></path>
                     <path d="M4 4L12 12"></path>
@@ -1430,9 +1430,9 @@
               </div>
             </div>
             <div data-js-track-item class="py-0.5">
-              <div class="group flex items-center justify-between h-[30px] px-2.5 rounded-md cursor-pointer hover:bg-gray-700">
+              <div class="group flex h-[30px] cursor-pointer items-center justify-between rounded-md px-2.5 hover:bg-gray-700">
                 <span class="text-white">AMZN</span>
-                <button type="button" class="-m-1 p-1 hidden hover:text-white group-hover:block">
+                <button type="button" class="-m-1 hidden p-1 hover:text-white group-hover:block">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 4L4 12"></path>
                     <path d="M4 4L12 12"></path>
@@ -1441,9 +1441,9 @@
               </div>
             </div>
             <div data-js-track-item class="py-0.5">
-              <div class="group flex items-center justify-between h-[30px] px-2.5 rounded-md cursor-pointer hover:bg-gray-700">
+              <div class="group flex h-[30px] cursor-pointer items-center justify-between rounded-md px-2.5 hover:bg-gray-700">
                 <span class="text-white">NFLX</span>
-                <button type="button" class="-m-1 p-1 hidden hover:text-white group-hover:block">
+                <button type="button" class="-m-1 hidden p-1 hover:text-white group-hover:block">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 4L4 12"></path>
                     <path d="M4 4L12 12"></path>
@@ -1452,9 +1452,9 @@
               </div>
             </div>
             <div data-js-track-item class="py-0.5">
-              <div class="group flex items-center justify-between h-[30px] px-2.5 rounded-md cursor-pointer hover:bg-gray-700">
+              <div class="group flex h-[30px] cursor-pointer items-center justify-between rounded-md px-2.5 hover:bg-gray-700">
                 <span class="text-white">NVDA</span>
-                <button type="button" class="-m-1 p-1 hidden hover:text-white group-hover:block">
+                <button type="button" class="-m-1 hidden p-1 hover:text-white group-hover:block">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 4L4 12"></path>
                     <path d="M4 4L12 12"></path>
@@ -1462,71 +1462,71 @@
                 </button>
               </div>
             </div>
-            <div data-js-track-frame class="absolute top-0 -right-[5px] -left-[5px] h-[34px] py-1 rounded-xl border border-dashed border-gray-600 box-content pointer-events-none -translate-y-1"></div>
+            <div data-js-track-frame class="pointer-events-none absolute top-0 -right-[5px] -left-[5px] box-content h-[34px] -translate-y-1 rounded-xl border border-dashed border-gray-600 py-1"></div>
           </div>
         </div>
       </div>
       <!--/ left sidebar -->
 
       <!-- right sidebar -->
-      <div id="sidebar" class="fixed z-header top-[86px] right-0 bottom-0 w-96 border-l border-gray-600 bg-gray-700 translate-x-full transition-all duration-300">
+      <div id="sidebar" class="fixed top-[86px] right-0 bottom-0 z-header w-96 translate-x-full border-l border-gray-600 bg-gray-700 transition-all duration-300">
         <!-- right sidebar tabs -->
         <div class="flex">
-          <button type="button" data-js-tab="#parameters" class="flex items-center justify-center w-1/2 h-9 border-b border-blue-selected font-bold text-white hover:text-white">Parameters</button>
-          <button type="button" data-js-tab="#layouts" class="flex items-center justify-center w-1/2 h-9 py-2 border-b border-gray-600 hover:text-white">Layouts</button>
+          <button type="button" data-js-tab="#parameters" class="flex h-9 w-1/2 items-center justify-center border-b border-blue-selected font-bold text-white hover:text-white">Parameters</button>
+          <button type="button" data-js-tab="#layouts" class="flex h-9 w-1/2 items-center justify-center border-b border-gray-600 py-2 hover:text-white">Layouts</button>
         </div>
         <!--/ right sidebar tabs -->
 
         <div>
           <!-- right sidebar parameters -->
           <div id="parameters">
-            <div class="absolute top-9 right-0 bottom-0 left-0 pb-13 overflow-auto">
-              <div class="py-2.5 px-5 border-b border-gray-600">
+            <div class="absolute top-9 right-0 bottom-0 left-0 overflow-auto pb-13">
+              <div class="border-b border-gray-600 py-2.5 px-5">
                 <div id="parameters-layout-select" class="relative">
-                  <button type="button" data-js-popover-open="#layout-dropdown" data-js-popover-position="auto" class="appearance-none block w-full py-1.5 pr-[30px] pl-[9px] rounded-md border border-gray-600 bg-gray-800 text-left text-white hover:border-gray-500 focus:outline-0 focus:border-blue-selected focus:bg-gray-900 aria-pressed:bg-gray-900 aria-pressed:pointer-events-none">VectorVest Default Layout</button>
-                  <div class="absolute top-0 right-0 flex items-center justify-center w-[32px] h-[32px] text-gray-500 opacity-60 pointer-events-none">
+                  <button type="button" data-js-popover-open="#layout-dropdown" data-js-popover-position="auto" class="block w-full appearance-none rounded-md border border-gray-600 bg-gray-800 py-1.5 pr-[30px] pl-[9px] text-left text-white hover:border-gray-500 focus:border-blue-selected focus:bg-gray-900 focus:outline-0 aria-pressed:pointer-events-none aria-pressed:bg-gray-900">VectorVest Default Layout</button>
+                  <div class="pointer-events-none absolute top-0 right-0 flex h-[32px] w-[32px] items-center justify-center text-gray-500 opacity-60">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                       <path d="M4 6L8 10L12 6"></path>
                     </svg>
                   </div>
-                  <div data-js-popover="" id="layout-dropdown" class="absolute z-popover top-full right-0 left-0 hidden max-h-56 p-2-px overflow-auto rounded-md border border-gray-500/30 bg-gray-600 shadow-modal">
-                    <div data-js-dropdown-value="Colt 45" class="py-1.5 px-2 rounded-md text-sm text-white cursor-pointer hover:bg-gray-700">Colt 45</div>
-                    <div data-js-dropdown-value="VectorVest Default Layout" class="py-1.5 px-2 rounded-md text-sm text-white cursor-pointer hover:bg-gray-700">VectorVest Default Layout</div>
-                    <div data-js-dropdown-value="Enhanced ProTrader Timing" class="py-1.5 px-2 rounded-md text-sm text-white cursor-pointer hover:bg-gray-700">Enhanced ProTrader Timing</div>
-                    <div data-js-dropdown-value="Acid Test" class="py-1.5 px-2 rounded-md text-sm text-white cursor-pointer hover:bg-gray-700">Acid Test</div>
-                    <div data-js-dropdown-value="NPI Near Perfect Indicator" class="py-1.5 px-2 rounded-md text-sm text-white cursor-pointer hover:bg-gray-700">NPI Near Perfect Indicator</div>
-                    <div data-js-dropdown-value="Midas Touch" class="py-1.5 px-2 rounded-md text-sm text-white cursor-pointer hover:bg-gray-700">Midas Touch</div>
-                    <div data-js-dropdown-value="GLB / RT Kicker" class="py-1.5 px-2 rounded-md text-sm text-white cursor-pointer hover:bg-gray-700">GLB / RT Kicker</div>
-                    <div data-js-dropdown-value="My Custom Layout #1" class="py-1.5 px-2 rounded-md text-sm text-white cursor-pointer hover:bg-gray-700">My Custom Layout #1</div>
-                    <div data-js-dropdown-value="Jared’s Layout #2" class="py-1.5 px-2 rounded-md text-sm text-white cursor-pointer hover:bg-gray-700">Jared’s Layout #2</div>
-                    <div data-js-dropdown-value="My Layout #3" class="py-1.5 px-2 rounded-md text-sm text-white cursor-pointer hover:bg-gray-700">My Layout #3</div>
-                    <div data-js-dropdown-value="My Custom Layout #4" class="py-1.5 px-2 rounded-md text-sm text-white cursor-pointer hover:bg-gray-700">My Custom Layout #4</div>
+                  <div data-js-popover="" id="layout-dropdown" class="absolute top-full right-0 left-0 z-popover hidden max-h-56 overflow-auto rounded-md border border-gray-500/30 bg-gray-600 p-2-px shadow-modal">
+                    <div data-js-dropdown-value="Colt 45" class="cursor-pointer rounded-md py-1.5 px-2 text-sm text-white hover:bg-gray-700">Colt 45</div>
+                    <div data-js-dropdown-value="VectorVest Default Layout" class="cursor-pointer rounded-md py-1.5 px-2 text-sm text-white hover:bg-gray-700">VectorVest Default Layout</div>
+                    <div data-js-dropdown-value="Enhanced ProTrader Timing" class="cursor-pointer rounded-md py-1.5 px-2 text-sm text-white hover:bg-gray-700">Enhanced ProTrader Timing</div>
+                    <div data-js-dropdown-value="Acid Test" class="cursor-pointer rounded-md py-1.5 px-2 text-sm text-white hover:bg-gray-700">Acid Test</div>
+                    <div data-js-dropdown-value="NPI Near Perfect Indicator" class="cursor-pointer rounded-md py-1.5 px-2 text-sm text-white hover:bg-gray-700">NPI Near Perfect Indicator</div>
+                    <div data-js-dropdown-value="Midas Touch" class="cursor-pointer rounded-md py-1.5 px-2 text-sm text-white hover:bg-gray-700">Midas Touch</div>
+                    <div data-js-dropdown-value="GLB / RT Kicker" class="cursor-pointer rounded-md py-1.5 px-2 text-sm text-white hover:bg-gray-700">GLB / RT Kicker</div>
+                    <div data-js-dropdown-value="My Custom Layout #1" class="cursor-pointer rounded-md py-1.5 px-2 text-sm text-white hover:bg-gray-700">My Custom Layout #1</div>
+                    <div data-js-dropdown-value="Jared’s Layout #2" class="cursor-pointer rounded-md py-1.5 px-2 text-sm text-white hover:bg-gray-700">Jared’s Layout #2</div>
+                    <div data-js-dropdown-value="My Layout #3" class="cursor-pointer rounded-md py-1.5 px-2 text-sm text-white hover:bg-gray-700">My Layout #3</div>
+                    <div data-js-dropdown-value="My Custom Layout #4" class="cursor-pointer rounded-md py-1.5 px-2 text-sm text-white hover:bg-gray-700">My Custom Layout #4</div>
                   </div>
                 </div>
-                <div id="parameters-layout-options" class="hidden relative grid-cols-2 gap-2 mt-2.5">
-                  <button type="button" id="parameters-layout-reset" class="flex gap-1 items-center justify-center h-[26px] px-2.5-px rounded-md border border-blue-300/30 bg-gray-700 text-sm text-blue-300 hover:shadow-button-ter-hover hover:text-white">
+                <div id="parameters-layout-options" class="relative mt-2.5 hidden grid-cols-2 gap-2">
+                  <button type="button" id="parameters-layout-reset" class="flex h-[26px] items-center justify-center gap-1 rounded-md border border-blue-300/30 bg-gray-700 px-2.5-px text-sm text-blue-300 hover:text-white hover:shadow-button-ter-hover">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="-ml-0.5">
                       <path d="M2.49948 3.59424V6.89478H5.80002"></path>
                       <path d="M3.88021 9.64527C4.23688 10.6576 4.91291 11.5267 5.80644 12.1214C6.69996 12.7162 7.76257 13.0044 8.83417 12.9428C9.90576 12.8811 10.9283 12.4728 11.7477 11.7795C12.5671 11.0861 13.1389 10.1453 13.3771 9.09868C13.6153 8.05207 13.5068 6.95641 13.0682 5.97677C12.6295 4.99714 11.8843 4.18661 10.9449 3.66731C10.0055 3.14801 8.92284 2.94806 7.85994 3.09761C6.79704 3.24715 5.81153 3.73808 5.0519 4.49642L2.49948 6.89482"></path>
                     </svg>
                     <span>Reset Changes</span>
                   </button>
-                  <button type="button" data-js-popover-open="#new-layout-save" data-js-popover-position="auto" id="parameters-layout-save" class="flex gap-1 items-center justify-center h-[26px] px-2.5-px rounded-md border border-blue-300/30 bg-gray-700 text-sm text-blue-300 hover:shadow-button-ter-hover hover:text-white aria-pressed:border-blue-300/80 aria-pressed:shadow-button-ter-hover aria-pressed:text-white aria-pressed:pointer-events-none">
+                  <button type="button" data-js-popover-open="#new-layout-save" data-js-popover-position="auto" id="parameters-layout-save" class="flex h-[26px] items-center justify-center gap-1 rounded-md border border-blue-300/30 bg-gray-700 px-2.5-px text-sm text-blue-300 hover:text-white hover:shadow-button-ter-hover aria-pressed:pointer-events-none aria-pressed:border-blue-300/80 aria-pressed:text-white aria-pressed:shadow-button-ter-hover">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="-ml-0.5">
                       <path d="M8 4V12"></path>
                       <path d="M4 8H12"></path>
                     </svg>
                     <span>Save as New Layout</span>
                   </button>
-                  <div data-js-popover="" id="new-layout-save" class="absolute z-popover top-full right-0 hidden w-60 mt-1 p-2.5-px overflow-auto rounded-md border border-gray-500/30 bg-gray-600 shadow-modal">
-                    <label class="block mb-1 text-sm">Layout Name</label>
-                    <input type="text" placeholder="Enter layout name" class="appearance-none block w-full py-1.5 px-2.5-px rounded-md border border-gray-600 bg-gray-800 text-white placeholder:text-gray-500 hover:border-gray-500 focus:outline-0 focus:border-blue-selected focus:bg-gray-900" />
+                  <div data-js-popover="" id="new-layout-save" class="absolute top-full right-0 z-popover mt-1 hidden w-60 overflow-auto rounded-md border border-gray-500/30 bg-gray-600 p-2.5-px shadow-modal">
+                    <label class="mb-1 block text-sm">Layout Name</label>
+                    <input type="text" placeholder="Enter layout name" class="block w-full appearance-none rounded-md border border-gray-600 bg-gray-800 py-1.5 px-2.5-px text-white placeholder:text-gray-500 hover:border-gray-500 focus:border-blue-selected focus:bg-gray-900 focus:outline-0" />
                     <hr class="my-2.5-px -mx-2.5-px border-t border-gray-500/30" />
                     <div class="flex justify-end gap-2">
-                      <button type="button" data-js-popover-close="#new-layout-save" class="flex gap-1 items-center justify-center h-[26px] px-2.5-px rounded-md border border-blue-300/30 bg-gray-700 text-sm text-blue-300 hover:shadow-button-ter-hover hover:text-white">
+                      <button type="button" data-js-popover-close="#new-layout-save" class="flex h-[26px] items-center justify-center gap-1 rounded-md border border-blue-300/30 bg-gray-700 px-2.5-px text-sm text-blue-300 hover:text-white hover:shadow-button-ter-hover">
                         <span>Cancel</span>
                       </button>
-                      <button type="button" data-js-popover-close="#new-layout-save" class="flex gap-1 items-center justify-center h-[26px] px-2.5 rounded bg-gradient-to-b from-blue-600 to-blue-800 shadow-button text-sm text-white hover:shadow-button-hover">
+                      <button type="button" data-js-popover-close="#new-layout-save" class="flex h-[26px] items-center justify-center gap-1 rounded bg-gradient-to-b from-blue-600 to-blue-800 px-2.5 text-sm text-white shadow-button hover:shadow-button-hover">
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="-ml-0.5">
                           <path d="M12 5L5.8125 11L3 8.27273" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
@@ -1537,15 +1537,15 @@
                 </div>
               </div>
               <div class="py-2.5 px-5">
-                <label for="" class="block mb-1 text-sm">Parameters</label>
+                <label for="" class="mb-1 block text-sm">Parameters</label>
                 <div class="relative">
-                  <input type="text" placeholder="Search parameters" id="parameters-search" class="appearance-none block w-full py-1.5 px-[9px] pr-[30px] rounded-md border border-gray-600 bg-gray-800 text-white placeholder:text-gray-500 hover:border-gray-500 focus:outline-0 focus:border-blue-selected focus:bg-gray-900" />
-                  <div class="absolute top-0 right-0 flex items-center justify-center w-[32px] h-[32px] text-gray-500 opacity-60 pointer-events-none">
+                  <input type="text" placeholder="Search parameters" id="parameters-search" class="block w-full appearance-none rounded-md border border-gray-600 bg-gray-800 py-1.5 px-[9px] pr-[30px] text-white placeholder:text-gray-500 hover:border-gray-500 focus:border-blue-selected focus:bg-gray-900 focus:outline-0" />
+                  <div class="pointer-events-none absolute top-0 right-0 flex h-[32px] w-[32px] items-center justify-center text-gray-500 opacity-60">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="currentcolor">
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M7.33335 3.91666C5.44638 3.91666 3.91669 5.44635 3.91669 7.33332C3.91669 9.22031 5.44638 10.75 7.33335 10.75C9.22034 10.75 10.75 9.22031 10.75 7.33332C10.75 5.44635 9.22034 3.91666 7.33335 3.91666ZM2.41669 7.33332C2.41669 4.61792 4.61795 2.41666 7.33335 2.41666C10.0488 2.41666 12.25 4.61792 12.25 7.33332C12.25 8.42043 11.8972 9.42512 11.2998 10.2392L13.3637 12.303C13.6566 12.5959 13.6566 13.0708 13.3637 13.3637C13.0708 13.6565 12.5959 13.6565 12.303 13.3637L10.2392 11.2998C9.42515 11.8972 8.42046 12.25 7.33335 12.25C4.61795 12.25 2.41669 10.0487 2.41669 7.33332Z"></path>
                     </svg>
                   </div>
-                  <button type="button" id="parameters-search-clear" class="absolute top-0 right-0 flex items-center justify-center w-[32px] h-[32px] text-blue-300 invisible hover:text-white">
+                  <button type="button" id="parameters-search-clear" class="invisible absolute top-0 right-0 flex h-[32px] w-[32px] items-center justify-center text-blue-300 hover:text-white">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                       <path d="M12 4L4 12"></path>
                       <path d="M4 4L12 12"></path>
@@ -1553,17 +1553,17 @@
                   </button>
                 </div>
 
-                <div class="flex flex-col gap-0.5 overflow-hidden mt-4 -mx-2.5 rounded-md">
+                <div class="-mx-2.5 mt-4 flex flex-col gap-0.5 overflow-hidden rounded-md">
                   <div data-js-accordion-item class="bg-gray-600/40">
-                    <div data-js-accordion-toggle class="flex gap-1 items-center py-2.5 px-2.5 text-h6 uppercase select-none cursor-pointer hover:text-blue-300">
+                    <div data-js-accordion-toggle class="flex cursor-pointer select-none items-center gap-1 py-2.5 px-2.5 text-h6 uppercase hover:text-blue-300">
                       <svg width="12" height="12" viewBox="0 0 12 12" fill="currentcolor" class="rotate-90">
                         <path d="M8.53907 5.61589L3.82009 1.68341C3.49443 1.41202 3 1.6436 3 2.06752L3 9.93248C3 10.3564 3.49443 10.588 3.82009 10.3166L8.53907 6.38411C8.77894 6.18421 8.77894 5.81579 8.53907 5.61589Z"></path>
                       </svg>
                       <span class="text-white">Earnings & Sales (6)</span>
                     </div>
                     <div class="-mt-1 pb-1.5 text-white">
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" checked="" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" checked="" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                           <rect x="3" width="1" height="4" class="fill-red"></rect>
                           <rect x="1.5" y="4.5" width="4" height="7" class="fill-red stroke-red"></rect>
@@ -1579,8 +1579,8 @@
                           </svg>
                         </button>
                       </label>
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" checked="" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" checked="" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="text-[#C3EC4E]">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -1591,20 +1591,20 @@
                           </svg>
                         </button>
                       </label>
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" checked="" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" checked="" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="text-[#FEBE2B]">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
                         <span class="mr-auto">RV (Relative Value)</span>
-                        <button type="button" data-js-popover-open="#chart-menu" class="-m-1 p-1 text-gray-500 hover:text-white aria-pressed:text-white aria-pressed:pointer-events-none">
+                        <button type="button" data-js-popover-open="#chart-menu" class="-m-1 p-1 text-gray-500 hover:text-white aria-pressed:pointer-events-none aria-pressed:text-white">
                           <svg width="16" height="16" viewBox="0 0 16 16" fill="currentcolor">
                             <path d="M6.99351 1.3335C6.67418 1.3335 6.4012 1.55923 6.33987 1.87256L6.11721 3.01579C5.57004 3.2227 5.06409 3.51177 4.61982 3.87646L3.52346 3.49886C3.22146 3.39486 2.88919 3.51974 2.72919 3.79574L1.72398 5.53792C1.56465 5.81459 1.62264 6.16583 1.8633 6.37516L2.74221 7.13949C2.6965 7.42039 2.66669 7.70635 2.66669 8.00016C2.66669 8.29397 2.6965 8.57994 2.74221 8.86084L1.8633 9.62516C1.62264 9.8345 1.56465 10.1857 1.72398 10.4624L2.72919 12.2046C2.88852 12.4813 3.22146 12.6061 3.52346 12.5028L4.61982 12.1252C5.06395 12.4896 5.57029 12.7777 6.11721 12.9845L6.33987 14.1278C6.4012 14.4411 6.67418 14.6668 6.99351 14.6668H9.00653C9.32587 14.6668 9.59885 14.4411 9.66018 14.1278L9.88284 12.9845C10.43 12.7776 10.936 12.4886 11.3802 12.1239L12.4766 12.5015C12.7786 12.6055 13.1109 12.4813 13.2709 12.2046L14.2761 10.4611C14.4354 10.1844 14.3774 9.8345 14.1367 9.62516L13.2578 8.86084C13.3035 8.57994 13.3334 8.29397 13.3334 8.00016C13.3334 7.70635 13.3035 7.42039 13.2578 7.13949L14.1367 6.37516C14.3774 6.16583 14.4354 5.81459 14.2761 5.53792L13.2709 3.79574C13.1115 3.51907 12.7786 3.39423 12.4766 3.49756L11.3802 3.87516C10.9361 3.51069 10.4298 3.2226 9.88284 3.01579L9.66018 1.87256C9.59885 1.55923 9.32587 1.3335 9.00653 1.3335H6.99351ZM8.00002 5.3335C9.47269 5.3335 10.6667 6.5275 10.6667 8.00016C10.6667 9.47283 9.47269 10.6668 8.00002 10.6668C6.52736 10.6668 5.33336 9.47283 5.33336 8.00016C5.33336 6.5275 6.52736 5.3335 8.00002 5.3335Z"></path>
                           </svg>
                         </button>
                       </label>
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" checked="" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" checked="" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="text-[#A1B1EB]">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -1615,8 +1615,8 @@
                           </svg>
                         </button>
                       </label>
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" checked="" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" checked="" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="text-[#A16319]">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -1627,8 +1627,8 @@
                           </svg>
                         </button>
                       </label>
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" checked="" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" checked="" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="text-[#C5443C]">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -1639,8 +1639,8 @@
                           </svg>
                         </button>
                       </label>
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="text-[#FFC9A4]">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -1651,8 +1651,8 @@
                           </svg>
                         </button>
                       </label>
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="text-[#FFC9A4]">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -1663,8 +1663,8 @@
                           </svg>
                         </button>
                       </label>
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="text-[#FFC9A4]">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -1675,8 +1675,8 @@
                           </svg>
                         </button>
                       </label>
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="text-[#FFC9A4]">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -1687,8 +1687,8 @@
                           </svg>
                         </button>
                       </label>
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="text-[#FFC9A4]">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -1699,8 +1699,8 @@
                           </svg>
                         </button>
                       </label>
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="text-[#FBE94D]">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -1711,8 +1711,8 @@
                           </svg>
                         </button>
                       </label>
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="text-[#C8E7D1]">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -1726,15 +1726,15 @@
                     </div>
                   </div>
                   <div data-js-accordion-item class="bg-gray-600/40">
-                    <div data-js-accordion-toggle class="flex gap-1 items-center py-2.5 px-2.5 text-h6 uppercase select-none cursor-pointer hover:text-blue-300">
+                    <div data-js-accordion-toggle class="flex cursor-pointer select-none items-center gap-1 py-2.5 px-2.5 text-h6 uppercase hover:text-blue-300">
                       <svg width="12" height="12" viewBox="0 0 12 12" fill="currentcolor">
                         <path d="M8.53907 5.61589L3.82009 1.68341C3.49443 1.41202 3 1.6436 3 2.06752L3 9.93248C3 10.3564 3.49443 10.588 3.82009 10.3166L8.53907 6.38411C8.77894 6.18421 8.77894 5.81579 8.53907 5.61589Z"></path>
                       </svg>
                       <span>Dividend Analysis</span>
                     </div>
-                    <div class="hidden -mt-1 pb-1.5 text-white">
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                    <div class="-mt-1 hidden pb-1.5 text-white">
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="text-[#FFCDCB]">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -1745,8 +1745,8 @@
                           </svg>
                         </button>
                       </label>
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="text-[#FFC9A4]">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -1757,8 +1757,8 @@
                           </svg>
                         </button>
                       </label>
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="text-[#FFC9A4]">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -1769,8 +1769,8 @@
                           </svg>
                         </button>
                       </label>
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="text-[#FFC9A4]">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -1781,8 +1781,8 @@
                           </svg>
                         </button>
                       </label>
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="text-[#FFC9A4]">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -1793,8 +1793,8 @@
                           </svg>
                         </button>
                       </label>
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="text-[#FFC9A4]">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -1808,15 +1808,15 @@
                     </div>
                   </div>
                   <div data-js-accordion-item class="bg-gray-600/40">
-                    <div data-js-accordion-toggle class="flex gap-1 items-center py-2.5 px-2.5 text-h6 uppercase select-none cursor-pointer hover:text-blue-300">
+                    <div data-js-accordion-toggle class="flex cursor-pointer select-none items-center gap-1 py-2.5 px-2.5 text-h6 uppercase hover:text-blue-300">
                       <svg width="12" height="12" viewBox="0 0 12 12" fill="currentcolor">
                         <path d="M8.53907 5.61589L3.82009 1.68341C3.49443 1.41202 3 1.6436 3 2.06752L3 9.93248C3 10.3564 3.49443 10.588 3.82009 10.3166L8.53907 6.38411C8.77894 6.18421 8.77894 5.81579 8.53907 5.61589Z"></path>
                       </svg>
                       <span class="text-white">Price/Volume (2)</span>
                     </div>
-                    <div class="hidden -mt-1 pb-1.5 text-white">
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                    <div class="-mt-1 hidden pb-1.5 text-white">
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="#FFC9A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -1827,8 +1827,8 @@
                           </svg>
                         </button>
                       </label>
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="#FFC9A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -1839,8 +1839,8 @@
                           </svg>
                         </button>
                       </label>
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="#FFC9A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -1851,8 +1851,8 @@
                           </svg>
                         </button>
                       </label>
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="#FFC9A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -1863,8 +1863,8 @@
                           </svg>
                         </button>
                       </label>
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" checked="" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" checked="" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="#FFC9A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -1875,8 +1875,8 @@
                           </svg>
                         </button>
                       </label>
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" checked="" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" checked="" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="#FFC9A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -1887,8 +1887,8 @@
                           </svg>
                         </button>
                       </label>
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="#FFC9A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -1899,8 +1899,8 @@
                           </svg>
                         </button>
                       </label>
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="#FFC9A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -1911,8 +1911,8 @@
                           </svg>
                         </button>
                       </label>
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="#FFC9A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -1926,15 +1926,15 @@
                     </div>
                   </div>
                   <div data-js-accordion-item class="bg-gray-600/40">
-                    <div data-js-accordion-toggle class="flex gap-1 items-center py-2.5 px-2.5 text-h6 uppercase select-none cursor-pointer hover:text-blue-300">
+                    <div data-js-accordion-toggle class="flex cursor-pointer select-none items-center gap-1 py-2.5 px-2.5 text-h6 uppercase hover:text-blue-300">
                       <svg width="12" height="12" viewBox="0 0 12 12" fill="currentcolor">
                         <path d="M8.53907 5.61589L3.82009 1.68341C3.49443 1.41202 3 1.6436 3 2.06752L3 9.93248C3 10.3564 3.49443 10.588 3.82009 10.3166L8.53907 6.38411C8.77894 6.18421 8.77894 5.81579 8.53907 5.61589Z"></path>
                       </svg>
                       <span>Sales/Market Capital</span>
                     </div>
-                    <div class="hidden -mt-1 pb-1.5 text-white">
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                    <div class="-mt-1 hidden pb-1.5 text-white">
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="#FFC9A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -1945,8 +1945,8 @@
                           </svg>
                         </button>
                       </label>
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="#FFC9A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -1957,8 +1957,8 @@
                           </svg>
                         </button>
                       </label>
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="#FFC9A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -1969,8 +1969,8 @@
                           </svg>
                         </button>
                       </label>
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="#FFC9A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -1984,15 +1984,15 @@
                     </div>
                   </div>
                   <div data-js-accordion-item class="bg-gray-600/40">
-                    <div data-js-accordion-toggle class="flex gap-1 items-center py-2.5 px-2.5 text-h6 uppercase select-none cursor-pointer hover:text-blue-300">
+                    <div data-js-accordion-toggle class="flex cursor-pointer select-none items-center gap-1 py-2.5 px-2.5 text-h6 uppercase hover:text-blue-300">
                       <svg width="12" height="12" viewBox="0 0 12 12" fill="currentcolor">
                         <path d="M8.53907 5.61589L3.82009 1.68341C3.49443 1.41202 3 1.6436 3 2.06752L3 9.93248C3 10.3564 3.49443 10.588 3.82009 10.3166L8.53907 6.38411C8.77894 6.18421 8.77894 5.81579 8.53907 5.61589Z"></path>
                       </svg>
                       <span>Technical Analysis</span>
                     </div>
-                    <div class="hidden -mt-1 pb-1.5 text-white">
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                    <div class="-mt-1 hidden pb-1.5 text-white">
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="#FFC9A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -2003,8 +2003,8 @@
                           </svg>
                         </button>
                       </label>
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="#FFC9A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -2015,8 +2015,8 @@
                           </svg>
                         </button>
                       </label>
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="#FFC9A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -2027,8 +2027,8 @@
                           </svg>
                         </button>
                       </label>
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="#FFC9A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -2039,8 +2039,8 @@
                           </svg>
                         </button>
                       </label>
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="#FFC9A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -2051,8 +2051,8 @@
                           </svg>
                         </button>
                       </label>
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="#FFC9A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -2063,8 +2063,8 @@
                           </svg>
                         </button>
                       </label>
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="#FFC9A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -2075,8 +2075,8 @@
                           </svg>
                         </button>
                       </label>
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="#FFC9A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -2087,8 +2087,8 @@
                           </svg>
                         </button>
                       </label>
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="#FFC9A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -2099,8 +2099,8 @@
                           </svg>
                         </button>
                       </label>
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="#FFC9A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -2111,8 +2111,8 @@
                           </svg>
                         </button>
                       </label>
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="#FFC9A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -2126,15 +2126,15 @@
                     </div>
                   </div>
                   <div data-js-accordion-item class="bg-gray-600/40">
-                    <div data-js-accordion-toggle class="flex gap-1 items-center py-2.5 px-2.5 text-h6 uppercase select-none cursor-pointer hover:text-blue-300">
+                    <div data-js-accordion-toggle class="flex cursor-pointer select-none items-center gap-1 py-2.5 px-2.5 text-h6 uppercase hover:text-blue-300">
                       <svg width="12" height="12" viewBox="0 0 12 12" fill="currentcolor">
                         <path d="M8.53907 5.61589L3.82009 1.68341C3.49443 1.41202 3 1.6436 3 2.06752L3 9.93248C3 10.3564 3.49443 10.588 3.82009 10.3166L8.53907 6.38411C8.77894 6.18421 8.77894 5.81579 8.53907 5.61589Z"></path>
                       </svg>
                       <span>VectorVest Fields</span>
                     </div>
-                    <div class="hidden -mt-1 pb-1.5 text-white">
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                    <div class="-mt-1 hidden pb-1.5 text-white">
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="#FFC9A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -2145,8 +2145,8 @@
                           </svg>
                         </button>
                       </label>
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="#FFC9A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -2157,8 +2157,8 @@
                           </svg>
                         </button>
                       </label>
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="#FFC9A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -2169,8 +2169,8 @@
                           </svg>
                         </button>
                       </label>
-                      <label class="flex gap-2 items-center py-1.5 px-2 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                      <label class="flex cursor-pointer items-center gap-2 py-1.5 px-2 hover:bg-gray-600">
+                        <input type="checkbox" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="#FFC9A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -2181,8 +2181,8 @@
                           </svg>
                         </button>
                       </label>
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="#FFC9A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -2193,8 +2193,8 @@
                           </svg>
                         </button>
                       </label>
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="#FFC9A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -2205,8 +2205,8 @@
                           </svg>
                         </button>
                       </label>
-                      <label class="group flex gap-2 items-center py-1.5 px-2.5 cursor-pointer hover:bg-gray-600">
-                        <input type="checkbox" class="appearance-none w-[18px] h-[18px] rounded border border-gray-600 bg-gray-800 cursor-pointer group-hover:border-gray-500" />
+                      <label class="group flex cursor-pointer items-center gap-2 py-1.5 px-2.5 hover:bg-gray-600">
+                        <input type="checkbox" class="h-[18px] w-[18px] cursor-pointer appearance-none rounded border border-gray-600 bg-gray-800 group-hover:border-gray-500" />
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                           <path d="M2 12.5L5 8.5L7 11L10 6.5L12 8.5L14.5 5" stroke="#FFC9A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -2222,11 +2222,11 @@
                 </div>
               </div>
             </div>
-            <div class="absolute right-0 bottom-0 left-0 grid grid-cols-2 gap-2 items-center h-13 px-5 pb-px border-t border-gray-600 bg-gray-700 shadow-[0px_-4px_20px_rgba(0,0,0,.2)]">
-              <button type="button" class="flex gap-1 items-center justify-center h-[32px] px-3-px rounded-md border border-blue-300/30 bg-gray-700 text-blue-300 hover:shadow-button-ter-hover hover:text-white">
+            <div class="absolute right-0 bottom-0 left-0 grid h-13 grid-cols-2 items-center gap-2 border-t border-gray-600 bg-gray-700 px-5 pb-px shadow-[0px_-4px_20px_rgba(0,0,0,.2)]">
+              <button type="button" class="flex h-[32px] items-center justify-center gap-1 rounded-md border border-blue-300/30 bg-gray-700 px-3-px text-blue-300 hover:text-white hover:shadow-button-ter-hover">
                 <span>Reset to Default</span>
               </button>
-              <button type="button" data-js-toggle-sidebar class="flex gap-1 items-center justify-center h-[32px] px-3 rounded-md bg-gradient-to-b from-blue-600 to-blue-800 shadow-button text-white hover:shadow-button-hover">
+              <button type="button" data-js-toggle-sidebar class="flex h-[32px] items-center justify-center gap-1 rounded-md bg-gradient-to-b from-blue-600 to-blue-800 px-3 text-white shadow-button hover:shadow-button-hover">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="-ml-0.5">
                   <path d="M12 5L5.8125 11L3 8.27273" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
@@ -2238,13 +2238,13 @@
 
           <!-- right sidebar layouts -->
           <div id="layouts" class="hidden">
-            <div class="absolute top-9 right-0 bottom-0 left-0 pb-13 overflow-auto">
+            <div class="absolute top-9 right-0 bottom-0 left-0 overflow-auto pb-13">
               <div class="p-5">
                 <div class="text-h6 uppercase">VectorVest Layouts</div>
-                <div class="mt-2 -mx-2.5">
-                  <div class="group flex gap-2 items-center py-1 px-2.5 rounded-md hover:bg-gray-800">
+                <div class="-mx-2.5 mt-2">
+                  <div class="group flex items-center gap-2 rounded-md py-1 px-2.5 hover:bg-gray-800">
                     <span class="mr-auto text-white">Colt 45</span>
-                    <button type="button" class="flex gap-1 items-center justify-center h-[22px] px-2-px rounded-md border border-blue-300/30 bg-gray-700 text-xs text-blue-300 opacity-0 hover:shadow-button-ter-hover hover:text-white group-hover:opacity-100">
+                    <button type="button" class="flex h-[22px] items-center justify-center gap-1 rounded-md border border-blue-300/30 bg-gray-700 px-2-px text-xs text-blue-300 opacity-0 hover:text-white hover:shadow-button-ter-hover group-hover:opacity-100">
                       <span>Apply</span>
                     </button>
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="text-gray-500">
@@ -2253,9 +2253,9 @@
                       <rect x="0.333333" y="0.333333" width="15.3333" height="15.3333" stroke="currentColor" stroke-width="0.666667" />
                     </svg>
                   </div>
-                  <div class="group flex gap-2 items-center py-1 px-2.5 rounded-md hover:bg-gray-800">
+                  <div class="group flex items-center gap-2 rounded-md py-1 px-2.5 hover:bg-gray-800">
                     <span class="mr-auto text-white">VectorVest Default Layout</span>
-                    <button type="button" class="flex gap-1 items-center justify-center h-[22px] px-2-px rounded-md border border-blue-300/30 bg-gray-700 text-xs text-blue-300 opacity-0 hover:shadow-button-ter-hover hover:text-white group-hover:opacity-100">
+                    <button type="button" class="flex h-[22px] items-center justify-center gap-1 rounded-md border border-blue-300/30 bg-gray-700 px-2-px text-xs text-blue-300 opacity-0 hover:text-white hover:shadow-button-ter-hover group-hover:opacity-100">
                       <span>Apply</span>
                     </button>
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="text-gray-500">
@@ -2264,9 +2264,9 @@
                       <rect x="0.333333" y="0.333333" width="15.3333" height="15.3333" stroke="currentColor" stroke-width="0.666667" />
                     </svg>
                   </div>
-                  <div class="group flex gap-2 items-center py-1 px-2.5 rounded-md hover:bg-gray-800">
+                  <div class="group flex items-center gap-2 rounded-md py-1 px-2.5 hover:bg-gray-800">
                     <span class="mr-auto text-white">Enhanced ProTrader Timing</span>
-                    <button type="button" class="flex gap-1 items-center justify-center h-[22px] px-2-px rounded-md border border-blue-300/30 bg-gray-700 text-xs text-blue-300 opacity-0 hover:shadow-button-ter-hover hover:text-white group-hover:opacity-100">
+                    <button type="button" class="flex h-[22px] items-center justify-center gap-1 rounded-md border border-blue-300/30 bg-gray-700 px-2-px text-xs text-blue-300 opacity-0 hover:text-white hover:shadow-button-ter-hover group-hover:opacity-100">
                       <span>Apply</span>
                     </button>
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="text-gray-500">
@@ -2275,9 +2275,9 @@
                       <rect x="0.333333" y="0.333333" width="15.3333" height="15.3333" stroke="currentColor" stroke-width="0.666667" />
                     </svg>
                   </div>
-                  <div class="group flex gap-2 items-center py-1 px-2.5 rounded-md hover:bg-gray-800">
+                  <div class="group flex items-center gap-2 rounded-md py-1 px-2.5 hover:bg-gray-800">
                     <span class="mr-auto text-white">Acid Test</span>
-                    <button type="button" class="flex gap-1 items-center justify-center h-[22px] px-2-px rounded-md border border-blue-300/30 bg-gray-700 text-xs text-blue-300 opacity-0 hover:shadow-button-ter-hover hover:text-white group-hover:opacity-100">
+                    <button type="button" class="flex h-[22px] items-center justify-center gap-1 rounded-md border border-blue-300/30 bg-gray-700 px-2-px text-xs text-blue-300 opacity-0 hover:text-white hover:shadow-button-ter-hover group-hover:opacity-100">
                       <span>Apply</span>
                     </button>
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="text-gray-500">
@@ -2286,9 +2286,9 @@
                       <rect x="0.333333" y="0.333333" width="15.3333" height="15.3333" stroke="currentColor" stroke-width="0.666667" />
                     </svg>
                   </div>
-                  <div class="group flex gap-2 items-center py-1 px-2.5 rounded-md hover:bg-gray-800">
+                  <div class="group flex items-center gap-2 rounded-md py-1 px-2.5 hover:bg-gray-800">
                     <span class="mr-auto text-white">NPI Near Perfect Indicator</span>
-                    <button type="button" class="flex gap-1 items-center justify-center h-[22px] px-2-px rounded-md border border-blue-300/30 bg-gray-700 text-xs text-blue-300 opacity-0 hover:shadow-button-ter-hover hover:text-white group-hover:opacity-100">
+                    <button type="button" class="flex h-[22px] items-center justify-center gap-1 rounded-md border border-blue-300/30 bg-gray-700 px-2-px text-xs text-blue-300 opacity-0 hover:text-white hover:shadow-button-ter-hover group-hover:opacity-100">
                       <span>Apply</span>
                     </button>
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="text-gray-500">
@@ -2297,9 +2297,9 @@
                       <rect x="0.333333" y="0.333333" width="15.3333" height="15.3333" stroke="currentColor" stroke-width="0.666667" />
                     </svg>
                   </div>
-                  <div class="group flex gap-2 items-center py-1 px-2.5 rounded-md hover:bg-gray-800">
+                  <div class="group flex items-center gap-2 rounded-md py-1 px-2.5 hover:bg-gray-800">
                     <span class="mr-auto text-white">Midas Touch</span>
-                    <button type="button" class="flex gap-1 items-center justify-center h-[22px] px-2-px rounded-md border border-blue-300/30 bg-gray-700 text-xs text-blue-300 opacity-0 hover:shadow-button-ter-hover hover:text-white group-hover:opacity-100">
+                    <button type="button" class="flex h-[22px] items-center justify-center gap-1 rounded-md border border-blue-300/30 bg-gray-700 px-2-px text-xs text-blue-300 opacity-0 hover:text-white hover:shadow-button-ter-hover group-hover:opacity-100">
                       <span>Apply</span>
                     </button>
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="text-gray-500">
@@ -2308,9 +2308,9 @@
                       <rect x="0.333333" y="0.333333" width="15.3333" height="15.3333" stroke="currentColor" stroke-width="0.666667" />
                     </svg>
                   </div>
-                  <div class="group flex gap-2 items-center py-1 px-2.5 rounded-md hover:bg-gray-800">
+                  <div class="group flex items-center gap-2 rounded-md py-1 px-2.5 hover:bg-gray-800">
                     <span class="mr-auto text-white">GLB / RT Kicker</span>
-                    <button type="button" class="flex gap-1 items-center justify-center h-[22px] px-2-px rounded-md border border-blue-300/30 bg-gray-700 text-xs text-blue-300 opacity-0 hover:shadow-button-ter-hover hover:text-white group-hover:opacity-100">
+                    <button type="button" class="flex h-[22px] items-center justify-center gap-1 rounded-md border border-blue-300/30 bg-gray-700 px-2-px text-xs text-blue-300 opacity-0 hover:text-white hover:shadow-button-ter-hover group-hover:opacity-100">
                       <span>Apply</span>
                     </button>
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="text-gray-500">
@@ -2321,10 +2321,10 @@
                   </div>
                 </div>
                 <div class="mt-6 text-h6 uppercase">My Layouts</div>
-                <div class="mt-2 -mx-2.5">
-                  <div class="group flex gap-2 items-center py-1 px-2.5 rounded-md hover:bg-gray-800">
+                <div class="-mx-2.5 mt-2">
+                  <div class="group flex items-center gap-2 rounded-md py-1 px-2.5 hover:bg-gray-800">
                     <span class="mr-auto text-white">My Custom Layout #1</span>
-                    <button type="button" class="flex gap-1 items-center justify-center h-[22px] px-2-px rounded-md border border-blue-300/30 bg-gray-700 text-xs text-blue-300 opacity-0 hover:shadow-button-ter-hover hover:text-white group-hover:opacity-100">
+                    <button type="button" class="flex h-[22px] items-center justify-center gap-1 rounded-md border border-blue-300/30 bg-gray-700 px-2-px text-xs text-blue-300 opacity-0 hover:text-white hover:shadow-button-ter-hover group-hover:opacity-100">
                       <span>Apply</span>
                     </button>
                     <button type="button" data-js-popover-open="#layout-menu" class="-m-1 p-1 opacity-0 hover:text-white group-hover:opacity-100">
@@ -2335,9 +2335,9 @@
                       </svg>
                     </button>
                   </div>
-                  <div class="group flex gap-2 items-center py-1 px-2.5 rounded-md hover:bg-gray-800">
+                  <div class="group flex items-center gap-2 rounded-md py-1 px-2.5 hover:bg-gray-800">
                     <span class="mr-auto text-white">Jared’s Layout #2</span>
-                    <button type="button" class="flex gap-1 items-center justify-center h-[22px] px-2-px rounded-md border border-blue-300/30 bg-gray-700 text-xs text-blue-300 opacity-0 hover:shadow-button-ter-hover hover:text-white group-hover:opacity-100">
+                    <button type="button" class="flex h-[22px] items-center justify-center gap-1 rounded-md border border-blue-300/30 bg-gray-700 px-2-px text-xs text-blue-300 opacity-0 hover:text-white hover:shadow-button-ter-hover group-hover:opacity-100">
                       <span>Apply</span>
                     </button>
                     <button type="button" data-js-popover-open="#layout-menu" class="-m-1 p-1 opacity-0 hover:text-white group-hover:opacity-100">
@@ -2348,9 +2348,9 @@
                       </svg>
                     </button>
                   </div>
-                  <div class="group flex gap-2 items-center py-1 px-2.5 rounded-md hover:bg-gray-800">
+                  <div class="group flex items-center gap-2 rounded-md py-1 px-2.5 hover:bg-gray-800">
                     <span class="mr-auto text-white">My Layout #3</span>
-                    <button type="button" class="flex gap-1 items-center justify-center h-[22px] px-2-px rounded-md border border-blue-300/30 bg-gray-700 text-xs text-blue-300 opacity-0 hover:shadow-button-ter-hover hover:text-white group-hover:opacity-100">
+                    <button type="button" class="flex h-[22px] items-center justify-center gap-1 rounded-md border border-blue-300/30 bg-gray-700 px-2-px text-xs text-blue-300 opacity-0 hover:text-white hover:shadow-button-ter-hover group-hover:opacity-100">
                       <span>Apply</span>
                     </button>
                     <button type="button" data-js-popover-open="#layout-menu" class="-m-1 p-1 opacity-0 hover:text-white group-hover:opacity-100">
@@ -2361,9 +2361,9 @@
                       </svg>
                     </button>
                   </div>
-                  <div class="group flex gap-2 items-center py-1 px-2.5 rounded-md hover:bg-gray-800">
+                  <div class="group flex items-center gap-2 rounded-md py-1 px-2.5 hover:bg-gray-800">
                     <span class="mr-auto text-white">My Custom Layout #4</span>
-                    <button type="button" class="flex gap-1 items-center justify-center h-[22px] px-2-px rounded-md border border-blue-300/30 bg-gray-700 text-xs text-blue-300 opacity-0 hover:shadow-button-ter-hover hover:text-white group-hover:opacity-100">
+                    <button type="button" class="flex h-[22px] items-center justify-center gap-1 rounded-md border border-blue-300/30 bg-gray-700 px-2-px text-xs text-blue-300 opacity-0 hover:text-white hover:shadow-button-ter-hover group-hover:opacity-100">
                       <span>Apply</span>
                     </button>
                     <button type="button" data-js-popover-open="#layout-menu" class="-m-1 p-1 opacity-0 hover:text-white group-hover:opacity-100">
@@ -2377,8 +2377,8 @@
                 </div>
               </div>
             </div>
-            <div class="absolute right-0 bottom-0 left-0 grid items-center h-13 px-5 pb-px border-t border-gray-600 bg-gray-700 shadow-[0px_-4px_20px_rgba(0,0,0,.2)]">
-              <button type="button" data-js-toggle-sidebar class="flex gap-1 items-center justify-center h-[32px] px-3-px rounded-md border border-blue-300/30 bg-gray-700 text-blue-300 hover:shadow-button-ter-hover hover:text-white">
+            <div class="absolute right-0 bottom-0 left-0 grid h-13 items-center border-t border-gray-600 bg-gray-700 px-5 pb-px shadow-[0px_-4px_20px_rgba(0,0,0,.2)]">
+              <button type="button" data-js-toggle-sidebar class="flex h-[32px] items-center justify-center gap-1 rounded-md border border-blue-300/30 bg-gray-700 px-3-px text-blue-300 hover:text-white hover:shadow-button-ter-hover">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="-ml-0.5">
                   <path d="M12 5L5.8125 11L3 8.27273" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
@@ -2392,8 +2392,8 @@
       <!--/ right sidebar -->
 
       <!-- toolbar -->
-      <div class="fixed z-header top-[50px] right-0 bottom-0 left-48 flex gap-3 items-center h-9 px-5 border-b border-gray-700 bg-gray-800">
-        <div class="flex gap-3 items-center text-sm">
+      <div class="fixed top-[50px] right-0 bottom-0 left-48 z-header flex h-9 items-center gap-3 border-b border-gray-700 bg-gray-800 px-5">
+        <div class="flex items-center gap-3 text-sm">
           <button type="button" class="text-white">1D</button>
           <button type="button" class="text-gray-500 hover:text-white">2D</button>
           <button type="button" class="text-gray-500 hover:text-white">3D</button>
@@ -2407,22 +2407,22 @@
           <button type="button" class="text-gray-500 hover:text-white">10Y</button>
         </div>
 
-        <div class="flex gap-1.5 mx-auto">
-          <button type="button" class="py-1-px px-2 rounded-full border border-blue-selected bg-gray-700 text-sm text-white">Current</button>
-          <button type="button" class="py-1-px px-2 rounded-full border border-gray-400/50 text-sm text-white hover:border-gray-400">High Low</button>
-          <button type="button" class="py-1-px px-2 rounded-full border border-gray-400/50 text-sm text-white hover:border-gray-400">Splits</button>
-          <button type="button" class="py-1-px px-2 rounded-full border border-gray-400/50 text-sm text-white hover:border-gray-400">Log</button>
-          <button type="button" class="flex gap-1 items-center py-1-px px-2 rounded-full border border-gray-400/50 text-sm text-white hover:border-gray-400">
+        <div class="mx-auto flex gap-1.5">
+          <button type="button" class="rounded-full border border-blue-selected bg-gray-700 py-1-px px-2 text-sm text-white">Current</button>
+          <button type="button" class="rounded-full border border-gray-400/50 py-1-px px-2 text-sm text-white hover:border-gray-400">High Low</button>
+          <button type="button" class="rounded-full border border-gray-400/50 py-1-px px-2 text-sm text-white hover:border-gray-400">Splits</button>
+          <button type="button" class="rounded-full border border-gray-400/50 py-1-px px-2 text-sm text-white hover:border-gray-400">Log</button>
+          <button type="button" class="flex items-center gap-1 rounded-full border border-gray-400/50 py-1-px px-2 text-sm text-white hover:border-gray-400">
             <span>RTX-Kikcker</span>
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="-mr-0.5 text-gray-400">
               <path d="M4 6L8 10L12 6" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
           </button>
-          <button type="button" class="py-1-px px-2 rounded-full border border-gray-400/50 text-sm text-white hover:border-gray-400">Last Close</button>
+          <button type="button" class="rounded-full border border-gray-400/50 py-1-px px-2 text-sm text-white hover:border-gray-400">Last Close</button>
         </div>
 
         <div class="text-sm">Default Layout</div>
-        <button type="button" data-js-toggle-sidebar class="flex gap-1 items-center justify-center h-[26px] px-2.5 rounded-md bg-button-secondary shadow-button text-sm text-blue-300 hover:text-white">
+        <button type="button" data-js-toggle-sidebar class="flex h-[26px] items-center justify-center gap-1 rounded-md bg-button-secondary px-2.5 text-sm text-blue-300 shadow-button hover:text-white">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="currentcolor" class="-ml-0.5">
             <path d="M6.99351 1.3335C6.67418 1.3335 6.4012 1.55923 6.33987 1.87256L6.11721 3.01579C5.57004 3.2227 5.06409 3.51177 4.61982 3.87646L3.52346 3.49886C3.22146 3.39486 2.88919 3.51974 2.72919 3.79574L1.72398 5.53792C1.56465 5.81459 1.62264 6.16583 1.8633 6.37516L2.74221 7.13949C2.6965 7.42039 2.66669 7.70635 2.66669 8.00016C2.66669 8.29397 2.6965 8.57994 2.74221 8.86084L1.8633 9.62516C1.62264 9.8345 1.56465 10.1857 1.72398 10.4624L2.72919 12.2046C2.88852 12.4813 3.22146 12.6061 3.52346 12.5028L4.61982 12.1252C5.06395 12.4896 5.57029 12.7777 6.11721 12.9845L6.33987 14.1278C6.4012 14.4411 6.67418 14.6668 6.99351 14.6668H9.00653C9.32587 14.6668 9.59885 14.4411 9.66018 14.1278L9.88284 12.9845C10.43 12.7776 10.936 12.4886 11.3802 12.1239L12.4766 12.5015C12.7786 12.6055 13.1109 12.4813 13.2709 12.2046L14.2761 10.4611C14.4354 10.1844 14.3774 9.8345 14.1367 9.62516L13.2578 8.86084C13.3035 8.57994 13.3334 8.29397 13.3334 8.00016C13.3334 7.70635 13.3035 7.42039 13.2578 7.13949L14.1367 6.37516C14.3774 6.16583 14.4354 5.81459 14.2761 5.53792L13.2709 3.79574C13.1115 3.51907 12.7786 3.39423 12.4766 3.49756L11.3802 3.87516C10.9361 3.51069 10.4298 3.2226 9.88284 3.01579L9.66018 1.87256C9.59885 1.55923 9.32587 1.3335 9.00653 1.3335H6.99351ZM8.00002 5.3335C9.47269 5.3335 10.6667 6.5275 10.6667 8.00016C10.6667 9.47283 9.47269 10.6668 8.00002 10.6668C6.52736 10.6668 5.33336 9.47283 5.33336 8.00016C5.33336 6.5275 6.52736 5.3335 8.00002 5.3335Z"></path>
           </svg>
@@ -2432,27 +2432,27 @@
       <!--/ toolbar -->
 
       <!-- chart menu -->
-      <div data-js-popover="" id="chart-menu" class="fixed z-popover hidden p-2-px rounded-md border border-gray-500/30 bg-gray-600 shadow-modal whitespace-nowrap">
-        <button type="button" class="flex items-center gap-1.5 w-full py-1.5 px-3 rounded-md hover:bg-gray-700">
+      <div data-js-popover="" id="chart-menu" class="fixed z-popover hidden whitespace-nowrap rounded-md border border-gray-500/30 bg-gray-600 p-2-px shadow-modal">
+        <button type="button" class="flex w-full items-center gap-1.5 rounded-md py-1.5 px-3 hover:bg-gray-700">
           <span class="mr-3 text-white">Change Type</span>
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="-mr-0.5 ml-auto">
             <path d="M6 12L10 8L6 4" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
         </button>
-        <button type="button" data-js-popover-close="#chart-style-menu" data-js-popover-open="#moving-avarage-menu" data-js-popover-position="auto" class="flex items-center gap-1.5 w-full py-1.5 px-3 rounded-md hover:bg-gray-700">
+        <button type="button" data-js-popover-close="#chart-style-menu" data-js-popover-open="#moving-avarage-menu" data-js-popover-position="auto" class="flex w-full items-center gap-1.5 rounded-md py-1.5 px-3 hover:bg-gray-700">
           <span class="mr-3 text-white">Add Moving Average</span>
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="-mr-0.5 ml-auto">
             <path d="M6 12L10 8L6 4" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
         </button>
-        <button type="button" data-js-popover-close="#moving-avarage-menu" data-js-popover-open="#chart-style-menu" data-js-popover-position="auto" class="flex items-center gap-1.5 w-full py-1.5 px-3 rounded-md hover:bg-gray-700">
+        <button type="button" data-js-popover-close="#moving-avarage-menu" data-js-popover-open="#chart-style-menu" data-js-popover-position="auto" class="flex w-full items-center gap-1.5 rounded-md py-1.5 px-3 hover:bg-gray-700">
           <span class="mr-3 text-white">Change Style</span>
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="-mr-0.5 ml-auto">
             <path d="M6 12L10 8L6 4" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
         </button>
         <hr class="my-1 border-t border-gray-500/30" />
-        <button type="button" class="flex items-center gap-1.5 w-full py-1.5 px-3 rounded-md text-red hover:bg-gray-700">
+        <button type="button" class="flex w-full items-center gap-1.5 rounded-md py-1.5 px-3 text-red hover:bg-gray-700">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="-ml-0.5">
             <path d="M2.59998 4.3999H3.79998H13.4" />
             <path d="M6.79999 7.3999V10.9999" />
@@ -2462,30 +2462,30 @@
           <span>Remove</span>
         </button>
 
-        <div data-js-popover="" id="moving-avarage-menu" class="absolute top-[38px] right-full hidden w-76 mr-1 p-2-px rounded-md border border-gray-500/30 bg-gray-600 shadow-modal">
-          <div class="flex items-center mb-2 p-0.5 rounded-md bg-gray-800 text-sm">
-            <button type="button" class="relative grow shrink-0 basis-0 p-0.5 rounded bg-button-secondary shadow-button text-white">Simple</button>
-            <div class="h-[10px] -ml-px border-l border-gray-600"></div>
-            <button type="button" class="relative grow shrink-0 basis-0 p-0.5 rounded hover:text-white">Exponential</button>
-            <div class="h-[10px] -ml-px border-l border-gray-600"></div>
-            <button type="button" class="relative grow shrink-0 basis-0 p-0.5 rounded hover:text-white">Weighted</button>
+        <div data-js-popover="" id="moving-avarage-menu" class="absolute top-[38px] right-full mr-1 hidden w-76 rounded-md border border-gray-500/30 bg-gray-600 p-2-px shadow-modal">
+          <div class="mb-2 flex items-center rounded-md bg-gray-800 p-0.5 text-sm">
+            <button type="button" class="relative shrink-0 grow basis-0 rounded bg-button-secondary p-0.5 text-white shadow-button">Simple</button>
+            <div class="-ml-px h-[10px] border-l border-gray-600"></div>
+            <button type="button" class="relative shrink-0 grow basis-0 rounded p-0.5 hover:text-white">Exponential</button>
+            <div class="-ml-px h-[10px] border-l border-gray-600"></div>
+            <button type="button" class="relative shrink-0 grow basis-0 rounded p-0.5 hover:text-white">Weighted</button>
           </div>
-          <button type="button" class="flex items-center gap-1.5 w-full py-1.5 px-3 rounded-md hover:bg-gray-700">
+          <button type="button" class="flex w-full items-center gap-1.5 rounded-md py-1.5 px-3 hover:bg-gray-700">
             <span class="text-white">10</span>
           </button>
-          <button type="button" class="flex items-center gap-1.5 w-full py-1.5 px-3 rounded-md hover:bg-gray-700">
+          <button type="button" class="flex w-full items-center gap-1.5 rounded-md py-1.5 px-3 hover:bg-gray-700">
             <span class="text-white">20</span>
           </button>
-          <button type="button" class="flex items-center gap-1.5 w-full py-1.5 px-3 rounded-md hover:bg-gray-700">
+          <button type="button" class="flex w-full items-center gap-1.5 rounded-md py-1.5 px-3 hover:bg-gray-700">
             <span class="text-white">40</span>
           </button>
         </div>
 
-        <div data-js-popover="" id="chart-style-menu" class="absolute top-[68px] right-full hidden w-64 mr-1 p-2-px rounded-md border border-gray-500/30 bg-gray-600 shadow-modal">
+        <div data-js-popover="" id="chart-style-menu" class="absolute top-[68px] right-full mr-1 hidden w-64 rounded-md border border-gray-500/30 bg-gray-600 p-2-px shadow-modal">
           <div class="mb-1 text-sm">Line Style</div>
           <div class="grid grid-cols-3 gap-3">
-            <button type="button" data-js-popover-open="#color-selector" data-js-popover-position="auto" class="flex h-[26px] w-full rounded-md border border-gray-400 bg-[#D38301] hover:shadow-button-ter-hover hover:text-white"></button>
-            <button type="button" class="flex gap-1 items-center justify-center h-[26px] w-full px-2.5-px rounded-md border border-blue-300/30 bg-gray-700 text-sm text-blue-300 hover:shadow-button-ter-hover hover:text-white">
+            <button type="button" data-js-popover-open="#color-selector" data-js-popover-position="auto" class="flex h-[26px] w-full rounded-md border border-gray-400 bg-[#D38301] hover:text-white hover:shadow-button-ter-hover"></button>
+            <button type="button" class="flex h-[26px] w-full items-center justify-center gap-1 rounded-md border border-blue-300/30 bg-gray-700 px-2.5-px text-sm text-blue-300 hover:text-white hover:shadow-button-ter-hover">
               <svg width="25" height="1" viewBox="0 0 25 1" fill="none" class="mr-auto">
                 <line x1="0.5" y1="0.5" x2="24.5" y2="0.5" stroke="white" />
               </svg>
@@ -2493,17 +2493,17 @@
                 <path d="M4 6L8 10L12 6" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </button>
-            <button type="button" class="flex gap-1 items-center justify-center h-[26px] w-full px-2.5-px rounded-md border border-blue-300/30 bg-gray-700 text-sm text-blue-300 hover:shadow-button-ter-hover hover:text-white">
+            <button type="button" class="flex h-[26px] w-full items-center justify-center gap-1 rounded-md border border-blue-300/30 bg-gray-700 px-2.5-px text-sm text-blue-300 hover:text-white hover:shadow-button-ter-hover">
               <span class="mr-auto">Solid</span>
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="-mr-0.5">
                 <path d="M4 6L8 10L12 6" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </button>
           </div>
-          <div class="grid grid-cols-2 gap-2 mt-4">
+          <div class="mt-4 grid grid-cols-2 gap-2">
             <div>
               <div class="mb-1 text-sm">Marker Type</div>
-              <button type="button" class="flex gap-1 items-center justify-center h-[26px] w-full px-2.5-px rounded-md border border-blue-300/30 bg-gray-700 text-sm text-blue-300 hover:shadow-button-ter-hover hover:text-white">
+              <button type="button" class="flex h-[26px] w-full items-center justify-center gap-1 rounded-md border border-blue-300/30 bg-gray-700 px-2.5-px text-sm text-blue-300 hover:text-white hover:shadow-button-ter-hover">
                 <span class="mr-auto">None</span>
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="-mr-0.5">
                   <path d="M4 6L8 10L12 6" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -2512,7 +2512,7 @@
             </div>
             <div>
               <div class="mb-1 text-sm">Marker Size</div>
-              <button type="button" class="flex gap-1 items-center justify-center h-[26px] w-full px-2.5-px rounded-md border border-blue-300/30 bg-gray-700 text-sm text-blue-300 hover:shadow-button-ter-hover hover:text-white">
+              <button type="button" class="flex h-[26px] w-full items-center justify-center gap-1 rounded-md border border-blue-300/30 bg-gray-700 px-2.5-px text-sm text-blue-300 hover:text-white hover:shadow-button-ter-hover">
                 <span class="mr-auto">Small</span>
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="-mr-0.5">
                   <path d="M4 6L8 10L12 6" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -2520,8 +2520,8 @@
               </button>
             </div>
           </div>
-          <div data-js-popover="" id="color-selector" class="absolute top-[57px] left-2-px hidden w-48 p-2-px rounded-md border border-gray-500/30 bg-gray-700 shadow-modal">
-            <div class="grid grid-cols-12 cursor-pointer">
+          <div data-js-popover="" id="color-selector" class="absolute top-[57px] left-2-px hidden w-48 rounded-md border border-gray-500/30 bg-gray-700 p-2-px shadow-modal">
+            <div class="grid cursor-pointer grid-cols-12">
               <div class="aspect-square bg-[#FEFFFE]"></div>
               <div class="aspect-square bg-[#EBEBEB]"></div>
               <div class="aspect-square bg-[#D6D6D6]"></div>
@@ -2581,7 +2581,7 @@
               <div class="aspect-square bg-[#99244F]"></div>
               <div class="aspect-square bg-[#E22400]"></div>
               <div class="aspect-square bg-[#DA5100]"></div>
-              <div class="aspect-square relative ring-2 ring-white bg-[#D38301]"></div>
+              <div class="relative aspect-square bg-[#D38301] ring-2 ring-white"></div>
               <div class="aspect-square bg-[#D19D01]"></div>
               <div class="aspect-square bg-[#F5EC00]"></div>
               <div class="aspect-square bg-[#C3D117]"></div>
@@ -2652,23 +2652,23 @@
               <div class="aspect-square bg-[#F6FADB]"></div>
               <div class="aspect-square bg-[#DEEED4]"></div>
             </div>
-            <div class="flex gap-2 mt-2">
+            <div class="mt-2 flex gap-2">
               <div class="shrin-0 w-16">
                 <div class="mb-1 text-xxs">HEX</div>
-                <div id="color-selector-hex" class="p-[3px] rounded bg-gray-600 text-center text-xxs text-white">#D38301</div>
+                <div id="color-selector-hex" class="rounded bg-gray-600 p-[3px] text-center text-xxs text-white">#D38301</div>
               </div>
-              <div class="grow grid gap-px grid-cols-3">
+              <div class="grid grow grid-cols-3 gap-px">
                 <div>
                   <div class="mb-1 text-xxs">R</div>
-                  <div id="color-selector-r" class="p-[3px] rounded-l bg-gray-600 text-center text-xxs text-white">211</div>
+                  <div id="color-selector-r" class="rounded-l bg-gray-600 p-[3px] text-center text-xxs text-white">211</div>
                 </div>
                 <div>
                   <div class="mb-1 text-xxs">G</div>
-                  <div id="color-selector-g" class="p-[3px] bg-gray-600 text-center text-xxs text-white">131</div>
+                  <div id="color-selector-g" class="bg-gray-600 p-[3px] text-center text-xxs text-white">131</div>
                 </div>
                 <div>
                   <div class="mb-1 text-xxs">B</div>
-                  <div id="color-selector-b" class="p-[3px] rounded-r bg-gray-600 text-center text-xxs text-white">1</div>
+                  <div id="color-selector-b" class="rounded-r bg-gray-600 p-[3px] text-center text-xxs text-white">1</div>
                 </div>
               </div>
             </div>
@@ -2678,8 +2678,8 @@
       <!--/ chart menu -->
 
       <!-- layout menu -->
-      <div data-js-popover="" id="layout-menu" class="fixed z-popover hidden mt-0.5 p-2-px rounded-md border border-gray-500/30 bg-gray-600 shadow-modal whitespace-nowrap">
-        <button type="button" class="flex items-center gap-1.5 w-full py-1.5 px-3 rounded-md hover:bg-gray-700">
+      <div data-js-popover="" id="layout-menu" class="fixed z-popover mt-0.5 hidden whitespace-nowrap rounded-md border border-gray-500/30 bg-gray-600 p-2-px shadow-modal">
+        <button type="button" class="flex w-full items-center gap-1.5 rounded-md py-1.5 px-3 hover:bg-gray-700">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="-ml-0.5">
             <path d="M7.5 3H3.22222C2.89807 3 2.58719 3.12877 2.35798 3.35798C2.12877 3.58719 2 3.89807 2 4.22222V12.7778C2 13.1019 2.12877 13.4128 2.35798 13.642C2.58719 13.8712 2.89807 14 3.22222 14H11.7778C12.1019 14 12.4128 13.8712 12.642 13.642C12.8712 13.4128 13 13.1019 13 12.7778V8.5" />
             <path d="M11.692 2.39599C11.9456 2.14244 12.2894 2 12.648 2C13.0066 2 13.3505 2.14244 13.604 2.39599C13.8576 2.64954 14 2.99342 14 3.35199C14 3.71056 13.8576 4.05444 13.604 4.30799L7.54934 10.3627L5 11L5.63733 8.45066L11.692 2.39599Z" />
@@ -2687,7 +2687,7 @@
           <span class="text-white">Edit Name</span>
         </button>
         <hr class="my-1 border-t border-gray-500/30" />
-        <button type="button" class="flex items-center gap-1.5 w-full py-1.5 px-3 rounded-md text-red hover:bg-gray-700">
+        <button type="button" class="flex w-full items-center gap-1.5 rounded-md py-1.5 px-3 text-red hover:bg-gray-700">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="-ml-0.5">
             <path d="M2.59998 4.3999H3.79998H13.4" />
             <path d="M6.79999 7.3999V10.9999" />
