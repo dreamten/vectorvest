@@ -115,39 +115,39 @@
       <!-- toolbar -->
       <div class="fixed top-[118px] right-0 left-0 z-header flex h-9 items-center justify-between gap-3 border-b border-gray-600 bg-gray-800 px-5 xl:top-[50px] xl:left-48">
         <div class="flex items-center gap-3 text-sm">
-          <button type="button" class="text-white">1D</button>
-          <button type="button" class="hidden text-gray-500 hover:text-white md:block">2D</button>
-          <button type="button" class="hidden text-gray-500 hover:text-white md:block">3D</button>
-          <button type="button" class="hidden text-gray-500 hover:text-white md:block">4D</button>
-          <button type="button" class="text-gray-500 hover:text-white">5D</button>
-          <button type="button" class="text-gray-500 hover:text-white">1M</button>
-          <button type="button" class="text-gray-500 hover:text-white">3M</button>
-          <button type="button" class="text-gray-500 hover:text-white">6M</button>
-          <button type="button" class="text-gray-500 hover:text-white">1Y</button>
-          <button type="button" class="text-gray-500 hover:text-white">5Y</button>
-          <button type="button" class="hidden text-gray-500 hover:text-white md:block">10Y</button>
+          <button type="button" class="text-gray-500 hover:text-white aria-selected:text-white">1D</button>
+          <button type="button" class="hidden text-gray-500 hover:text-white aria-selected:text-white md:block">2D</button>
+          <button type="button" class="hidden text-gray-500 hover:text-white aria-selected:text-white md:block">3D</button>
+          <button type="button" class="hidden text-gray-500 hover:text-white aria-selected:text-white md:block">4D</button>
+          <button type="button" class="text-gray-500 hover:text-white aria-selected:text-white">5D</button>
+          <button type="button" class="text-gray-500 hover:text-white aria-selected:text-white">1M</button>
+          <button type="button" class="text-gray-500 hover:text-white aria-selected:text-white">3M</button>
+          <button type="button" aria-selected="true" class="text-gray-500 hover:text-white aria-selected:text-white">6M</button>
+          <button type="button" class="text-gray-500 hover:text-white aria-selected:text-white">1Y</button>
+          <button type="button" class="text-gray-500 hover:text-white aria-selected:text-white">5Y</button>
+          <button type="button" class="hidden text-gray-500 hover:text-white aria-selected:text-white md:block">10Y</button>
         </div>
 
         <div class="absolute top-full right-0 left-0 mt-px flex h-[34px] items-center gap-1.5 overflow-auto whitespace-nowrap border-b border-gray-600 bg-gray-800 px-3 xl:static xl:mt-0 xl:ml-auto xl:h-auto xl:border-0">
-          <button type="button" class="rounded-full border border-blue-selected bg-gray-700 py-1-px px-2 text-sm text-white">Current</button>
-          <button type="button" class="rounded-full border border-gray-400/50 py-1-px px-2 text-sm text-white hover:border-gray-400">High Low</button>
-          <button type="button" class="rounded-full border border-gray-400/50 py-1-px px-2 text-sm text-white hover:border-gray-400">Splits</button>
-          <button type="button" class="rounded-full border border-gray-400/50 py-1-px px-2 text-sm text-white hover:border-gray-400">Log</button>
-          <button type="button" class="flex items-center gap-1 rounded-full border border-gray-400/50 py-1-px px-2 text-sm text-white hover:border-gray-400">
-            <span>RTX-Kikcker</span>
+          <button type="button" class="rounded-full border border-gray-400/50 py-1-px px-2 text-sm text-white hover:border-gray-400 aria-selected:border-blue-selected aria-selected:bg-gray-700">Current</button>
+          <button type="button" class="rounded-full border border-gray-400/50 py-1-px px-2 text-sm text-white hover:border-gray-400 aria-selected:border-blue-selected aria-selected:bg-gray-700">High Low</button>
+          <button type="button" class="rounded-full border border-gray-400/50 py-1-px px-2 text-sm text-white hover:border-gray-400 aria-selected:border-blue-selected aria-selected:bg-gray-700">Splits</button>
+          <button type="button" class="rounded-full border border-gray-400/50 py-1-px px-2 text-sm text-white hover:border-gray-400 aria-selected:border-blue-selected aria-selected:bg-gray-700">Log</button>
+          <button type="button" aria-selected="true" class="flex items-center gap-1 rounded-full border border-gray-400/50 py-1-px px-2 text-sm text-white hover:border-gray-400 aria-selected:border-blue-selected aria-selected:bg-gray-700">
+            <span>RTX-Kicker</span>
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="-mr-0.5 text-gray-400">
               <path d="M4 6L8 10L12 6" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
           </button>
-          <button type="button" class="rounded-full border border-gray-400/50 py-1-px px-2 text-sm text-white hover:border-gray-400">Last Close</button>
+          <button type="button" class="rounded-full border border-gray-400/50 py-1-px px-2 text-sm text-white hover:border-gray-400 aria-selected:border-blue-selected aria-selected:bg-gray-700">Last Close</button>
         </div>
 
         <div class="ml-auto hidden text-sm md:block">Default Layout</div>
-        <button type="button" data-js-toggle-sidebar class="flex h-[26px] items-center justify-center gap-1 rounded-md bg-button-secondary px-2.5 text-sm text-blue-300 shadow-button hover:text-white">
+        <button type="button" data-js-toggle-sidebar class="flex h-[26px] items-center justify-center gap-1 rounded-md bg-button-secondary px-2.5 text-sm text-blue-300 shadow-button hover:text-white" onclick="document.getElementById('sidebar').ariaHidden = false">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="currentcolor" class="-ml-0.5">
             <path d="M6.99351 1.3335C6.67418 1.3335 6.4012 1.55923 6.33987 1.87256L6.11721 3.01579C5.57004 3.2227 5.06409 3.51177 4.61982 3.87646L3.52346 3.49886C3.22146 3.39486 2.88919 3.51974 2.72919 3.79574L1.72398 5.53792C1.56465 5.81459 1.62264 6.16583 1.8633 6.37516L2.74221 7.13949C2.6965 7.42039 2.66669 7.70635 2.66669 8.00016C2.66669 8.29397 2.6965 8.57994 2.74221 8.86084L1.8633 9.62516C1.62264 9.8345 1.56465 10.1857 1.72398 10.4624L2.72919 12.2046C2.88852 12.4813 3.22146 12.6061 3.52346 12.5028L4.61982 12.1252C5.06395 12.4896 5.57029 12.7777 6.11721 12.9845L6.33987 14.1278C6.4012 14.4411 6.67418 14.6668 6.99351 14.6668H9.00653C9.32587 14.6668 9.59885 14.4411 9.66018 14.1278L9.88284 12.9845C10.43 12.7776 10.936 12.4886 11.3802 12.1239L12.4766 12.5015C12.7786 12.6055 13.1109 12.4813 13.2709 12.2046L14.2761 10.4611C14.4354 10.1844 14.3774 9.8345 14.1367 9.62516L13.2578 8.86084C13.3035 8.57994 13.3334 8.29397 13.3334 8.00016C13.3334 7.70635 13.3035 7.42039 13.2578 7.13949L14.1367 6.37516C14.3774 6.16583 14.4354 5.81459 14.2761 5.53792L13.2709 3.79574C13.1115 3.51907 12.7786 3.39423 12.4766 3.49756L11.3802 3.87516C10.9361 3.51069 10.4298 3.2226 9.88284 3.01579L9.66018 1.87256C9.59885 1.55923 9.32587 1.3335 9.00653 1.3335H6.99351ZM8.00002 5.3335C9.47269 5.3335 10.6667 6.5275 10.6667 8.00016C10.6667 9.47283 9.47269 10.6668 8.00002 10.6668C6.52736 10.6668 5.33336 9.47283 5.33336 8.00016C5.33336 6.5275 6.52736 5.3335 8.00002 5.3335Z"></path>
           </svg>
-          <span>Edit <span class="hidden md:inline">Data</span><span class="md:hidden">(5)</span></span>
+          <span>Edit <span class="hidden md:inline">Graphs</span><span class="md:hidden">(5)</span></span>
         </button>
       </div>
       <!--/ toolbar -->
@@ -646,721 +646,6 @@
             </div>
           </div>
         </div>
-
-        <div data-js-slide class="relative pt-5 pb-5 xl:pb-8">
-          <div class="flex items-start justify-between">
-            <div>
-              <div class="flex items-center gap-2.5">
-                <div class="text-h1 text-white">NVDA</div>
-                <div class="flex h-5 items-center rounded-full bg-green px-2 text-h6 uppercase text-white">Buy</div>
-              </div>
-              <div class="mt-1">NVIDIA</div>
-            </div>
-          </div>
-
-          <div data-js-slide-cont class="-mr-16 -ml-3 mt-5 flex h-[480px] gap-12 md:mr-0 md:ml-0">
-            <div class="flex grow flex-col">
-              <div class="flex shrink-0 items-center text-xxs text-gray-500">
-                <div class="flex h-2.5 grow">
-                  <div class="w-[3%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[2%] bg-green"></div>
-                  <div class="w-[4%] bg-red"></div>
-                  <div class="w-[3%] bg-orange"></div>
-                  <div class="w-[4%] bg-red"></div>
-                  <div class="w-[3%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[5%] bg-orange"></div>
-                  <div class="w-[8%] bg-red"></div>
-                  <div class="w-[3%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[1%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[2%] bg-orange"></div>
-                  <div class="w-[3%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[2%] bg-green"></div>
-                  <div class="w-[20%] bg-red"></div>
-                  <div class="w-[8%] bg-orange"></div>
-                  <div class="w-[10%] bg-green"></div>
-                  <div class="w-[5%] bg-red"></div>
-                  <div class="w-[2%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[6%] bg-green"></div>
-                </div>
-                <div class="-my-0.5 w-[52px] pl-2">Rating</div>
-              </div>
-              <div class="relative mt-2 grow">
-                <div id="chart-price-6" class="absolute inset-0"></div>
-              </div>
-              <div class="relative mt-4 grow">
-                <div id="chart-rt-6" class="absolute inset-0"></div>
-              </div>
-            </div>
-            <div class="hidden w-76 shrink-0 lg:block">
-              <div class="h-[423px] bg-gray-800"></div>
-            </div>
-          </div>
-
-          <div class="pointer-events-none absolute right-0 bottom-0 left-0 hidden xl:block">
-            <div class="absolute top-1/2 right-0 left-0 h-px -translate-y-1/2 bg-gray-600"></div>
-            <div class="relative m-auto flex h-4 w-5 items-center justify-center rounded bg-gray-700">
-              <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                <path d="M3 7.75L6 10.75L9 7.75M3 4.25L6 1.25L9 4.25" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </div>
-          </div>
-        </div>
-
-        <div data-js-slide class="relative pt-5 pb-5 xl:pb-8">
-          <div class="flex items-start justify-between">
-            <div>
-              <div class="flex items-center gap-2.5">
-                <div class="text-h1 text-white">MSFT</div>
-                <div class="flex h-5 items-center rounded-full bg-green px-2 text-h6 uppercase text-white">Buy</div>
-              </div>
-              <div class="mt-1">Microsoft</div>
-            </div>
-          </div>
-
-          <div data-js-slide-cont class="-mr-16 -ml-3 mt-5 flex h-[480px] gap-12 md:mr-0 md:ml-0">
-            <div class="flex grow flex-col">
-              <div class="flex shrink-0 items-center text-xxs text-gray-500">
-                <div class="flex h-2.5 grow">
-                  <div class="w-[3%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[2%] bg-green"></div>
-                  <div class="w-[4%] bg-red"></div>
-                  <div class="w-[3%] bg-orange"></div>
-                  <div class="w-[4%] bg-red"></div>
-                  <div class="w-[3%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[5%] bg-orange"></div>
-                  <div class="w-[8%] bg-red"></div>
-                  <div class="w-[3%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[1%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[2%] bg-orange"></div>
-                  <div class="w-[3%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[2%] bg-green"></div>
-                  <div class="w-[20%] bg-red"></div>
-                  <div class="w-[8%] bg-orange"></div>
-                  <div class="w-[10%] bg-green"></div>
-                  <div class="w-[5%] bg-red"></div>
-                  <div class="w-[2%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[6%] bg-green"></div>
-                </div>
-                <div class="-my-0.5 w-[52px] pl-2">Rating</div>
-              </div>
-              <div class="relative mt-2 grow">
-                <div id="chart-price-7" class="absolute inset-0"></div>
-              </div>
-              <div class="relative mt-4 grow">
-                <div id="chart-rt-7" class="absolute inset-0"></div>
-              </div>
-            </div>
-            <div class="hidden w-76 shrink-0 lg:block">
-              <div class="h-[423px] bg-gray-800"></div>
-            </div>
-          </div>
-
-          <div class="pointer-events-none absolute right-0 bottom-0 left-0 hidden xl:block">
-            <div class="absolute top-1/2 right-0 left-0 h-px -translate-y-1/2 bg-gray-600"></div>
-            <div class="relative m-auto flex h-4 w-5 items-center justify-center rounded bg-gray-700">
-              <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                <path d="M3 7.75L6 10.75L9 7.75M3 4.25L6 1.25L9 4.25" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </div>
-          </div>
-        </div>
-
-        <div data-js-slide class="relative pt-5 pb-5 xl:pb-8">
-          <div class="flex items-start justify-between">
-            <div>
-              <div class="flex items-center gap-2.5">
-                <div class="text-h1 text-white">TSLA</div>
-                <div class="flex h-5 items-center rounded-full bg-green px-2 text-h6 uppercase text-white">Buy</div>
-              </div>
-              <div class="mt-1">Tesla</div>
-            </div>
-          </div>
-
-          <div data-js-slide-cont class="-mr-16 -ml-3 mt-5 flex h-[480px] gap-12 md:mr-0 md:ml-0">
-            <div class="flex grow flex-col">
-              <div class="flex shrink-0 items-center text-xxs text-gray-500">
-                <div class="flex h-2.5 grow">
-                  <div class="w-[3%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[2%] bg-green"></div>
-                  <div class="w-[4%] bg-red"></div>
-                  <div class="w-[3%] bg-orange"></div>
-                  <div class="w-[4%] bg-red"></div>
-                  <div class="w-[3%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[5%] bg-orange"></div>
-                  <div class="w-[8%] bg-red"></div>
-                  <div class="w-[3%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[1%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[2%] bg-orange"></div>
-                  <div class="w-[3%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[2%] bg-green"></div>
-                  <div class="w-[20%] bg-red"></div>
-                  <div class="w-[8%] bg-orange"></div>
-                  <div class="w-[10%] bg-green"></div>
-                  <div class="w-[5%] bg-red"></div>
-                  <div class="w-[2%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[6%] bg-green"></div>
-                </div>
-                <div class="-my-0.5 w-[52px] pl-2">Rating</div>
-              </div>
-              <div class="relative mt-2 grow">
-                <div id="chart-price-8" class="absolute inset-0"></div>
-              </div>
-              <div class="relative mt-4 grow">
-                <div id="chart-rt-8" class="absolute inset-0"></div>
-              </div>
-            </div>
-            <div class="hidden w-76 shrink-0 lg:block">
-              <div class="h-[423px] bg-gray-800"></div>
-            </div>
-          </div>
-
-          <div class="pointer-events-none absolute right-0 bottom-0 left-0 hidden xl:block">
-            <div class="absolute top-1/2 right-0 left-0 h-px -translate-y-1/2 bg-gray-600"></div>
-            <div class="relative m-auto flex h-4 w-5 items-center justify-center rounded bg-gray-700">
-              <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                <path d="M3 7.75L6 10.75L9 7.75M3 4.25L6 1.25L9 4.25" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </div>
-          </div>
-        </div>
-
-        <div data-js-slide class="relative pt-5 pb-5 xl:pb-8">
-          <div class="flex items-start justify-between">
-            <div>
-              <div class="flex items-center gap-2.5">
-                <div class="text-h1 text-white">AMZN</div>
-                <div class="flex h-5 items-center rounded-full bg-red px-2 text-h6 uppercase text-white">Sell</div>
-              </div>
-              <div class="mt-1">Amazon</div>
-            </div>
-          </div>
-
-          <div data-js-slide-cont class="-mr-16 -ml-3 mt-5 flex h-[480px] gap-12 md:mr-0 md:ml-0">
-            <div class="flex grow flex-col">
-              <div class="flex shrink-0 items-center text-xxs text-gray-500">
-                <div class="flex h-2.5 grow">
-                  <div class="w-[3%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[2%] bg-green"></div>
-                  <div class="w-[4%] bg-red"></div>
-                  <div class="w-[3%] bg-orange"></div>
-                  <div class="w-[4%] bg-red"></div>
-                  <div class="w-[3%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[5%] bg-orange"></div>
-                  <div class="w-[8%] bg-red"></div>
-                  <div class="w-[3%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[1%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[2%] bg-orange"></div>
-                  <div class="w-[3%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[2%] bg-green"></div>
-                  <div class="w-[20%] bg-red"></div>
-                  <div class="w-[8%] bg-orange"></div>
-                  <div class="w-[10%] bg-green"></div>
-                  <div class="w-[5%] bg-red"></div>
-                  <div class="w-[2%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[6%] bg-green"></div>
-                </div>
-                <div class="-my-0.5 w-[52px] pl-2">Rating</div>
-              </div>
-              <div class="relative mt-2 grow">
-                <div id="chart-price-9" class="absolute inset-0"></div>
-              </div>
-              <div class="relative mt-4 grow">
-                <div id="chart-rt-9" class="absolute inset-0"></div>
-              </div>
-            </div>
-            <div class="hidden w-76 shrink-0 lg:block">
-              <div class="h-[423px] bg-gray-800"></div>
-            </div>
-          </div>
-
-          <div class="pointer-events-none absolute right-0 bottom-0 left-0 hidden xl:block">
-            <div class="absolute top-1/2 right-0 left-0 h-px -translate-y-1/2 bg-gray-600"></div>
-            <div class="relative m-auto flex h-4 w-5 items-center justify-center rounded bg-gray-700">
-              <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                <path d="M3 7.75L6 10.75L9 7.75M3 4.25L6 1.25L9 4.25" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </div>
-          </div>
-        </div>
-
-        <div data-js-slide class="relative pt-5 pb-5 xl:pb-8">
-          <div class="flex items-start justify-between">
-            <div>
-              <div class="flex items-center gap-2.5">
-                <div class="text-h1 text-white">NFLX</div>
-                <div class="flex h-5 items-center rounded-full bg-green px-2 text-h6 uppercase text-white">Buy</div>
-              </div>
-              <div class="mt-1">Netflix</div>
-            </div>
-          </div>
-
-          <div data-js-slide-cont class="-mr-16 -ml-3 mt-5 flex h-[480px] gap-12 md:mr-0 md:ml-0">
-            <div class="flex grow flex-col">
-              <div class="flex shrink-0 items-center text-xxs text-gray-500">
-                <div class="flex h-2.5 grow">
-                  <div class="w-[3%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[2%] bg-green"></div>
-                  <div class="w-[4%] bg-red"></div>
-                  <div class="w-[3%] bg-orange"></div>
-                  <div class="w-[4%] bg-red"></div>
-                  <div class="w-[3%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[5%] bg-orange"></div>
-                  <div class="w-[8%] bg-red"></div>
-                  <div class="w-[3%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[1%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[2%] bg-orange"></div>
-                  <div class="w-[3%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[2%] bg-green"></div>
-                  <div class="w-[20%] bg-red"></div>
-                  <div class="w-[8%] bg-orange"></div>
-                  <div class="w-[10%] bg-green"></div>
-                  <div class="w-[5%] bg-red"></div>
-                  <div class="w-[2%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[6%] bg-green"></div>
-                </div>
-                <div class="-my-0.5 w-[52px] pl-2">Rating</div>
-              </div>
-              <div class="relative mt-2 grow">
-                <div id="chart-price-10" class="absolute inset-0"></div>
-              </div>
-              <div class="relative mt-4 grow">
-                <div id="chart-rt-10" class="absolute inset-0"></div>
-              </div>
-            </div>
-            <div class="hidden w-76 shrink-0 lg:block">
-              <div class="h-[423px] bg-gray-800"></div>
-            </div>
-          </div>
-
-          <div class="pointer-events-none absolute right-0 bottom-0 left-0 hidden xl:block">
-            <div class="absolute top-1/2 right-0 left-0 h-px -translate-y-1/2 bg-gray-600"></div>
-            <div class="relative m-auto flex h-4 w-5 items-center justify-center rounded bg-gray-700">
-              <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                <path d="M3 7.75L6 10.75L9 7.75M3 4.25L6 1.25L9 4.25" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </div>
-          </div>
-        </div>
-
-        <div data-js-slide class="relative pt-5 pb-5 xl:pb-8">
-          <div class="flex items-start justify-between">
-            <div>
-              <div class="flex items-center gap-2.5">
-                <div class="text-h1 text-white">NVDA</div>
-                <div class="flex h-5 items-center rounded-full bg-green px-2 text-h6 uppercase text-white">Buy</div>
-              </div>
-              <div class="mt-1">NVIDIA</div>
-            </div>
-          </div>
-
-          <div data-js-slide-cont class="-mr-16 -ml-3 mt-5 flex h-[480px] gap-12 md:mr-0 md:ml-0">
-            <div class="flex grow flex-col">
-              <div class="flex shrink-0 items-center text-xxs text-gray-500">
-                <div class="flex h-2.5 grow">
-                  <div class="w-[3%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[2%] bg-green"></div>
-                  <div class="w-[4%] bg-red"></div>
-                  <div class="w-[3%] bg-orange"></div>
-                  <div class="w-[4%] bg-red"></div>
-                  <div class="w-[3%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[5%] bg-orange"></div>
-                  <div class="w-[8%] bg-red"></div>
-                  <div class="w-[3%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[1%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[2%] bg-orange"></div>
-                  <div class="w-[3%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[2%] bg-green"></div>
-                  <div class="w-[20%] bg-red"></div>
-                  <div class="w-[8%] bg-orange"></div>
-                  <div class="w-[10%] bg-green"></div>
-                  <div class="w-[5%] bg-red"></div>
-                  <div class="w-[2%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[6%] bg-green"></div>
-                </div>
-                <div class="-my-0.5 w-[52px] pl-2">Rating</div>
-              </div>
-              <div class="relative mt-2 grow">
-                <div id="chart-price-11" class="absolute inset-0"></div>
-              </div>
-              <div class="relative mt-4 grow">
-                <div id="chart-rt-11" class="absolute inset-0"></div>
-              </div>
-            </div>
-            <div class="hidden w-76 shrink-0 lg:block">
-              <div class="h-[423px] bg-gray-800"></div>
-            </div>
-          </div>
-
-          <div class="pointer-events-none absolute right-0 bottom-0 left-0 hidden xl:block">
-            <div class="absolute top-1/2 right-0 left-0 h-px -translate-y-1/2 bg-gray-600"></div>
-            <div class="relative m-auto flex h-4 w-5 items-center justify-center rounded bg-gray-700">
-              <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                <path d="M3 7.75L6 10.75L9 7.75M3 4.25L6 1.25L9 4.25" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </div>
-          </div>
-        </div>
-
-        <div data-js-slide class="relative pt-5 pb-5 xl:pb-8">
-          <div class="flex items-start justify-between">
-            <div>
-              <div class="flex items-center gap-2.5">
-                <div class="text-h1 text-white">MSFT</div>
-                <div class="flex h-5 items-center rounded-full bg-green px-2 text-h6 uppercase text-white">Buy</div>
-              </div>
-              <div class="mt-1">Microsoft</div>
-            </div>
-          </div>
-
-          <div data-js-slide-cont class="-mr-16 -ml-3 mt-5 flex h-[480px] gap-12 md:mr-0 md:ml-0">
-            <div class="flex grow flex-col">
-              <div class="flex shrink-0 items-center text-xxs text-gray-500">
-                <div class="flex h-2.5 grow">
-                  <div class="w-[3%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[2%] bg-green"></div>
-                  <div class="w-[4%] bg-red"></div>
-                  <div class="w-[3%] bg-orange"></div>
-                  <div class="w-[4%] bg-red"></div>
-                  <div class="w-[3%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[5%] bg-orange"></div>
-                  <div class="w-[8%] bg-red"></div>
-                  <div class="w-[3%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[1%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[2%] bg-orange"></div>
-                  <div class="w-[3%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[2%] bg-green"></div>
-                  <div class="w-[20%] bg-red"></div>
-                  <div class="w-[8%] bg-orange"></div>
-                  <div class="w-[10%] bg-green"></div>
-                  <div class="w-[5%] bg-red"></div>
-                  <div class="w-[2%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[6%] bg-green"></div>
-                </div>
-                <div class="-my-0.5 w-[52px] pl-2">Rating</div>
-              </div>
-              <div class="relative mt-2 grow">
-                <div id="chart-price-12" class="absolute inset-0"></div>
-              </div>
-              <div class="relative mt-4 grow">
-                <div id="chart-rt-12" class="absolute inset-0"></div>
-              </div>
-            </div>
-            <div class="hidden w-76 shrink-0 lg:block">
-              <div class="h-[423px] bg-gray-800"></div>
-            </div>
-          </div>
-
-          <div class="pointer-events-none absolute right-0 bottom-0 left-0 hidden xl:block">
-            <div class="absolute top-1/2 right-0 left-0 h-px -translate-y-1/2 bg-gray-600"></div>
-            <div class="relative m-auto flex h-4 w-5 items-center justify-center rounded bg-gray-700">
-              <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                <path d="M3 7.75L6 10.75L9 7.75M3 4.25L6 1.25L9 4.25" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </div>
-          </div>
-        </div>
-
-        <div data-js-slide class="relative pt-5 pb-5 xl:pb-8">
-          <div class="flex items-start justify-between">
-            <div>
-              <div class="flex items-center gap-2.5">
-                <div class="text-h1 text-white">TSLA</div>
-                <div class="flex h-5 items-center rounded-full bg-green px-2 text-h6 uppercase text-white">Buy</div>
-              </div>
-              <div class="mt-1">Tesla</div>
-            </div>
-          </div>
-
-          <div data-js-slide-cont class="-mr-16 -ml-3 mt-5 flex h-[480px] gap-12 md:mr-0 md:ml-0">
-            <div class="flex grow flex-col">
-              <div class="flex shrink-0 items-center text-xxs text-gray-500">
-                <div class="flex h-2.5 grow">
-                  <div class="w-[3%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[2%] bg-green"></div>
-                  <div class="w-[4%] bg-red"></div>
-                  <div class="w-[3%] bg-orange"></div>
-                  <div class="w-[4%] bg-red"></div>
-                  <div class="w-[3%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[5%] bg-orange"></div>
-                  <div class="w-[8%] bg-red"></div>
-                  <div class="w-[3%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[1%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[2%] bg-orange"></div>
-                  <div class="w-[3%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[2%] bg-green"></div>
-                  <div class="w-[20%] bg-red"></div>
-                  <div class="w-[8%] bg-orange"></div>
-                  <div class="w-[10%] bg-green"></div>
-                  <div class="w-[5%] bg-red"></div>
-                  <div class="w-[2%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[6%] bg-green"></div>
-                </div>
-                <div class="-my-0.5 w-[52px] pl-2">Rating</div>
-              </div>
-              <div class="relative mt-2 grow">
-                <div id="chart-price-13" class="absolute inset-0"></div>
-              </div>
-              <div class="relative mt-4 grow">
-                <div id="chart-rt-13" class="absolute inset-0"></div>
-              </div>
-            </div>
-            <div class="hidden w-76 shrink-0 lg:block">
-              <div class="h-[423px] bg-gray-800"></div>
-            </div>
-          </div>
-
-          <div class="pointer-events-none absolute right-0 bottom-0 left-0 hidden xl:block">
-            <div class="absolute top-1/2 right-0 left-0 h-px -translate-y-1/2 bg-gray-600"></div>
-            <div class="relative m-auto flex h-4 w-5 items-center justify-center rounded bg-gray-700">
-              <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                <path d="M3 7.75L6 10.75L9 7.75M3 4.25L6 1.25L9 4.25" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </div>
-          </div>
-        </div>
-
-        <div data-js-slide class="relative pt-5 pb-5 xl:pb-8">
-          <div class="flex items-start justify-between">
-            <div>
-              <div class="flex items-center gap-2.5">
-                <div class="text-h1 text-white">AMZN</div>
-                <div class="flex h-5 items-center rounded-full bg-red px-2 text-h6 uppercase text-white">Sell</div>
-              </div>
-              <div class="mt-1">Amazon</div>
-            </div>
-          </div>
-
-          <div data-js-slide-cont class="-mr-16 -ml-3 mt-5 flex h-[480px] gap-12 md:mr-0 md:ml-0">
-            <div class="flex grow flex-col">
-              <div class="flex shrink-0 items-center text-xxs text-gray-500">
-                <div class="flex h-2.5 grow">
-                  <div class="w-[3%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[2%] bg-green"></div>
-                  <div class="w-[4%] bg-red"></div>
-                  <div class="w-[3%] bg-orange"></div>
-                  <div class="w-[4%] bg-red"></div>
-                  <div class="w-[3%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[5%] bg-orange"></div>
-                  <div class="w-[8%] bg-red"></div>
-                  <div class="w-[3%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[1%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[2%] bg-orange"></div>
-                  <div class="w-[3%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[2%] bg-green"></div>
-                  <div class="w-[20%] bg-red"></div>
-                  <div class="w-[8%] bg-orange"></div>
-                  <div class="w-[10%] bg-green"></div>
-                  <div class="w-[5%] bg-red"></div>
-                  <div class="w-[2%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[6%] bg-green"></div>
-                </div>
-                <div class="-my-0.5 w-[52px] pl-2">Rating</div>
-              </div>
-              <div class="relative mt-2 grow">
-                <div id="chart-price-14" class="absolute inset-0"></div>
-              </div>
-              <div class="relative mt-4 grow">
-                <div id="chart-rt-14" class="absolute inset-0"></div>
-              </div>
-            </div>
-            <div class="hidden w-76 shrink-0 lg:block">
-              <div class="h-[423px] bg-gray-800"></div>
-            </div>
-          </div>
-
-          <div class="pointer-events-none absolute right-0 bottom-0 left-0 hidden xl:block">
-            <div class="absolute top-1/2 right-0 left-0 h-px -translate-y-1/2 bg-gray-600"></div>
-            <div class="relative m-auto flex h-4 w-5 items-center justify-center rounded bg-gray-700">
-              <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                <path d="M3 7.75L6 10.75L9 7.75M3 4.25L6 1.25L9 4.25" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </div>
-          </div>
-        </div>
-
-        <div data-js-slide class="relative pt-5 pb-5 xl:pb-8">
-          <div class="flex items-start justify-between">
-            <div>
-              <div class="flex items-center gap-2.5">
-                <div class="text-h1 text-white">NFLX</div>
-                <div class="flex h-5 items-center rounded-full bg-green px-2 text-h6 uppercase text-white">Buy</div>
-              </div>
-              <div class="mt-1">Netflix</div>
-            </div>
-          </div>
-
-          <div data-js-slide-cont class="-mr-16 -ml-3 mt-5 flex h-[480px] gap-12 md:mr-0 md:ml-0">
-            <div class="flex grow flex-col">
-              <div class="flex shrink-0 items-center text-xxs text-gray-500">
-                <div class="flex h-2.5 grow">
-                  <div class="w-[3%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[2%] bg-green"></div>
-                  <div class="w-[4%] bg-red"></div>
-                  <div class="w-[3%] bg-orange"></div>
-                  <div class="w-[4%] bg-red"></div>
-                  <div class="w-[3%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[5%] bg-orange"></div>
-                  <div class="w-[8%] bg-red"></div>
-                  <div class="w-[3%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[1%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[2%] bg-orange"></div>
-                  <div class="w-[3%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[2%] bg-green"></div>
-                  <div class="w-[20%] bg-red"></div>
-                  <div class="w-[8%] bg-orange"></div>
-                  <div class="w-[10%] bg-green"></div>
-                  <div class="w-[5%] bg-red"></div>
-                  <div class="w-[2%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[6%] bg-green"></div>
-                </div>
-                <div class="-my-0.5 w-[52px] pl-2">Rating</div>
-              </div>
-              <div class="relative mt-2 grow">
-                <div id="chart-price-15" class="absolute inset-0"></div>
-              </div>
-              <div class="relative mt-4 grow">
-                <div id="chart-rt-15" class="absolute inset-0"></div>
-              </div>
-            </div>
-            <div class="hidden w-76 shrink-0 lg:block">
-              <div class="h-[423px] bg-gray-800"></div>
-            </div>
-          </div>
-
-          <div class="pointer-events-none absolute right-0 bottom-0 left-0 hidden xl:block">
-            <div class="absolute top-1/2 right-0 left-0 h-px -translate-y-1/2 bg-gray-600"></div>
-            <div class="relative m-auto flex h-4 w-5 items-center justify-center rounded bg-gray-700">
-              <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                <path d="M3 7.75L6 10.75L9 7.75M3 4.25L6 1.25L9 4.25" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </div>
-          </div>
-        </div>
-
-        <div data-js-slide class="relative pt-5 pb-5 xl:pb-8">
-          <div class="flex items-start justify-between">
-            <div>
-              <div class="flex items-center gap-2.5">
-                <div class="text-h1 text-white">NVDA</div>
-                <div class="flex h-5 items-center rounded-full bg-green px-2 text-h6 uppercase text-white">Buy</div>
-              </div>
-              <div class="mt-1">NVIDIA</div>
-            </div>
-          </div>
-
-          <div data-js-slide-cont class="-mr-16 -ml-3 mt-5 flex h-[480px] gap-12 md:mr-0 md:ml-0">
-            <div class="flex grow flex-col">
-              <div class="flex shrink-0 items-center text-xxs text-gray-500">
-                <div class="flex h-2.5 grow">
-                  <div class="w-[3%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[2%] bg-green"></div>
-                  <div class="w-[4%] bg-red"></div>
-                  <div class="w-[3%] bg-orange"></div>
-                  <div class="w-[4%] bg-red"></div>
-                  <div class="w-[3%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[5%] bg-orange"></div>
-                  <div class="w-[8%] bg-red"></div>
-                  <div class="w-[3%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[1%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[2%] bg-orange"></div>
-                  <div class="w-[3%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[2%] bg-green"></div>
-                  <div class="w-[20%] bg-red"></div>
-                  <div class="w-[8%] bg-orange"></div>
-                  <div class="w-[10%] bg-green"></div>
-                  <div class="w-[5%] bg-red"></div>
-                  <div class="w-[2%] bg-green"></div>
-                  <div class="w-[1%] bg-red"></div>
-                  <div class="w-[6%] bg-green"></div>
-                </div>
-                <div class="-my-0.5 w-[52px] pl-2">Rating</div>
-              </div>
-              <div class="relative mt-2 grow">
-                <div id="chart-price-16" class="absolute inset-0"></div>
-              </div>
-              <div class="relative mt-4 grow">
-                <div id="chart-rt-16" class="absolute inset-0"></div>
-              </div>
-            </div>
-            <div class="hidden w-76 shrink-0 lg:block">
-              <div class="h-[423px] bg-gray-800"></div>
-            </div>
-          </div>
-
-          <div class="pointer-events-none absolute right-0 bottom-0 left-0 hidden xl:block">
-            <div class="absolute top-1/2 right-0 left-0 h-px -translate-y-1/2 bg-gray-600"></div>
-            <div class="relative m-auto flex h-4 w-5 items-center justify-center rounded bg-gray-700">
-              <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                <path d="M3 7.75L6 10.75L9 7.75M3 4.25L6 1.25L9 4.25" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </div>
-          </div>
-        </div>
       </div>
       <!--/ content -->
 
@@ -1377,7 +662,7 @@
         </div>
         <div class="absolute top-9 right-0 left-0 overflow-auto font-bold xl:bottom-0 xl:py-3 xl:px-5">
           <div class="hidden xl:block">
-            <div class="text-h6 uppercase">Stocks (43)</div>
+            <div class="text-h6 uppercase">Stocks (5)</div>
             <div class="mt-2 -mr-2 mb-3 text-xs">
               Use Up
               <svg width="12" height="12" viewBox="0 0 12 12" fill="currentcolor" class="mt-px inline-block rounded-sm bg-gray-700 align-top text-gray-500">
@@ -1392,7 +677,7 @@
           </div>
           <div data-js-track class="relative flex overflow-auto bg-gray-700 xl:-mx-2.5 xl:block xl:overflow-visible xl:bg-transparent">
             <div data-js-track-item class="border-l border-gray-600 first:border-0 xl:border-0 xl:py-0.5">
-              <div aria-selected="true" class="group flex h-8 cursor-pointer items-center justify-between border-b border-gray-600 px-5 pt-px aria-selected:border-blue-selected aria-selected:bg-gray-800 xl:h-[30px] xl:rounded-md xl:border-0 xl:px-2.5 xl:hover:bg-gray-700 xl:aria-selected:pointer-events-none xl:aria-selected:cursor-default xl:aria-selected:bg-gradient-to-b xl:aria-selected:from-blue-600 xl:aria-selected:to-blue-800">
+              <div aria-selected="true" class="group flex h-8 cursor-pointer items-center justify-between border-b border-gray-600 px-5 pt-px aria-selected:border-blue-selected aria-selected:bg-gray-800 xl:h-[30px] xl:rounded-md xl:border-0 xl:px-2.5 xl:pt-0 xl:hover:bg-gray-700 xl:aria-selected:pointer-events-none xl:aria-selected:cursor-default xl:aria-selected:bg-gray-600">
                 <span class="text-white">AAPL</span>
                 <button type="button" class="-m-1 hidden p-1 hover:text-white xl:group-hover:block">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -1403,7 +688,7 @@
               </div>
             </div>
             <div data-js-track-item class="border-l border-gray-600 first:border-0 xl:border-0 xl:py-0.5">
-              <div class="group flex h-8 cursor-pointer items-center justify-between border-b border-gray-600 px-5 pt-px aria-selected:border-blue-selected aria-selected:bg-gray-800 xl:h-[30px] xl:rounded-md xl:border-0 xl:px-2.5 xl:hover:bg-gray-700 xl:aria-selected:pointer-events-none xl:aria-selected:cursor-default xl:aria-selected:bg-gradient-to-b xl:aria-selected:from-blue-600 xl:aria-selected:to-blue-800">
+              <div class="group flex h-8 cursor-pointer items-center justify-between border-b border-gray-600 px-5 pt-px aria-selected:border-blue-selected aria-selected:bg-gray-800 xl:h-[30px] xl:rounded-md xl:border-0 xl:px-2.5 xl:pt-0 xl:hover:bg-gray-700 xl:aria-selected:pointer-events-none xl:aria-selected:cursor-default xl:aria-selected:bg-gray-600">
                 <span class="text-white">MSFT</span>
                 <button type="button" class="-m-1 hidden p-1 hover:text-white xl:group-hover:block">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -1414,7 +699,7 @@
               </div>
             </div>
             <div data-js-track-item class="border-l border-gray-600 first:border-0 xl:border-0 xl:py-0.5">
-              <div class="group flex h-8 cursor-pointer items-center justify-between border-b border-gray-600 px-5 pt-px aria-selected:border-blue-selected aria-selected:bg-gray-800 xl:h-[30px] xl:rounded-md xl:border-0 xl:px-2.5 xl:hover:bg-gray-700 xl:aria-selected:pointer-events-none xl:aria-selected:cursor-default xl:aria-selected:bg-gradient-to-b xl:aria-selected:from-blue-600 xl:aria-selected:to-blue-800">
+              <div class="group flex h-8 cursor-pointer items-center justify-between border-b border-gray-600 px-5 pt-px aria-selected:border-blue-selected aria-selected:bg-gray-800 xl:h-[30px] xl:rounded-md xl:border-0 xl:px-2.5 xl:pt-0 xl:hover:bg-gray-700 xl:aria-selected:pointer-events-none xl:aria-selected:cursor-default xl:aria-selected:bg-gray-600">
                 <span class="text-white">TSLA</span>
                 <button type="button" class="-m-1 hidden p-1 hover:text-white xl:group-hover:block">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -1425,7 +710,7 @@
               </div>
             </div>
             <div data-js-track-item class="border-l border-gray-600 first:border-0 xl:border-0 xl:py-0.5">
-              <div class="group flex h-8 cursor-pointer items-center justify-between border-b border-gray-600 px-5 pt-px aria-selected:border-blue-selected aria-selected:bg-gray-800 xl:h-[30px] xl:rounded-md xl:border-0 xl:px-2.5 xl:hover:bg-gray-700 xl:aria-selected:pointer-events-none xl:aria-selected:cursor-default xl:aria-selected:bg-gradient-to-b xl:aria-selected:from-blue-600 xl:aria-selected:to-blue-800">
+              <div class="group flex h-8 cursor-pointer items-center justify-between border-b border-gray-600 px-5 pt-px aria-selected:border-blue-selected aria-selected:bg-gray-800 xl:h-[30px] xl:rounded-md xl:border-0 xl:px-2.5 xl:pt-0 xl:hover:bg-gray-700 xl:aria-selected:pointer-events-none xl:aria-selected:cursor-default xl:aria-selected:bg-gray-600">
                 <span class="text-white">AMZN</span>
                 <button type="button" class="-m-1 hidden p-1 hover:text-white xl:group-hover:block">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -1436,7 +721,7 @@
               </div>
             </div>
             <div data-js-track-item class="border-l border-gray-600 first:border-0 xl:border-0 xl:py-0.5">
-              <div class="group flex h-8 cursor-pointer items-center justify-between border-b border-gray-600 px-5 pt-px aria-selected:border-blue-selected aria-selected:bg-gray-800 xl:h-[30px] xl:rounded-md xl:border-0 xl:px-2.5 xl:hover:bg-gray-700 xl:aria-selected:pointer-events-none xl:aria-selected:cursor-default xl:aria-selected:bg-gradient-to-b xl:aria-selected:from-blue-600 xl:aria-selected:to-blue-800">
+              <div class="group flex h-8 cursor-pointer items-center justify-between border-b border-gray-600 px-5 pt-px aria-selected:border-blue-selected aria-selected:bg-gray-800 xl:h-[30px] xl:rounded-md xl:border-0 xl:px-2.5 xl:pt-0 xl:hover:bg-gray-700 xl:aria-selected:pointer-events-none xl:aria-selected:cursor-default xl:aria-selected:bg-gray-600">
                 <span class="text-white">NFLX</span>
                 <button type="button" class="-m-1 hidden p-1 hover:text-white xl:group-hover:block">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -1446,135 +731,26 @@
                 </button>
               </div>
             </div>
-            <div data-js-track-item class="border-l border-gray-600 first:border-0 xl:border-0 xl:py-0.5">
-              <div class="group flex h-8 cursor-pointer items-center justify-between border-b border-gray-600 px-5 pt-px aria-selected:border-blue-selected aria-selected:bg-gray-800 xl:h-[30px] xl:rounded-md xl:border-0 xl:px-2.5 xl:hover:bg-gray-700 xl:aria-selected:pointer-events-none xl:aria-selected:cursor-default xl:aria-selected:bg-gradient-to-b xl:aria-selected:from-blue-600 xl:aria-selected:to-blue-800">
-                <span class="text-white">NVDA</span>
-                <button type="button" class="-m-1 hidden p-1 hover:text-white xl:group-hover:block">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 4L4 12"></path>
-                    <path d="M4 4L12 12"></path>
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <div data-js-track-item class="border-l border-gray-600 first:border-0 xl:border-0 xl:py-0.5">
-              <div class="group flex h-8 cursor-pointer items-center justify-between border-b border-gray-600 px-5 pt-px aria-selected:border-blue-selected aria-selected:bg-gray-800 xl:h-[30px] xl:rounded-md xl:border-0 xl:px-2.5 xl:hover:bg-gray-700 xl:aria-selected:pointer-events-none xl:aria-selected:cursor-default xl:aria-selected:bg-gradient-to-b xl:aria-selected:from-blue-600 xl:aria-selected:to-blue-800">
-                <span class="text-white">MSFT</span>
-                <button type="button" class="-m-1 hidden p-1 hover:text-white xl:group-hover:block">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 4L4 12"></path>
-                    <path d="M4 4L12 12"></path>
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <div data-js-track-item class="border-l border-gray-600 first:border-0 xl:border-0 xl:py-0.5">
-              <div class="group flex h-8 cursor-pointer items-center justify-between border-b border-gray-600 px-5 pt-px aria-selected:border-blue-selected aria-selected:bg-gray-800 xl:h-[30px] xl:rounded-md xl:border-0 xl:px-2.5 xl:hover:bg-gray-700 xl:aria-selected:pointer-events-none xl:aria-selected:cursor-default xl:aria-selected:bg-gradient-to-b xl:aria-selected:from-blue-600 xl:aria-selected:to-blue-800">
-                <span class="text-white">TSLA</span>
-                <button type="button" class="-m-1 hidden p-1 hover:text-white xl:group-hover:block">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 4L4 12"></path>
-                    <path d="M4 4L12 12"></path>
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <div data-js-track-item class="border-l border-gray-600 first:border-0 xl:border-0 xl:py-0.5">
-              <div class="group flex h-8 cursor-pointer items-center justify-between border-b border-gray-600 px-5 pt-px aria-selected:border-blue-selected aria-selected:bg-gray-800 xl:h-[30px] xl:rounded-md xl:border-0 xl:px-2.5 xl:hover:bg-gray-700 xl:aria-selected:pointer-events-none xl:aria-selected:cursor-default xl:aria-selected:bg-gradient-to-b xl:aria-selected:from-blue-600 xl:aria-selected:to-blue-800">
-                <span class="text-white">AMZN</span>
-                <button type="button" class="-m-1 hidden p-1 hover:text-white xl:group-hover:block">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 4L4 12"></path>
-                    <path d="M4 4L12 12"></path>
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <div data-js-track-item class="border-l border-gray-600 first:border-0 xl:border-0 xl:py-0.5">
-              <div class="group flex h-8 cursor-pointer items-center justify-between border-b border-gray-600 px-5 pt-px aria-selected:border-blue-selected aria-selected:bg-gray-800 xl:h-[30px] xl:rounded-md xl:border-0 xl:px-2.5 xl:hover:bg-gray-700 xl:aria-selected:pointer-events-none xl:aria-selected:cursor-default xl:aria-selected:bg-gradient-to-b xl:aria-selected:from-blue-600 xl:aria-selected:to-blue-800">
-                <span class="text-white">NFLX</span>
-                <button type="button" class="-m-1 hidden p-1 hover:text-white xl:group-hover:block">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 4L4 12"></path>
-                    <path d="M4 4L12 12"></path>
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <div data-js-track-item class="border-l border-gray-600 first:border-0 xl:border-0 xl:py-0.5">
-              <div class="group flex h-8 cursor-pointer items-center justify-between border-b border-gray-600 px-5 pt-px aria-selected:border-blue-selected aria-selected:bg-gray-800 xl:h-[30px] xl:rounded-md xl:border-0 xl:px-2.5 xl:hover:bg-gray-700 xl:aria-selected:pointer-events-none xl:aria-selected:cursor-default xl:aria-selected:bg-gradient-to-b xl:aria-selected:from-blue-600 xl:aria-selected:to-blue-800">
-                <span class="text-white">NVDA</span>
-                <button type="button" class="-m-1 hidden p-1 hover:text-white xl:group-hover:block">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 4L4 12"></path>
-                    <path d="M4 4L12 12"></path>
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <div data-js-track-item class="border-l border-gray-600 first:border-0 xl:border-0 xl:py-0.5">
-              <div class="group flex h-8 cursor-pointer items-center justify-between border-b border-gray-600 px-5 pt-px aria-selected:border-blue-selected aria-selected:bg-gray-800 xl:h-[30px] xl:rounded-md xl:border-0 xl:px-2.5 xl:hover:bg-gray-700 xl:aria-selected:pointer-events-none xl:aria-selected:cursor-default xl:aria-selected:bg-gradient-to-b xl:aria-selected:from-blue-600 xl:aria-selected:to-blue-800">
-                <span class="text-white">MSFT</span>
-                <button type="button" class="-m-1 hidden p-1 hover:text-white xl:group-hover:block">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 4L4 12"></path>
-                    <path d="M4 4L12 12"></path>
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <div data-js-track-item class="border-l border-gray-600 first:border-0 xl:border-0 xl:py-0.5">
-              <div class="group flex h-8 cursor-pointer items-center justify-between border-b border-gray-600 px-5 pt-px aria-selected:border-blue-selected aria-selected:bg-gray-800 xl:h-[30px] xl:rounded-md xl:border-0 xl:px-2.5 xl:hover:bg-gray-700 xl:aria-selected:pointer-events-none xl:aria-selected:cursor-default xl:aria-selected:bg-gradient-to-b xl:aria-selected:from-blue-600 xl:aria-selected:to-blue-800">
-                <span class="text-white">TSLA</span>
-                <button type="button" class="-m-1 hidden p-1 hover:text-white xl:group-hover:block">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 4L4 12"></path>
-                    <path d="M4 4L12 12"></path>
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <div data-js-track-item class="border-l border-gray-600 first:border-0 xl:border-0 xl:py-0.5">
-              <div class="group flex h-8 cursor-pointer items-center justify-between border-b border-gray-600 px-5 pt-px aria-selected:border-blue-selected aria-selected:bg-gray-800 xl:h-[30px] xl:rounded-md xl:border-0 xl:px-2.5 xl:hover:bg-gray-700 xl:aria-selected:pointer-events-none xl:aria-selected:cursor-default xl:aria-selected:bg-gradient-to-b xl:aria-selected:from-blue-600 xl:aria-selected:to-blue-800">
-                <span class="text-white">AMZN</span>
-                <button type="button" class="-m-1 hidden p-1 hover:text-white xl:group-hover:block">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 4L4 12"></path>
-                    <path d="M4 4L12 12"></path>
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <div data-js-track-item class="border-l border-gray-600 first:border-0 xl:border-0 xl:py-0.5">
-              <div class="group flex h-8 cursor-pointer items-center justify-between border-b border-gray-600 px-5 pt-px aria-selected:border-blue-selected aria-selected:bg-gray-800 xl:h-[30px] xl:rounded-md xl:border-0 xl:px-2.5 xl:hover:bg-gray-700 xl:aria-selected:pointer-events-none xl:aria-selected:cursor-default xl:aria-selected:bg-gradient-to-b xl:aria-selected:from-blue-600 xl:aria-selected:to-blue-800">
-                <span class="text-white">NFLX</span>
-                <button type="button" class="-m-1 hidden p-1 hover:text-white xl:group-hover:block">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 4L4 12"></path>
-                    <path d="M4 4L12 12"></path>
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <div data-js-track-item class="border-l border-gray-600 first:border-0 xl:border-0 xl:py-0.5">
-              <div class="group flex h-8 cursor-pointer items-center justify-between border-b border-gray-600 px-5 pt-px aria-selected:border-blue-selected aria-selected:bg-gray-800 xl:h-[30px] xl:rounded-md xl:border-0 xl:px-2.5 xl:hover:bg-gray-700 xl:aria-selected:pointer-events-none xl:aria-selected:cursor-default xl:aria-selected:bg-gradient-to-b xl:aria-selected:from-blue-600 xl:aria-selected:to-blue-800">
-                <span class="text-white">NVDA</span>
-                <button type="button" class="-m-1 hidden p-1 hover:text-white xl:group-hover:block">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 4L4 12"></path>
-                    <path d="M4 4L12 12"></path>
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <div data-js-track-frame class="pointer-events-none absolute top-0 -right-[5px] -left-[5px] box-content hidden h-[34px] -translate-y-1 rounded-xl border border-dashed border-gray-600 py-1 xl:block"></div>
+            <div data-js-track-frame class="pointer-events-none absolute top-0 -right-1 -left-1 box-content hidden h-[34px] -translate-y-[2px] rounded-10 border border-blue-selected py-px xl:block"></div>
           </div>
         </div>
       </div>
       <!--/ left sidebar -->
 
       <!-- right sidebar -->
-      <div id="sidebar" class="fixed right-0 bottom-0 top-[154px] z-header w-full translate-x-full bg-gray-700 transition-all duration-300 sm:w-96 sm:border-l sm:border-gray-600 xl:top-[86px]">
+      <div id="sidebar" aria-hidden="true" class="fixed right-0 bottom-0 top-0 z-header w-full bg-gray-700 transition-all duration-300 aria-hidden:translate-x-full sm:w-96 sm:border-l sm:border-gray-600">
+        <!-- right sidebar head -->
+        <div class="flex h-[50px] items-center justify-between pr-2.5 pl-5">
+          <div class="text-lg text-white">Edit Graphs</div>
+          <button type="button" class="flex items-center justify-center gap-1 text-blue-300 hover:text-white" onclick="document.getElementById('sidebar').ariaHidden = true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M18 6L6 18" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M6 6L18 18" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <!--/ right sidebar head -->
+
         <!-- right sidebar tabs -->
         <div class="flex">
           <button type="button" data-js-tab="#parameters" class="flex h-9 w-1/2 items-center justify-center border-b border-blue-selected font-bold text-white hover:text-white">Parameters</button>
@@ -1585,7 +761,7 @@
         <div>
           <!-- right sidebar parameters -->
           <div id="parameters">
-            <div class="absolute top-9 right-0 bottom-0 left-0 overflow-auto pb-13">
+            <div class="absolute top-[86px] right-0 bottom-0 left-0 overflow-auto pb-13">
               <div class="border-b border-gray-600 py-2.5 px-5">
                 <div id="parameters-layout-select" class="relative">
                   <button type="button" data-js-popover-open="#layout-dropdown" data-js-popover-position="auto" class="block w-full appearance-none rounded-md border border-gray-600 bg-gray-800 py-1.5 pr-[30px] pl-[9px] text-left text-white hover:border-gray-500 focus:border-blue-selected focus:bg-gray-900 focus:outline-0 aria-pressed:pointer-events-none aria-pressed:bg-gray-900">VectorVest Default Layout</button>
@@ -2343,7 +1519,7 @@
 
           <!-- right sidebar layouts -->
           <div id="layouts" class="hidden">
-            <div class="absolute top-9 right-0 bottom-0 left-0 overflow-auto pb-13">
+            <div class="absolute top-[86px] right-0 bottom-0 left-0 overflow-auto pb-13">
               <div class="p-5">
                 <div class="text-h6 uppercase">VectorVest Layouts</div>
                 <div class="-mx-2.5 mt-2">

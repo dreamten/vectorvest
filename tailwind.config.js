@@ -129,6 +129,9 @@ module.exports = {
       borderWidth: {
         6: '6px',
       },
+      borderRadius: {
+        10: '10px',
+      },
       backgroundImage: {
         'button-secondary': 'linear-gradient(#2A3F56, #203144 33%)',
         'color-guard-pattern': `url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9"><circle cx="4.5" cy="4.5" r="1.5" fill="white" fill-opacity="0.05" /></svg>')`,

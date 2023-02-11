@@ -1,19 +1,12 @@
-const headerHeight = $('#content').offset().top;
-
-function debounce(func) {
-  var timer;
-  return function (event) {
-    if (timer) clearTimeout(timer);
-    timer = setTimeout(func, 100, event);
-  };
-}
+const headerHeight = document.getElementById('content').getBoundingClientRect().top;
 
 function redrawTrack() {
-  const frameHeight = 32 * ((window.innerHeight - headerHeight) / $('[data-js-slide]').eq(0).outerHeight());
+  const frameHeight = 34 * ((window.innerHeight - headerHeight) / $('[data-js-slide]').eq(0).outerHeight());
+  const scroll1 = window.scrollY / (document.body.offsetHeight - window.innerHeight);
+  const scroll2 = scroll1 * ($('[data-js-track]').outerHeight() - frameHeight);
   $('[data-js-track-frame]').css('height', frameHeight);
-  let scroll1 = window.scrollY / (document.body.offsetHeight - window.innerHeight);
-  let scroll2 = scroll1 * ($('[data-js-track]').outerHeight() - frameHeight);
   $('[data-js-track-frame]').css('margin-top', scroll2);
+  return;
 }
 redrawTrack();
 
@@ -76,11 +69,6 @@ $(document).on('click', '[data-js-tab]', function () {
   $this.siblings().removeClass('border-blue-selected').removeClass('font-bold').removeClass('text-white').addClass('border-gray-600');
   $($this.attr('data-js-tab')).removeClass('hidden').siblings().addClass('hidden');
 });
-
-$(document).on('click', '[data-js-toggle-sidebar]', function () {
-  $('#sidebar').toggleClass('shadow-modal').toggleClass('translate-x-full');
-});
-
 $(document).on('click', '[data-js-accordion-toggle]', function () {
   const $this = $(this);
   $this.next().slideToggle(150);
@@ -275,18 +263,32 @@ const areaSeriesData = [
   { time: 1556841600 + 1800 * 48, value: 231.2 },
 ];
 
-const candleChartIds = ['chart-price', 'chart-price-2', 'chart-price-3', 'chart-price-4', 'chart-price-5', 'chart-price-6', 'chart-price-7', 'chart-price-8', 'chart-price-9', 'chart-price-10', 'chart-price-11', 'chart-price-12', 'chart-price-13', 'chart-price-14', 'chart-price-15', 'chart-price-16'];
+const candleChartIds = ['chart-price', 'chart-price-2', 'chart-price-3', 'chart-price-4', 'chart-price-5'];
 const candleChart = [];
 const candleSeries = [];
+const candleChartMarkers = [
+  { time: candleSeriesData[5].time, position: 'belowBar', color: '#6EE15B', text: '▲' },
+  { time: candleSeriesData[9].time, position: 'belowBar', color: '#6EE15B', text: '▲' },
+  { time: candleSeriesData[13].time, position: 'belowBar', color: '#6EE15B', text: '▲' },
+  { time: candleSeriesData[17].time, position: 'belowBar', color: '#6EE15B', text: '▲' },
+  { time: candleSeriesData[24].time, position: 'belowBar', color: '#6EE15B', text: '▲' },
+  { time: candleSeriesData[28].time, position: 'belowBar', color: '#6EE15B', text: '▲' },
+  { time: candleSeriesData[33].time, position: 'belowBar', color: '#6EE15B', text: '▲' },
+  { time: candleSeriesData[38].time, position: 'belowBar', color: '#6EE15B', text: '▲' },
+  { time: candleSeriesData[42].time, position: 'belowBar', color: '#6EE15B', text: '▲' },
+  { time: candleSeriesData[44].time, position: 'belowBar', color: '#6EE15B', text: '▲' },
+  { time: candleSeriesData[47].time, position: 'belowBar', color: '#6EE15B', text: '▲' },
+];
 candleChartIds.forEach(function (item, index) {
   const container = document.getElementById(item);
   container.classList.add('overflow-hidden');
   candleChart[index] = LightweightCharts.createChart(container, chartOptions);
   candleSeries[index] = candleChart[index].addCandlestickSeries(candleSeriesOptions);
   candleSeries[index].setData(candleSeriesData);
+  candleSeries[index].setMarkers(candleChartMarkers);
   candleChart[index].timeScale().fitContent();
 });
-const areaChartIds = ['chart-rt', 'chart-rt-2', 'chart-rt-3', 'chart-rt-4', 'chart-rt-5', 'chart-rt-6', 'chart-rt-7', 'chart-rt-8', 'chart-rt-9', 'chart-rt-10', 'chart-rt-11', 'chart-rt-12', 'chart-rt-13', 'chart-rt-14', 'chart-rt-15', 'chart-rt-16'];
+const areaChartIds = ['chart-rt', 'chart-rt-2', 'chart-rt-3', 'chart-rt-4', 'chart-rt-5'];
 const areaChart = [];
 const areaSeries = [];
 areaChartIds.forEach(function (item, index) {
