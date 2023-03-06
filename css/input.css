@@ -61,12 +61,12 @@
   [data-preview='']:hover [data-source=''] {
     @apply opacity-100;
   }
-  [data-js-accordion-item] {
+  /* [data-js-accordion-item] {
     @apply hidden;
   }
   [data-js-accordion-item]:has(label.flex) {
     @apply block;
-  }
+  } */
   [data-js-popover-open='#layout-menu'].pointer-events-none {
     @apply text-white opacity-100;
   }

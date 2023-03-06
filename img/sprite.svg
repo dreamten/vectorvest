@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <symbol id="logo" viewBox="0 0 16 16" fill="none">
+      <path d="M8 16L0 8H8V16Z" fill="currentColor"/>
+      <path d="M1 1H5L15 10.5V15L1 1Z" fill="currentColor"/>
+      <rect x="0.5" y="0.5" width="15" height="15" stroke="currentColor"/>
+    </symbol>
+
+    <symbol id="info" viewBox="0 0 16 16" fill="none">
+      <title>Info</title>
+      <path d="M8 13C10.7614 13 13 10.7614 13 8C13 5.23858 10.7614 3 8 3C5.23858 3 3 5.23858 3 8C3 10.7614 5.23858 13 8 13Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M8 10V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M8 6H8.00545" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    </symbol>
+
+    <symbol id="expand" viewBox="0 0 16 16" fill="none">
+      <path d="M10 3H13V6" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M6 13H3V10" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M13 3L9 7" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M3 13L7 9" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    </symbol>
+  </defs>
+</svg>
